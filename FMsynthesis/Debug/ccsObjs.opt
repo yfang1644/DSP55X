@@ -1,0 +1,1 @@
+"./vectors.obj" "./timer.obj" "./sysinit.obj" "./sine.obj" "./pll.obj" "./music.obj" "./main.obj" "./ezdsp5535_sar.obj" "./ezdsp5535_lcd.obj" "./ezdsp5535_i2s.obj" "./ezdsp5535_i2c.obj" "./ezdsp5535_gpio.obj" "./boot.obj" "./autoinit.obj" "./audio.obj" "./aic3204.obj" "./DSP_utils.obj" "../lnkx.cmd" 

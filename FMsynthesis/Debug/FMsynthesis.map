@@ -1,0 +1,261 @@
+******************************************************************************
+              TMS320C55x Linker Unix v4.4.1                    
+******************************************************************************
+>> Linked Fri Dec  5 21:19:40 2014
+
+OUTPUT FILE NAME:   <FMsynthesis.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 00020bc0
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+                        (bytes)   (bytes)    (bytes)   (bytes)
+----------------------  --------  ---------  --------  --------  ----  --------
+PAGE 0:
+  MMR                   00000000   000000c0  00000000  000000c0  RWIX
+  DARAM0                000000c0   0000ff40  000072ca  00008c76  RWIX
+  VECS1                 00010000   00000100  00000100  00000000  RWIX
+  SARAM0                00010100   0000ff00  00000000  0000ff00  RWIX
+  SARAM1                00020000   00020000  00000c96  0001f36a  RWIX
+  SARAM2                00040000   0000ff00  000040e4  0000be1c  RWIX
+  CROM                  00fe0000   00000600  00000600  00000000  R  X
+  PDROM                 00ff8000   00008000  00000000  00008000  R IX
+
+PAGE 2:
+  IOPORT                00000000   00020000  00000000  00020000  RWI 
+
+
+SECTION ALLOCATION MAP
+(Addresses surrounded by []'s are displayed for convenience only!)
+
+output                                                          attributes/
+section   page  orgn(bytes) orgn(words) len(bytes) len(words)   input sections
+--------  ----  ----------- ----------- ---------- ----------   --------------
+.pinit       0   [ 00040000 ]  00020000          *   00000000   UNINITIALIZED
+
+.stack       0   [ 000000c0 ]  00000060          *   00001000   UNINITIALIZED
+                 [ 000000c0 ]  00000060          *   00001000   --HOLE--
+
+.data        0   [ 000000c0 ]  00000060          *   00000000   UNINITIALIZED
+
+.sysstack 
+*            0   [ 000020c0 ]  00001060          *   00000800   UNINITIALIZED
+                 [ 000020c0 ]  00001060          *   00000800   --HOLE--
+
+dmaMem       0   [ 000030c0 ]  00001860          *   00000100   UNINITIALIZED
+                 [ 000030c0 ]  00001860          *   00000100   audio.obj (dmaMem)
+
+.bss         0   [ 000032c0 ]  00001960          *   00002047   UNINITIALIZED
+                 [ 000032c0 ]  00001960          *   00002000   sine.obj (.bss)
+                 [ 000072c0 ]  00003960          *   00000042   music.obj (.bss)
+                 [ 00007344 ]  000039a2          *   00000004   audio.obj (.bss)
+                 [ 0000734c ]  000039a6          *   00000001   main.obj (.bss)
+
+.const       0   [ 00007350 ]  000039a8          *   0000001e   
+                 [ 00007350 ]  000039a8          *   0000000f   main.obj (.const:.string)
+                 [ 0000736e ]  000039b7          *   0000000f   main.obj (.const:_$P$T0$1)
+
+.vectors     0     00010000  [ 00008000 ] 00000100          *   
+                   00010000  [ 00008000 ] 00000100          *   vectors.obj (.vectors)
+
+.text        0     00020000  [ 00010000 ] 00000c96          *   
+                   00020000  [ 00010000 ] 000002a6          *   ezdsp5535_lcd.obj (.text)
+                   000202a6  [ 00010153 ] 000001e7          *   audio.obj (.text)
+                   0002048d  [ 00010246+] 000001a7          *   aic3204.obj (.text)
+                   00020634  [ 0001031a ] 00000102          *   ezdsp5535_i2c.obj (.text)
+                   00020736  [ 0001039b ] 000000f6          *   main.obj (.text)
+                   0002082c  [ 00010416 ] 000000dc          *   music.obj (.text)
+                   00020908  [ 00010484 ] 000000b2          *   ezdsp5535_sar.obj (.text)
+                   000209ba  [ 000104dd ] 0000009a          *   sine.obj (.text)
+                   00020a54  [ 0001052a ] 00000070          *   audio.obj (.text:retain)
+                   00020ac4  [ 00010562 ] 0000004d          *   autoinit.obj (.text)
+                   00020b11  [ 00010588+] 0000003c          *   sysinit.obj (.text)
+                   00020b4d  [ 000105a6+] 0000003b          *   pll.obj (.text)
+                   00020b88  [ 000105c4 ] 00000038          *   ezdsp5535_i2s.obj (.text:retain)
+                   00020bc0  [ 000105e0 ] 00000030          *   boot.obj (.text)
+                   00020bf0  [ 000105f8 ] 00000030          *   ezdsp5535_i2s.obj (.text)
+                   00020c20  [ 00010610 ] 0000002e          *   timer.obj (.text:retain)
+                   00020c4e  [ 00010627 ] 0000001c          *   timer.obj (.text)
+                   00020c6a  [ 00010635 ] 0000001a          *   ezdsp5535_gpio.obj (.text)
+                   00020c84  [ 00010642 ] 0000000b          *   DSP_utils.obj (.text)
+                   00020c8f  [ 00010647+] 00000006          *   vectors.obj (.text)
+                   00020c95  [ 0001064a ] 00000001          *   --HOLE-- [fill = 20]
+
+.cinit       0   [ 00040000 ]  00020000          *   00002072   
+                 [ 00040000 ]  00020000          *   00002003   sine.obj (.cinit)
+                 [ 00044006 ]  00022003          *   0000005a   music.obj (.cinit)
+                 [ 000440ba ]  0002205d          *   00000010   audio.obj (.cinit)
+                 [ 000440da ]  0002206d          *   00000004   main.obj (.cinit)
+                 [ 000440e2 ]  00022071          *   00000001   --HOLE-- [fill = 0]
+
+.charrom     0   [ 00fe0000 ]  007f0000          *   00000300   UNINITIALIZED
+                 [ 00fe0000 ]  007f0000          *   00000300   ezdsp5535_lcd.obj (.charrom)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+abs. value/
+byte addr   word addr   name
+---------   ---------   ----
+00000002                $TI_capability$C5500$CallingConvention
+00000002                $TI_capability$C5500$MemoryModel
+00000001                $TI_capability_requires_rev3
+ffffffff                .bss
+ffffffff                .data
+ffffffff                .text
+0002048d                _AIC3204_rset
+            000039a0    _Ao
+            007f0000    _CharGen_6x8
+00020331                _DMA_audio_init
+00020c6a                _EZDSP5535_GPIO_init
+00020634                _EZDSP5535_I2C_close
+0002063d                _EZDSP5535_I2C_init
+000206cf                _EZDSP5535_I2C_read
+0002065c                _EZDSP5535_I2C_reset
+0002066a                _EZDSP5535_I2C_write
+00020bf0                _EZDSP5535_I2S_init
+00020161                _EZDSP5535_LCD_init
+00020000                _EZDSP5535_LCD_multiSend
+00020023                _EZDSP5535_LCD_send
+00020954                _EZDSP5535_SAR_getKey
+00020908                _EZDSP5535_SAR_init
+00020c84                _EZDSP5535_waitusec
+00020b11                _INTR_init
+00020093                _LCD_print
+0002003d                _LCD_scroll
+00020b4d                _PLL_init
+00010000                _Reset
+00020c4e                _TIMER_init
+            00001060    __STACK_END
+00002000                __STACK_SIZE
+00001000                __SYSSTACK_SIZE
+ffffffff                ___binit__
+ffffffff                ___bss__
+ffffffff                ___c_args__
+            00020000    ___cinit__
+ffffffff                ___data__
+ffffffff                ___edata__
+ffffffff                ___end__
+ffffffff                ___etext__
+ffffffff                ___pinit__
+ffffffff                ___text__
+            00000060    __stack
+            00001060    __sysstack
+000204ac                _aic3204_init
+000202a6                _audioProcessing
+00020ac4                _auto_init
+00020bc0                _c_int00
+000208e9                _changeInstrument
+            0000399e    _dArg
+            0000399d    _dPhi
+00020a54                _dma_isr
+            00003960    _freqTable
+            0000399f    _gVolMask
+00020ba4                _i2s2_rx_isr
+00020b88                _i2s2_tx_isr
+00020759                _main
+0002082c                _musicProcessing
+            000039a2    _pingpong
+            0000396c    _preDefined
+00020736                _printMessage
+            00001860    _rcv_l
+            000018a0    _rcv_r
+000209ba                _sine
+            00001960    _sine_table
+            00003976    _song
+            000039a6    _taskList
+00020c20                _tim_isr
+            000018e0    _xmt_l
+            00001920    _xmt_r
+ffffffff                binit
+            00020000    cinit
+ffffffff                edata
+ffffffff                end
+ffffffff                etext
+ffffffff                pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+abs. value/
+byte addr   word addr   name
+---------   ---------   ----
+00000001                $TI_capability_requires_rev3
+00000002                $TI_capability$C5500$CallingConvention
+00000002                $TI_capability$C5500$MemoryModel
+            00000060    __stack
+00001000                __SYSSTACK_SIZE
+00002000                __STACK_SIZE
+            00001060    __STACK_END
+            00001060    __sysstack
+            00001860    _rcv_l
+            000018a0    _rcv_r
+            000018e0    _xmt_l
+            00001920    _xmt_r
+            00001960    _sine_table
+            00003960    _freqTable
+            0000396c    _preDefined
+            00003976    _song
+            0000399d    _dPhi
+            0000399e    _dArg
+            0000399f    _gVolMask
+            000039a0    _Ao
+            000039a2    _pingpong
+            000039a6    _taskList
+00010000                _Reset
+00020000                _EZDSP5535_LCD_multiSend
+00020023                _EZDSP5535_LCD_send
+0002003d                _LCD_scroll
+00020093                _LCD_print
+00020161                _EZDSP5535_LCD_init
+000202a6                _audioProcessing
+00020331                _DMA_audio_init
+0002048d                _AIC3204_rset
+000204ac                _aic3204_init
+00020634                _EZDSP5535_I2C_close
+0002063d                _EZDSP5535_I2C_init
+0002065c                _EZDSP5535_I2C_reset
+0002066a                _EZDSP5535_I2C_write
+000206cf                _EZDSP5535_I2C_read
+00020736                _printMessage
+00020759                _main
+0002082c                _musicProcessing
+000208e9                _changeInstrument
+00020908                _EZDSP5535_SAR_init
+00020954                _EZDSP5535_SAR_getKey
+000209ba                _sine
+00020a54                _dma_isr
+00020ac4                _auto_init
+00020b11                _INTR_init
+00020b4d                _PLL_init
+00020b88                _i2s2_tx_isr
+00020ba4                _i2s2_rx_isr
+00020bc0                _c_int00
+00020bf0                _EZDSP5535_I2S_init
+00020c20                _tim_isr
+00020c4e                _TIMER_init
+00020c6a                _EZDSP5535_GPIO_init
+00020c84                _EZDSP5535_waitusec
+            00020000    ___cinit__
+            00020000    cinit
+            007f0000    _CharGen_6x8
+ffffffff                .bss
+ffffffff                .data
+ffffffff                .text
+ffffffff                ___binit__
+ffffffff                ___bss__
+ffffffff                ___c_args__
+ffffffff                ___data__
+ffffffff                ___edata__
+ffffffff                ___end__
+ffffffff                ___etext__
+ffffffff                ___pinit__
+ffffffff                ___text__
+ffffffff                binit
+ffffffff                edata
+ffffffff                end
+ffffffff                etext
+ffffffff                pinit
+
+[76 symbols]

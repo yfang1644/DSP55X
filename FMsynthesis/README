@@ -1,0 +1,10 @@
+howling control
+hilbert transform, phase shift pi/2, multiply sin/cos
+
+        +---------+      x sin()
+  ---+--| Hilbert |------>o------+
+     |  +---------+               \
+     |                           + O---->
+     |   +-------+                /
+     +---| delay |------->o------+
+         +-------+       x cos()
