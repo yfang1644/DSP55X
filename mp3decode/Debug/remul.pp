@@ -1,0 +1,1 @@
+remul.obj: ../remul.c

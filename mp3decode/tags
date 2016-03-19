@@ -1,0 +1,744 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+$1	boot.asm	/^$1:	TC1 = bit(@ST3_L, #1) || mmap()$/;"	l
+$2	boot.asm	/^$2:	TC1 = bit(@ST3_L, #0) || mmap()$/;"	l
+AC0	DSP_utils.asm	/^	AC0 = #0 || CSR = T0$/;"	d
+AC0	DSP_utils.asm	/^	AC0 = POPBOTH()$/;"	d
+AC0	DSP_utils.asm	/^    AC0 = AC0 + (AC1 << #-12) || return$/;"	d
+AC0	autoinit.asm	/^	AC0 = AC0 | (AC1 <<< #-8)$/;"	d
+AC0	autoinit.asm	/^        AC0 = dbl(*AR6+)$/;"	d
+AC0	autoinit.asm	/^        AC0 = uns(*AR0+) << #8$/;"	d
+AC1	DSP_utils.asm	/^	AC1 = AC1 * T0 || AC0 = AC0 << #4$/;"	d
+AC1	autoinit.asm	/^	AC1 = AC1 & #0xff	$/;"	d
+AC1	autoinit.asm	/^	AC1 = uns(*AR0+)$/;"	d
+AIC3204_I2C_ADDR	aic3204.c	5;"	d	file:
+AIC3204_rget	aic3204.c	/^Int16 AIC3204_rget( Int8 regnum, Int8* regval )$/;"	f
+AIC3204_rset	aic3204.c	/^Int16 AIC3204_rset( Uint8 regnum, Uint8 regval )$/;"	f
+AOSR	aic3204.c	/^	Uint8 AOSR;$/;"	m	struct:codec_param	file:
+AR0	autoinit.asm	/^        AR0   = #(cinit & 0xffff)$/;"	d
+AR2	autoinit.asm	/^	AR2 = AR2 >> #1$/;"	d
+AR2	autoinit.asm	/^        AR2 = *AR0+$/;"	d
+AR6	autoinit.asm	/^	AR6   = AC0$/;"	d
+AR6	autoinit.asm	/^        AR6   = #(___pinit__ & 0xffff)$/;"	d
+AR7	autoinit.asm	/^	AR7 = ~AR0$/;"	d
+AR7	autoinit.asm	/^	AR7 = ~AR6$/;"	d
+ASM_DEPS	Debug/sources.mk	/^ASM_DEPS := $/;"	m
+ASM_DEPS__QUOTED	Debug/sources.mk	/^ASM_DEPS__QUOTED := $/;"	m
+ASM_SRCS	Debug/sources.mk	/^ASM_SRCS := $/;"	m
+ASM_UPPER_DEPS	Debug/sources.mk	/^ASM_UPPER_DEPS := $/;"	m
+ASM_UPPER_DEPS__QUOTED	Debug/sources.mk	/^ASM_UPPER_DEPS__QUOTED := $/;"	m
+ASM_UPPER_SRCS	Debug/sources.mk	/^ASM_UPPER_SRCS := $/;"	m
+A_SRCS	Debug/sources.mk	/^A_SRCS := $/;"	m
+Audio_init	audio.c	/^void Audio_init(void)$/;"	f
+BASOP_H_DEFINED	include/basop32.h	19;"	d
+BERR	vectors.asm	/^BERR:		.ivec	no_handler			; Bus Error Interrupt$/;"	l
+BRC0	DSP_utils.asm	/^	BRC0 = T0$/;"	d
+BUF_SIZE	audio.c	161;"	d	file:
+C	layer12.c	/^  mad_fixed_t C;$/;"	m	struct:quantclass	file:
+C43_DEPS	Debug/sources.mk	/^C43_DEPS := $/;"	m
+C43_DEPS__QUOTED	Debug/sources.mk	/^C43_DEPS__QUOTED := $/;"	m
+C43_SRCS	Debug/sources.mk	/^C43_SRCS := $/;"	m
+C5500_EXECUTABLE_OUTPUTS	Debug/sources.mk	/^C5500_EXECUTABLE_OUTPUTS := $/;"	m
+C5500_EXECUTABLE_OUTPUTS__QUOTED	Debug/sources.mk	/^C5500_EXECUTABLE_OUTPUTS__QUOTED := $/;"	m
+C55_DEPS	Debug/sources.mk	/^C55_DEPS := $/;"	m
+C55_DEPS__QUOTED	Debug/sources.mk	/^C55_DEPS__QUOTED := $/;"	m
+C55_SRCS	Debug/sources.mk	/^C55_SRCS := $/;"	m
+C62_DEPS	Debug/sources.mk	/^C62_DEPS := $/;"	m
+C62_DEPS__QUOTED	Debug/sources.mk	/^C62_DEPS__QUOTED := $/;"	m
+C62_SRCS	Debug/sources.mk	/^C62_SRCS := $/;"	m
+C64_DEPS	Debug/sources.mk	/^C64_DEPS := $/;"	m
+C64_DEPS__QUOTED	Debug/sources.mk	/^C64_DEPS__QUOTED := $/;"	m
+C64_SRCS	Debug/sources.mk	/^C64_SRCS := $/;"	m
+C67_DEPS	Debug/sources.mk	/^C67_DEPS := $/;"	m
+C67_DEPS__QUOTED	Debug/sources.mk	/^C67_DEPS__QUOTED := $/;"	m
+C67_SRCS	Debug/sources.mk	/^C67_SRCS := $/;"	m
+CC_DEPS	Debug/sources.mk	/^CC_DEPS := $/;"	m
+CC_DEPS__QUOTED	Debug/sources.mk	/^CC_DEPS__QUOTED := $/;"	m
+CC_SRCS	Debug/sources.mk	/^CC_SRCS := $/;"	m
+CG_TOOL_ROOT	Debug/makefile	/^CG_TOOL_ROOT := \/opt\/ti\/ccsv5\/tools\/compiler\/c5500_4.4.1$/;"	m
+CHAR_BIT	include/bit.h	4;"	d
+CLA_DEPS	Debug/sources.mk	/^CLA_DEPS := $/;"	m
+CLA_DEPS__QUOTED	Debug/sources.mk	/^CLA_DEPS__QUOTED := $/;"	m
+CLA_SRCS	Debug/sources.mk	/^CLA_SRCS := $/;"	m
+CMD_SRCS	Debug/sources.mk	/^CMD_SRCS := $/;"	m
+CMD_UPPER_SRCS	Debug/sources.mk	/^CMD_UPPER_SRCS := $/;"	m
+COPROCFFT	vectors.asm	/^COPROCFFT:	.ivec	no_handler			; Coprocessor FFT Module Interrupt$/;"	l
+CPP_DEPS	Debug/sources.mk	/^CPP_DEPS := $/;"	m
+CPP_DEPS__QUOTED	Debug/sources.mk	/^CPP_DEPS__QUOTED := $/;"	m
+CPP_SRCS	Debug/sources.mk	/^CPP_SRCS := $/;"	m
+CRC_POLY	bit.c	49;"	d	file:
+CSR	DSP_utils.asm	/^	CSR = T0 || AC0 = dbl(*AR1+)$/;"	d
+CSR	autoinit.asm	/^	CSR = AR2$/;"	d
+CXX_DEPS	Debug/sources.mk	/^CXX_DEPS := $/;"	m
+CXX_DEPS__QUOTED	Debug/sources.mk	/^CXX_DEPS__QUOTED := $/;"	m
+CXX_SRCS	Debug/sources.mk	/^CXX_SRCS := $/;"	m
+C_DEPS	Debug/sources.mk	/^C_DEPS := $/;"	m
+C_DEPS__QUOTED	Debug/sources.mk	/^C_DEPS__QUOTED := $/;"	m
+C_SRCS	Debug/sources.mk	/^C_SRCS := $/;"	m
+C_UPPER_DEPS	Debug/sources.mk	/^C_UPPER_DEPS := $/;"	m
+C_UPPER_DEPS__QUOTED	Debug/sources.mk	/^C_UPPER_DEPS__QUOTED := $/;"	m
+C_UPPER_SRCS	Debug/sources.mk	/^C_UPPER_SRCS := $/;"	m
+D	layer12.c	/^  mad_fixed_t D;$/;"	m	struct:quantclass	file:
+D	synth.c	/^mad_fixed_t const D[17][32] = {$/;"	v	file:
+DATAMEMCOPY	autoinit.asm	/^DATAMEMCOPY:$/;"	l
+DLOG	vectors.asm	/^DLOG:		.ivec	no_handler			; Emulation Interrupt - DLOG$/;"	l
+DMA	vectors.asm	/^DMA:		.ivec	_dma_isr			; DMA Interrupt$/;"	l
+DMA_audio_init	audio.c	/^int DMA_audio_init(Uint16 size)$/;"	f
+DOSR	aic3204.c	/^	Uint8 DOSR;$/;"	m	struct:codec_param	file:
+EMIF	vectors.asm	/^EMIF:		.ivec	no_handler			; EMIF Error Interrupt$/;"	l
+EMUINT	vectors.asm	/^EMUINT:		.ivec	no_handler			; Emulation monitor mode interrupt$/;"	l
+EXIT	autoinit.asm	/^EXIT:$/;"	l
+EZDSP5535_GPIO_init	ezdsp5535_gpio.c	/^void EZDSP5535_GPIO_init()$/;"	f
+EZDSP5535_I2C_close	ezdsp5535_i2c.c	/^void EZDSP5535_I2C_close( )$/;"	f
+EZDSP5535_I2C_init	ezdsp5535_i2c.c	/^void EZDSP5535_I2C_init( )$/;"	f
+EZDSP5535_I2C_read	ezdsp5535_i2c.c	/^Int16 EZDSP5535_I2C_read( Uint16 i2c_addr, Int8* data, Uint16 len )$/;"	f
+EZDSP5535_I2C_reset	ezdsp5535_i2c.c	/^void EZDSP5535_I2C_reset( )$/;"	f
+EZDSP5535_I2C_write	ezdsp5535_i2c.c	/^Int16 EZDSP5535_I2C_write( Uint16 i2c_addr, Int8* data, Uint16 len )$/;"	f
+EZDSP5535_I2S_init	ezdsp5535_i2s.c	/^void EZDSP5535_I2S_init(void)$/;"	f
+EZDSP5535_LCD_init	ezdsp5535_lcd.c	/^void EZDSP5535_LCD_init( )$/;"	f
+EZDSP5535_LCD_multiSend	ezdsp5535_lcd.c	/^Int16 EZDSP5535_LCD_multiSend( Uint8* data, Uint16 len )$/;"	f
+EZDSP5535_LCD_send	ezdsp5535_lcd.c	/^Int16 EZDSP5535_LCD_send( Uint16 comdat, Uint16 data )$/;"	f
+File_init	file.c	/^int File_init(char *filename)$/;"	f
+GPIO	vectors.asm	/^GPIO:		.ivec	no_handler			; GPIO Interrupt$/;"	l
+I2C	vectors.asm	/^I2C:		.ivec	no_handler			; IIC interrupt$/;"	l
+ICR	main.c	16;"	d	file:
+III_aliasreduce	layer3.c	/^void III_aliasreduce(mad_fixed_t xr[576], short lines)$/;"	f	file:
+III_decode	layer3.c	/^enum mad_error III_decode(struct mad_bitptr *ptr, struct mad_frame *frame,$/;"	f	file:
+III_exponents	layer3.c	/^void III_exponents(struct channel const *channel,$/;"	f	file:
+III_freqinver	layer3.c	/^void III_freqinver(mad_fixed_t sample[18][32], unsigned short sb)$/;"	f	file:
+III_huffdecode	layer3.c	/^enum mad_error III_huffdecode(struct mad_bitptr *ptr, mad_fixed_t xr[576],$/;"	f	file:
+III_imdct_l	layer3.c	/^void III_imdct_l(mad_fixed_t const X[18], mad_fixed_t z[36],$/;"	f	file:
+III_imdct_s	layer3.c	/^void III_imdct_s(mad_fixed_t const X[18], mad_fixed_t z[36])$/;"	f	file:
+III_overlap	layer3.c	/^void III_overlap(mad_fixed_t const output[36], mad_fixed_t overlap[18],$/;"	f	file:
+III_overlap_z	layer3.c	/^void III_overlap_z(mad_fixed_t overlap[18],$/;"	f	file:
+III_reorder	layer3.c	/^void III_reorder(mad_fixed_t xr[576], struct channel const *channel,$/;"	f	file:
+III_requantize	layer3.c	/^mad_fixed_t III_requantize(unsigned short value, short exp)$/;"	f	file:
+III_scalefactors	layer3.c	/^unsigned long III_scalefactors(struct mad_bitptr *ptr, struct channel *channel,$/;"	f	file:
+III_scalefactors_lsf	layer3.c	/^unsigned long III_scalefactors_lsf(struct mad_bitptr *ptr,$/;"	f	file:
+III_sideinfo	layer3.c	/^enum mad_error III_sideinfo(struct mad_bitptr *ptr, unsigned short nch,$/;"	f	file:
+III_stereo	layer3.c	/^enum mad_error III_stereo(mad_fixed_t xr[2][576],$/;"	f	file:
+II_samples	layer12.c	/^void II_samples(struct mad_bitptr *ptr,$/;"	f	file:
+INT0	vectors.asm	/^INT0:		.ivec	no_handler			; External User Interrupt #0 $/;"	l
+INT1	vectors.asm	/^INT1:		.ivec	no_handler			; External User Interrupt #1$/;"	l
+INTR_init	sysinit.c	/^void INTR_init(void)$/;"	f
+I_STEREO	layer3.c	/^  I_STEREO  = 0x1,$/;"	e	enum:__anon16	file:
+I_sample	layer12.c	/^mad_fixed_t I_sample(struct mad_bitptr *ptr, unsigned short nb)$/;"	f	file:
+K_DEPS	Debug/sources.mk	/^K_DEPS := $/;"	m
+K_DEPS__QUOTED	Debug/sources.mk	/^K_DEPS__QUOTED := $/;"	m
+K_SRCS	Debug/sources.mk	/^K_SRCS := $/;"	m
+LCD	vectors.asm	/^LCD:		.ivec	no_handler			; LCD Interrupt$/;"	l
+LCD_print	ezdsp5535_lcd.c	/^void LCD_print(char *s, int page)$/;"	f
+LCD_scroll	ezdsp5535_lcd.c	/^void LCD_scroll()$/;"	f
+LDS_SRCS	Debug/sources.mk	/^LDS_SRCS := $/;"	m
+LDS_UPPER_SRCS	Debug/sources.mk	/^LDS_UPPER_SRCS := $/;"	m
+LD_SRCS	Debug/sources.mk	/^LD_SRCS := $/;"	m
+LD_UPPER_SRCS	Debug/sources.mk	/^LD_UPPER_SRCS := $/;"	m
+LIBMAD_BIT_H	include/bit.h	2;"	d
+LIBMAD_DECODER_H	include/decoder.h	2;"	d
+LIBMAD_FIXED_H	include/fixed.h	2;"	d
+LIBMAD_FRAME_H	include/frame.h	2;"	d
+LIBMAD_HUFFMAN_H	include/huffman.h	23;"	d
+LIBMAD_LAYER12_H	include/layer12.h	2;"	d
+LIBMAD_LAYER3_H	include/layer3.h	2;"	d
+LIBMAD_STREAM_H	include/stream.h	2;"	d
+LIBMAD_SYNTH_H	include/synth.h	2;"	d
+LIBMAD_TIMER_H	include/timer.h	2;"	d
+LIBS	Debug/objects.mk	/^LIBS := -llibfatfs.lib$/;"	m
+LIB_SRCS	Debug/sources.mk	/^LIB_SRCS := $/;"	m
+LOOP	autoinit.asm	/^LOOP:$/;"	l
+LOOP2	autoinit.asm	/^LOOP2:	$/;"	l
+L_abs	include/basop32.h	65;"	d
+L_add	include/basop32.h	51;"	d
+L_mac	include/basop32.h	49;"	d
+L_msu	include/basop32.h	50;"	d
+L_mult	include/basop32.h	48;"	d
+L_negate	include/basop32.h	66;"	d
+L_shl	include/basop32.h	59;"	d
+L_shr	include/basop32.h	60;"	d
+L_sub	include/basop32.h	52;"	d
+MADC	aic3204.c	/^	Uint8 MADC;$/;"	m	struct:codec_param	file:
+MAD_BUFFER_GUARD	include/stream.h	6;"	d
+MAD_BUFFER_MDLEN	include/stream.h	7;"	d
+MAD_EMPHASIS_50_15_US	include/frame.h	/^  MAD_EMPHASIS_50_15_US	  = 1,		\/* 50\/15 microseconds emphasis *\/$/;"	e	enum:mad_emphasis
+MAD_EMPHASIS_CCITT_J_17	include/frame.h	/^  MAD_EMPHASIS_CCITT_J_17 = 3,		\/* CCITT J.17 emphasis *\/$/;"	e	enum:mad_emphasis
+MAD_EMPHASIS_NONE	include/frame.h	/^  MAD_EMPHASIS_NONE	  = 0,		\/* no emphasis *\/$/;"	e	enum:mad_emphasis
+MAD_EMPHASIS_RESERVED	include/frame.h	/^  MAD_EMPHASIS_RESERVED   = 2		\/* unknown emphasis *\/$/;"	e	enum:mad_emphasis
+MAD_ERROR_BADBIGVALUES	include/stream.h	/^  MAD_ERROR_BADBIGVALUES   = 0x0232,	\/* bad big_values count *\/$/;"	e	enum:mad_error
+MAD_ERROR_BADBITALLOC	include/stream.h	/^  MAD_ERROR_BADBITALLOC	   = 0x0211,	\/* forbidden bit allocation value *\/$/;"	e	enum:mad_error
+MAD_ERROR_BADBITRATE	include/stream.h	/^  MAD_ERROR_BADBITRATE	   = 0x0103,	\/* forbidden bitrate value *\/$/;"	e	enum:mad_error
+MAD_ERROR_BADBLOCKTYPE	include/stream.h	/^  MAD_ERROR_BADBLOCKTYPE   = 0x0233,	\/* reserved block_type *\/$/;"	e	enum:mad_error
+MAD_ERROR_BADCRC	include/stream.h	/^  MAD_ERROR_BADCRC	   = 0x0201,	\/* CRC check failed *\/$/;"	e	enum:mad_error
+MAD_ERROR_BADDATAPTR	include/stream.h	/^  MAD_ERROR_BADDATAPTR	   = 0x0235,	\/* bad main_data_begin pointer *\/$/;"	e	enum:mad_error
+MAD_ERROR_BADEMPHASIS	include/stream.h	/^  MAD_ERROR_BADEMPHASIS	   = 0x0105,	\/* reserved emphasis value *\/$/;"	e	enum:mad_error
+MAD_ERROR_BADFRAMELEN	include/stream.h	/^  MAD_ERROR_BADFRAMELEN	   = 0x0231,	\/* bad frame length *\/$/;"	e	enum:mad_error
+MAD_ERROR_BADHUFFDATA	include/stream.h	/^  MAD_ERROR_BADHUFFDATA	   = 0x0238,	\/* Huffman data overrun *\/$/;"	e	enum:mad_error
+MAD_ERROR_BADHUFFTABLE	include/stream.h	/^  MAD_ERROR_BADHUFFTABLE   = 0x0237,	\/* bad Huffman table select *\/$/;"	e	enum:mad_error
+MAD_ERROR_BADLAYER	include/stream.h	/^  MAD_ERROR_BADLAYER	   = 0x0102,	\/* reserved header layer value *\/$/;"	e	enum:mad_error
+MAD_ERROR_BADMODE	include/stream.h	/^  MAD_ERROR_BADMODE        = 0x0222,	\/* bad bitrate\/mode combination *\/$/;"	e	enum:mad_error
+MAD_ERROR_BADPART3LEN	include/stream.h	/^  MAD_ERROR_BADPART3LEN	   = 0x0236,	\/* bad audio data length *\/$/;"	e	enum:mad_error
+MAD_ERROR_BADSAMPLERATE	include/stream.h	/^  MAD_ERROR_BADSAMPLERATE  = 0x0104,	\/* reserved sample frequency value *\/$/;"	e	enum:mad_error
+MAD_ERROR_BADSCALEFACTOR	include/stream.h	/^  MAD_ERROR_BADSCALEFACTOR = 0x0221,	\/* bad scalefactor index *\/$/;"	e	enum:mad_error
+MAD_ERROR_BADSCFSI	include/stream.h	/^  MAD_ERROR_BADSCFSI	   = 0x0234,	\/* bad scalefactor selection info *\/$/;"	e	enum:mad_error
+MAD_ERROR_BADSTEREO	include/stream.h	/^  MAD_ERROR_BADSTEREO	   = 0x0239	\/* incompatible block_type for JS *\/$/;"	e	enum:mad_error
+MAD_ERROR_BUFLEN	include/stream.h	/^  MAD_ERROR_BUFLEN	   = 0x0001,	\/* input buffer too small (or EOF) *\/$/;"	e	enum:mad_error
+MAD_ERROR_BUFPTR	include/stream.h	/^  MAD_ERROR_BUFPTR	   = 0x0002,	\/* invalid (null) buffer pointer *\/$/;"	e	enum:mad_error
+MAD_ERROR_LOSTSYNC	include/stream.h	/^  MAD_ERROR_LOSTSYNC	   = 0x0101,	\/* lost synchronization *\/$/;"	e	enum:mad_error
+MAD_ERROR_NOMEM	include/stream.h	/^  MAD_ERROR_NOMEM	   = 0x0031,	\/* not enough memory *\/$/;"	e	enum:mad_error
+MAD_ERROR_NONE	include/stream.h	/^  MAD_ERROR_NONE	   = 0x0000,	\/* no error *\/$/;"	e	enum:mad_error
+MAD_F	include/fixed.h	33;"	d
+MAD_FLAG_COPYRIGHT	include/frame.h	/^  MAD_FLAG_COPYRIGHT	= 0x0020,	\/* frame is copyright *\/$/;"	e	enum:__anon7
+MAD_FLAG_FREEFORMAT	include/frame.h	/^  MAD_FLAG_FREEFORMAT	= 0x0400,	\/* uses free format bitrate *\/$/;"	e	enum:__anon7
+MAD_FLAG_INCOMPLETE	include/frame.h	/^  MAD_FLAG_INCOMPLETE	= 0x0008,	\/* header but not data is decoded *\/$/;"	e	enum:__anon7
+MAD_FLAG_I_STEREO	include/frame.h	/^  MAD_FLAG_I_STEREO	= 0x0100,	\/* uses intensity joint stereo *\/$/;"	e	enum:__anon7
+MAD_FLAG_LSF_EXT	include/frame.h	/^  MAD_FLAG_LSF_EXT	= 0x1000,	\/* lower sampling freq. extension *\/$/;"	e	enum:__anon7
+MAD_FLAG_MC_EXT	include/frame.h	/^  MAD_FLAG_MC_EXT	= 0x2000,	\/* multichannel audio extension *\/$/;"	e	enum:__anon7
+MAD_FLAG_MPEG_2_5_EXT	include/frame.h	/^  MAD_FLAG_MPEG_2_5_EXT	= 0x4000	\/* MPEG 2.5 (unofficial) extension *\/$/;"	e	enum:__anon7
+MAD_FLAG_MS_STEREO	include/frame.h	/^  MAD_FLAG_MS_STEREO	= 0x0200,	\/* uses middle\/side joint stereo *\/$/;"	e	enum:__anon7
+MAD_FLAG_NPRIVATE_III	include/frame.h	/^  MAD_FLAG_NPRIVATE_III	= 0x0007,	\/* number of Layer III private bits *\/$/;"	e	enum:__anon7
+MAD_FLAG_ORIGINAL	include/frame.h	/^  MAD_FLAG_ORIGINAL	= 0x0040,	\/* frame is original (else copy) *\/$/;"	e	enum:__anon7
+MAD_FLAG_PADDING	include/frame.h	/^  MAD_FLAG_PADDING	= 0x0080,	\/* frame has additional slot *\/$/;"	e	enum:__anon7
+MAD_FLAG_PROTECTION	include/frame.h	/^  MAD_FLAG_PROTECTION	= 0x0010,	\/* frame has CRC protection *\/$/;"	e	enum:__anon7
+MAD_FLOW_BREAK	include/decoder.h	/^  MAD_FLOW_BREAK    = 0x0011,	\/* stop decoding and signal an error *\/$/;"	e	enum:mad_flow
+MAD_FLOW_CONTINUE	include/decoder.h	/^  MAD_FLOW_CONTINUE = 0x0000,	\/* continue normally *\/$/;"	e	enum:mad_flow
+MAD_FLOW_IGNORE	include/decoder.h	/^  MAD_FLOW_IGNORE   = 0x0020	\/* ignore the current frame *\/$/;"	e	enum:mad_flow
+MAD_FLOW_STOP	include/decoder.h	/^  MAD_FLOW_STOP     = 0x0010,	\/* stop decoding normally *\/$/;"	e	enum:mad_flow
+MAD_F_FRACBITS	include/fixed.h	31;"	d
+MAD_F_MAX	include/fixed.h	36;"	d
+MAD_F_MIN	include/fixed.h	35;"	d
+MAD_F_ML0	include/fixed.h	70;"	d
+MAD_F_MLA	include/fixed.h	71;"	d
+MAD_F_MLN	include/fixed.h	72;"	d
+MAD_F_MLZ	include/fixed.h	73;"	d
+MAD_F_ONE	include/fixed.h	38;"	d
+MAD_F_SCALEBITS	synth.c	493;"	d	file:
+MAD_F_SCALEBITS	synth.c	494;"	d	file:
+MAD_LAYER_I	include/frame.h	/^  MAD_LAYER_I   = 1,			\/* Layer I *\/$/;"	e	enum:mad_layer
+MAD_LAYER_II	include/frame.h	/^  MAD_LAYER_II  = 2,			\/* Layer II *\/$/;"	e	enum:mad_layer
+MAD_LAYER_III	include/frame.h	/^  MAD_LAYER_III = 3			\/* Layer III *\/$/;"	e	enum:mad_layer
+MAD_MODE_DUAL_CHANNEL	include/frame.h	/^  MAD_MODE_DUAL_CHANNEL	  = 1,		\/* dual channel *\/$/;"	e	enum:mad_mode
+MAD_MODE_JOINT_STEREO	include/frame.h	/^  MAD_MODE_JOINT_STEREO	  = 2,		\/* joint (MS\/intensity) stereo *\/$/;"	e	enum:mad_mode
+MAD_MODE_SINGLE_CHANNEL	include/frame.h	/^  MAD_MODE_SINGLE_CHANNEL = 0,		\/* single channel *\/$/;"	e	enum:mad_mode
+MAD_MODE_STEREO	include/frame.h	/^  MAD_MODE_STEREO	  = 3		\/* normal LR stereo *\/$/;"	e	enum:mad_mode
+MAD_NCHANNELS	include/frame.h	55;"	d
+MAD_NSBSAMPLES	include/frame.h	56;"	d
+MAD_OPTION_HALFSAMPLERATE	include/stream.h	/^  MAD_OPTION_HALFSAMPLERATE = 0x0002	\/* generate PCM at 1\/2 sample rate *\/$/;"	e	enum:__anon1
+MAD_OPTION_IGNORECRC	include/stream.h	/^  MAD_OPTION_IGNORECRC      = 0x0001,	\/* ignore CRC errors *\/$/;"	e	enum:__anon1
+MAD_PCM_CHANNEL_DUAL_1	include/synth.h	/^  MAD_PCM_CHANNEL_DUAL_1 = 0,$/;"	e	enum:__anon3
+MAD_PCM_CHANNEL_DUAL_2	include/synth.h	/^  MAD_PCM_CHANNEL_DUAL_2 = 1$/;"	e	enum:__anon3
+MAD_PCM_CHANNEL_SINGLE	include/synth.h	/^  MAD_PCM_CHANNEL_SINGLE = 0$/;"	e	enum:__anon2
+MAD_PCM_CHANNEL_STEREO_LEFT	include/synth.h	/^  MAD_PCM_CHANNEL_STEREO_LEFT  = 0,$/;"	e	enum:__anon4
+MAD_PCM_CHANNEL_STEREO_RIGHT	include/synth.h	/^  MAD_PCM_CHANNEL_STEREO_RIGHT = 1$/;"	e	enum:__anon4
+MAD_PRIVATE_HEADER	include/frame.h	/^  MAD_PRIVATE_HEADER	= 0x0100,	\/* header private bit *\/$/;"	e	enum:__anon8
+MAD_PRIVATE_III	include/frame.h	/^  MAD_PRIVATE_III	= 0x001f	\/* Layer III private bits (up to 5) *\/$/;"	e	enum:__anon8
+MAD_RECOVERABLE	include/stream.h	38;"	d
+MAD_TIMER_RESOLUTION	include/timer.h	11;"	d
+MASK	layer3.c	1198;"	d	file:
+MASK	layer3.c	874;"	d	file:
+MASK1BIT	layer3.c	1199;"	d	file:
+MASK1BIT	layer3.c	876;"	d	file:
+MAX_16	include/basop32.h	33;"	d
+MAX_32	include/basop32.h	30;"	d
+MAX_BUFFER_SIZE	include/defs.h	3;"	d
+MDAC	aic3204.c	/^	Uint8 MDAC;$/;"	m	struct:codec_param	file:
+MDP	boot.asm	/^	MDP   = #0$/;"	d
+MDP05	autoinit.asm	/^	MDP05 = #0$/;"	d
+MDP05	autoinit.asm	/^        MDP05 = #((cinit >> 16) & 0x7f)$/;"	d
+MDP05	boot.asm	/^	MDP05 = #0$/;"	d
+MDP67	autoinit.asm	/^	MDP67 = #0$/;"	d
+MDP67	autoinit.asm	/^	MDP67 = *SP(#0) $/;"	d
+MDP67	autoinit.asm	/^	MDP67 = @AC0_H || mmap()$/;"	d
+MDP67	autoinit.asm	/^        MDP67 = #((___pinit__ >> 16) & 0x7f)$/;"	d
+MDP67	boot.asm	/^	MDP67 = #0$/;"	d
+MDR_FREE	ezdsp5535_i2c.c	74;"	d	file:
+MDR_IRS	ezdsp5535_i2c.c	73;"	d	file:
+MDR_MST	ezdsp5535_i2c.c	72;"	d	file:
+MDR_STP	ezdsp5535_i2c.c	77;"	d	file:
+MDR_STT	ezdsp5535_i2c.c	70;"	d	file:
+MDR_TRX	ezdsp5535_i2c.c	71;"	d	file:
+MIN_16	include/basop32.h	34;"	d
+MIN_32	include/basop32.h	31;"	d
+ML0	synth.c	480;"	d	file:
+ML0	synth.c	487;"	d	file:
+MLA	synth.c	481;"	d	file:
+MLA	synth.c	488;"	d	file:
+MLN	synth.c	482;"	d	file:
+MLN	synth.c	489;"	d	file:
+MLZ	synth.c	483;"	d	file:
+MLZ	synth.c	490;"	d	file:
+MS_STEREO	layer3.c	/^  MS_STEREO = 0x2$/;"	e	enum:__anon16	file:
+MUL	synth.c	474;"	d	file:
+MUL	synth.c	76;"	d	file:
+NADC	aic3204.c	/^	Uint8 NADC;$/;"	m	struct:codec_param	file:
+NDAC	aic3204.c	/^	Uint8 NDAC;$/;"	m	struct:codec_param	file:
+NMI	vectors.asm	/^NMI:		.ivec	no_handler			; Nonmaskable Interrupt$/;"	l
+OBJS	Debug/sources.mk	/^OBJS := $/;"	m
+OBJS__QUOTED	Debug/sources.mk	/^OBJS__QUOTED := $/;"	m
+OBJ_SRCS	Debug/sources.mk	/^OBJ_SRCS := $/;"	m
+OPT_DEPS	Debug/sources.mk	/^OPT_DEPS := $/;"	m
+OPT_DEPS__QUOTED	Debug/sources.mk	/^OPT_DEPS__QUOTED := $/;"	m
+OPT_SRCS	Debug/sources.mk	/^OPT_SRCS := $/;"	m
+OSD9616_I2C_ADDR	ezdsp5535_lcd.c	6;"	d	file:
+O_SRCS	Debug/sources.mk	/^O_SRCS := $/;"	m
+PINIT	autoinit.asm	/^PINIT:		$/;"	l
+PLLD	aic3204.c	/^	Uint16 PLLD;$/;"	m	struct:codec_param	file:
+PLLJ	aic3204.c	/^	Uint8 PLLJ;$/;"	m	struct:codec_param	file:
+PLL_init	pll.c	/^void PLL_init(Uint32 clock)$/;"	f
+PORTMEMCOPY	autoinit.asm	/^PORTMEMCOPY:$/;"	l
+PRESHIFT	synth.c	485;"	d	file:
+PRESHIFT	synth.c	495;"	d	file:
+PRESHIFT	synth.c	497;"	d	file:
+PROG0	vectors.asm	/^PROG0:		.ivec	no_handler			; Programmable 0 Interrupt$/;"	l
+PROG1	vectors.asm	/^PROG1:		.ivec	no_handler			; Programmable 1 Interrupt$/;"	l
+PROG2	vectors.asm	/^PROG2:		.ivec	no_handler			; Programmable 2 Interrupt$/;"	l
+PROG3	vectors.asm	/^PROG3:		.ivec	no_handler			; Programmable 3 Interrupt$/;"	l
+PTR	huffman.c	10;"	d	file:
+PTR	huffman.c	3031;"	d	file:
+PTR	huffman.c	80;"	d	file:
+PTR	huffman.c	82;"	d	file:
+RCV2	vectors.asm	/^RCV2:		.ivec	_i2s2_rx_isr		; I2S2 Rx Interrupt$/;"	l
+RCV3	vectors.asm	/^RCV3:		.ivec	no_handler			; I2S3 Rx Interrupt$/;"	l
+RM	Debug/makefile	/^RM := rm -rf$/;"	m
+RMDIR	Debug/makefile	/^RMDIR := rm -rf$/;"	m
+RST	vectors.asm	/^RST:		.ivec	reset_isr, USE_RETA	; Reset \/ Software Interrupt #0$/;"	l
+RTC	vectors.asm	/^RTC:		.ivec	no_handler			; RTC interrupt$/;"	l
+RTC_reset	csl_rtc.c	/^void RTC_reset(void)$/;"	f
+RTDXRCV	vectors.asm	/^RTDXRCV:	.ivec	no_handler			; Emulation Interrupt - RTDX receive$/;"	l
+RTDXXMT	vectors.asm	/^RTDXXMT:	.ivec	no_handler			; Emulation Interrupt - RTDX transmit$/;"	l
+RTOS	vectors.asm	/^RTOS:		.ivec	no_handler			; Emulation Interrupt - RTOS$/;"	l
+S43_DEPS	Debug/sources.mk	/^S43_DEPS := $/;"	m
+S43_DEPS__QUOTED	Debug/sources.mk	/^S43_DEPS__QUOTED := $/;"	m
+S43_SRCS	Debug/sources.mk	/^S43_SRCS := $/;"	m
+S55_DEPS	Debug/sources.mk	/^S55_DEPS := $/;"	m
+S55_DEPS__QUOTED	Debug/sources.mk	/^S55_DEPS__QUOTED := $/;"	m
+S55_SRCS	Debug/sources.mk	/^S55_SRCS := $/;"	m
+S62_DEPS	Debug/sources.mk	/^S62_DEPS := $/;"	m
+S62_DEPS__QUOTED	Debug/sources.mk	/^S62_DEPS__QUOTED := $/;"	m
+S62_SRCS	Debug/sources.mk	/^S62_SRCS := $/;"	m
+S64_DEPS	Debug/sources.mk	/^S64_DEPS := $/;"	m
+S64_DEPS__QUOTED	Debug/sources.mk	/^S64_DEPS__QUOTED := $/;"	m
+S64_SRCS	Debug/sources.mk	/^S64_SRCS := $/;"	m
+S67_DEPS	Debug/sources.mk	/^S67_DEPS := $/;"	m
+S67_DEPS__QUOTED	Debug/sources.mk	/^S67_DEPS__QUOTED := $/;"	m
+S67_SRCS	Debug/sources.mk	/^S67_SRCS := $/;"	m
+SARADC	vectors.asm	/^SARADC:		.ivec	no_handler			; SAR ADC Interrupt$/;"	l
+SA_DEPS	Debug/sources.mk	/^SA_DEPS := $/;"	m
+SA_DEPS__QUOTED	Debug/sources.mk	/^SA_DEPS__QUOTED := $/;"	m
+SA_SRCS	Debug/sources.mk	/^SA_SRCS := $/;"	m
+SHIFT	synth.c	475;"	d	file:
+SHIFT	synth.c	484;"	d	file:
+SHIFT	synth.c	491;"	d	file:
+SHIFT	synth.c	69;"	d	file:
+SHIFT	synth.c	71;"	d	file:
+SINT30	vectors.asm	/^SINT30:		.ivec	no_handler			; Software Interrupt #30$/;"	l
+SINT31	vectors.asm	/^SINT31:		.ivec	no_handler			; Software Interrupt #31$/;"	l
+SP	autoinit.asm	/^	SP = SP + #1$/;"	d
+SP	autoinit.asm	/^	SP = SP + #3$/;"	d
+SP	autoinit.asm	/^	SP = SP - #1$/;"	d
+SP	autoinit.asm	/^	SP = SP - #3$/;"	d
+SP	boot.asm	/^	SP  = #((__stack + (__STACK_SIZE >> 1)) & 0xFFFE)$/;"	d
+SP	boot.asm	/^	SP = SP + #0   ; avoid ECNs 372 and 438$/;"	d
+SPI	vectors.asm	/^SPI:		.ivec	no_handler			; SPI Receive Interrupt$/;"	l
+SSP	boot.asm	/^ 	SSP = #((__sysstack + (__SYSSTACK_SIZE >> 1)) & 0xFFFF)$/;"	d
+ST1_OFF	boot.asm	/^ST1_OFF .equ (1<<ST1_LEAD)|(1<<ST1_SATA)|(1<<ST1_RDM)|(1<<ST1_FRCT)|(1<<ST1_M40)|(1<<ST1_SATD)$/;"	l
+ST1_OFF	boot.asm	/^ST1_OFF .equ (1<<ST1_M40)|(1<<ST1_SATD)|(1<<ST1_C16)|(1<<ST1_FRCT)|(1<<ST1_C54CM)$/;"	l
+ST1_ON	boot.asm	/^ST1_ON  .equ (1<<ST1_ARMS)|(1<<ST1_CPL)|(1<<ST1_SXMD)|(1<<ST1_GSM)$/;"	l
+ST1_ON	boot.asm	/^ST1_ON  .equ (1<<ST1_CPL)|(1<<ST1_SXMD)$/;"	l
+ST2_03LC	boot.asm	/^ST2_03LC .equ (1<<ST2_AR0LC) | (1<<ST2_AR1LC) | (1<<ST2_AR2LC) | (1<<ST2_AR3LC)$/;"	l
+ST2_47LC	boot.asm	/^ST2_47LC .equ (1<<ST2_AR4LC) | (1<<ST2_AR5LC) | (1<<ST2_AR6LC) | (1<<ST2_AR7LC)$/;"	l
+ST2_OFF	boot.asm	/^ST2_OFF  .equ (1<<ST2_CDPLC) | ST2_03LC | ST2_47LC$/;"	l
+ST2_OFF	boot.asm	/^ST2_OFF  .equ (1<<ST2_RDM) | (1<<ST2_CDPLC) | ST2_03LC | ST2_47LC$/;"	l
+ST2_ON	boot.asm	/^ST2_ON   .equ (1<<ST2_ARMS)$/;"	l
+STR_RRDY	ezdsp5535_i2c.c	76;"	d	file:
+STR_XRDY	ezdsp5535_i2c.c	75;"	d	file:
+SUBDIRS	Debug/sources.mk	/^SUBDIRS := \\$/;"	m
+S_DEPS	Debug/sources.mk	/^S_DEPS := $/;"	m
+S_DEPS__QUOTED	Debug/sources.mk	/^S_DEPS__QUOTED := $/;"	m
+S_SRCS	Debug/sources.mk	/^S_SRCS := $/;"	m
+S_UPPER_DEPS	Debug/sources.mk	/^S_UPPER_DEPS := $/;"	m
+S_UPPER_DEPS__QUOTED	Debug/sources.mk	/^S_UPPER_DEPS__QUOTED := $/;"	m
+S_UPPER_SRCS	Debug/sources.mk	/^S_UPPER_SRCS := $/;"	m
+T0	DSP_utils.asm	/^	T0 = AC0 || AC0 = AC0 * AC1$/;"	d
+TIMER_init	ezdsp5535_timer.c	/^void TIMER_init(void)$/;"	f
+TIME_CONST	ezdsp5535_timer.c	11;"	d	file:
+TINT	vectors.asm	/^TINT:		.ivec	_tim_isr			; Timer \/ Software Interrupt #4$/;"	l
+UART	vectors.asm	/^UART:		.ivec	no_handler			; IIS #1 Receive Interrupt$/;"	l
+UMAX_32	include/basop32.h	36;"	d
+UMIN_32	include/basop32.h	37;"	d
+USB	vectors.asm	/^USB:		.ivec	no_handler			; USB Transmit Interrupt$/;"	l
+USER_OBJS	Debug/objects.mk	/^USER_OBJS :=$/;"	m
+V	huffman.c	12;"	d	file:
+V	huffman.c	15;"	d	file:
+V	huffman.c	3030;"	d	file:
+V	huffman.c	79;"	d	file:
+V	huffman.c	84;"	d	file:
+V	huffman.c	86;"	d	file:
+WORDS_BIGENDIAN	include/huffman.h	25;"	d
+XAR0	autoinit.asm	/^	XAR0 = #___bss__$/;"	d
+XAR0	autoinit.asm	/^        XAR0  = #(cinit & 0x7fffff)$/;"	d
+XAR0	autoinit.asm	/^        XAR0  = #(cinit & 0xffffff)$/;"	d
+XAR0	boot.asm	/^	XAR0 = #___bss__$/;"	d
+XAR1	boot.asm	/^	XAR1 = XAR0$/;"	d
+XAR2	boot.asm	/^	XAR2 = XAR0$/;"	d
+XAR3	boot.asm	/^	XAR3 = XAR0$/;"	d
+XAR4	boot.asm	/^	XAR4 = XAR0$/;"	d
+XAR5	boot.asm	/^	XAR5 = XAR0$/;"	d
+XAR6	autoinit.asm	/^	XAR6  = AC0$/;"	d
+XAR6	autoinit.asm	/^	XAR6 = #___bss__$/;"	d
+XAR6	autoinit.asm	/^	XAR6 = dbl(*SP(#0))$/;"	d
+XAR6	autoinit.asm	/^        XAR6  = #(___pinit__ & 0x7fffff)$/;"	d
+XAR6	autoinit.asm	/^        XAR6  = #(___pinit__ & 0xffffff)$/;"	d
+XAR6	boot.asm	/^	XAR6 = XAR0$/;"	d
+XAR7	boot.asm	/^	XAR7 = XAR0$/;"	d
+XCDP	boot.asm	/^	XCDP = XAR0$/;"	d
+XDP	boot.asm	/^	XDP  = XAR0$/;"	d
+XMT2	vectors.asm	/^XMT2:		.ivec	_i2s2_tx_isr		; I2S2 Tx Interrupt$/;"	l
+XMT3	vectors.asm	/^XMT3:		.ivec	no_handler			; I2S3 Tx Interrupt$/;"	l
+XSP	boot.asm	/^	XSP = #((__stack + (__STACK_SIZE >> 1)) & 0x7FFFFE)$/;"	d
+XSP	boot.asm	/^	XSP = #((__stack + (__STACK_SIZE)) & 0xFFFFFC)$/;"	d
+XSSP	boot.asm	/^	XSSP = #((__sysstack + (__SYSSTACK_SIZE >> 1)) & 0x7FFFFE)$/;"	d
+XSSP	boot.asm	/^   	XSSP = #((__sysstack + (__SYSSTACK_SIZE)) & 0xFFFFFC)$/;"	d
+_AUDIO_H_	include/audio.h	2;"	d
+_C55X	include/c55x.h	7;"	d
+_DSP_scale	DSP_utils.asm	/^_DSP_scale:$/;"	l
+_DSP_zero	DSP_utils.asm	/^_DSP_zero:$/;"	l
+_EZDSP5535_waitusec	DSP_utils.asm	/^_EZDSP5535_waitusec:$/;"	l
+_GPIO_H_	include/ezdsp5535_gpio.h	8;"	d
+_Reset	vectors.asm	/^_Reset:$/;"	l
+__stack	boot.asm	/^__stack:    .usect  .stack, 0, 0, 1$/;"	l
+__sysstack	boot.asm	/^__sysstack: .usect  .sysstack, 0, 0, 1$/;"	l
+_auto_init	autoinit.asm	/^_auto_init:	.asmfunc$/;"	l
+_c_int00	boot.asm	/^_c_int00:	.asmfunc$/;"	l
+_divli	divli.c	/^long _divli(long x1, long x2)$/;"	f
+_mad_f_mul	DSP_utils.asm	/^_mad_f_mul:$/;"	l
+_remul	remul.c	/^unsigned long _remul (unsigned long x1, unsigned long x2)$/;"	f
+abs_s	include/basop32.h	54;"	d
+add	include/basop32.h	45;"	d
+aic3204_init	aic3204.c	/^void aic3204_init(Uint8 rate, Int8 micGain)$/;"	f
+aic3204_set_frequency	aic3204.c	/^void aic3204_set_frequency(Int8 freq)$/;"	f
+aic3204_set_mic_gain	aic3204.c	/^void aic3204_set_mic_gain(Int8 gain)$/;"	f
+aic3204_set_spk_gain	aic3204.c	/^void aic3204_set_spk_gain(Int8 gain)$/;"	f
+anc_bitlen	include/stream.h	/^  unsigned short anc_bitlen;			\/* number of ancillary bits *\/$/;"	m	struct:mad_stream
+anc_ptr	include/stream.h	/^  struct mad_bitptr anc_ptr;		\/* ancillary bits pointer *\/$/;"	m	struct:mad_stream	typeref:struct:mad_stream::mad_bitptr
+audioProcessing	audio.c	/^int audioProcessing(void)$/;"	f
+big_values	layer3.c	/^      unsigned short big_values;$/;"	m	struct:sideinfo::granule::channel	file:
+bitalloc_table	layer12.c	/^} const bitalloc_table[8] = {$/;"	v	file:
+bitrate	include/frame.h	/^  unsigned short bitrate;		\/* stream bitrate (kbps) *\/$/;"	m	struct:mad_header
+bitrate_table	frame.c	/^unsigned short const bitrate_table[5][15] = {	\/* bitrate in kbps *\/$/;"	v	file:
+bits	include/huffman.h	/^    unsigned short bits   :  3;$/;"	m	struct:huffpair::__anon11
+bits	include/huffman.h	/^    unsigned short bits   :  3;$/;"	m	struct:huffquad::__anon9
+bits	layer12.c	/^  unsigned char bits;$/;"	m	struct:quantclass	file:
+block_type	layer3.c	/^      unsigned char block_type;$/;"	m	struct:sideinfo::granule::channel	file:
+bufend	include/stream.h	/^  unsigned char const *bufend;		\/* end of buffer *\/$/;"	m	struct:mad_stream
+buffer	include/stream.h	/^  unsigned char const *buffer;		\/* input bitstream buffer *\/$/;"	m	struct:mad_stream
+byte	include/bit.h	/^  unsigned char const *byte;$/;"	m	struct:mad_bitptr
+ca	layer3.c	/^mad_fixed_t const ca[8] = {$/;"	v	file:
+cache	include/bit.h	/^  unsigned short cache;$/;"	m	struct:mad_bitptr
+cb_data	include/decoder.h	/^  void *cb_data;$/;"	m	struct:mad_decoder
+ch	layer3.c	/^    } ch[2];$/;"	m	struct:sideinfo::granule	typeref:struct:sideinfo::granule::channel	file:
+channel	layer3.c	/^    struct channel {$/;"	s	struct:sideinfo::granule	file:
+channels	include/synth.h	/^  unsigned short channels;		\/* number of channels *\/$/;"	m	struct:mad_pcm
+clearBuffer	audio.c	/^void clearBuffer()$/;"	f
+codec_param	aic3204.c	/^struct codec_param {$/;"	s	file:
+costab1	synth.c	113;"	d	file:
+costab10	synth.c	122;"	d	file:
+costab11	synth.c	123;"	d	file:
+costab12	synth.c	124;"	d	file:
+costab13	synth.c	125;"	d	file:
+costab14	synth.c	126;"	d	file:
+costab15	synth.c	127;"	d	file:
+costab16	synth.c	128;"	d	file:
+costab17	synth.c	129;"	d	file:
+costab18	synth.c	130;"	d	file:
+costab19	synth.c	131;"	d	file:
+costab2	synth.c	114;"	d	file:
+costab20	synth.c	132;"	d	file:
+costab21	synth.c	133;"	d	file:
+costab22	synth.c	134;"	d	file:
+costab23	synth.c	135;"	d	file:
+costab24	synth.c	136;"	d	file:
+costab25	synth.c	137;"	d	file:
+costab26	synth.c	138;"	d	file:
+costab27	synth.c	139;"	d	file:
+costab28	synth.c	140;"	d	file:
+costab29	synth.c	141;"	d	file:
+costab3	synth.c	115;"	d	file:
+costab30	synth.c	142;"	d	file:
+costab31	synth.c	143;"	d	file:
+costab4	synth.c	116;"	d	file:
+costab5	synth.c	117;"	d	file:
+costab6	synth.c	118;"	d	file:
+costab7	synth.c	119;"	d	file:
+costab8	synth.c	120;"	d	file:
+costab9	synth.c	121;"	d	file:
+count1table_select	layer3.c	/^  count1table_select = 0x01,$/;"	e	enum:__anon15	file:
+crc_check	include/frame.h	/^  unsigned short crc_check;		\/* frame CRC accumulator *\/$/;"	m	struct:mad_header
+crc_table	bit.c	/^unsigned short const crc_table[256] = {$/;"	v	file:
+crc_target	include/frame.h	/^  unsigned short crc_target;		\/* final target CRC checksum *\/$/;"	m	struct:mad_header
+cs	layer3.c	/^mad_fixed_t const cs[8] = {$/;"	v	file:
+data1	ezdsp5535_i2s.c	/^Int16 data1, data2;$/;"	v
+data2	ezdsp5535_i2s.c	/^Int16 data1, data2;$/;"	v
+dct32	synth.c	/^void dct32(mad_fixed_t const in[32], unsigned short slot,$/;"	f	file:
+dctIV	layer3.c	/^void dctIV(mad_fixed_t const y[18], mad_fixed_t X[18])$/;"	f	file:
+decode_header	frame.c	/^int decode_header(struct mad_header *header, struct mad_stream *stream)$/;"	f	file:
+decoder	audio.c	/^struct mad_decoder decoder;$/;"	v	typeref:struct:mad_decoder
+decoder_table	frame.c	/^short (*const decoder_table[3])(struct mad_stream *, struct mad_frame *) = {$/;"	v	file:
+div_s	include/basop32.h	69;"	d
+dmaIsrStatus	audio.c	/^volatile Uint16 dmaIsrStatus = 0;$/;"	v
+dma_isr	audio.c	/^void interrupt dma_isr(void)$/;"	f
+duration	include/frame.h	/^  mad_timer_t duration;			\/* audio playing time of frame *\/$/;"	m	struct:mad_header
+emphasis	include/frame.h	/^  short emphasis;		\/* de-emphasis to use (see above) *\/$/;"	m	struct:mad_header
+error	audio.c	/^enum mad_flow error(void *data,$/;"	f
+error	include/stream.h	/^  enum mad_error error;			\/* error code (see above) *\/$/;"	m	struct:mad_stream	typeref:enum:mad_stream::mad_error
+error_func	include/decoder.h	/^  enum mad_flow (*error_func)(void *, struct mad_stream *, struct mad_frame *);$/;"	m	struct:mad_decoder	typeref:enum:mad_decoder::error_func
+exponent	layer3.c	/^  unsigned long exponent :  5;$/;"	m	struct:fixedfloat	file:
+fastsdct	layer3.c	/^void fastsdct(mad_fixed_t const x[9], mad_fixed_t y[18])$/;"	f	file:
+file	file.c	/^FIL file;$/;"	v
+filter	include/synth.h	/^  mad_fixed_t filter[2][2][2][16][8];	\/* polyphase filterbank outputs *\/$/;"	m	struct:mad_synth
+filter_func	include/decoder.h	/^  enum mad_flow (*filter_func)(void *,$/;"	m	struct:mad_decoder	typeref:enum:mad_decoder::filter_func
+final	include/huffman.h	/^    unsigned short final  :  1;$/;"	m	struct:huffpair::__anon11
+final	include/huffman.h	/^    unsigned short final  :  1;$/;"	m	struct:huffpair::__anon12
+final	include/huffman.h	/^    unsigned short final  :  1;$/;"	m	struct:huffquad::__anon10
+final	include/huffman.h	/^    unsigned short final  :  1;$/;"	m	struct:huffquad::__anon9
+fixedfloat	layer3.c	/^struct fixedfloat {$/;"	s	file:
+flags	include/frame.h	/^  short flags;				\/* flags (see below) *\/$/;"	m	struct:mad_header
+flags	layer3.c	/^      unsigned char flags;$/;"	m	struct:sideinfo::granule::channel	file:
+font	ezdsp5535_lcd.c	/^long font[] = {$/;"	v
+fraction	include/timer.h	/^  unsigned long fraction;	\/* 1\/MAD_TIMER_RESOLUTION seconds *\/$/;"	m	struct:__anon6
+frame	include/decoder.h	/^    struct mad_frame frame;$/;"	m	struct:mad_decoder::__anon5	typeref:struct:mad_decoder::__anon5::mad_frame
+free_bitrate	frame.c	/^int free_bitrate(struct mad_stream *stream, struct mad_header const *header)$/;"	f	file:
+freerate	include/stream.h	/^  unsigned short freerate;			\/* free bitrate (fixed,kbps) *\/$/;"	m	struct:mad_stream
+fs	file.c	/^FATFS *fs = NULL;$/;"	v
+gBufferSize	audio.c	/^Uint16 gBufferSize = 0;$/;"	v
+gcd	timer.c	/^unsigned long gcd(unsigned long num1, unsigned long num2)$/;"	f	file:
+global_gain	layer3.c	/^      unsigned short global_gain;$/;"	m	struct:sideinfo::granule::channel	file:
+gpio_isr	ezdsp5535_gpio.c	/^void interrupt gpio_isr(void)$/;"	f
+gr	layer3.c	/^  } gr[2];$/;"	m	struct:sideinfo	typeref:struct:sideinfo::granule	file:
+granule	layer3.c	/^  struct granule {$/;"	s	struct:sideinfo	file:
+group	layer12.c	/^  unsigned char group;$/;"	m	struct:quantclass	file:
+header	include/frame.h	/^  struct mad_header header;		\/* MPEG audio header *\/$/;"	m	struct:mad_frame	typeref:struct:mad_frame::mad_header
+header_func	include/decoder.h	/^  enum mad_flow (*header_func)(void *, struct mad_header const *);$/;"	m	struct:mad_decoder	typeref:enum:mad_decoder::header_func
+hlen	include/huffman.h	/^    unsigned short hlen   :  3;$/;"	m	struct:huffpair::__anon12
+hlen	include/huffman.h	/^    unsigned short hlen   :  3;$/;"	m	struct:huffquad::__anon10
+huffpair	include/huffman.h	/^union huffpair {$/;"	u
+huffquad	include/huffman.h	/^union huffquad {$/;"	u
+hufftab0	huffman.c	/^union huffpair const hufftab0[] = {$/;"	v	file:
+hufftab1	huffman.c	/^union huffpair const hufftab1[] = {$/;"	v	file:
+hufftab10	huffman.c	/^union huffpair const hufftab10[] = {$/;"	v	file:
+hufftab11	huffman.c	/^union huffpair const hufftab11[] = {$/;"	v	file:
+hufftab12	huffman.c	/^union huffpair const hufftab12[] = {$/;"	v	file:
+hufftab13	huffman.c	/^union huffpair const hufftab13[] = {$/;"	v	file:
+hufftab15	huffman.c	/^union huffpair const hufftab15[] = {$/;"	v	file:
+hufftab16	huffman.c	/^union huffpair const hufftab16[] = {$/;"	v	file:
+hufftab2	huffman.c	/^union huffpair const hufftab2[] = {$/;"	v	file:
+hufftab24	huffman.c	/^union huffpair const hufftab24[] = {$/;"	v	file:
+hufftab3	huffman.c	/^union huffpair const hufftab3[] = {$/;"	v	file:
+hufftab5	huffman.c	/^union huffpair const hufftab5[] = {$/;"	v	file:
+hufftab6	huffman.c	/^union huffpair const hufftab6[] = {$/;"	v	file:
+hufftab7	huffman.c	/^union huffpair const hufftab7[] = {$/;"	v	file:
+hufftab8	huffman.c	/^union huffpair const hufftab8[] = {$/;"	v	file:
+hufftab9	huffman.c	/^union huffpair const hufftab9[] = {$/;"	v	file:
+hufftabA	huffman.c	/^union huffquad const hufftabA[] = {$/;"	v	file:
+hufftabB	huffman.c	/^union huffquad const hufftabB[] = {$/;"	v	file:
+hufftable	include/huffman.h	/^struct hufftable {$/;"	s
+i2s2_rx_isr	ezdsp5535_i2s.c	/^interrupt void i2s2_rx_isr(void)$/;"	f
+i2s2_tx_isr	ezdsp5535_i2s.c	/^interrupt void i2s2_tx_isr(void)$/;"	f
+imdct36	layer3.c	/^void imdct36(mad_fixed_t const X[18], mad_fixed_t x[36])$/;"	f	file:
+imdct36	layer3.c	/^void imdct36(mad_fixed_t const x[18], mad_fixed_t y[36])$/;"	f	file:
+imdct_s	layer3.c	/^mad_fixed_t const imdct_s[6][6] = {$/;"	v	file:
+input	audio.c	/^enum mad_flow input(void *data, struct mad_stream *stream)$/;"	f
+input_func	include/decoder.h	/^  enum mad_flow (*input_func)(void *, struct mad_stream *);$/;"	m	struct:mad_decoder	typeref:enum:mad_decoder::input_func
+is_lsf_table	layer3.c	/^mad_fixed_t const is_lsf_table[2][15] = {$/;"	v	file:
+is_table	layer3.c	/^mad_fixed_t const is_table[7] = {$/;"	v	file:
+l	layer3.c	/^  unsigned char const *l;$/;"	m	struct:__anon18	file:
+layer	include/frame.h	/^  short layer;			\/* audio layer (1, 2, or 3) *\/$/;"	m	struct:mad_header
+left	include/bit.h	/^  unsigned short left;$/;"	m	struct:mad_bitptr
+length	include/synth.h	/^  unsigned short length;		\/* number of samples per channel *\/$/;"	m	struct:mad_pcm
+linbits	include/huffman.h	/^  unsigned short linbits;$/;"	m	struct:hufftable
+linear_table	layer12.c	/^mad_fixed_t const linear_table[14] = {$/;"	v	file:
+m	layer3.c	/^  unsigned char const *m;$/;"	m	struct:__anon18	file:
+mad_bit_bitsleft	include/bit.h	19;"	d
+mad_bit_crc	bit.c	/^unsigned short mad_bit_crc(struct mad_bitptr bitptr, unsigned short len,$/;"	f
+mad_bit_finish	include/bit.h	14;"	d
+mad_bit_init	bit.c	/^void mad_bit_init(struct mad_bitptr *bitptr, unsigned char const *byte)$/;"	f
+mad_bit_length	bit.c	/^unsigned long mad_bit_length(struct mad_bitptr const *begin,$/;"	f
+mad_bit_nextbyte	bit.c	/^unsigned char const *mad_bit_nextbyte(struct mad_bitptr const *bitptr)$/;"	f
+mad_bit_read	bit.c	/^unsigned long mad_bit_read(struct mad_bitptr *bitptr, unsigned short len)$/;"	f
+mad_bit_skip	bit.c	/^void mad_bit_skip(struct mad_bitptr *bitptr, unsigned short len)$/;"	f
+mad_bitptr	include/bit.h	/^struct mad_bitptr {$/;"	s
+mad_decoder	include/decoder.h	/^struct mad_decoder {$/;"	s
+mad_decoder_init	decoder.c	/^void mad_decoder_init(struct mad_decoder *decoder, void *data,$/;"	f
+mad_decoder_run	decoder.c	/^short mad_decoder_run(struct mad_decoder *decoder)$/;"	f
+mad_emphasis	include/frame.h	/^enum mad_emphasis {$/;"	g
+mad_error	include/stream.h	/^enum mad_error {$/;"	g
+mad_f_fracpart	include/fixed.h	41;"	d
+mad_f_fromint	include/fixed.h	44;"	d
+mad_f_intpart	include/fixed.h	40;"	d
+mad_fixed_t	include/fixed.h	/^typedef   long mad_fixed_t;$/;"	t
+mad_flow	include/decoder.h	/^enum mad_flow {$/;"	g
+mad_frame	include/frame.h	/^struct mad_frame {$/;"	s
+mad_frame_decode	frame.c	/^int mad_frame_decode(struct mad_frame *frame, struct mad_stream *stream)$/;"	f
+mad_frame_finish	frame.c	/^void mad_frame_finish(struct mad_frame *frame)$/;"	f
+mad_frame_init	frame.c	/^void mad_frame_init(struct mad_frame *frame)$/;"	f
+mad_frame_mute	frame.c	/^void mad_frame_mute(struct mad_frame *frame)$/;"	f
+mad_header	include/frame.h	/^struct mad_header {$/;"	s
+mad_header_decode	frame.c	/^int mad_header_decode(struct mad_header *header, struct mad_stream *stream)$/;"	f
+mad_header_finish	include/frame.h	86;"	d
+mad_header_init	frame.c	/^void mad_header_init(struct mad_header *header)$/;"	f
+mad_huff_pair_table	huffman.c	/^struct hufftable const mad_huff_pair_table[32] = {$/;"	v
+mad_huff_quad_table	huffman.c	/^union huffquad const *const mad_huff_quad_table[2] = { hufftabA, hufftabB };$/;"	v
+mad_layer	include/frame.h	/^enum mad_layer {$/;"	g
+mad_layer_I	layer12.c	/^short mad_layer_I(struct mad_stream *stream, struct mad_frame *frame)$/;"	f
+mad_layer_II	layer12.c	/^short mad_layer_II(struct mad_stream *stream, struct mad_frame *frame)$/;"	f
+mad_layer_III	layer3.c	/^short mad_layer_III(struct mad_stream *stream, struct mad_frame *frame)$/;"	f
+mad_mode	include/frame.h	/^enum mad_mode {$/;"	g
+mad_pcm	include/synth.h	/^struct mad_pcm {$/;"	s
+mad_sample_t	include/fixed.h	/^typedef mad_fixed_t mad_sample_t;$/;"	t
+mad_stream	include/stream.h	/^struct mad_stream {$/;"	s
+mad_stream_buffer	stream.c	/^void mad_stream_buffer(struct mad_stream *stream,$/;"	f
+mad_stream_finish	stream.c	/^void mad_stream_finish(struct mad_stream *stream)$/;"	f
+mad_stream_init	stream.c	/^void mad_stream_init(struct mad_stream *stream)$/;"	f
+mad_stream_sync	stream.c	/^short mad_stream_sync(struct mad_stream *stream)$/;"	f
+mad_synth	include/synth.h	/^struct mad_synth {$/;"	s
+mad_synth_finish	include/synth.h	42;"	d
+mad_synth_frame	synth.c	/^void mad_synth_frame(struct mad_synth *synth, struct mad_frame const *frame)$/;"	f
+mad_synth_init	synth.c	/^void mad_synth_init(struct mad_synth *synth)$/;"	f
+mad_synth_mute	synth.c	/^void mad_synth_mute(struct mad_synth *synth)$/;"	f
+mad_timer_reset	include/timer.h	13;"	d
+mad_timer_set	timer.c	/^void mad_timer_set(mad_timer_t *timer, unsigned long seconds,$/;"	f
+mad_timer_t	include/timer.h	/^} mad_timer_t;$/;"	t	typeref:struct:__anon6
+mad_timer_zero	timer.c	/^mad_timer_t const mad_timer_zero = { 0, 0 };$/;"	v
+main	main.c	/^void main(void)$/;"	f
+main_data	include/stream.h	/^  unsigned char main_data[MAD_BUFFER_MDLEN];$/;"	m	struct:mad_stream
+main_data_begin	layer3.c	/^  unsigned short main_data_begin;$/;"	m	struct:sideinfo	file:
+mantissa	layer3.c	/^  unsigned long mantissa : 27;$/;"	m	struct:fixedfloat	file:
+md_len	include/stream.h	/^  unsigned short md_len;			\/* bytes in main_data *\/$/;"	m	struct:mad_stream
+mem_cpy	layer3.c	/^void mem_cpy (void* dst, const void* src, int cnt) {$/;"	f	file:
+message_func	include/decoder.h	/^  enum mad_flow (*message_func)(void *, void *, unsigned int *);$/;"	m	struct:mad_decoder	typeref:enum:mad_decoder::message_func
+mixed_block_flag	layer3.c	/^  mixed_block_flag   = 0x08$/;"	e	enum:__anon15	file:
+mode	include/frame.h	/^  short mode;			\/* channel mode (see above) *\/$/;"	m	struct:mad_header
+mode_extension	include/frame.h	/^  short mode_extension;			\/* additional mode info *\/$/;"	m	struct:mad_header
+mult	include/basop32.h	62;"	d
+mult_r	include/basop32.h	67;"	d
+nbal	layer12.c	/^  unsigned short nbal;$/;"	m	struct:__anon14	file:
+negate	include/basop32.h	55;"	d
+next_frame	include/stream.h	/^  unsigned char const *next_frame;	\/* start of next frame *\/$/;"	m	struct:mad_stream
+nlevels	layer12.c	/^  unsigned short nlevels;$/;"	m	struct:quantclass	file:
+no_handler	vectors.asm	/^no_handler:$/;"	l
+norm_l	include/basop32.h	70;"	d
+norm_s	include/basop32.h	71;"	d
+nsfb_table	layer3.c	/^unsigned char const nsfb_table[6][3][4] = {$/;"	v	file:
+offset	include/huffman.h	/^    unsigned short offset : 12;$/;"	m	struct:huffpair::__anon11
+offset	include/huffman.h	/^    unsigned short offset : 12;$/;"	m	struct:huffquad::__anon9
+offset	layer12.c	/^  unsigned short offset;$/;"	m	struct:__anon14	file:
+offset_table	layer12.c	/^unsigned char const offset_table[6][15] = {$/;"	v	file:
+offsets	layer12.c	/^  unsigned char const offsets[30];$/;"	m	struct:__anon13	file:
+options	include/frame.h	/^  short options;				\/* decoding options (from stream) *\/$/;"	m	struct:mad_frame
+output	audio.c	/^enum mad_flow output(void *data,$/;"	f
+output_func	include/decoder.h	/^  enum mad_flow (*output_func)(void *,$/;"	m	struct:mad_decoder	typeref:enum:mad_decoder::output_func
+overlap	include/frame.h	/^  mad_fixed_t overlap[2][32][18];	\/* Layer III block overlap data *\/$/;"	m	struct:mad_frame
+part2_3_length	layer3.c	/^      short part2_3_length;$/;"	m	struct:sideinfo::granule::channel	file:
+pcm	include/synth.h	/^  struct mad_pcm pcm;			\/* PCM output *\/$/;"	m	struct:mad_synth	typeref:struct:mad_synth::mad_pcm
+phase	include/synth.h	/^  unsigned short phase;			\/* current processing phase *\/$/;"	m	struct:mad_synth
+pingpong	audio.c	/^volatile Int16 pingpong = -1;$/;"	v
+preflag	layer3.c	/^  preflag	     = 0x04,$/;"	e	enum:__anon15	file:
+pretab	layer3.c	/^unsigned char const pretab[22] = {$/;"	v	file:
+private_bits	include/frame.h	/^  short private_bits;			\/* private bits (see below) *\/$/;"	m	struct:mad_header
+private_bits	layer3.c	/^  unsigned short private_bits;$/;"	m	struct:sideinfo	file:
+ptr	include/huffman.h	/^  } ptr;$/;"	m	union:huffpair	typeref:struct:huffpair::__anon11
+ptr	include/huffman.h	/^  } ptr;$/;"	m	union:huffquad	typeref:struct:huffquad::__anon9
+ptr	include/stream.h	/^  struct mad_bitptr ptr;			\/* current processing bit pointer *\/$/;"	m	struct:mad_stream	typeref:struct:mad_stream::mad_bitptr
+qc_table	layer12.c	/^} const qc_table[17] = {$/;"	v	file:
+quantclass	layer12.c	/^struct quantclass {$/;"	s	file:
+rcv_l	audio.c	/^Int16 rcv_l[MAX_BUFFER_SIZE*2], xmt_l[MAX_BUFFER_SIZE*2];$/;"	v
+rcv_r	audio.c	/^Int16 rcv_r[MAX_BUFFER_SIZE*2], xmt_r[MAX_BUFFER_SIZE*2];$/;"	v
+readbuf	audio.c	/^unsigned char readbuf[2*BUF_SIZE];$/;"	v
+reduce_rational	timer.c	/^void reduce_rational(unsigned long *numer, unsigned long *denom)$/;"	f	file:
+reduce_timer	timer.c	/^void reduce_timer(mad_timer_t *timer)$/;"	f	file:
+region0_count	layer3.c	/^      unsigned char region0_count;$/;"	m	struct:sideinfo::granule::channel	file:
+region1_count	layer3.c	/^      unsigned char region1_count;$/;"	m	struct:sideinfo::granule::channel	file:
+reset_isr	vectors.asm	/^reset_isr:$/;"	l
+root_table	layer3.c	/^mad_fixed_t const root_table[7] = {$/;"	v	file:
+round16	include/basop32.h	63;"	d
+rq_table	layer3.c	/^} const rq_table[8207] = {$/;"	v
+rtc_get_time	csl_rtc.c	/^void rtc_get_time (unsigned char *pRtcTime, int len)$/;"	f
+rtc_set_time	csl_rtc.c	/^void rtc_set_time (unsigned char *pRtcTime, int len)$/;"	f
+s	layer3.c	/^  unsigned char const *s;$/;"	m	struct:__anon18	file:
+samplerate	include/frame.h	/^  unsigned short samplerate;		\/* sampling frequency (Hz) *\/$/;"	m	struct:mad_header
+samplerate	include/synth.h	/^  unsigned int samplerate;		\/* sampling frequency (Hz) *\/$/;"	m	struct:mad_pcm
+samplerate_table	frame.c	/^unsigned short const samplerate_table[3] = { 44100, 48000, 32000 };$/;"	v	file:
+samples	include/synth.h	/^  mad_fixed_t samples[2][1152];		\/* PCM output samples [ch][sample] *\/$/;"	m	struct:mad_pcm
+sblimit	layer12.c	/^  unsigned short sblimit;$/;"	m	struct:__anon13	file:
+sbquant_table	layer12.c	/^} const sbquant_table[5] = {$/;"	v	file:
+sbsample	include/frame.h	/^  mad_fixed_t sbsample[2][36][32];	\/* synthesis subband filter samples *\/$/;"	m	struct:mad_frame
+scale	audio.c	/^short scale(mad_fixed_t sample)$/;"	f
+scale_rational	timer.c	/^unsigned long scale_rational(unsigned long numer, unsigned long denom,$/;"	f	file:
+scalefac	layer3.c	/^      unsigned char scalefac[39];	\/* scalefac_l and\/or scalefac_s *\/$/;"	m	struct:sideinfo::granule::channel	file:
+scalefac_compress	layer3.c	/^      unsigned short scalefac_compress;$/;"	m	struct:sideinfo::granule::channel	file:
+scalefac_scale	layer3.c	/^  scalefac_scale     = 0x02,$/;"	e	enum:__anon15	file:
+scfsi	layer3.c	/^  unsigned short scfsi[2];$/;"	m	struct:sideinfo	file:
+sdctII	layer3.c	/^void sdctII(mad_fixed_t const x[18], mad_fixed_t X[18])$/;"	f	file:
+seconds	include/timer.h	/^  signed long seconds;		\/* whole seconds *\/$/;"	m	struct:__anon6
+sf_table	layer12.c	/^mad_fixed_t const sf_table[64] = {$/;"	v	file:
+sfb_11025_long	layer3.c	237;"	d	file:
+sfb_11025_mixed	layer3.c	256;"	d	file:
+sfb_11025_short	layer3.c	246;"	d	file:
+sfb_12000_long	layer3.c	236;"	d	file:
+sfb_12000_mixed	layer3.c	255;"	d	file:
+sfb_12000_short	layer3.c	245;"	d	file:
+sfb_16000_long	layer3.c	185;"	d	file:
+sfb_16000_mixed	layer3.c	/^unsigned char const sfb_16000_mixed[] = {$/;"	v	file:
+sfb_16000_short	layer3.c	/^unsigned char const sfb_16000_short[] = {$/;"	v	file:
+sfb_22050_long	layer3.c	/^unsigned char const sfb_22050_long[] = {$/;"	v	file:
+sfb_22050_mixed	layer3.c	/^unsigned char const sfb_22050_mixed[] = {$/;"	v	file:
+sfb_22050_short	layer3.c	/^unsigned char const sfb_22050_short[] = {$/;"	v	file:
+sfb_24000_long	layer3.c	/^unsigned char const sfb_24000_long[] = {$/;"	v	file:
+sfb_24000_mixed	layer3.c	/^unsigned char const sfb_24000_mixed[] = {$/;"	v	file:
+sfb_24000_short	layer3.c	/^unsigned char const sfb_24000_short[] = {$/;"	v	file:
+sfb_32000_long	layer3.c	/^unsigned char const sfb_32000_long[] = {$/;"	v	file:
+sfb_32000_mixed	layer3.c	/^unsigned char const sfb_32000_mixed[] = {$/;"	v	file:
+sfb_32000_short	layer3.c	/^unsigned char const sfb_32000_short[] = {$/;"	v	file:
+sfb_44100_long	layer3.c	/^unsigned char const sfb_44100_long[] = {$/;"	v	file:
+sfb_44100_mixed	layer3.c	/^unsigned char const sfb_44100_mixed[] = {$/;"	v	file:
+sfb_44100_short	layer3.c	/^unsigned char const sfb_44100_short[] = {$/;"	v	file:
+sfb_48000_long	layer3.c	/^unsigned char const sfb_48000_long[] = {$/;"	v	file:
+sfb_48000_mixed	layer3.c	/^unsigned char const sfb_48000_mixed[] = {$/;"	v	file:
+sfb_48000_short	layer3.c	/^unsigned char const sfb_48000_short[] = {$/;"	v	file:
+sfb_8000_long	layer3.c	/^unsigned char const sfb_8000_long[] = {$/;"	v	file:
+sfb_8000_mixed	layer3.c	/^unsigned char const sfb_8000_mixed[] = {$/;"	v	file:
+sfb_8000_short	layer3.c	/^unsigned char const sfb_8000_short[] = {$/;"	v	file:
+sfbwidth_table	layer3.c	/^} const sfbwidth_table[9] = {$/;"	v	file:
+sflen_table	layer3.c	/^} const sflen_table[16] = {$/;"	v	file:
+shl	include/basop32.h	56;"	d
+shr	include/basop32.h	57;"	d
+sideinfo	layer3.c	/^struct sideinfo {$/;"	s	file:
+skiplen	include/stream.h	/^  unsigned short skiplen;			\/* bytes to skip before next frame *\/$/;"	m	struct:mad_stream
+slen1	layer3.c	/^  unsigned short slen1;$/;"	m	struct:__anon17	file:
+slen2	layer3.c	/^  unsigned short slen2;$/;"	m	struct:__anon17	file:
+startbits	include/huffman.h	/^  unsigned short startbits;$/;"	m	struct:hufftable
+stream	include/decoder.h	/^    struct mad_stream stream;$/;"	m	struct:mad_decoder::__anon5	typeref:struct:mad_decoder::__anon5::mad_stream
+sub	include/basop32.h	46;"	d
+subblock_gain	layer3.c	/^      unsigned char subblock_gain[3];$/;"	m	struct:sideinfo::granule::channel	file:
+sync	include/decoder.h	/^  } sync;$/;"	m	struct:mad_decoder	typeref:struct:mad_decoder::__anon5
+sync	include/stream.h	/^  short sync;							\/* stream sync found *\/$/;"	m	struct:mad_stream
+synth	include/decoder.h	/^    struct mad_synth synth;$/;"	m	struct:mad_decoder::__anon5	typeref:struct:mad_decoder::__anon5::mad_synth
+synth_full	synth.c	/^void synth_full(struct mad_synth *synth, struct mad_frame const *frame,$/;"	f	file:
+table	include/huffman.h	/^  union huffpair const *table;$/;"	m	struct:hufftable
+table_select	layer3.c	/^      unsigned char table_select[3];$/;"	m	struct:sideinfo::granule::channel	file:
+this_frame	include/stream.h	/^  unsigned char const *this_frame;	\/* start of current frame *\/$/;"	m	struct:mad_stream
+tim_isr	ezdsp5535_timer.c	/^void interrupt tim_isr(void)$/;"	f
+v	include/huffman.h	/^    unsigned short v      :  1;$/;"	m	struct:huffquad::__anon10
+value	include/huffman.h	/^  } value;$/;"	m	union:huffpair	typeref:struct:huffpair::__anon12
+value	include/huffman.h	/^  } value;$/;"	m	union:huffquad	typeref:struct:huffquad::__anon10
+w	include/huffman.h	/^    unsigned short w      :  1;$/;"	m	struct:huffquad::__anon10
+window_l	layer3.c	/^mad_fixed_t const window_l[36] = {$/;"	v	file:
+window_s	layer3.c	/^mad_fixed_t const window_s[12] = {$/;"	v	file:
+x	include/huffman.h	/^    unsigned short x      :  1;$/;"	m	struct:huffquad::__anon10
+x	include/huffman.h	/^    unsigned short x      :  4;$/;"	m	struct:huffpair::__anon12
+xmt_l	audio.c	/^Int16 rcv_l[MAX_BUFFER_SIZE*2], xmt_l[MAX_BUFFER_SIZE*2];$/;"	v
+xmt_r	audio.c	/^Int16 rcv_r[MAX_BUFFER_SIZE*2], xmt_r[MAX_BUFFER_SIZE*2];$/;"	v
+y	include/huffman.h	/^    unsigned short y      :  1;$/;"	m	struct:huffquad::__anon10
+y	include/huffman.h	/^    unsigned short y      :  4;$/;"	m	struct:huffpair::__anon12

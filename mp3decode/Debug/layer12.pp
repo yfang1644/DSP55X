@@ -1,0 +1,9 @@
+layer12.obj: ../layer12.c
+layer12.obj: /home/fang/ti/ezdsp5535_v1/tests/mp3decode/include/fixed.h
+layer12.obj: /home/fang/ti/ezdsp5535_v1/tests/mp3decode/include/bit.h
+layer12.obj: /home/fang/ti/ezdsp5535_v1/tests/mp3decode/include/stream.h
+layer12.obj: /home/fang/ti/ezdsp5535_v1/tests/mp3decode/include/frame.h
+layer12.obj: /home/fang/ti/ezdsp5535_v1/tests/mp3decode/include/timer.h
+layer12.obj: /home/fang/ti/ezdsp5535_v1/tests/mp3decode/include/layer12.h
+layer12.obj: ../sf_table.dat
+layer12.obj: ../qc_table.dat

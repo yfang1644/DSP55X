@@ -1,0 +1,1 @@
+"./tables.obj" "./sam2coef.obj" "./huff_tab.obj" "./encoder.obj" "./decoder.obj" "./dct4_s.obj" "./dct4_a.obj" "./common.obj" "./coef2sam.obj" "./DSP_utils.obj" 

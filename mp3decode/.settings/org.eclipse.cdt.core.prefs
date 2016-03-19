@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+environment/project/com.ti.ccstudio.buildDefinitions.C5500.Debug.354775026/LIBFATFS_PATH/delimiter=\:
+environment/project/com.ti.ccstudio.buildDefinitions.C5500.Debug.354775026/LIBFATFS_PATH/operation=append
+environment/project/com.ti.ccstudio.buildDefinitions.C5500.Debug.354775026/LIBFATFS_PATH/value=/home/fang/ti/ezdsp5535_v1/tests/libfatfs
+environment/project/com.ti.ccstudio.buildDefinitions.C5500.Debug.354775026/append=true
+environment/project/com.ti.ccstudio.buildDefinitions.C5500.Debug.354775026/appendContributed=true
