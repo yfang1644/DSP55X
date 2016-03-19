@@ -1,0 +1,17 @@
+2014-08-25
+	repack this project
+	extract libg722_1.lib and libfatfs.lib as independent projects
+2013-03-26
+	uart TX/RX interrupt
+	watermark
+
+2013-03-24
+	PPMODE Mode 1 (SPI, GPIO, UART, and I2S2). 7 signals of the SPI module,
+	6 GPIO signals, 4 signals of the UART module and 4 signals of the I2S2
+	module are routed to the 21 external signals of the parallel port.
+
+	PPMODE Mode 6 (SPI, I2S2, I2S3, and GPIO). 7 signals of the SPI module,
+	4 signals of the I2S2 module, 4 signals of the I2S3 module, and 6 GPIO
+	are routed to the 21 external signals of the parallel port.
+
+	add uart interface

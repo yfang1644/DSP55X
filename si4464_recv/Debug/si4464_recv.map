@@ -1,0 +1,827 @@
+******************************************************************************
+              TMS320C55x Linker Unix v4.4.1                    
+******************************************************************************
+>> Linked Sun Sep 28 12:27:48 2014
+
+OUTPUT FILE NAME:   <si4464_recv.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 00028ebc
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+                        (bytes)   (bytes)    (bytes)   (bytes)
+----------------------  --------  ---------  --------  --------  ----  --------
+PAGE 0:
+  MMR                   00000000   000000c0  00000000  000000c0  RWIX
+  DARAM0                000000c0   0000ff40  0000ff40  00000000  RWIX
+  VECS1                 00010000   00000100  00000100  00000000  RWIX
+  SARAM0                00010100   0000ff00  0000475a  0000b7a6  RWIX
+  SARAM1                00020000   00020000  00008fbe  00017042  RWIX
+  SARAM2                00040000   0000ff00  00007a82  0000847e  RWIX
+  PDROM                 00ff8000   00008000  00000000  00008000  R IX
+
+PAGE 2:
+  IOPORT                00000000   00020000  00000000  00020000  RWI 
+
+
+SECTION ALLOCATION MAP
+(Addresses surrounded by []'s are displayed for convenience only!)
+
+output                                                          attributes/
+section   page  orgn(bytes) orgn(words) len(bytes) len(words)   input sections
+--------  ----  ----------- ----------- ---------- ----------   --------------
+.pinit       0   [ 00040000 ]  00020000          *   00000000   UNINITIALIZED
+
+.data        0   [ 000000c0 ]  00000060          *   00000000   UNINITIALIZED
+
+.cio         0   [ 000000c0 ]  00000060          *   00001400   UNINITIALIZED
+                 [ 000000c0 ]  00000060          *   00001400   audio.obj (.cio)
+
+.bss.1       0   [ 000028c0 ]  00001460          *   00006ba0   UNINITIALIZED
+                 [ 000028c0 ]  00001460          *   0000209e   libg722_1.lib : huff_tab.obj (.bss)
+                 [ 000069fc ]  000034fe          *   00002040   libfat16.lib : RWSec.obj (.bss)
+                 [ 0000aa7c ]  0000553e          *   00000a5c   libg722_1.lib : dct4_s.obj (.bss)
+                 [ 0000bf34 ]  00005f9a          *   00000a00                 : common.obj (.bss)
+                 [ 0000d334 ]  0000699a          *   00000838                 : tables.obj (.bss)
+                 [ 0000e3a4 ]  000071d2          *   0000069c                 : dct4_a.obj (.bss)
+                 [ 0000f0dc ]  0000786e          *   00000500                 : coef2sam.obj (.bss)
+                 [ 0000fadc ]  00007d6e          *   00000284                 : decoder.obj (.bss)
+                 [ 0000ffe4 ]  00007ff2          *   00000008   ezdsp5535_spi.obj (.bss)
+                 [ 0000fff4 ]  00007ffa          *   00000005   main.obj (.bss)
+                 [ 0000fffe ]  00007fff          *   00000001   ezdsp5535_gpio.obj (.bss)
+
+.vectors     0     00010000  [ 00008000 ] 00000100          *   
+                   00010000  [ 00008000 ] 00000100          *   vectors.obj (.vectors)
+
+.stack       0   [ 00010100 ]  00008080          *   00001000   UNINITIALIZED
+                 [ 00010100 ]  00008080          *   00001000   --HOLE--
+
+.sysstack 
+*            0   [ 00012100 ]  00009080          *   00000800   UNINITIALIZED
+                 [ 00012100 ]  00009080          *   00000800   --HOLE--
+
+.bss.2       0   [ 00013100 ]  00009880          *   00000ae5   UNINITIALIZED
+                 [ 00013100 ]  00009880          *   00000500   libg722_1.lib : sam2coef.obj (.bss)
+                 [ 00013b00 ]  00009d80          *   00000201   libfat16.lib : dir.obj (.bss)
+                 [ 00013f02 ]  00009f81          *   00000147   Si446x_api.obj (.bss)
+                 [ 00014190 ]  0000a0c8          *   00000109   audio.obj (.bss)
+                 [ 000143a2 ]  0000a1d1          *   00000001   fileproc.obj (.bss)
+                 [ 000143a4 ]  0000a1d2          *   00000100   ezdsp5535_lcd.obj (.bss)
+                 [ 000145a4 ]  0000a2d2          *   00000093   libfat16.lib : ezdsp5535_sdcard.obj (.bss)
+
+.bss.3       0   [ 000146cc ]  0000a366          *   00000076   UNINITIALIZED
+                 [ 000146cc ]  0000a366          *   00000058   libfat16.lib : file.obj (.bss)
+                 [ 0001477c ]  0000a3be          *   0000001a                : disk.obj (.bss)
+                 [ 000147b0 ]  0000a3d8          *   00000004   ezdsp5535_i2s.obj (.bss)
+
+.const.1     0   [ 000147b8 ]  0000a3dc          *   00000047   
+                 [ 000147b8 ]  0000a3dc          *   00000032   fileproc.obj (.const:.string)
+                 [ 0001481c ]  0000a40e          *   00000015   main.obj (.const:.string)
+
+.const.2     0   [ 00014848 ]  0000a424          *   0000000b   
+                 [ 00014848 ]  0000a424          *   00000004   libg722_1.lib : dct4_a.obj (.const:_$P$T0$1)
+                 [ 00014850 ]  0000a428          *   00000004                 : dct4_s.obj (.const:_$P$T0$1)
+                 [ 00014858 ]  0000a42c          *   00000003                 : decoder.obj (.const:_$P$T0$2)
+
+.text        0     00020000  [ 00010000 ] 00008fbe          *   
+                   00020000  [ 00010000 ] 00001e24          *   libfat16.lib : csl_mmcsd.obj (.text)
+                   00021e24  [ 00010f12 ] 00000be8          *                : fdt.obj (.text)
+                   00022a0c  [ 00011506 ] 00000b2d          *                : file.obj (.text)
+                   00023539  [ 00011a9c+] 00000a94          *   libg722_1.lib : encoder.obj (.text)
+                   00023fcd  [ 00011fe6+] 000008d0          *                 : decoder.obj (.text)
+                   0002489d  [ 0001244e+] 00000718          *   Si446x_api.obj (.text)
+                   00024fb5  [ 000127da+] 000006ba          *   libfat16.lib : fat.obj (.text)
+                   0002566f  [ 00012b37+] 000005e9          *                : dir.obj (.text)
+                   00025c58  [ 00012e2c ] 000005df          *                : disk.obj (.text)
+                   00026237  [ 0001311b+] 00000522          *                : RWSec.obj (.text)
+                   00026759  [ 000133ac+] 0000040c          *   libg722_1.lib : dct4_s.obj (.text)
+                   00026b65  [ 000135b2+] 000003df          *                 : common.obj (.text)
+                   00026f44  [ 000137a2 ] 0000039e          *   audio.obj (.text)
+                   000272e2  [ 00013971 ] 00000354          *   libg722_1.lib : dct4_a.obj (.text)
+                   00027636  [ 00013b1b ] 000002bb          *   ezdsp5535_lcd.obj (.text)
+                   000278f1  [ 00013c78+] 000002aa          *   ezdsp5535_spi.obj (.text)
+                   00027b9b  [ 00013dcd+] 00000242          *   libg722_1.lib : sam2coef.obj (.text)
+                   00027ddd  [ 00013eee+] 000001de          *   libfat16.lib : ezdsp5535_sdcard.obj (.text)
+                   00027fbb  [ 00013fdd+] 000001dc          *   aic3204.obj (.text)
+                   00028197  [ 000140cb+] 000001a2          *   libg722_1.lib : coef2sam.obj (.text)
+                   00028339  [ 0001419c+] 00000185          *   ezdsp5535_sar.obj (.text)
+                   000284be  [ 0001425f ] 0000015a          *   main.obj (.text)
+                   00028618  [ 0001430c ] 00000133          *   libfat16.lib : sd.obj (.text)
+                   0002874b  [ 000143a5+] 00000124          *   ezdsp5535_i2c.obj (.text)
+                   0002886f  [ 00014437+] 000000ee          *   ezdsp5535_spi.obj (.text:retain)
+                   0002895d  [ 000144ae+] 000000db          *   libfat16.lib : divul.obj (.text)
+                   00028a38  [ 0001451c ] 000000b6          *   ezdsp5535_i2s.obj (.text:retain)
+                   00028aee  [ 00014577 ] 000000a5          *   libfat16.lib : remul.obj (.text)
+                   00028b93  [ 000145c9+] 0000008f          *   audio.obj (.text:retain)
+                   00028c22  [ 00014611 ] 00000082          *   fileproc.obj (.text)
+                   00028ca4  [ 00014652 ] 00000063          *   ezdsp5535_gpio.obj (.text)
+                   00028d07  [ 00014683+] 0000005b          *   libg722_1.lib : DSP_utils.obj (.text)
+                   00028d62  [ 000146b1 ] 0000004e          *   ezdsp5535_gpio.obj (.text:retain)
+                   00028db0  [ 000146d8 ] 0000004d          *   autoinit.obj (.text)
+                   00028dfd  [ 000146fe+] 00000047          *   sysinit.obj (.text)
+                   00028e44  [ 00014722 ] 00000043          *   pll.obj (.text)
+                   00028e87  [ 00014743+] 00000035          *   libfat16.lib : DSP_bytes.obj (.text)
+                   00028ebc  [ 0001475e ] 00000030          *   boot.obj (.text)
+                   00028eec  [ 00014776 ] 0000002e          *   timer.obj (.text:retain)
+                   00028f1a  [ 0001478d ] 0000002d          *   timer.obj (.text)
+                   00028f47  [ 000147a3+] 0000002a          *   libfat16.lib : udiv.obj (.text)
+                   00028f71  [ 000147b8+] 00000028          *   ezdsp5535_i2s.obj (.text)
+                   00028f99  [ 000147cc+] 00000013          *   libfat16.lib : lmpy.obj (.text)
+                   00028fac  [ 000147d6 ] 0000000b          *   DSP_utils.obj (.text)
+                   00028fb7  [ 000147db+] 00000006          *   vectors.obj (.text)
+                   00028fbd  [ 000147de ] 00000001          *   --HOLE-- [fill = 20]
+
+.cinit       0   [ 00040000 ]  00020000          *   00003d41   
+                 [ 00040000 ]  00020000          *   000020f5   libg722_1.lib : huff_tab.obj (.cinit)
+                 [ 000441ea ]  000220f5          *   00000a7d                 : dct4_s.obj (.cinit)
+                 [ 000456e4 ]  00022b72          *   0000085f                 : tables.obj (.cinit)
+                 [ 000467a2 ]  000233d1          *   000006b7                 : dct4_a.obj (.cinit)
+                 [ 00047510 ]  00023a88          *   00000163   Si446x_api.obj (.cinit)
+                 [ 000477d6 ]  00023beb          *   00000103   ezdsp5535_lcd.obj (.cinit)
+                 [ 000479dc ]  00023cee          *   00000017   audio.obj (.cinit)
+                 [ 00047a0a ]  00023d05          *   00000014   main.obj (.cinit)
+                 [ 00047a32 ]  00023d19          *   00000010   ezdsp5535_spi.obj (.cinit)
+                 [ 00047a52 ]  00023d29          *   00000008   ezdsp5535_i2s.obj (.cinit)
+                 [ 00047a62 ]  00023d31          *   00000007   libg722_1.lib : decoder.obj (.cinit)
+                 [ 00047a70 ]  00023d38          *   00000004   ezdsp5535_gpio.obj (.cinit)
+                 [ 00047a78 ]  00023d3c          *   00000004   fileproc.obj (.cinit)
+                 [ 00047a80 ]  00023d40          *   00000001   --HOLE-- [fill = 0]
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+abs. value/
+byte addr   word addr   name
+---------   ---------   ----
+00000002                $TI_capability$C5500$CallingConvention
+00000002                $TI_capability$C5500$MemoryModel
+00000001                $TI_capability_requires_rev3
+ffffffff                .bss
+ffffffff                .data
+ffffffff                .text
+00028f99                I$$LMPY
+00028f47                I$$UDIV
+00028f5c                I$$UMOD
+00027fbb                _AIC3204_rget
+00027ff5                _AIC3204_rset
+00022603                _AddFDT
+000260de                _AddFileDriver
+00026348                _AllCacheWriteBack
+00027219                _Audio_init
+00026237                _CacheInit
+0002628e                _CacheWriteBack2
+00025c25                _ChangeDir
+000227dd                _ChangeFDT
+00021e24                _ClearClus
+00026f44                _DMA_audio_init
+00028d27                _DSP_add
+00028ea2                _DSP_byte2word
+00028d40                _DSP_mac
+00028d1a                _DSP_memcpy
+00028e87                _DSP_word2byte
+00028d07                _DSP_zero
+000226f3                _DelFDT
+000228c2                _DirIsEmpty
+            000034fe    _DiskCache
+            0000a3be    _DiskInfo
+00025c58                _DiskInit
+00028ca4                _EZDSP5535_GPIO_init
+0002876a                _EZDSP5535_I2C_close
+0002874b                _EZDSP5535_I2C_init
+000287f5                _EZDSP5535_I2C_read
+00028773                _EZDSP5535_I2C_reset
+00028781                _EZDSP5535_I2C_write
+00028f71                _EZDSP5535_I2S_init
+0002766b                _EZDSP5535_LCD_init
+00027656                _EZDSP5535_LCD_multiSend
+00027636                _EZDSP5535_LCD_send
+00028e44                _EZDSP5535_PLL_init
+00028385                _EZDSP5535_SAR_getKey
+00028339                _EZDSP5535_SAR_init
+00027f56                _EZDSP5535_SDCARD_close
+00027ddd                _EZDSP5535_SDCARD_init
+000278f1                _EZDSP5535_SPI_init
+00028fac                _EZDSP5535_waitusec
+00025463                _FATAddClus
+0002560a                _FATDelClusChain
+00024fb5                _FATGetNextClus
+00025217                _FATSetNextClus
+000223ce                _FDTInfo
+0002292a                _FDTIsLie
+            0000a1d1    _FHandle
+000256ea                _FS_GetDateTime
+00022edd                _FileClose
+000233db                _FileCloseAll
+            0000a366    _FileInfo
+00022a0c                _FileInit
+00022ea6                _FileOpen
+00022f94                _FileRead
+0002340d                _FileSeek
+000231bb                _FileWrite
+000224dc                _FindFDTInfo
+00022a3a                _FindOpenFile
+00025f0f                _FloppyDiskInit
+000266e5                _FreeCache
+00025597                _FreeClus
+00026696                _FreeDriveCache
+00025cb5                _FsMount
+            00009d80    _FsPathFileName
+0002566f                _FsStrCopy
+00025f03                _FsUMount
+00026385                _GetCache
+00025948                _GetDirClusIndex
+00028dfd                _INTR_init
+000277ca                _LCD_print
+000278b0                _LCD_scroll
+00020143                _MMC_clearResponse
+0002008a                _MMC_close
+00020429                _MMC_deselectCard
+0002010d                _MMC_getNumberOfCards
+00020000                _MMC_open
+000214e6                _MMC_read
+000204f8                _MMC_selectCard
+0002021c                _MMC_sendCmd
+000202cd                _MMC_sendGoIdle
+00020a87                _MMC_sendOpCond
+00021a2b                _MMC_setBlockLength
+000200db                _MMC_setCardPtr
+000200a8                _MMC_setCardType
+00020354                _MMC_stop
+00021717                _MMC_write
+00025a8e                _MakeDir
+            0000a022    _ModemRx1
+            0000a089    _ModemRx10
+            0000a097    _ModemRx11
+            0000a0a5    _ModemRx12
+            0000a02e    _ModemRx2
+            0000a03d    _ModemRx3
+            0000a04a    _ModemRx4
+            0000a050    _ModemRx4_1
+            0000a058    _ModemRx5
+            0000a062    _ModemRx6
+            0000a06b    _ModemRx7
+            0000a074    _ModemRx8
+            0000a07b    _ModemRx9
+            00009ffb    _ModemTrx1
+            0000a003    _ModemTrx2
+            0000a009    _ModemTrx3
+            0000a015    _ModemTrx4
+            0000a0b3    _ModemTx1
+            0000a0c2    _ModemTx2
+00026416                _OpenSec
+            00009fa1    _PaSettings
+00021e97                _ReadFDTInfo
+00026556                _ReadSec
+00024a0a                _ReceivePacket
+00025ba8                _RemoveDir
+00022b5f                _RemoveFile
+000261b3                _RemoveFileDriver
+00010000                _Reset
+0002233e                _RootFDTInfo
+00028618                _SDCammand
+00021d5a                _SD_ReadBlock
+00021de0                _SD_ReadBlock_Raw
+00021d9f                _SD_WriteBlock
+00021e02                _SD_WriteBlock_Raw
+00021c31                _SD_configurePullup
+00020e0d                _SD_getCardCsd
+00020c24                _SD_sendAllCID
+00020b2b                _SD_sendRca
+00021ac3                _SD_setBusWidth
+00027aed                _SPI_recvData
+00027b54                _SPI_sendData
+00024a6e                _SendPacket
+0002489d                _SetPAMode
+00024ae5                _Si446x_Init
+0002793c                _SpiBusStatus
+00027a4e                _SpiGetResponse
+00027971                _SpiReadByte
+00027ad6                _SpiReadRxDataBuffer
+000279fb                _SpiSendCommand
+00027999                _SpiWaitforCTS
+000279d1                _SpiWriteByte
+00027aad                _SpiWriteTxDataBuffer
+0002577c                _StrToFDTName
+00028f1a                _TIMER_init
+0002207f                _WriteFDTInfo
+00026635                _WriteSec
+00022be4                __FileOpenR
+00022e2f                __FileOpenRW
+00022cb1                __FileOpenW
+00025890                __GetFDTInfo
+00025f42                __HardDiskInit
+            00009080    __STACK_END
+00002000                __STACK_SIZE
+00001000                __SYSSTACK_SIZE
+ffffffff                ___binit__
+ffffffff                ___bss__
+ffffffff                ___c_args__
+            00020000    ___cinit__
+ffffffff                ___data__
+ffffffff                ___edata__
+ffffffff                ___end__
+ffffffff                ___etext__
+ffffffff                ___pinit__
+ffffffff                ___text__
+00028f47                __divu
+0002895d                __divul
+00028f99                __mpyli
+00028f5c                __remu
+00028aee                __remul
+            00008080    __stack
+            00009080    __sysstack
+            0000725e    _a_cos_msin_16
+            000071d2    _a_cos_msin_2
+            000072fe    _a_cos_msin_32
+            000071e6    _a_cos_msin_4
+            0000743e    _a_cos_msin_64
+            0000720e    _a_cos_msin_8
+            000076be    _a_cos_msin_table
+            00009f91    _abApi_Read
+            00009f81    _abApi_Write
+00023791                _adjust_abs_region_power_index
+0002801c                _aic3204_init
+            0000772e    _anal_bias
+00027196                _audioDecoding
+0002711c                _audioEncoding
+00028db0                _auto_init
+00024935                _bApi_Set_Receive
+0002499f                _bApi_Set_Send
+00023539                _bits_to_words
+            00007ff6    _buffer
+            00005f9a    _buffer_a
+            0000621a    _buffer_b
+            0000649a    _buffer_c
+00028ebc                _c_int00
+00026e5a                _calc_offset
+00026eea                _categorize
+00028325                _coef2sam_init
+00026b65                _comp_powercat_and_catbalance
+0002383a                _compute_region_powers
+            0000a3d8    _data1
+            0000a3d9    _data2
+            000076ca    _dct_core_a
+            0000553e    _dct_core_s
+000272e2                _dct_type_iv_a
+00026759                _dct_type_iv_s
+0002404f                _decode_envelope
+000242ba                _decode_vector_quantized_mlt_indices
+0002479f                _decoder
+            00001460    _differential_region_power_bits
+            00001700    _differential_region_power_codes
+            000019a0    _differential_region_power_decoder_tree
+            000056e2    _dither
+00028b93                _dma_isr
+00023ea1                _encoder
+000246e0                _error_handling
+            00001f28    _expected_bits_table
+00028c22                _fileProcessing
+            0000a1d2    _font
+            0000a14f    _gDct_length
+            0000a14e    _gDct_length_log
+            0000a1cb    _gNum_categorization_control_bits
+            0000a1cd    _gNum_categorization_control_possibilities
+            0000a1ca    _gNumber_of_regions
+            0000a1cc    _gNumber_of_valid_coefs
+00023fcd                _get_next_bit
+0002400f                _get_rand
+            00007ffb    _gpioIsrStatus
+00028d62                _gpio_isr
+00028a93                _i2s2_rx_isr
+00028a38                _i2s2_tx_isr
+00024235                _index_to_array
+            0000a0c8    _inputDmaChn
+            00006a42    _int_dead_zone
+            00006a4a    _int_dead_zone_low_bits
+            0000699a    _int_region_standard_deviation_table
+000284be                _main
+            00007ffe    _mark
+            00006a32    _max_bin_plus_one
+            00006a3a    _max_bin_plus_one_inverse
+            00005822    _max_dither
+            00006cd2    _max_rmlt_to_samples_window
+            00006a52    _max_samples_to_rmlt_window
+            00002b06    _mlt_decoder_tree_category_0
+            00002c6e    _mlt_decoder_tree_category_1
+            00002d28    _mlt_decoder_tree_category_2
+            00002d86    _mlt_decoder_tree_category_3
+            00003194    _mlt_decoder_tree_category_4
+            00003334    _mlt_decoder_tree_category_5
+            000034b2    _mlt_decoder_tree_category_6
+            00001ea8    _mlt_quant_centroid
+            00001f30    _mlt_sqvh_bitcount_category_0
+            000020b8    _mlt_sqvh_bitcount_category_1
+            00002180    _mlt_sqvh_bitcount_category_2
+            000021e2    _mlt_sqvh_bitcount_category_3
+            000026c4    _mlt_sqvh_bitcount_category_4
+            000028c4    _mlt_sqvh_bitcount_category_5
+            00002aaa    _mlt_sqvh_bitcount_category_6
+            00001ff4    _mlt_sqvh_code_category_0
+            0000211c    _mlt_sqvh_code_category_1
+            000021b1    _mlt_sqvh_code_category_2
+            00002453    _mlt_sqvh_code_category_3
+            000027c4    _mlt_sqvh_code_category_4
+            000029b7    _mlt_sqvh_code_category_5
+            00002aca    _mlt_sqvh_code_category_6
+            0000a314    _mmcCardObj
+            0000a364    _mmcStatus
+            0000a312    _mmcsdHandle
+            0000a0d3    _number_of_16bit_words_per_frame
+            0000a0d1    _number_of_bits_per_frame
+            0000a0d2    _number_of_bytes_per_frame
+            00006a2a    _number_of_vectors
+            0000a0d0    _offset
+            00007d6e    _old_decoder_mlt_coefs
+            0000a1ce    _old_mag_shift
+            0000a0cc    _outputDmaChn
+            0000a2d2    _pMmcsdContObj
+000241fa                _rate_adjust_categories
+            0000a150    _rawInWords
+            0000a0d4    _rawOutWords
+            00000060    _rcv_l
+            00000a60    _rcv_r
+            00007ff2    _recv_cnt
+00028197                _rmlt_coefs_to_samples
+            00007092    _rmlt_to_samples_window
+            00005b2e    _s_cos_msin_16
+            00005aa2    _s_cos_msin_2
+            00005bce    _s_cos_msin_32
+            00005ab6    _s_cos_msin_4
+            00005d0e    _s_cos_msin_64
+            00005ade    _s_cos_msin_8
+            00005f8e    _s_cos_msin_table
+00027dc9                _sam2coef_init
+00027b9b                _samples_to_rmlt_coefs
+            00006f52    _samples_to_rmlt_window
+            0000a342    _sdCardCsdObj
+            0000a332    _sdCardIdObj
+            00007ff3    _sent_cnt
+            00007ff4    _sent_cntRes
+0002840b                _setCommandByKey
+            00007ff5    _si4464Func
+            00007ffc    _spiIsrStatus
+0002886f                _spi_isr
+            00007ff8    _spi_set
+            000069da    _standard_deviation_inverse_table
+            00006a1a    _step_size_inverse_table
+            000055a2    _syn_bias_7khz
+            00002aea    _table_of_bitcount_tables
+            00002af8    _table_of_code_tables
+            000034f0    _table_of_decoder_tables
+            00007ffa    _taskList
+00024628                _test_4_frame_errors
+            00007ffd    _timIsrStatus
+00028eec                _tim_isr
+            00006a22    _vector_dimension
+00023a48                _vector_huffman
+00023c64                _vector_quantize_mlts
+            0000671a    _windowed_data
+            00000560    _xmt_l
+            00000f60    _xmt_r
+ffffffff                binit
+            00020000    cinit
+ffffffff                edata
+ffffffff                end
+ffffffff                etext
+ffffffff                pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+abs. value/
+byte addr   word addr   name
+---------   ---------   ----
+00000001                $TI_capability_requires_rev3
+00000002                $TI_capability$C5500$CallingConvention
+00000002                $TI_capability$C5500$MemoryModel
+            00000060    _rcv_l
+            00000560    _xmt_l
+00001000                __SYSSTACK_SIZE
+            00000a60    _rcv_r
+            00000f60    _xmt_r
+00002000                __STACK_SIZE
+            00001460    _differential_region_power_bits
+            00001700    _differential_region_power_codes
+            000019a0    _differential_region_power_decoder_tree
+            00001ea8    _mlt_quant_centroid
+            00001f28    _expected_bits_table
+            00001f30    _mlt_sqvh_bitcount_category_0
+            00001ff4    _mlt_sqvh_code_category_0
+            000020b8    _mlt_sqvh_bitcount_category_1
+            0000211c    _mlt_sqvh_code_category_1
+            00002180    _mlt_sqvh_bitcount_category_2
+            000021b1    _mlt_sqvh_code_category_2
+            000021e2    _mlt_sqvh_bitcount_category_3
+            00002453    _mlt_sqvh_code_category_3
+            000026c4    _mlt_sqvh_bitcount_category_4
+            000027c4    _mlt_sqvh_code_category_4
+            000028c4    _mlt_sqvh_bitcount_category_5
+            000029b7    _mlt_sqvh_code_category_5
+            00002aaa    _mlt_sqvh_bitcount_category_6
+            00002aca    _mlt_sqvh_code_category_6
+            00002aea    _table_of_bitcount_tables
+            00002af8    _table_of_code_tables
+            00002b06    _mlt_decoder_tree_category_0
+            00002c6e    _mlt_decoder_tree_category_1
+            00002d28    _mlt_decoder_tree_category_2
+            00002d86    _mlt_decoder_tree_category_3
+            00003194    _mlt_decoder_tree_category_4
+            00003334    _mlt_decoder_tree_category_5
+            000034b2    _mlt_decoder_tree_category_6
+            000034f0    _table_of_decoder_tables
+            000034fe    _DiskCache
+            0000553e    _dct_core_s
+            000055a2    _syn_bias_7khz
+            000056e2    _dither
+            00005822    _max_dither
+            00005aa2    _s_cos_msin_2
+            00005ab6    _s_cos_msin_4
+            00005ade    _s_cos_msin_8
+            00005b2e    _s_cos_msin_16
+            00005bce    _s_cos_msin_32
+            00005d0e    _s_cos_msin_64
+            00005f8e    _s_cos_msin_table
+            00005f9a    _buffer_a
+            0000621a    _buffer_b
+            0000649a    _buffer_c
+            0000671a    _windowed_data
+            0000699a    _int_region_standard_deviation_table
+            000069da    _standard_deviation_inverse_table
+            00006a1a    _step_size_inverse_table
+            00006a22    _vector_dimension
+            00006a2a    _number_of_vectors
+            00006a32    _max_bin_plus_one
+            00006a3a    _max_bin_plus_one_inverse
+            00006a42    _int_dead_zone
+            00006a4a    _int_dead_zone_low_bits
+            00006a52    _max_samples_to_rmlt_window
+            00006cd2    _max_rmlt_to_samples_window
+            00006f52    _samples_to_rmlt_window
+            00007092    _rmlt_to_samples_window
+            000071d2    _a_cos_msin_2
+            000071e6    _a_cos_msin_4
+            0000720e    _a_cos_msin_8
+            0000725e    _a_cos_msin_16
+            000072fe    _a_cos_msin_32
+            0000743e    _a_cos_msin_64
+            000076be    _a_cos_msin_table
+            000076ca    _dct_core_a
+            0000772e    _anal_bias
+            00007d6e    _old_decoder_mlt_coefs
+            00007ff2    _recv_cnt
+            00007ff3    _sent_cnt
+            00007ff4    _sent_cntRes
+            00007ff5    _si4464Func
+            00007ff6    _buffer
+            00007ff8    _spi_set
+            00007ffa    _taskList
+            00007ffb    _gpioIsrStatus
+            00007ffc    _spiIsrStatus
+            00007ffd    _timIsrStatus
+            00007ffe    _mark
+00010000                _Reset
+            00008080    __stack
+            00009080    __STACK_END
+            00009080    __sysstack
+            00009d80    _FsPathFileName
+            00009f81    _abApi_Write
+            00009f91    _abApi_Read
+            00009fa1    _PaSettings
+            00009ffb    _ModemTrx1
+            0000a003    _ModemTrx2
+            0000a009    _ModemTrx3
+            0000a015    _ModemTrx4
+            0000a022    _ModemRx1
+            0000a02e    _ModemRx2
+            0000a03d    _ModemRx3
+            0000a04a    _ModemRx4
+            0000a050    _ModemRx4_1
+            0000a058    _ModemRx5
+            0000a062    _ModemRx6
+            0000a06b    _ModemRx7
+            0000a074    _ModemRx8
+            0000a07b    _ModemRx9
+            0000a089    _ModemRx10
+            0000a097    _ModemRx11
+            0000a0a5    _ModemRx12
+            0000a0b3    _ModemTx1
+            0000a0c2    _ModemTx2
+            0000a0c8    _inputDmaChn
+            0000a0cc    _outputDmaChn
+            0000a0d0    _offset
+            0000a0d1    _number_of_bits_per_frame
+            0000a0d2    _number_of_bytes_per_frame
+            0000a0d3    _number_of_16bit_words_per_frame
+            0000a0d4    _rawOutWords
+            0000a14e    _gDct_length_log
+            0000a14f    _gDct_length
+            0000a150    _rawInWords
+            0000a1ca    _gNumber_of_regions
+            0000a1cb    _gNum_categorization_control_bits
+            0000a1cc    _gNumber_of_valid_coefs
+            0000a1cd    _gNum_categorization_control_possibilities
+            0000a1ce    _old_mag_shift
+            0000a1d1    _FHandle
+            0000a1d2    _font
+            0000a2d2    _pMmcsdContObj
+            0000a312    _mmcsdHandle
+            0000a314    _mmcCardObj
+            0000a332    _sdCardIdObj
+            0000a342    _sdCardCsdObj
+            0000a364    _mmcStatus
+            0000a366    _FileInfo
+            0000a3be    _DiskInfo
+            0000a3d8    _data1
+            0000a3d9    _data2
+00020000                _MMC_open
+0002008a                _MMC_close
+000200a8                _MMC_setCardType
+000200db                _MMC_setCardPtr
+0002010d                _MMC_getNumberOfCards
+00020143                _MMC_clearResponse
+0002021c                _MMC_sendCmd
+000202cd                _MMC_sendGoIdle
+00020354                _MMC_stop
+00020429                _MMC_deselectCard
+000204f8                _MMC_selectCard
+00020a87                _MMC_sendOpCond
+00020b2b                _SD_sendRca
+00020c24                _SD_sendAllCID
+00020e0d                _SD_getCardCsd
+000214e6                _MMC_read
+00021717                _MMC_write
+00021a2b                _MMC_setBlockLength
+00021ac3                _SD_setBusWidth
+00021c31                _SD_configurePullup
+00021d5a                _SD_ReadBlock
+00021d9f                _SD_WriteBlock
+00021de0                _SD_ReadBlock_Raw
+00021e02                _SD_WriteBlock_Raw
+00021e24                _ClearClus
+00021e97                _ReadFDTInfo
+0002207f                _WriteFDTInfo
+0002233e                _RootFDTInfo
+000223ce                _FDTInfo
+000224dc                _FindFDTInfo
+00022603                _AddFDT
+000226f3                _DelFDT
+000227dd                _ChangeFDT
+000228c2                _DirIsEmpty
+0002292a                _FDTIsLie
+00022a0c                _FileInit
+00022a3a                _FindOpenFile
+00022b5f                _RemoveFile
+00022be4                __FileOpenR
+00022cb1                __FileOpenW
+00022e2f                __FileOpenRW
+00022ea6                _FileOpen
+00022edd                _FileClose
+00022f94                _FileRead
+000231bb                _FileWrite
+000233db                _FileCloseAll
+0002340d                _FileSeek
+00023539                _bits_to_words
+00023791                _adjust_abs_region_power_index
+0002383a                _compute_region_powers
+00023a48                _vector_huffman
+00023c64                _vector_quantize_mlts
+00023ea1                _encoder
+00023fcd                _get_next_bit
+0002400f                _get_rand
+0002404f                _decode_envelope
+000241fa                _rate_adjust_categories
+00024235                _index_to_array
+000242ba                _decode_vector_quantized_mlt_indices
+00024628                _test_4_frame_errors
+000246e0                _error_handling
+0002479f                _decoder
+0002489d                _SetPAMode
+00024935                _bApi_Set_Receive
+0002499f                _bApi_Set_Send
+00024a0a                _ReceivePacket
+00024a6e                _SendPacket
+00024ae5                _Si446x_Init
+00024fb5                _FATGetNextClus
+00025217                _FATSetNextClus
+00025463                _FATAddClus
+00025597                _FreeClus
+0002560a                _FATDelClusChain
+0002566f                _FsStrCopy
+000256ea                _FS_GetDateTime
+0002577c                _StrToFDTName
+00025890                __GetFDTInfo
+00025948                _GetDirClusIndex
+00025a8e                _MakeDir
+00025ba8                _RemoveDir
+00025c25                _ChangeDir
+00025c58                _DiskInit
+00025cb5                _FsMount
+00025f03                _FsUMount
+00025f0f                _FloppyDiskInit
+00025f42                __HardDiskInit
+000260de                _AddFileDriver
+000261b3                _RemoveFileDriver
+00026237                _CacheInit
+0002628e                _CacheWriteBack2
+00026348                _AllCacheWriteBack
+00026385                _GetCache
+00026416                _OpenSec
+00026556                _ReadSec
+00026635                _WriteSec
+00026696                _FreeDriveCache
+000266e5                _FreeCache
+00026759                _dct_type_iv_s
+00026b65                _comp_powercat_and_catbalance
+00026e5a                _calc_offset
+00026eea                _categorize
+00026f44                _DMA_audio_init
+0002711c                _audioEncoding
+00027196                _audioDecoding
+00027219                _Audio_init
+000272e2                _dct_type_iv_a
+00027636                _EZDSP5535_LCD_send
+00027656                _EZDSP5535_LCD_multiSend
+0002766b                _EZDSP5535_LCD_init
+000277ca                _LCD_print
+000278b0                _LCD_scroll
+000278f1                _EZDSP5535_SPI_init
+0002793c                _SpiBusStatus
+00027971                _SpiReadByte
+00027999                _SpiWaitforCTS
+000279d1                _SpiWriteByte
+000279fb                _SpiSendCommand
+00027a4e                _SpiGetResponse
+00027aad                _SpiWriteTxDataBuffer
+00027ad6                _SpiReadRxDataBuffer
+00027aed                _SPI_recvData
+00027b54                _SPI_sendData
+00027b9b                _samples_to_rmlt_coefs
+00027dc9                _sam2coef_init
+00027ddd                _EZDSP5535_SDCARD_init
+00027f56                _EZDSP5535_SDCARD_close
+00027fbb                _AIC3204_rget
+00027ff5                _AIC3204_rset
+0002801c                _aic3204_init
+00028197                _rmlt_coefs_to_samples
+00028325                _coef2sam_init
+00028339                _EZDSP5535_SAR_init
+00028385                _EZDSP5535_SAR_getKey
+0002840b                _setCommandByKey
+000284be                _main
+00028618                _SDCammand
+0002874b                _EZDSP5535_I2C_init
+0002876a                _EZDSP5535_I2C_close
+00028773                _EZDSP5535_I2C_reset
+00028781                _EZDSP5535_I2C_write
+000287f5                _EZDSP5535_I2C_read
+0002886f                _spi_isr
+0002895d                __divul
+00028a38                _i2s2_tx_isr
+00028a93                _i2s2_rx_isr
+00028aee                __remul
+00028b93                _dma_isr
+00028c22                _fileProcessing
+00028ca4                _EZDSP5535_GPIO_init
+00028d07                _DSP_zero
+00028d1a                _DSP_memcpy
+00028d27                _DSP_add
+00028d40                _DSP_mac
+00028d62                _gpio_isr
+00028db0                _auto_init
+00028dfd                _INTR_init
+00028e44                _EZDSP5535_PLL_init
+00028e87                _DSP_word2byte
+00028ea2                _DSP_byte2word
+00028ebc                _c_int00
+00028eec                _tim_isr
+00028f1a                _TIMER_init
+00028f47                I$$UDIV
+00028f47                __divu
+00028f5c                I$$UMOD
+00028f5c                __remu
+00028f71                _EZDSP5535_I2S_init
+00028f99                I$$LMPY
+00028f99                __mpyli
+00028fac                _EZDSP5535_waitusec
+            00020000    ___cinit__
+            00020000    cinit
+ffffffff                .bss
+ffffffff                .data
+ffffffff                .text
+ffffffff                ___binit__
+ffffffff                ___bss__
+ffffffff                ___c_args__
+ffffffff                ___data__
+ffffffff                ___edata__
+ffffffff                ___end__
+ffffffff                ___etext__
+ffffffff                ___pinit__
+ffffffff                ___text__
+ffffffff                binit
+ffffffff                edata
+ffffffff                end
+ffffffff                etext
+ffffffff                pinit
+
+[331 symbols]

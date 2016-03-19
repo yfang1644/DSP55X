@@ -1,0 +1,226 @@
+******************************************************************************
+              TMS320C55x Linker Unix v4.4.1                    
+******************************************************************************
+>> Linked Wed Jun  3 19:33:49 2015
+
+OUTPUT FILE NAME:   <combfil2.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 000208dc
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+                        (bytes)   (bytes)    (bytes)   (bytes)
+----------------------  --------  ---------  --------  --------  ----  --------
+PAGE 0:
+  MMR                   00000000   000000c0  00000000  000000c0  RWIX
+  DARAM0                000000c0   0000ff40  00003794  0000c7ac  RWIX
+  SARAM0                00010000   00010000  00000000  00010000  RWIX
+  SARAM1                00020000   00020000  000009d5  0001f62b  RWIX
+  SARAM2                00040000   0000ff00  0000001a  0000fee6  RWIX
+  VECS0                 0004ff00   00000100  00000100  00000000  RWIX
+  CROM                  00fe0000   00000600  00000600  00000000  R  X
+  PDROM                 00ff8000   00008000  00000000  00008000  R IX
+
+PAGE 2:
+  IOPORT                00000000   00020000  00000000  00020000  RWI 
+
+
+SECTION ALLOCATION MAP
+(Addresses surrounded by []'s are displayed for convenience only!)
+
+output                                                          attributes/
+section   page  orgn(bytes) orgn(words) len(bytes) len(words)   input sections
+--------  ----  ----------- ----------- ---------- ----------   --------------
+.pinit       0   [ 00040000 ]  00020000          *   00000000   UNINITIALIZED
+
+.stack       0   [ 000000c0 ]  00000060          *   00001000   UNINITIALIZED
+                 [ 000000c0 ]  00000060          *   00001000   --HOLE--
+
+.data        0   [ 000000c0 ]  00000060          *   00000000   UNINITIALIZED
+
+.sysstack 
+*            0   [ 000020c0 ]  00001060          *   00000800   UNINITIALIZED
+                 [ 000020c0 ]  00001060          *   00000800   --HOLE--
+
+.bss         0   [ 000030c0 ]  00001860          *   000003c5   UNINITIALIZED
+                 [ 000030c0 ]  00001860          *   000003c3   ezdsp5535_i2s.obj (.bss)
+                 [ 00003846 ]  00001c23          *   00000002   main.obj (.bss)
+
+.const       0   [ 0000384c ]  00001c26          *   00000005   
+                 [ 0000384c ]  00001c26          *   00000005   main.obj (.const:.string)
+
+.text        0     00020000  [ 00010000 ] 000009d5          *   
+                   00020000  [ 00010000 ] 000002a6          *   ezdsp5535_lcd.obj (.text)
+                   000202a6  [ 00010153 ] 000001a7          *   aic3204.obj (.text)
+                   0002044d  [ 00010226+] 0000014a          *   main.obj (.text)
+                   00020597  [ 000102cb+] 00000104          *   ezdsp5535_i2c.obj (.text)
+                   0002069b  [ 0001034d+] 000000cb          *   ezdsp5535_i2s.obj (.text:retain)
+                   00020766  [ 000103b3 ] 000000b2          *   ezdsp5535_sar.obj (.text)
+                   00020818  [ 0001040c ] 0000004d          *   autoinit.obj (.text)
+                   00020865  [ 00010432+] 0000003c          *   sysinit.obj (.text)
+                   000208a1  [ 00010450+] 0000003b          *   pll.obj (.text)
+                   000208dc  [ 0001046e ] 00000030          *   boot.obj (.text)
+                   0002090c  [ 00010486 ] 00000030          *   ezdsp5535_i2s.obj (.text)
+                   0002093c  [ 0001049e ] 0000002d          *   timer.obj (.text:retain)
+                   00020969  [ 000104b4+] 00000020          *   timer.obj (.text)
+                   00020989  [ 000104c4+] 0000001a          *   ezdsp5535_gpio.obj (.text)
+                   000209a3  [ 000104d1+] 00000018          *   DSP_utils.obj (.text)
+                   000209bb  [ 000104dd+] 00000013          *   rts55x.lib : lmpy.obj (.text)
+                   000209ce  [ 000104e7 ] 00000006          *   vectors.obj (.text)
+                   000209d4  [ 000104ea ] 00000001          *   --HOLE-- [fill = 20]
+
+.cinit       0   [ 00040000 ]  00020000          *   0000000d   
+                 [ 00040000 ]  00020000          *   00000008   main.obj (.cinit)
+                 [ 00040010 ]  00020008          *   00000004   ezdsp5535_i2s.obj (.cinit)
+                 [ 00040018 ]  0002000c          *   00000001   --HOLE-- [fill = 0]
+
+.vectors     0     0004ff00  [ 00027f80 ] 00000100          *   
+                   0004ff00  [ 00027f80 ] 00000100          *   vectors.obj (.vectors)
+
+.charrom     0   [ 00fe0000 ]  007f0000          *   00000300   UNINITIALIZED
+                 [ 00fe0000 ]  007f0000          *   00000300   ezdsp5535_lcd.obj (.charrom)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+abs. value/
+byte addr   word addr   name
+---------   ---------   ----
+00000002                $TI_capability$C5500$CallingConvention
+00000002                $TI_capability$C5500$MemoryModel
+00000001                $TI_capability_requires_rev3
+ffffffff                .bss
+ffffffff                .data
+ffffffff                .text
+000209bb                I$$LMPY
+000202a6                _AIC3204_rset
+            007f0000    _CharGen_6x8
+000209a3                _DSP_memcpy
+00020989                _EZDSP5535_GPIO_init
+00020597                _EZDSP5535_I2C_close
+000205a0                _EZDSP5535_I2C_init
+00020632                _EZDSP5535_I2C_read
+000205bf                _EZDSP5535_I2C_reset
+000205cd                _EZDSP5535_I2C_write
+0002090c                _EZDSP5535_I2S_init
+00020161                _EZDSP5535_LCD_init
+00020000                _EZDSP5535_LCD_multiSend
+00020023                _EZDSP5535_LCD_send
+000207b2                _EZDSP5535_SAR_getKey
+00020766                _EZDSP5535_SAR_init
+000209b0                _EZDSP5535_waitusec
+00020865                _INTR_init
+00020093                _LCD_print
+0002003d                _LCD_scroll
+000208a1                _PLL_init
+0004ff00                _Reset
+00020969                _TIMER_init
+            00001060    __STACK_END
+00002000                __STACK_SIZE
+00001000                __SYSSTACK_SIZE
+ffffffff                ___binit__
+ffffffff                ___bss__
+ffffffff                ___c_args__
+            00020000    ___cinit__
+ffffffff                ___data__
+ffffffff                ___edata__
+ffffffff                ___end__
+ffffffff                ___etext__
+ffffffff                ___pinit__
+ffffffff                ___text__
+000209bb                __mpyli
+            00000060    __stack
+            00001060    __sysstack
+000202c5                _aic3204_init
+00020818                _auto_init
+000208dc                _c_int00
+            00001c20    _dataL
+            00001c21    _dataR
+            00001860    _delay_array
+0002044d                _displayPeriod
+000206cd                _i2s2_rx_isr
+0002069b                _i2s2_tx_isr
+000204d8                _main
+            00001c24    _period
+0002093c                _tim_isr
+            00001c23    _timer_st
+ffffffff                binit
+            00020000    cinit
+ffffffff                edata
+ffffffff                end
+ffffffff                etext
+ffffffff                pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+abs. value/
+byte addr   word addr   name
+---------   ---------   ----
+00000001                $TI_capability_requires_rev3
+00000002                $TI_capability$C5500$CallingConvention
+00000002                $TI_capability$C5500$MemoryModel
+            00000060    __stack
+00001000                __SYSSTACK_SIZE
+00002000                __STACK_SIZE
+            00001060    __STACK_END
+            00001060    __sysstack
+            00001860    _delay_array
+            00001c20    _dataL
+            00001c21    _dataR
+            00001c23    _timer_st
+            00001c24    _period
+00020000                _EZDSP5535_LCD_multiSend
+00020023                _EZDSP5535_LCD_send
+0002003d                _LCD_scroll
+00020093                _LCD_print
+00020161                _EZDSP5535_LCD_init
+000202a6                _AIC3204_rset
+000202c5                _aic3204_init
+0002044d                _displayPeriod
+000204d8                _main
+00020597                _EZDSP5535_I2C_close
+000205a0                _EZDSP5535_I2C_init
+000205bf                _EZDSP5535_I2C_reset
+000205cd                _EZDSP5535_I2C_write
+00020632                _EZDSP5535_I2C_read
+0002069b                _i2s2_tx_isr
+000206cd                _i2s2_rx_isr
+00020766                _EZDSP5535_SAR_init
+000207b2                _EZDSP5535_SAR_getKey
+00020818                _auto_init
+00020865                _INTR_init
+000208a1                _PLL_init
+000208dc                _c_int00
+0002090c                _EZDSP5535_I2S_init
+0002093c                _tim_isr
+00020969                _TIMER_init
+00020989                _EZDSP5535_GPIO_init
+000209a3                _DSP_memcpy
+000209b0                _EZDSP5535_waitusec
+000209bb                I$$LMPY
+000209bb                __mpyli
+            00020000    ___cinit__
+            00020000    cinit
+0004ff00                _Reset
+            007f0000    _CharGen_6x8
+ffffffff                .bss
+ffffffff                .data
+ffffffff                .text
+ffffffff                ___binit__
+ffffffff                ___bss__
+ffffffff                ___c_args__
+ffffffff                ___data__
+ffffffff                ___edata__
+ffffffff                ___end__
+ffffffff                ___etext__
+ffffffff                ___pinit__
+ffffffff                ___text__
+ffffffff                binit
+ffffffff                edata
+ffffffff                end
+ffffffff                etext
+ffffffff                pinit
+
+[64 symbols]

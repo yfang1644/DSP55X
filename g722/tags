@@ -1,0 +1,849 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+$1	boot.asm	/^$1:	TC1 = bit(@ST3_L, #1) || mmap()$/;"	l
+$2	boot.asm	/^$2:	TC1 = bit(@ST3_L, #0) || mmap()$/;"	l
+ABS_REGION_POWER_LEVELS	include/huff_def.h	16;"	d
+AC0	DSP_op.asm	/^	AC0 = AC0 * T1$/;"	d
+AC0	DSP_op.asm	/^	AC0 = AC0 + (AC1<<1) || AC1 = POPBOTH()$/;"	d
+AC0	DSP_op.asm	/^	AC0 = AC0 - (AC1<<1) || AC1 = POPBOTH()$/;"	d
+AC0	DSP_op.asm	/^	AC0 = AC0 << #1$/;"	d
+AC0	DSP_op.asm	/^	AC0 = AC0 << T0$/;"	d
+AC0	DSP_op.asm	/^	AC0 = AC0 << T1$/;"	d
+AC0	DSP_op.asm	/^	AC0 = rnd(AC0)$/;"	d
+AC0	DSP_op.asm	/^	AC0 = saturate(AC0)||$/;"	d
+AC0	DSP_utils.asm	/^		AC0 = AC0 + ((*AR0+)*(*AR1+))$/;"	d
+AC0	DSP_utils.asm	/^	AC0 = #0 || CSR = T0$/;"	d
+AC0	DSP_utils.asm	/^	AC0 = POPBOTH()$/;"	d
+AC0	autoinit.asm	/^	AC0 = AC0 | (AC1 <<< #-8)$/;"	d
+AC0	autoinit.asm	/^        AC0 = dbl(*AR6+)$/;"	d
+AC0	autoinit.asm	/^        AC0 = uns(*AR0+) << #8$/;"	d
+AC0	idiv.asm	/^	AC0 = |T0|             		; take absolute value of Q$/;"	d
+AC0	idiv.asm	/^	AC0 = |T0|$/;"	d
+AC0	lmpy.asm	/^	AC0 = AC0 * *SP(#0)	      	 ; AC0 = IHI * JLO$/;"	d
+AC0	lmpy.asm	/^	AC0 = AC0 + (AC1 << #16)      	 ; final result  $/;"	d
+AC0	lmpy.asm	/^	AC0 = uns(T0 * *SP(#0))	      	 ; AC0 = ILO * JLO$/;"	d
+AC0	lmpy.asm	/^ 	AC0 = uns(AC0.L) * uns(AC1.L)    ; AC0 = ILO * JLO$/;"	d
+AC0	udiv.asm	/^	AC0 = T0			; Move Q to AC0$/;"	d
+AC1	DSP_op.asm	/^	AC1 = AC1 * T1$/;"	d
+AC1	autoinit.asm	/^	AC1 = AC1 & #0xff	$/;"	d
+AC1	autoinit.asm	/^	AC1 = uns(*AR0+)$/;"	d
+AC1	lmpy.asm	/^	AC1 = (AC1 * T0) + AC0	      	 ; AC1 = (JHI * ILO) + (IHI * JLO)$/;"	d
+AC2	lmpy.asm	/^ 	AC2 = AC0.H * AC1.L	         ; AC2 = IHI * JLO$/;"	d
+AC2	lmpy.asm	/^ 	AC2 = AC2 + (AC1.H * AC0.L)      ; AC2 = (IHI * JLO) + (JHI * ILO)$/;"	d
+AIC3204_I2C_ADDR	aic3204.c	5;"	d	file:
+AIC3204_rget	aic3204.c	/^Int16 AIC3204_rget( Uint8 regnum, Uint8* regval )$/;"	f
+AIC3204_rset	aic3204.c	/^Int16 AIC3204_rset(Uint8 regnum, Uint8 regval)$/;"	f
+AR0	autoinit.asm	/^        AR0   = #(cinit & 0xffff)$/;"	d
+AR2	autoinit.asm	/^	AR2 = AR2 >> #1$/;"	d
+AR2	autoinit.asm	/^        AR2 = *AR0+$/;"	d
+AR4	idiv.asm	/^	AR4 = AR4 ^ T0			; determine sign of Q$/;"	d
+AR4	idiv.asm	/^	AR4 = T1	         	; save D (for sign)$/;"	d
+AR6	autoinit.asm	/^	AR6   = AC0$/;"	d
+AR6	autoinit.asm	/^        AR6   = #(___pinit__ & 0xffff)$/;"	d
+AR7	autoinit.asm	/^	AR7 = ~AR0$/;"	d
+AR7	autoinit.asm	/^	AR7 = ~AR6$/;"	d
+ASM_DEPS	Debug/sources.mk	/^ASM_DEPS := $/;"	m
+ASM_DEPS__QUOTED	Debug/sources.mk	/^ASM_DEPS__QUOTED := $/;"	m
+ASM_SRCS	Debug/sources.mk	/^ASM_SRCS := $/;"	m
+ASM_UPPER_DEPS	Debug/sources.mk	/^ASM_UPPER_DEPS := $/;"	m
+ASM_UPPER_DEPS__QUOTED	Debug/sources.mk	/^ASM_UPPER_DEPS__QUOTED := $/;"	m
+ASM_UPPER_SRCS	Debug/sources.mk	/^ASM_UPPER_SRCS := $/;"	m
+ATTR_ARCHIVE	include/fat.h	95;"	d
+ATTR_DIRECTORY	include/fat.h	94;"	d
+ATTR_HIDDEN	include/fat.h	91;"	d
+ATTR_READ_ONLY	include/fat.h	90;"	d
+ATTR_SYSTEM	include/fat.h	92;"	d
+ATTR_VOLUME_ID	include/fat.h	93;"	d
+A_SRCS	Debug/sources.mk	/^A_SRCS := $/;"	m
+AddFDT	fdt.c	/^Uint8 AddFDT(Uint32 ClusIndex, FDT *FDTData)$/;"	f
+AddFileDriver	disk.c	/^void AddFileDriver(Uint16 (* DiakCommand)(Uint8 Cammand, void *Parameter), void *RsvdForLow)$/;"	f
+AllCacheWriteBack	RWSec.c	/^void AllCacheWriteBack(void)$/;"	f
+Attr	include/fat.h	/^    Uint8   Attr;               \/* 文件属性 *\/$/;"	m	struct:_FDT
+BAD_CLUS	include/fat.h	100;"	d
+BAD_COMMAND	include/fat.h	77;"	d
+BAD_DISK_COMMAND	include/fat.h	50;"	d
+BASE_CACHE_NUM	RWSec.c	9;"	d	file:
+BASOP_H_DEFINED	include/basop32.h	19;"	d
+BERR	vectors.asm	/^BERR:		.ivec	no_handler			; Bus Error Interrupt$/;"	l
+BITRATE	include/codec.h	9;"	d
+BRC0	DSP_utils.asm	/^	BRC0 = T0 || T0 = *AR1+$/;"	d
+BRC0	DSP_utils.asm	/^	BRC0 = T0$/;"	d
+BW14K	include/codec.h	12;"	d
+Bit_Obj	include/typedef.h	/^}Bit_Obj;$/;"	t	typeref:struct:__anon1
+Buf	include/fat.h	/^    Uint8       *Buf;           \/* 数据存储位置 *\/$/;"	m	struct:_Disk_RW_Parameter
+BytsPerSec	include/fat.h	/^    Uint16      BytsPerSec;     \/* 每扇区字节数 *\/$/;"	m	struct:_Disk_Info
+C43_DEPS	Debug/sources.mk	/^C43_DEPS := $/;"	m
+C43_DEPS__QUOTED	Debug/sources.mk	/^C43_DEPS__QUOTED := $/;"	m
+C43_SRCS	Debug/sources.mk	/^C43_SRCS := $/;"	m
+C5500_EXECUTABLE_OUTPUTS	Debug/sources.mk	/^C5500_EXECUTABLE_OUTPUTS := $/;"	m
+C5500_EXECUTABLE_OUTPUTS__QUOTED	Debug/sources.mk	/^C5500_EXECUTABLE_OUTPUTS__QUOTED := $/;"	m
+C55_DEPS	Debug/sources.mk	/^C55_DEPS := $/;"	m
+C55_DEPS__QUOTED	Debug/sources.mk	/^C55_DEPS__QUOTED := $/;"	m
+C55_SRCS	Debug/sources.mk	/^C55_SRCS := $/;"	m
+C62_DEPS	Debug/sources.mk	/^C62_DEPS := $/;"	m
+C62_DEPS__QUOTED	Debug/sources.mk	/^C62_DEPS__QUOTED := $/;"	m
+C62_SRCS	Debug/sources.mk	/^C62_SRCS := $/;"	m
+C64_DEPS	Debug/sources.mk	/^C64_DEPS := $/;"	m
+C64_DEPS__QUOTED	Debug/sources.mk	/^C64_DEPS__QUOTED := $/;"	m
+C64_SRCS	Debug/sources.mk	/^C64_SRCS := $/;"	m
+C67_DEPS	Debug/sources.mk	/^C67_DEPS := $/;"	m
+C67_DEPS__QUOTED	Debug/sources.mk	/^C67_DEPS__QUOTED := $/;"	m
+C67_SRCS	Debug/sources.mk	/^C67_SRCS := $/;"	m
+CACHE_DATA	include/fat.h	115;"	d
+CACHE_READ	include/fat.h	113;"	d
+CACHE_WRITTEN	include/fat.h	114;"	d
+CC_DEPS	Debug/sources.mk	/^CC_DEPS := $/;"	m
+CC_DEPS__QUOTED	Debug/sources.mk	/^CC_DEPS__QUOTED := $/;"	m
+CC_SRCS	Debug/sources.mk	/^CC_SRCS := $/;"	m
+CG_TOOL_ROOT	Debug/makefile	/^CG_TOOL_ROOT := \/opt\/ti\/ccsv5\/tools\/compiler\/c5500_4.4.1$/;"	m
+CLA_DEPS	Debug/sources.mk	/^CLA_DEPS := $/;"	m
+CLA_DEPS__QUOTED	Debug/sources.mk	/^CLA_DEPS__QUOTED := $/;"	m
+CLA_SRCS	Debug/sources.mk	/^CLA_SRCS := $/;"	m
+CLUSTER_NOT_IN_DISK	include/fat.h	59;"	d
+CMD_SRCS	Debug/sources.mk	/^CMD_SRCS := $/;"	m
+CMD_UPPER_SRCS	Debug/sources.mk	/^CMD_UPPER_SRCS := $/;"	m
+COPROCFFT	vectors.asm	/^COPROCFFT:	.ivec	no_handler			; Coprocessor FFT Module Interrupt$/;"	l
+CORE_SIZE	include/defs.h	47;"	d
+CPP_DEPS	Debug/sources.mk	/^CPP_DEPS := $/;"	m
+CPP_DEPS__QUOTED	Debug/sources.mk	/^CPP_DEPS__QUOTED := $/;"	m
+CPP_SRCS	Debug/sources.mk	/^CPP_SRCS := $/;"	m
+CSR	DSP_utils.asm	/^	CSR = T0$/;"	d
+CSR	autoinit.asm	/^	CSR = AR2$/;"	d
+CXX_DEPS	Debug/sources.mk	/^CXX_DEPS := $/;"	m
+CXX_DEPS__QUOTED	Debug/sources.mk	/^CXX_DEPS__QUOTED := $/;"	m
+CXX_SRCS	Debug/sources.mk	/^CXX_SRCS := $/;"	m
+C_DEPS	Debug/sources.mk	/^C_DEPS := $/;"	m
+C_DEPS__QUOTED	Debug/sources.mk	/^C_DEPS__QUOTED := $/;"	m
+C_SRCS	Debug/sources.mk	/^C_SRCS := $/;"	m
+C_UPPER_DEPS	Debug/sources.mk	/^C_UPPER_DEPS := $/;"	m
+C_UPPER_DEPS__QUOTED	Debug/sources.mk	/^C_UPPER_DEPS__QUOTED := $/;"	m
+C_UPPER_SRCS	Debug/sources.mk	/^C_UPPER_SRCS := $/;"	m
+CacheInit	RWSec.c	/^void CacheInit(void)$/;"	f
+CacheWriteBack2	RWSec.c	/^void CacheWriteBack2(Uint16 Index)$/;"	f
+ChangeDir	dir.c	/^Uint8 ChangeDir(Int8 *Path)$/;"	f
+ChangeFDT	fdt.c	/^Uint8 ChangeFDT(Uint32 ClusIndex, FDT *FDTData)$/;"	f
+ClearClus	fdt.c	/^Uint8 ClearClus(Uint32 Index)$/;"	f
+Clus	include/fat.h	/^    Uint32      Clus;           \/* 当前簇号 *\/$/;"	m	struct:_FILE
+ClusPerData	include/fat.h	/^    Uint32      ClusPerData;    \/* 数据区包含簇数 *\/$/;"	m	struct:_Disk_Info
+CrtDate	include/fat.h	/^    Uint16  CrtDate;            \/* 建立日期（fat16保留）*\/$/;"	m	struct:_FDT
+CrtTime	include/fat.h	/^    Uint16  CrtTime;            \/* 建立时间（fat16保留）*\/$/;"	m	struct:_FDT
+CrtTimeTenth	include/fat.h	/^    Uint8   CrtTimeTenth;       \/* 建立时间（fat16保留）*\/$/;"	m	struct:_FDT
+DATAMEMCOPY	autoinit.asm	/^DATAMEMCOPY:$/;"	l
+DATE_TIME	include/fat.h	/^}DATE_TIME;$/;"	t	typeref:struct:_DATE_TIME
+DCT_LENGTH	include/defs.h	17;"	d
+DCT_LENGTH	include/defs.h	23;"	d
+DCT_LENGTH_DIV_16	include/defs.h	41;"	d
+DCT_LENGTH_DIV_2	include/defs.h	38;"	d
+DCT_LENGTH_DIV_32	include/defs.h	42;"	d
+DCT_LENGTH_DIV_4	include/defs.h	39;"	d
+DCT_LENGTH_DIV_64	include/defs.h	43;"	d
+DCT_LENGTH_DIV_8	include/defs.h	40;"	d
+DCT_LENGTH_LOG	include/defs.h	20;"	d
+DCT_LENGTH_LOG	include/defs.h	26;"	d
+DEL_FDT	include/fat.h	106;"	d
+DIFF_REGION_POWER_LEVELS	include/huff_def.h	17;"	d
+DIR_EMPTY	include/fat.h	65;"	d
+DIR_NOT_EMPTY	include/fat.h	66;"	d
+DISK_CACHE_SIZE	include/fat.h	11;"	d
+DISK_CHECK_CHANGE	include/fat.h	33;"	d
+DISK_CHECK_CMD	include/fat.h	28;"	d
+DISK_CLOSE	include/fat.h	24;"	d
+DISK_DRIVER_VER	include/fat.h	27;"	d
+DISK_FALSE	include/fat.h	49;"	d
+DISK_FREE_SECTOR	include/fat.h	30;"	d
+DISK_FULL	include/fat.h	55;"	d
+DISK_GET_BYTES_PER_SECTOR	include/fat.h	32;"	d
+DISK_GET_SECTORS_PER_BLOCK	include/fat.h	34;"	d
+DISK_GET_SECTOR_NUMBER	include/fat.h	31;"	d
+DISK_INIT	include/fat.h	23;"	d
+DISK_INIT_NOT_OK	include/fat.h	47;"	d
+DISK_INIT_OK	include/fat.h	46;"	d
+DISK_LOW_FORMAT	include/fat.h	29;"	d
+DISK_NO_FORMAT	include/fat.h	75;"	d
+DISK_READ_BLOCK	include/fat.h	35;"	d
+DISK_READ_NOT_OK	include/fat.h	43;"	d
+DISK_READ_OK	include/fat.h	42;"	d
+DISK_READ_RAW	include/fat.h	37;"	d
+DISK_READ_SECTOR	include/fat.h	25;"	d
+DISK_RETURN_OK	include/fat.h	41;"	d
+DISK_TRUE	include/fat.h	48;"	d
+DISK_WRITE_BLOCK	include/fat.h	36;"	d
+DISK_WRITE_NOT_OK	include/fat.h	45;"	d
+DISK_WRITE_OK	include/fat.h	44;"	d
+DISK_WRITE_RAW	include/fat.h	38;"	d
+DISK_WRITE_SECTOR	include/fat.h	26;"	d
+DLOG	vectors.asm	/^DLOG:		.ivec	no_handler			; Emulation Interrupt - DLOG$/;"	l
+DMA	vectors.asm	/^DMA:		.ivec	_dma_isr			; DMA Interrupt$/;"	l
+DMA_audio_init	dma.c	/^void DMA_audio_init(Uint16 size)$/;"	f
+DRP_DIFF_MAX	include/huff_def.h	20;"	d
+DRP_DIFF_MIN	include/huff_def.h	19;"	d
+DataStartSec	include/fat.h	/^    Uint32      DataStartSec;   \/* 数据区开始扇区号 *\/$/;"	m	struct:_Disk_Info
+DelFDT	fdt.c	/^Uint8 DelFDT(Uint32 ClusIndex, Int8 FileName[])$/;"	f
+DiakCommand	include/fat.h	/^    Uint16      (* DiakCommand)(Uint8 Cammand, void *Parameter);$/;"	m	struct:_Disk_Info
+DirClus	include/fat.h	/^    Uint32      DirClus;        \/* 所在目录开始簇号 *\/$/;"	m	struct:_FILE
+DirIsEmpty	fdt.c	/^Uint8 DirIsEmpty(Uint32 ClusIndex)$/;"	f
+DiskCache	RWSec.c	/^Disk_cache DiskCache[MAX_DISK_CACHES];      \/* 磁盘cache *\/$/;"	v
+DiskInfo	disk.c	/^Disk_Info DiskInfo;     \/\/逻辑盘信息$/;"	v
+DiskInit	disk.c	/^void DiskInit(void)$/;"	f
+Disk_Info	include/fat.h	/^}Disk_Info;$/;"	t	typeref:struct:_Disk_Info
+Disk_RW_Parameter	include/fat.h	/^}Disk_RW_Parameter;$/;"	t	typeref:struct:_Disk_RW_Parameter
+Disk_cache	include/fat.h	/^}Disk_cache;$/;"	t	typeref:struct:_Disk_Cache
+EMIF	vectors.asm	/^EMIF:		.ivec	no_handler			; EMIF Error Interrupt$/;"	l
+EMPTY_CLUS	include/fat.h	98;"	d
+EMPTY_CLUS_1	include/fat.h	99;"	d
+EMPTY_DRIVE	include/fat.h	81;"	d
+EMPTY_FDT	include/fat.h	105;"	d
+EMUINT	vectors.asm	/^EMUINT:		.ivec	no_handler			; Emulation monitor mode interrupt$/;"	l
+ENCODER_SCALE_FACTOR	include/defs.h	54;"	d
+EOF_CLUS_1	include/fat.h	101;"	d
+EOF_CLUS_END	include/fat.h	102;"	d
+ESC_FDT	include/fat.h	107;"	d
+ESF_ADJUSTMENT_TO_RMS_INDEX	include/defs.h	65;"	d
+EXIT	autoinit.asm	/^EXIT:$/;"	l
+EZDSP5535_GPIO_init	gpio.c	/^void EZDSP5535_GPIO_init()$/;"	f
+EZDSP5535_I2C_close	ezdsp5535_i2c.c	/^Int16 EZDSP5535_I2C_close( )$/;"	f
+EZDSP5535_I2C_init	ezdsp5535_i2c.c	/^Int16 EZDSP5535_I2C_init( )$/;"	f
+EZDSP5535_I2C_read	ezdsp5535_i2c.c	/^Int16 EZDSP5535_I2C_read( Uint16 i2c_addr, Uint16* data, Uint16 len )$/;"	f
+EZDSP5535_I2C_reset	ezdsp5535_i2c.c	/^Int16 EZDSP5535_I2C_reset( )$/;"	f
+EZDSP5535_I2C_write	ezdsp5535_i2c.c	/^Int16 EZDSP5535_I2C_write( Uint16 i2c_addr, Uint16* data, Uint16 len )$/;"	f
+EZDSP5535_I2S_init	ezdsp5535_i2s.c	/^void EZDSP5535_I2S_init( )$/;"	f
+EZDSP5535_LCD_init	ezdsp5535_lcd.c	/^void EZDSP5535_LCD_init( )$/;"	f
+EZDSP5535_LCD_multiSend	ezdsp5535_lcd.c	/^Int16 EZDSP5535_LCD_multiSend( Uint8* data, Uint16 len )$/;"	f
+EZDSP5535_LCD_send	ezdsp5535_lcd.c	/^Int16 EZDSP5535_LCD_send( Uint16 comdat, Uint16 data )$/;"	f
+EZDSP5535_SAR_getKey	ezdsp5535_sar.c	/^Uint16 EZDSP5535_SAR_getKey(void)$/;"	f
+EZDSP5535_SAR_init	ezdsp5535_sar.c	/^void EZDSP5535_SAR_init(void)$/;"	f
+EZDSP5535_SDCARD_close	ezdsp5535_sdcard.c	/^Int16 EZDSP5535_SDCARD_close()$/;"	f
+EZDSP5535_SDCARD_init	ezdsp5535_sdcard.c	/^Int16 EZDSP5535_SDCARD_init()$/;"	f
+FAT12	include/fat.h	85;"	d
+FAT16	include/fat.h	86;"	d
+FAT32	include/fat.h	87;"	d
+FATAddClus	fat.c	/^Uint32 FATAddClus(Uint32 Index)$/;"	f
+FATDelClusChain	fat.c	/^void FATDelClusChain(Uint32 Index)$/;"	f
+FATGetNextClus	fat.c	/^Uint32 FATGetNextClus(Uint32 Index)$/;"	f
+FATSecCnt	include/fat.h	/^    Uint32      FATSecCnt;      \/* 每个FAT占用扇区数 *\/$/;"	m	struct:_Disk_Info
+FATSetNextClus	fat.c	/^void FATSetNextClus(Uint32 Index, Uint32 Next)$/;"	f
+FATStartSec	include/fat.h	/^    Uint32      FATStartSec;    \/* FAT表开始扇区号 *\/$/;"	m	struct:_Disk_Info
+FATType	include/fat.h	/^    Uint8       FATType;        \/* 类型：FAT12、FAT16和FAT32 *\/$/;"	m	struct:_Disk_Info
+FAT_ERR	include/fat.h	68;"	d
+FDT	include/fat.h	/^} FDT;$/;"	t	typeref:struct:_FDT
+FDTGET	include/fat.h	109;"	d
+FDTInfo	fdt.c	/^Uint8 FDTInfo(Uint32 ClusIndex, Uint32 Index, FDT *FDTData, Uint16 type)$/;"	f
+FDTIsLie	fdt.c	/^Uint8 FDTIsLie(Uint32 ClusIndex, Int8 FileName[])$/;"	f
+FDTSET	include/fat.h	110;"	d
+FDT_EXISTS	include/fat.h	63;"	d
+FDT_OVER	include/fat.h	62;"	d
+FILE_EOF	include/fat.h	70;"	d
+FILE_FLAGS_READ	include/fat.h	118;"	d
+FILE_FLAGS_WRITE	include/fat.h	119;"	d
+FILE_LOCK	include/fat.h	71;"	d
+FILE_NAME_ERR	include/fat.h	69;"	d
+FRAME_SIZE	idiv.asm	/^FRAME_SIZE	.set	1$/;"	l
+FRAME_SIZE	idiv.asm	/^FRAME_SIZE	.set	2$/;"	l
+FRAME_SIZE	lmpy.asm	/^FRAME_SIZE	.set	1$/;"	l
+FRAME_SIZE	lmpy.asm	/^FRAME_SIZE	.set	2$/;"	l
+FRAME_SIZE	udiv.asm	/^FRAME_SIZE	.set	1$/;"	l
+FRAME_SIZE	udiv.asm	/^FRAME_SIZE	.set	2$/;"	l
+FS_GetDateTime	dir.c	/^Uint8 FS_GetDateTime(SYS_TIME *CurTime)$/;"	f
+FileClose	file.c	/^Uint8 FileClose(HANDLE Handle)$/;"	f
+FileCloseAll	file.c	/^void FileCloseAll(void)$/;"	f
+FileInfo	file.c	/^MY_FILE FileInfo[MAX_OPEN_FILES];        \/* 打开文件信息表 *\/$/;"	v
+FileInit	file.c	/^void FileInit(void)$/;"	f
+FileOpen	file.c	/^HANDLE FileOpen(Int8 *DirFileName, Uint16 type)$/;"	f
+FileRead	file.c	/^Uint32 FileRead(void *Buf, Uint32 Size, HANDLE Handle)$/;"	f
+FileSeek	file.c	/^Uint8 FileSeek(HANDLE Handle, Int32 offset, Uint8 Whence)$/;"	f
+FileSize	include/fat.h	/^    Uint32      FileSize;       \/* 文件大小 *\/$/;"	m	struct:_FILE
+FileSize	include/fat.h	/^    Uint32  FileSize;           \/* 文件大小 *\/$/;"	m	struct:_FDT
+FileWrite	file.c	/^Uint32 FileWrite(void *Buf, Uint32 Size, HANDLE Handle)$/;"	f
+FindFDTInfo	fdt.c	/^Uint8 FindFDTInfo(FDT *Rt, Uint32 ClusIndex, Int8 FileName[])$/;"	f
+FindOpenFile	file.c	/^HANDLE FindOpenFile(Uint32 DirClus, Int8 *FileName, Uint16 type)$/;"	f
+Flag	include/fat.h	/^    Uint8       Flag;           \/* 状态 *\/$/;"	m	struct:_Disk_Cache
+Flags	include/fat.h	/^    Uint8       Flags;          \/* 一些标志 *\/$/;"	m	struct:_FILE
+FloppyDiskInit	disk.c	/^void FloppyDiskInit(Uint16  (* DiakCommand)(Uint8 Cammand, void *Parameter),$/;"	f
+FreeCache	RWSec.c	/^void FreeCache(Uint32 Index)$/;"	f
+FreeClus	fat.c	/^Uint8 FreeClus(Uint32 Index)$/;"	f
+FreeDriveCache	RWSec.c	/^void FreeDriveCache(void)$/;"	f
+FsMount	disk.c	/^Uint8 FsMount(Uint8 *Buf)$/;"	f
+FsPathFileName	dir.c	/^Int8 FsPathFileName[MAX_PATHFILE_LENGTH + 1];$/;"	v
+FsStrCopy	dir.c	/^Int8 *FsStrCopy(Int8 *source)$/;"	f
+FsUMount	disk.c	/^Uint8 FsUMount(void)$/;"	f
+FstClus	include/fat.h	/^    Uint32      FstClus;        \/* 起始簇号 *\/$/;"	m	struct:_FILE
+FstClusHI	include/fat.h	/^    Uint16  FstClusHI;          \/* 起始簇号高两个字节（fat16保留）*\/$/;"	m	struct:_FDT
+FstClusLO	include/fat.h	/^    Uint16  FstClusLO;          \/* 起始簇(cluster)号低两个字节 *\/$/;"	m	struct:_FDT
+GETDATATIME	include/fat.h	356;"	d
+GETDATATIME	include/fat.h	360;"	d
+GET_TIME_ERR	include/fat.h	74;"	d
+GPIO	vectors.asm	/^GPIO:		.ivec	no_handler			; GPIO Interrupt$/;"	l
+GPIO0	include/ezdsp5535_gpio.h	11;"	d
+GPIO1	include/ezdsp5535_gpio.h	12;"	d
+GPIO10	include/ezdsp5535_gpio.h	22;"	d
+GPIO11	include/ezdsp5535_gpio.h	23;"	d
+GPIO12	include/ezdsp5535_gpio.h	24;"	d
+GPIO13	include/ezdsp5535_gpio.h	25;"	d
+GPIO14	include/ezdsp5535_gpio.h	26;"	d
+GPIO15	include/ezdsp5535_gpio.h	27;"	d
+GPIO16	include/ezdsp5535_gpio.h	28;"	d
+GPIO17	include/ezdsp5535_gpio.h	29;"	d
+GPIO18	include/ezdsp5535_gpio.h	30;"	d
+GPIO19	include/ezdsp5535_gpio.h	31;"	d
+GPIO2	include/ezdsp5535_gpio.h	13;"	d
+GPIO20	include/ezdsp5535_gpio.h	33;"	d
+GPIO21	include/ezdsp5535_gpio.h	34;"	d
+GPIO22	include/ezdsp5535_gpio.h	35;"	d
+GPIO23	include/ezdsp5535_gpio.h	36;"	d
+GPIO24	include/ezdsp5535_gpio.h	37;"	d
+GPIO25	include/ezdsp5535_gpio.h	38;"	d
+GPIO26	include/ezdsp5535_gpio.h	39;"	d
+GPIO27	include/ezdsp5535_gpio.h	40;"	d
+GPIO28	include/ezdsp5535_gpio.h	41;"	d
+GPIO29	include/ezdsp5535_gpio.h	42;"	d
+GPIO3	include/ezdsp5535_gpio.h	14;"	d
+GPIO30	include/ezdsp5535_gpio.h	44;"	d
+GPIO31	include/ezdsp5535_gpio.h	45;"	d
+GPIO4	include/ezdsp5535_gpio.h	15;"	d
+GPIO5	include/ezdsp5535_gpio.h	16;"	d
+GPIO6	include/ezdsp5535_gpio.h	17;"	d
+GPIO7	include/ezdsp5535_gpio.h	18;"	d
+GPIO8	include/ezdsp5535_gpio.h	19;"	d
+GPIO9	include/ezdsp5535_gpio.h	20;"	d
+GPIO_	include/ezdsp5535_gpio.h	6;"	d
+GPIO_IN	include/ezdsp5535_gpio.h	8;"	d
+GPIO_OUT	include/ezdsp5535_gpio.h	9;"	d
+GetCache	RWSec.c	/^Uint16 GetCache(Uint32 Index)$/;"	f
+GetDirClusIndex	dir.c	/^Uint32 GetDirClusIndex(Int8 *Path)$/;"	f
+HANDLE	include/fat.h	/^typedef Uint16 HANDLE;$/;"	t
+I$$DIV	idiv.asm	/^I$$DIV:	.asmfunc$/;"	l
+I$$LMPY	lmpy.asm	/^I$$LMPY:	.asmfunc$/;"	l
+I$$MOD	idiv.asm	/^I$$MOD:	.asmfunc$/;"	l
+I$$UDIV	udiv.asm	/^I$$UDIV:	.asmfunc$/;"	l
+I$$UMOD	udiv.asm	/^I$$UMOD:	.asmfunc$/;"	l
+I2C	vectors.asm	/^I2C:		.ivec	no_handler			; IIC interrupt$/;"	l
+ICR	main.c	46;"	d	file:
+INT0	vectors.asm	/^INT0:		.ivec	no_handler			; External User Interrupt #0 $/;"	l
+INT1	vectors.asm	/^INT1:		.ivec	no_handler			; External User Interrupt #1$/;"	l
+INTERMEDIATE_FILES_FLAG	include/defs.h	68;"	d
+INTR_init	sysinit.c	/^void INTR_init(void)$/;"	f
+IN_DIR	dir.c	4;"	d	file:
+IN_DISK	disk.c	4;"	d	file:
+IN_FAT	fat.c	5;"	d	file:
+IN_FDT	fdt.c	4;"	d	file:
+IN_FILE	file.c	5;"	d	file:
+IN_RWSEC	RWSec.c	4;"	d	file:
+K_DEPS	Debug/sources.mk	/^K_DEPS := $/;"	m
+K_DEPS__QUOTED	Debug/sources.mk	/^K_DEPS__QUOTED := $/;"	m
+K_SRCS	Debug/sources.mk	/^K_SRCS := $/;"	m
+LCD	vectors.asm	/^LCD:		.ivec	no_handler			; LCD Interrupt$/;"	l
+LCD_print	ezdsp5535_lcd.c	/^void LCD_print(char *s, int cnt, int page)$/;"	f
+LCD_scroll	ezdsp5535_lcd.c	/^void LCD_scroll()$/;"	f
+LDS_SRCS	Debug/sources.mk	/^LDS_SRCS := $/;"	m
+LDS_UPPER_SRCS	Debug/sources.mk	/^LDS_UPPER_SRCS := $/;"	m
+LD_SRCS	Debug/sources.mk	/^LD_SRCS := $/;"	m
+LD_UPPER_SRCS	Debug/sources.mk	/^LD_UPPER_SRCS := $/;"	m
+LIBS	Debug/objects.mk	/^LIBS :=$/;"	m
+LIB_SRCS	Debug/sources.mk	/^LIB_SRCS := $/;"	m
+LOOP	autoinit.asm	/^LOOP:$/;"	l
+LOOP2	autoinit.asm	/^LOOP2:	$/;"	l
+LU_shl	basop32.c	/^UInt32 LU_shl (UInt32 L_var1, Int16 var2)$/;"	f
+LU_shl	basop32c.c	/^UInt32 LU_shl (UInt32 L_var1, Int16 var2)$/;"	f
+LU_shr	basop32.c	/^UInt32 LU_shr (UInt32 L_var1, Int16 var2)$/;"	f
+LU_shr	basop32c.c	/^UInt32 LU_shr (UInt32 L_var1, Int16 var2)$/;"	f
+L_abs	include/basop32.h	65;"	d
+L_add	basop32c.c	/^Int32 L_add (Int32 L_var1, Int32 L_var2)$/;"	f
+L_add	include/basop32.h	51;"	d
+L_deposit_l	basop32c.c	/^Int32 L_deposit_l (Int16 var1)$/;"	f
+L_mac	basop32c.c	/^Int32 L_mac (Int32 L_var3, Int16 var1, Int16 var2)$/;"	f
+L_mac	include/basop32.h	49;"	d
+L_mac0	basop32c.c	/^Int32 L_mac0 (Int32 L_var3, Int16 var1, Int16 var2)$/;"	f
+L_msu	include/basop32.h	50;"	d
+L_mult	basop32c.c	/^Int32 L_mult (Int16 var1, Int16 var2)$/;"	f
+L_mult	include/basop32.h	48;"	d
+L_mult0	basop32c.c	/^Int32 L_mult0 (Int16 var1,Int16 var2)$/;"	f
+L_negate	include/basop32.h	66;"	d
+L_shl	basop32c.c	/^Int32 L_shl (Int32 L_var1, Int16 var2)$/;"	f
+L_shl	include/basop32.h	59;"	d
+L_shr	basop32c.c	/^Int32 L_shr (Int32 L_var1, Int16 var2)$/;"	f
+L_shr	include/basop32.h	60;"	d
+L_sub	basop32c.c	/^Int32 L_sub (Int32 L_var1, Int32 L_var2)$/;"	f
+L_sub	include/basop32.h	52;"	d
+LstAccDate	include/fat.h	/^    Uint16  LstAccDate;         \/* 最后访问日期（fat16保留）*\/$/;"	m	struct:_FDT
+MAX_16	include/basop32.h	33;"	d
+MAX_32	include/basop32.h	30;"	d
+MAX_BITS_PER_FRAME	include/defs.h	71;"	d
+MAX_DISK_CACHES	RWSec.c	10;"	d	file:
+MAX_NUMBER_OF_REGIONS	include/defs.h	36;"	d
+MAX_NUM_BINS	include/huff_def.h	22;"	d
+MAX_OPEN_FILES	include/fat.h	7;"	d
+MAX_PATHFILE_LENGTH	include/fat.h	15;"	d
+MAX_VECTOR_DIMENSION	include/huff_def.h	24;"	d
+MAX_VECTOR_INDICES	include/huff_def.h	23;"	d
+MDP	boot.asm	/^	MDP   = #0$/;"	d
+MDP05	autoinit.asm	/^	MDP05 = #0$/;"	d
+MDP05	autoinit.asm	/^        MDP05 = #((cinit >> 16) & 0x7f)$/;"	d
+MDP05	boot.asm	/^	MDP05 = #0$/;"	d
+MDP67	autoinit.asm	/^	MDP67 = #0$/;"	d
+MDP67	autoinit.asm	/^	MDP67 = *SP(#0) $/;"	d
+MDP67	autoinit.asm	/^	MDP67 = @AC0_H || mmap()$/;"	d
+MDP67	autoinit.asm	/^        MDP67 = #((___pinit__ >> 16) & 0x7f)$/;"	d
+MDP67	boot.asm	/^	MDP67 = #0$/;"	d
+MDR_FREE	ezdsp5535_i2c.c	72;"	d	file:
+MDR_IRS	ezdsp5535_i2c.c	71;"	d	file:
+MDR_MST	ezdsp5535_i2c.c	70;"	d	file:
+MDR_STP	ezdsp5535_i2c.c	75;"	d	file:
+MDR_STT	ezdsp5535_i2c.c	68;"	d	file:
+MDR_TRX	ezdsp5535_i2c.c	69;"	d	file:
+MIN_16	include/basop32.h	34;"	d
+MIN_32	include/basop32.h	31;"	d
+MMC_clearResponse	csl_mmcsd.c	/^CSL_Status MMC_clearResponse(CSL_MmcsdHandle    hMmcsd)$/;"	f
+MMC_close	csl_mmcsd.c	/^CSL_Status MMC_close(CSL_MmcsdHandle    hMmcsd)$/;"	f
+MMC_config	csl_mmcsd.c	/^CSL_Status MMC_config(CSL_MmcsdHandle    hMmcsd,$/;"	f
+MMC_deselectCard	csl_mmcsd.c	/^CSL_Status MMC_deselectCard(CSL_MmcsdHandle    hMmcsd,$/;"	f
+MMC_getCardCsd	csl_mmcsd.c	/^CSL_Status MMC_getCardCsd(CSL_MmcsdHandle      hMmcsd,$/;"	f
+MMC_getCardStatus	csl_mmcsd.c	/^CSL_Status MMC_getCardStatus(CSL_MmcsdHandle    hMmcsd,$/;"	f
+MMC_getNumberOfCards	csl_mmcsd.c	/^CSL_Status MMC_getNumberOfCards(CSL_MmcsdHandle    hMmcsd,$/;"	f
+MMC_init	csl_mmcsd.c	/^CSL_Status MMC_init(void)$/;"	f
+MMC_open	csl_mmcsd.c	/^CSL_MmcsdHandle MMC_open(CSL_MMCControllerObj    *pMmcsdContObj,$/;"	f
+MMC_read	csl_mmcsd.c	/^CSL_Status MMC_read(CSL_MmcsdHandle    hMmcsd,$/;"	f
+MMC_saveStatus	csl_mmcsd.c	/^CSL_Status MMC_saveStatus(CSL_MmcsdHandle    hMmcsd)$/;"	f
+MMC_selectCard	csl_mmcsd.c	/^CSL_Status MMC_selectCard(CSL_MmcsdHandle    hMmcsd,$/;"	f
+MMC_sendAllCID	csl_mmcsd.c	/^CSL_Status MMC_sendAllCID(CSL_MmcsdHandle     hMmcsd,$/;"	f
+MMC_sendCmd	csl_mmcsd.c	/^CSL_Status MMC_sendCmd(CSL_MmcsdHandle    hMmcsd,$/;"	f
+MMC_sendGoIdle	csl_mmcsd.c	/^CSL_Status MMC_sendGoIdle(CSL_MmcsdHandle    hMmcsd)$/;"	f
+MMC_sendOpCond	csl_mmcsd.c	/^CSL_Status MMC_sendOpCond(CSL_MmcsdHandle    hMmcsd,$/;"	f
+MMC_setBlockLength	csl_mmcsd.c	/^CSL_Status MMC_setBlockLength (CSL_MmcsdHandle    hMmcsd,$/;"	f
+MMC_setCardPtr	csl_mmcsd.c	/^CSL_Status MMC_setCardPtr(CSL_MmcsdHandle    hMmcsd,$/;"	f
+MMC_setCardType	csl_mmcsd.c	/^CSL_Status MMC_setCardType(CSL_MMCCardObj    *pCardObj,$/;"	f
+MMC_setEndianMode	csl_mmcsd.c	/^CSL_Status MMC_setEndianMode (CSL_MmcsdHandle        hMmcsd,$/;"	f
+MMC_setRca	csl_mmcsd.c	/^CSL_Status MMC_setRca(CSL_MmcsdHandle     hMmcsd,$/;"	f
+MMC_setWriteBlkEraseCnt	csl_mmcsd.c	/^CSL_Status MMC_setWriteBlkEraseCnt(CSL_MmcsdHandle    hMmcsd,$/;"	f
+MMC_setupNative	csl_mmcsd.c	/^CSL_Status MMC_setupNative(CSL_MmcsdHandle       hMmcsd,$/;"	f
+MMC_stop	csl_mmcsd.c	/^CSL_Status MMC_stop(CSL_MmcsdHandle    hMmcsd)$/;"	f
+MMC_write	csl_mmcsd.c	/^CSL_Status MMC_write(CSL_MmcsdHandle    hMmcsd,$/;"	f
+MY_FILE	include/fat.h	/^} MY_FILE;$/;"	t	typeref:struct:_FILE
+MakeDir	dir.c	/^Uint8 MakeDir(Int8 *Path)$/;"	f
+NMI	vectors.asm	/^NMI:		.ivec	no_handler			; Nonmaskable Interrupt$/;"	l
+NOT_EMPTY_CACHE	include/fat.h	57;"	d
+NOT_FAT_DISK	include/fat.h	61;"	d
+NOT_FIND_DIR	include/fat.h	73;"	d
+NOT_FIND_DISK	include/fat.h	54;"	d
+NOT_FIND_FDT	include/fat.h	60;"	d
+NOT_FIND_FILE	include/fat.h	72;"	d
+NOT_RUN	include/fat.h	76;"	d
+NTRes	include/fat.h	/^    Uint8   NTRes;              \/* 保留给NT *\/$/;"	m	struct:_FDT
+NULL	include/fat.h	127;"	d
+NUMBER_OF_REGIONS	include/defs.h	18;"	d
+NUMBER_OF_REGIONS	include/defs.h	24;"	d
+NUMBER_OF_VALID_COEFS	include/defs.h	32;"	d
+NUM_CATEGORIES	include/defs.h	46;"	d
+NUM_CATEGORIZATION_CONTROL_BITS	include/defs.h	19;"	d
+NUM_CATEGORIZATION_CONTROL_BITS	include/defs.h	25;"	d
+NUM_CATEGORIZATION_CONTROL_POSSIBILITIES	include/defs.h	33;"	d
+Name	include/fat.h	/^    Int8        Name[11];       \/* 文件名 *\/$/;"	m	struct:_FILE
+Name	include/fat.h	/^    Int8    Name[11];           \/* 短文件名主文件名 *\/$/;"	m	struct:_FDT
+NoKey	include/ezdsp5535_sar.h	9;"	d
+Not_Open_FILE	include/fat.h	19;"	d
+NumFATs	include/fat.h	/^    Uint8       NumFATs;        \/* FAT表数目 *\/$/;"	m	struct:_Disk_Info
+OBJS	Debug/sources.mk	/^OBJS := $/;"	m
+OBJS__QUOTED	Debug/sources.mk	/^OBJS__QUOTED := $/;"	m
+OBJ_SRCS	Debug/sources.mk	/^OBJ_SRCS := $/;"	m
+OPT_DEPS	Debug/sources.mk	/^OPT_DEPS := $/;"	m
+OPT_DEPS__QUOTED	Debug/sources.mk	/^OPT_DEPS__QUOTED := $/;"	m
+OPT_SRCS	Debug/sources.mk	/^OPT_SRCS := $/;"	m
+OSD9616_I2C_ADDR	ezdsp5535_lcd.c	7;"	d	file:
+O_SRCS	Debug/sources.mk	/^O_SRCS := $/;"	m
+Offset	include/fat.h	/^    Uint32      Offset;         \/* 文件指针偏移量 *\/$/;"	m	struct:_FILE
+OpenSec	RWSec.c	/^Uint8 *OpenSec(Uint32 Index)$/;"	f
+Overflow	basop32.c	/^Int16 Overflow = 0;$/;"	v
+Overflow	basop32c.c	/^Int16 Overflow = 0;$/;"	v
+PARAMETER_ERR	include/fat.h	78;"	d
+PATH_NOT_FIND	include/fat.h	67;"	d
+PINIT	autoinit.asm	/^PINIT:		$/;"	l
+PLL_init	pll.c	/^void PLL_init(Uint32 clock)$/;"	f
+PORTMEMCOPY	autoinit.asm	/^PORTMEMCOPY:$/;"	l
+PP	include/fat.h	4;"	d
+PROG0	vectors.asm	/^PROG0:		.ivec	no_handler			; Programmable 0 Interrupt$/;"	l
+PROG1	vectors.asm	/^PROG1:		.ivec	no_handler			; Programmable 1 Interrupt$/;"	l
+PROG2	vectors.asm	/^PROG2:		.ivec	no_handler			; Programmable 2 Interrupt$/;"	l
+PROG3	vectors.asm	/^PROG3:		.ivec	no_handler			; Programmable 3 Interrupt$/;"	l
+PathClusIndex	include/fat.h	/^    Uint32      PathClusIndex;  \/* 当前路径的FDT表开始簇号, 0为根目录 *\/$/;"	m	struct:_Disk_Info
+RCV2	vectors.asm	/^RCV2:		.ivec	_i2s2_rx_isr		; I2S2 Rx Interrupt$/;"	l
+RCV3	vectors.asm	/^RCV3:		.ivec	no_handler			; I2S3 Rx Interrupt$/;"	l
+REGION_POWER_STEPSIZE_DB	include/huff_def.h	15;"	d
+REGION_POWER_TABLE_NUM_NEGATIVES	include/defs.h	51;"	d
+REGION_POWER_TABLE_SIZE	include/defs.h	50;"	d
+REGION_SIZE	include/defs.h	31;"	d
+RET2	idiv.asm	/^RET2:$/;"	l
+RETURN_OK	include/fat.h	53;"	d
+RM	Debug/makefile	/^RM := rm -rf$/;"	m
+RMDIR	Debug/makefile	/^RMDIR := rm -rf$/;"	m
+ROOT_FDT_FULL	include/fat.h	64;"	d
+RST	vectors.asm	/^RST:		.ivec	reset_isr, USE_RETA   ; Reset \/ Software Interrupt #0$/;"	l
+RTC	vectors.asm	/^RTC:		.ivec	no_handler			; RTC interrupt$/;"	l
+RTDXRCV	vectors.asm	/^RTDXRCV:	.ivec	no_handler			; Emulation Interrupt - RTDX receive$/;"	l
+RTDXXMT	vectors.asm	/^RTDXXMT:	.ivec	no_handler			; Emulation Interrupt - RTDX transmit$/;"	l
+RTOS	vectors.asm	/^RTOS:		.ivec	no_handler			; Emulation Interrupt - RTOS$/;"	l
+RW_ID	include/fat.h	/^    Uint16      RW_ID;          \/* 读写ID,用于释放Cache *\/$/;"	m	struct:_Disk_Cache
+Rand_Obj	include/typedef.h	/^}Rand_Obj;$/;"	t	typeref:struct:__anon2
+ReadFDTInfo	fdt.c	/^Uint8  ReadFDTInfo(Uint32 SecIndex, Uint16 ByteIndex, FDT *Rt)$/;"	f
+ReadSec	RWSec.c	/^Uint8 ReadSec(Uint32 Index, Uint16 isData)$/;"	f
+RemoveDir	dir.c	/^Uint8 RemoveDir(Int8 *Path)$/;"	f
+RemoveFile	file.c	/^Uint8 RemoveFile(Int8 *DirFileName)$/;"	f
+RemoveFileDriver	disk.c	/^void RemoveFileDriver(Uint16 (* DiakCommand)(Uint8 Cammand, void *Parameter))$/;"	f
+RootDirTable	include/fat.h	/^    Uint32      RootDirTable;   \/* 根目录开始扇区号（FAT32为开始簇号）*\/$/;"	m	struct:_Disk_Info
+RootFDTInfo	fdt.c	/^Uint8 RootFDTInfo(Uint32 Index, FDT *FDTData, Uint16 type)$/;"	f
+RootSecCnt	include/fat.h	/^    Uint32      RootSecCnt;     \/* 根目录占用扇区数 *\/$/;"	m	struct:_Disk_Info
+RsvdForLow	include/fat.h	/^    void        *RsvdForLow;    \/* 保留给底层驱动程序 *\/$/;"	m	struct:_Disk_Info
+RsvdForLow	include/fat.h	/^    void        *RsvdForLow;    \/* 保留给底层驱动程序，由_Disk_Info中拷贝过来 *\/$/;"	m	struct:_Disk_RW_Parameter
+S43_DEPS	Debug/sources.mk	/^S43_DEPS := $/;"	m
+S43_DEPS__QUOTED	Debug/sources.mk	/^S43_DEPS__QUOTED := $/;"	m
+S43_SRCS	Debug/sources.mk	/^S43_SRCS := $/;"	m
+S55_DEPS	Debug/sources.mk	/^S55_DEPS := $/;"	m
+S55_DEPS__QUOTED	Debug/sources.mk	/^S55_DEPS__QUOTED := $/;"	m
+S55_SRCS	Debug/sources.mk	/^S55_SRCS := $/;"	m
+S62_DEPS	Debug/sources.mk	/^S62_DEPS := $/;"	m
+S62_DEPS__QUOTED	Debug/sources.mk	/^S62_DEPS__QUOTED := $/;"	m
+S62_SRCS	Debug/sources.mk	/^S62_SRCS := $/;"	m
+S64_DEPS	Debug/sources.mk	/^S64_DEPS := $/;"	m
+S64_DEPS__QUOTED	Debug/sources.mk	/^S64_DEPS__QUOTED := $/;"	m
+S64_SRCS	Debug/sources.mk	/^S64_SRCS := $/;"	m
+S67_DEPS	Debug/sources.mk	/^S67_DEPS := $/;"	m
+S67_DEPS__QUOTED	Debug/sources.mk	/^S67_DEPS__QUOTED := $/;"	m
+S67_SRCS	Debug/sources.mk	/^S67_SRCS := $/;"	m
+SARADC	vectors.asm	/^SARADC:		.ivec	no_handler			; SAR ADC Interrupt$/;"	l
+SA_DEPS	Debug/sources.mk	/^SA_DEPS := $/;"	m
+SA_DEPS__QUOTED	Debug/sources.mk	/^SA_DEPS__QUOTED := $/;"	m
+SA_SRCS	Debug/sources.mk	/^SA_SRCS := $/;"	m
+SDCammand	sd.c	/^Uint16 SDCammand(Uint8 Cammand, void *Parameter) \/*使用您自己的函数名称 *\/$/;"	f
+SD_ReadBlock	csl_mmcsd.c	/^int SD_ReadBlock(Uint32 sect, Uint8 *p)$/;"	f
+SD_ReadBlock_Raw	csl_mmcsd.c	/^int SD_ReadBlock_Raw(Uint32 sect, Uint8 *p)$/;"	f
+SD_WriteBlock	csl_mmcsd.c	/^int SD_WriteBlock(Uint32 sect, Uint8 *p)$/;"	f
+SD_WriteBlock_Raw	csl_mmcsd.c	/^int SD_WriteBlock_Raw(Uint32 sect, Uint8 *p)$/;"	f
+SD_configurePullup	csl_mmcsd.c	/^CSL_Status SD_configurePullup(CSL_MmcsdHandle    hMmcsd,$/;"	f
+SD_getCardCsd	csl_mmcsd.c	/^CSL_Status SD_getCardCsd(CSL_MmcsdHandle      hMmcsd,$/;"	f
+SD_sendAllCID	csl_mmcsd.c	/^CSL_Status SD_sendAllCID(CSL_MmcsdHandle     hMmcsd,$/;"	f
+SD_sendRca	csl_mmcsd.c	/^CSL_Status SD_sendRca(CSL_MmcsdHandle     hMmcsd,$/;"	f
+SD_setBusWidth	csl_mmcsd.c	/^CSL_Status SD_setBusWidth(CSL_MmcsdHandle    hMmcsd,$/;"	f
+SECTOR_NOT_IN_CACHE	include/fat.h	56;"	d
+SECTOR_READ_ERR	include/fat.h	58;"	d
+SEEK_CUR	include/fat.h	123;"	d
+SEEK_END	include/fat.h	124;"	d
+SEEK_SET	include/fat.h	122;"	d
+SINT30	vectors.asm	/^SINT30:		.ivec	no_handler			; Software Interrupt #30$/;"	l
+SINT31	vectors.asm	/^SINT31:		.ivec	no_handler			; Software Interrupt #31$/;"	l
+SP	autoinit.asm	/^	SP = SP + #1$/;"	d
+SP	autoinit.asm	/^	SP = SP + #3$/;"	d
+SP	autoinit.asm	/^	SP = SP - #1$/;"	d
+SP	autoinit.asm	/^	SP = SP - #3$/;"	d
+SP	boot.asm	/^	SP  = #((__stack + (__STACK_SIZE >> 1)) & 0xFFFE)$/;"	d
+SP	boot.asm	/^	SP = SP + #0   ; avoid ECNs 372 and 438$/;"	d
+SP	idiv.asm	/^	SP = SP + #FRAME_SIZE		; deallocate frame$/;"	d
+SP	idiv.asm	/^	SP = SP + #FRAME_SIZE	 	; deallocate frame$/;"	d
+SP	idiv.asm	/^	SP = SP - #FRAME_SIZE		; allocate frame$/;"	d
+SP	idiv.asm	/^	SP = SP - #FRAME_SIZE		; allocate space$/;"	d
+SP	udiv.asm	/^	SP = SP + #FRAME_SIZE$/;"	d
+SP	udiv.asm	/^	SP = SP - #FRAME_SIZE$/;"	d
+SPI	vectors.asm	/^SPI:		.ivec	no_handler			; SPI Receive Interrupt$/;"	l
+SSP	boot.asm	/^ 	SSP = #((__sysstack + (__SYSSTACK_SIZE >> 1)) & 0xFFFF)$/;"	d
+ST1_OFF	boot.asm	/^ST1_OFF .equ (1<<ST1_LEAD)|(1<<ST1_SATA)|(1<<ST1_RDM)|(1<<ST1_FRCT)|(1<<ST1_M40)|(1<<ST1_SATD)$/;"	l
+ST1_OFF	boot.asm	/^ST1_OFF .equ (1<<ST1_M40)|(1<<ST1_SATD)|(1<<ST1_C16)|(1<<ST1_FRCT)|(1<<ST1_C54CM)$/;"	l
+ST1_ON	boot.asm	/^ST1_ON  .equ (1<<ST1_ARMS)|(1<<ST1_CPL)|(1<<ST1_SXMD)|(1<<ST1_GSM)$/;"	l
+ST1_ON	boot.asm	/^ST1_ON  .equ (1<<ST1_CPL)|(1<<ST1_SXMD)$/;"	l
+ST2_03LC	boot.asm	/^ST2_03LC .equ (1<<ST2_AR0LC) | (1<<ST2_AR1LC) | (1<<ST2_AR2LC) | (1<<ST2_AR3LC)$/;"	l
+ST2_47LC	boot.asm	/^ST2_47LC .equ (1<<ST2_AR4LC) | (1<<ST2_AR5LC) | (1<<ST2_AR6LC) | (1<<ST2_AR7LC)$/;"	l
+ST2_OFF	boot.asm	/^ST2_OFF  .equ (1<<ST2_CDPLC) | ST2_03LC | ST2_47LC$/;"	l
+ST2_OFF	boot.asm	/^ST2_OFF  .equ (1<<ST2_RDM) | (1<<ST2_CDPLC) | ST2_03LC | ST2_47LC$/;"	l
+ST2_ON	boot.asm	/^ST2_ON   .equ (1<<ST2_ARMS)$/;"	l
+STR_RRDY	ezdsp5535_i2c.c	74;"	d	file:
+STR_XRDY	ezdsp5535_i2c.c	73;"	d	file:
+SUBDIRS	Debug/sources.mk	/^SUBDIRS := \\$/;"	m
+SW1	include/ezdsp5535_sar.h	6;"	d
+SW12	include/ezdsp5535_sar.h	8;"	d
+SW2	include/ezdsp5535_sar.h	7;"	d
+SYS_TIME	include/fat.h	/^}SYS_TIME;$/;"	t	typeref:struct:_SYS_TIME
+S_DEPS	Debug/sources.mk	/^S_DEPS := $/;"	m
+S_DEPS__QUOTED	Debug/sources.mk	/^S_DEPS__QUOTED := $/;"	m
+S_SRCS	Debug/sources.mk	/^S_SRCS := $/;"	m
+S_UPPER_DEPS	Debug/sources.mk	/^S_UPPER_DEPS := $/;"	m
+S_UPPER_DEPS__QUOTED	Debug/sources.mk	/^S_UPPER_DEPS__QUOTED := $/;"	m
+S_UPPER_SRCS	Debug/sources.mk	/^S_UPPER_SRCS := $/;"	m
+SecIndex	include/fat.h	/^    Uint32      SecIndex;       \/* 缓冲的扇区索引 *\/$/;"	m	struct:_Disk_Cache
+SecOffset	include/fat.h	/^    Uint32      SecOffset;      \/* 分区起始位置 *\/$/;"	m	struct:_Disk_Info
+SecPerClus	include/fat.h	/^    Uint8       SecPerClus;     \/* 每簇扇区数 *\/$/;"	m	struct:_Disk_Info
+SecPerDisk	include/fat.h	/^    Uint32      SecPerDisk;     \/* 逻辑驱动器包含扇区数 *\/$/;"	m	struct:_Disk_Info
+SectorIndex	include/fat.h	/^    Uint32      SectorIndex;    \/* 操作的扇区 *\/$/;"	m	struct:_Disk_RW_Parameter
+StrToFDTName	dir.c	/^Uint8 StrToFDTName(Int8 *FDTName, Int8 *Str)$/;"	f
+T0	DSP_op.asm	/^	T0 = -T0$/;"	d
+T0	DSP_op.asm	/^	T0 = HI(AC0)$/;"	d
+T0	DSP_op.asm	/^	T0 = LO(AC0) || AC0 = POPBOTH()$/;"	d
+T0	DSP_op.asm	/^	T0 = LO(AC0)$/;"	d
+T0	DSP_op.asm	/^	T0 = |T0|$/;"	d
+T0	DSP_utils.asm	/^	T0 = T0 >> #1$/;"	d
+T0	idiv.asm	/^	T0 = -T0              		; negate Q$/;"	d
+T0	idiv.asm	/^	T0 = HI(AC0)		      	; extract remainder from AC0_H$/;"	d
+T0	idiv.asm	/^        T0 = AC0			; discard remainder$/;"	d
+T0	udiv.asm	/^	T0 = AC0 			; discard remainder$/;"	d
+T0	udiv.asm	/^	T0 = HI(AC0)		      	; extract remainder from AC0_H$/;"	d
+T1	DSP_op.asm	/^	T1 = -T1$/;"	d
+T1	idiv.asm	/^	T1 = T0$/;"	d
+TIMER_init	timer.c	/^void TIMER_init(void)$/;"	f
+TIME_CONST	timer.c	11;"	d	file:
+TINT	vectors.asm	/^TINT:		.ivec	_tim_isr			; Timer \/ Software Interrupt #4$/;"	l
+TYPEDEF_H	include/typedef.h	17;"	d
+UART	vectors.asm	/^UART:		.ivec	no_handler			; IIS #1 Receive Interrupt$/;"	l
+UMAX_32	include/basop32.h	36;"	d
+UMIN_32	include/basop32.h	37;"	d
+UN_MOUNT_DRIVE	include/fat.h	82;"	d
+USB	vectors.asm	/^USB:		.ivec	no_handler			; USB Transmit Interrupt$/;"	l
+USER_OBJS	Debug/objects.mk	/^USER_OBJS :=$/;"	m
+WriteFDTInfo	fdt.c	/^Uint8  WriteFDTInfo(Uint32 SecIndex, Uint16 ByteIndex, FDT *FDTData)$/;"	f
+WriteSec	RWSec.c	/^void WriteSec(Uint32 Index, Uint16 isData)$/;"	f
+WrtDate	include/fat.h	/^    Uint16  WrtDate;            \/* 最后写日期 *\/$/;"	m	struct:_FDT
+WrtTime	include/fat.h	/^    Uint16  WrtTime;            \/* 最后写时间 *\/$/;"	m	struct:_FDT
+XAR0	autoinit.asm	/^	XAR0 = #___bss__$/;"	d
+XAR0	autoinit.asm	/^        XAR0  = #(cinit & 0x7fffff)$/;"	d
+XAR0	autoinit.asm	/^        XAR0  = #(cinit & 0xffffff)$/;"	d
+XAR0	boot.asm	/^	XAR0 = #___bss__$/;"	d
+XAR1	boot.asm	/^	XAR1 = XAR0$/;"	d
+XAR2	boot.asm	/^	XAR2 = XAR0$/;"	d
+XAR3	boot.asm	/^	XAR3 = XAR0$/;"	d
+XAR4	boot.asm	/^	XAR4 = XAR0$/;"	d
+XAR5	boot.asm	/^	XAR5 = XAR0$/;"	d
+XAR6	autoinit.asm	/^	XAR6  = AC0$/;"	d
+XAR6	autoinit.asm	/^	XAR6 = #___bss__$/;"	d
+XAR6	autoinit.asm	/^	XAR6 = dbl(*SP(#0))$/;"	d
+XAR6	autoinit.asm	/^        XAR6  = #(___pinit__ & 0x7fffff)$/;"	d
+XAR6	autoinit.asm	/^        XAR6  = #(___pinit__ & 0xffffff)$/;"	d
+XAR6	boot.asm	/^	XAR6 = XAR0$/;"	d
+XAR7	boot.asm	/^	XAR7 = XAR0$/;"	d
+XCDP	boot.asm	/^	XCDP = XAR0$/;"	d
+XDP	boot.asm	/^	XDP  = XAR0$/;"	d
+XMT2	vectors.asm	/^XMT2:		.ivec	_i2s2_tx_isr		; I2S2 Tx Interrupt$/;"	l
+XMT3	vectors.asm	/^XMT3:		.ivec	no_handler			; I2S3 Tx Interrupt$/;"	l
+XSP	boot.asm	/^	XSP = #((__stack + (__STACK_SIZE >> 1)) & 0x7FFFFE)$/;"	d
+XSP	boot.asm	/^	XSP = #((__stack + (__STACK_SIZE)) & 0xFFFFFC)$/;"	d
+XSSP	boot.asm	/^	XSSP = #((__sysstack + (__SYSSTACK_SIZE >> 1)) & 0x7FFFFE)$/;"	d
+XSSP	boot.asm	/^   	XSSP = #((__sysstack + (__SYSSTACK_SIZE)) & 0xFFFFFC)$/;"	d
+_C55X	include/c55x.h	7;"	d
+_CODEC_H	include/codec.h	7;"	d
+_DATE_TIME	include/fat.h	/^typedef struct _DATE_TIME$/;"	s
+_DSP_add	DSP_utils.asm	/^_DSP_add:$/;"	l
+_DSP_mac	DSP_utils.asm	/^_DSP_mac:$/;"	l
+_DSP_memcpy	DSP_utils.asm	/^_DSP_memcpy:$/;"	l
+_DSP_zero	DSP_utils.asm	/^_DSP_zero:$/;"	l
+_Disk_Cache	include/fat.h	/^typedef struct _Disk_Cache$/;"	s
+_Disk_Info	include/fat.h	/^typedef struct _Disk_Info$/;"	s
+_Disk_RW_Parameter	include/fat.h	/^typedef struct _Disk_RW_Parameter$/;"	s
+_EZDSP5535_waitusec	DSP_utils.asm	/^_EZDSP5535_waitusec:$/;"	l
+_FDT	include/fat.h	/^typedef struct _FDT$/;"	s
+_FILE	include/fat.h	/^typedef struct _FILE$/;"	s
+_FileOpenR	file.c	/^HANDLE _FileOpenR(Int8 *DirFileName)$/;"	f
+_FileOpenRW	file.c	/^HANDLE _FileOpenRW(char *DirFileName)$/;"	f
+_FileOpenW	file.c	/^HANDLE _FileOpenW(Int8 *DirFileName)$/;"	f
+_GetFDTInfo	dir.c	/^Uint32 _GetFDTInfo(Int8 *FDTName, Int8 *DirFileName)$/;"	f
+_HardDiskInit	disk.c	/^void _HardDiskInit(Uint16  (* DiakCommand)(Uint8 Cammand, void *Parameter),$/;"	f
+_L_add	DSP_op.asm	/^_L_add:$/;"	l
+_L_mac	DSP_op.asm	/^_L_mac:$/;"	l
+_L_msu	DSP_op.asm	/^_L_msu:$/;"	l
+_L_mult	DSP_op.asm	/^_L_mult:$/;"	l
+_L_mult0	DSP_op.asm	/^_L_mult0:$/;"	l
+_L_shl	DSP_op.asm	/^_L_shl:$/;"	l
+_L_shr	DSP_op.asm	/^_L_shr:$/;"	l
+_L_sub	DSP_op.asm	/^_L_sub:$/;"	l
+_Reset	vectors.asm	/^_Reset:$/;"	l
+_SYS_TIME	include/fat.h	/^typedef  struct _SYS_TIME$/;"	s
+__divi	idiv.asm	/^__divi:$/;"	l
+__divu	udiv.asm	/^__divu:$/;"	l
+__mpyli	lmpy.asm	/^__mpyli:$/;"	l
+__remi	idiv.asm	/^__remi:$/;"	l
+__remu	udiv.asm	/^__remu:$/;"	l
+__stack	boot.asm	/^__stack:    .usect  .stack, 0, 0, 1$/;"	l
+__sysstack	boot.asm	/^__sysstack: .usect  .sysstack, 0, 0, 1$/;"	l
+_abs_s	DSP_op.asm	/^_abs_s:$/;"	l
+_add	DSP_op.asm	/^_add:$/;"	l
+_auto_init	autoinit.asm	/^_auto_init:	.asmfunc$/;"	l
+_c_int00	boot.asm	/^_c_int00:	.asmfunc$/;"	l
+_divul	divul.c	/^unsigned long _divul (unsigned long x1, unsigned long x2)$/;"	f
+_extract_h	DSP_op.asm	/^_extract_h:$/;"	l
+_negate	DSP_op.asm	/^_negate:$/;"	l
+_remul	remul.c	/^unsigned long _remul (unsigned long x1, unsigned long x2)$/;"	f
+_round16	DSP_op.asm	/^_round16:$/;"	l
+_satu	DSP_op.asm	/^_satu:$/;"	l
+_shl	DSP_op.asm	/^_shl:$/;"	l
+_shr	DSP_op.asm	/^_shr:$/;"	l
+_shr_rr	DSP_op.asm	/^_shr_rr:$/;"	l
+_sub	DSP_op.asm	/^_sub:$/;"	l
+a_cos_msin_16	include/dct4_a.h	/^cos_msin_t	a_cos_msin_16[80] = {$/;"	v
+a_cos_msin_2	include/dct4_a.h	/^cos_msin_t	a_cos_msin_2[10] = {$/;"	v
+a_cos_msin_32	include/dct4_a.h	/^cos_msin_t	a_cos_msin_32[160]= {$/;"	v
+a_cos_msin_4	include/dct4_a.h	/^cos_msin_t	a_cos_msin_4[20] = {$/;"	v
+a_cos_msin_64	include/dct4_a.h	/^cos_msin_t	a_cos_msin_64[320] = {$/;"	v
+a_cos_msin_8	include/dct4_a.h	/^cos_msin_t	a_cos_msin_8[40] = {$/;"	v
+a_cos_msin_table	include/dct4_a.h	/^cos_msin_t	*a_cos_msin_table[] = {a_cos_msin_2, a_cos_msin_4,$/;"	v
+abs_s	basop32c.c	/^Int16 abs_s (Int16 var1)$/;"	f
+abs_s	include/basop32.h	54;"	d
+add	basop32c.c	/^Int16 add (Int16 var1, Int16 var2)$/;"	f
+add	include/basop32.h	45;"	d
+adjust_abs_region_power_index	encoder.c	/^void adjust_abs_region_power_index(Int16 *absolute_region_power_index,Int16 *mlt_coefs)$/;"	f
+aic3204_init	aic3204.c	/^void aic3204_init(int rate)$/;"	f
+anal_bias	include/dct4_a.h	/^Int16 anal_bias[320] = {$/;"	v
+bits_to_words	encoder.c	/^void bits_to_words(Uint32 *region_mlt_bits,$/;"	f
+buf	include/fat.h	/^    Uint8       buf[DISK_CACHE_SIZE];   \/* 缓冲区 *\/$/;"	m	struct:_Disk_Cache
+buffer_a	main.c	/^Int16 buffer_a[DCT_LENGTH], buffer_b[DCT_LENGTH], buffer_c[DCT_LENGTH];$/;"	v
+buffer_b	main.c	/^Int16 buffer_a[DCT_LENGTH], buffer_b[DCT_LENGTH], buffer_c[DCT_LENGTH];$/;"	v
+buffer_c	main.c	/^Int16 buffer_a[DCT_LENGTH], buffer_b[DCT_LENGTH], buffer_c[DCT_LENGTH];$/;"	v
+calc_offset	common.c	/^Int16 calc_offset(Int16 *rms_index, Int16 available_bits)$/;"	f
+categorize	common.c	/^void categorize(Int16 number_of_available_bits,$/;"	f
+code_bit_count	include/typedef.h	/^    Int16 code_bit_count;      \/* bit count of the current word *\/$/;"	m	struct:__anon1
+code_word_ptr	include/typedef.h	/^    Int16 *code_word_ptr;      \/* pointer to the bitstream *\/$/;"	m	struct:__anon1
+coef2sam_init	coef2sam.c	/^void coef2sam_init()$/;"	f
+comp_powercat_and_catbalance	common.c	/^void comp_powercat_and_catbalance(Int16 *power_categories,$/;"	f
+compute_region_powers	encoder.c	/^Int16 compute_region_powers(Int16  *mlt_coefs,$/;"	f
+cos_msin_t	include/typedef.h	/^} cos_msin_t;$/;"	t	typeref:struct:__anon3
+cosine	include/typedef.h	/^    Int16 cosine;$/;"	m	struct:__anon3
+current_word	include/typedef.h	/^    Int16 current_word;        \/* current word in the bitstream being processed *\/$/;"	m	struct:__anon1
+da_day	include/fat.h	/^    Uint8   da_day;	            \/* 月中日期 *\/$/;"	m	struct:_DATE_TIME
+da_dow	include/fat.h	/^    Uint8   da_dow;	            \/* 星期中日期 *\/$/;"	m	struct:_DATE_TIME
+da_mon	include/fat.h	/^    Uint8   da_mon;	            \/* 月 *\/ $/;"	m	struct:_DATE_TIME
+da_year	include/fat.h	/^    Uint16  da_year;	        \/* 公元年 *\/$/;"	m	struct:_DATE_TIME
+data1	ezdsp5535_i2s.c	/^Int16 data1, data2;$/;"	v
+data2	ezdsp5535_i2s.c	/^Int16 data1, data2;$/;"	v
+date	include/fat.h	/^    Uint16  date;$/;"	m	struct:_SYS_TIME
+dct_core_a	include/dct4_a.h	/^Int16 dct_core_a[10][10] = {$/;"	v
+dct_core_s	include/dct4_s.h	/^Int16 dct_core_s[CORE_SIZE][CORE_SIZE] = {$/;"	v
+dct_type_iv_a	dct4_a.c	/^void dct_type_iv_a (Int16 *input,Int16 *output, Int16 dct_length)$/;"	f
+dct_type_iv_s	dct4_s.c	/^void dct_type_iv_s (Int16 *input, Int16 *output,Int16 dct_length)$/;"	f
+decode_envelope	decoder.c	/^void decode_envelope(Bit_Obj *bitobj,$/;"	f
+decode_vector_quantized_mlt_indices	decoder.c	/^void decode_vector_quantized_mlt_indices(Bit_Obj  *bitobj,$/;"	f
+decoder	decoder.c	/^void decoder(Bit_Obj *bitobj,$/;"	f
+differential_region_power_bits	huff_tab.c	/^Int16 differential_region_power_bits[MAX_NUMBER_OF_REGIONS][DIFF_REGION_POWER_LEVELS] = {$/;"	v
+differential_region_power_codes	huff_tab.c	/^Uint16 differential_region_power_codes[MAX_NUMBER_OF_REGIONS][DIFF_REGION_POWER_LEVELS] = {$/;"	v
+differential_region_power_decoder_tree	huff_tab.c	/^Int16 differential_region_power_decoder_tree[MAX_NUMBER_OF_REGIONS][DIFF_REGION_POWER_LEVELS-1][2] = {$/;"	v
+dither	include/dct4_s.h	/^Int16 dither[DCT_LENGTH]= {$/;"	v
+div_s	include/basop32.h	69;"	d
+dma_isr	dma.c	/^void interrupt dma_isr(void)$/;"	f
+encoder	encoder.c	/^void encoder(Int16  number_of_available_bits,$/;"	f
+error_handling	decoder.c	/^void error_handling(Int16 number_of_coefs,$/;"	f
+expected_bits_table	huff_tab.c	/^Int16 expected_bits_table[NUM_CATEGORIES] = {52, 47, 43, 37, 29, 22, 16,   0};$/;"	v
+extract_h	basop32c.c	/^Int16 extract_h (Int32 L_var1)$/;"	f
+font	ezdsp5535_lcd.c	/^long font[] = {$/;"	v
+get_next_bit	decoder.c	/^void get_next_bit(Bit_Obj *bitobj)$/;"	f
+get_rand	decoder.c	/^Int16 get_rand()$/;"	f
+i2s2_rx_isr	ezdsp5535_i2s.c	/^interrupt void i2s2_rx_isr()$/;"	f
+i2s2_tx_isr	ezdsp5535_i2s.c	/^interrupt void i2s2_tx_isr()$/;"	f
+index_to_array	decoder.c	/^Int16 index_to_array(Int16 index,Int16 *array,Int16 category)$/;"	f
+int_dead_zone	tables.c	/^Int16 int_dead_zone[NUM_CATEGORIES]=         $/;"	v
+int_dead_zone_low_bits	tables.c	/^Int16 int_dead_zone_low_bits[NUM_CATEGORIES]=$/;"	v
+int_region_standard_deviation_table	tables.c	/^Int16 int_region_standard_deviation_table[REGION_POWER_TABLE_SIZE] = {$/;"	v
+mac_r	basop32.c	/^Int16 mac_r (Int32 L_var3, Int16 var1, Int16 var2)$/;"	f
+mac_r	basop32c.c	/^Int16 mac_r (Int32 L_var3, Int16 var1, Int16 var2)$/;"	f
+main	main.c	/^void main(void)$/;"	f
+max_bin	tables.c	/^Int16 max_bin[NUM_CATEGORIES] = {13, 9, 6, 4, 3, 2, 1, 1};$/;"	v
+max_bin_plus_one_inverse	tables.c	/^Int16 max_bin_plus_one_inverse[NUM_CATEGORIES] = $/;"	v
+minus_sine	include/typedef.h	/^    Int16 minus_sine;$/;"	m	struct:__anon3
+mlt_decoder_tree_category_0	huff_tab.c	/^Int16 mlt_decoder_tree_category_0[180][2] = {$/;"	v
+mlt_decoder_tree_category_1	huff_tab.c	/^Int16 mlt_decoder_tree_category_1[93][2] = {$/;"	v
+mlt_decoder_tree_category_2	huff_tab.c	/^Int16 mlt_decoder_tree_category_2[47][2] = {$/;"	v
+mlt_decoder_tree_category_3	huff_tab.c	/^Int16 mlt_decoder_tree_category_3[519][2] = {$/;"	v
+mlt_decoder_tree_category_4	huff_tab.c	/^Int16 mlt_decoder_tree_category_4[208][2] = {$/;"	v
+mlt_decoder_tree_category_5	huff_tab.c	/^Int16 mlt_decoder_tree_category_5[191][2] = {$/;"	v
+mlt_decoder_tree_category_6	huff_tab.c	/^Int16 mlt_decoder_tree_category_6[31][2] = {$/;"	v
+mlt_quant_centroid	huff_tab.c	/^Int16 mlt_quant_centroid[NUM_CATEGORIES][MAX_NUM_BINS] = {$/;"	v
+mlt_sqvh_bitcount_category_0	huff_tab.c	/^Int16 mlt_sqvh_bitcount_category_0[196] = {$/;"	v
+mlt_sqvh_bitcount_category_1	huff_tab.c	/^Int16 mlt_sqvh_bitcount_category_1[100] = {$/;"	v
+mlt_sqvh_bitcount_category_2	huff_tab.c	/^Int16 mlt_sqvh_bitcount_category_2[49] = {$/;"	v
+mlt_sqvh_bitcount_category_3	huff_tab.c	/^Int16 mlt_sqvh_bitcount_category_3[625] = {$/;"	v
+mlt_sqvh_bitcount_category_4	huff_tab.c	/^Int16 mlt_sqvh_bitcount_category_4[256] = {$/;"	v
+mlt_sqvh_bitcount_category_5	huff_tab.c	/^Int16 mlt_sqvh_bitcount_category_5[243] = {$/;"	v
+mlt_sqvh_bitcount_category_6	huff_tab.c	/^Int16 mlt_sqvh_bitcount_category_6[32] = {$/;"	v
+mlt_sqvh_code_category_0	huff_tab.c	/^Uint16 mlt_sqvh_code_category_0[196] = {$/;"	v
+mlt_sqvh_code_category_1	huff_tab.c	/^Uint16 mlt_sqvh_code_category_1[100] = {$/;"	v
+mlt_sqvh_code_category_2	huff_tab.c	/^Uint16 mlt_sqvh_code_category_2[49] = {$/;"	v
+mlt_sqvh_code_category_3	huff_tab.c	/^Uint16 mlt_sqvh_code_category_3[625] = {$/;"	v
+mlt_sqvh_code_category_4	huff_tab.c	/^Uint16 mlt_sqvh_code_category_4[256] = {$/;"	v
+mlt_sqvh_code_category_5	huff_tab.c	/^Uint16 mlt_sqvh_code_category_5[243] = {$/;"	v
+mlt_sqvh_code_category_6	huff_tab.c	/^Uint16 mlt_sqvh_code_category_6[32] = {$/;"	v
+mmcCardObj	ezdsp5535_sdcard.c	/^CSL_MMCCardObj			mmcCardObj;$/;"	v
+mmcStatus	ezdsp5535_sdcard.c	/^CSL_Status	 mmcStatus;$/;"	v
+mmcsdHandle	ezdsp5535_sdcard.c	/^CSL_MmcsdHandle 		mmcsdHandle;$/;"	v
+msec	include/fat.h	/^    Uint8   msec;	$/;"	m	struct:_SYS_TIME
+mult	basop32.c	/^Int16 mult (Int16 var1, Int16 var2)$/;"	f
+mult	basop32c.c	/^Int16 mult (Int16 var1, Int16 var2)$/;"	f
+mult	include/basop32.h	62;"	d
+mult_r	basop32.c	/^Int16 mult_r (Int16 var1, Int16 var2)$/;"	f
+mult_r	basop32c.c	/^Int16 mult_r (Int16 var1, Int16 var2)$/;"	f
+mult_r	include/basop32.h	67;"	d
+negate	basop32c.c	/^Int16 negate (Int16 var1)$/;"	f
+negate	include/basop32.h	55;"	d
+next_bit	include/typedef.h	/^    Int16 next_bit;            \/* next bit in the current word *\/$/;"	m	struct:__anon1
+no_handler	vectors.asm	/^no_handler:$/;"	l
+norm_l	include/basop32.h	70;"	d
+norm_s	basop32.c	/^Int16 norm_s (Int16 var1)$/;"	f
+norm_s	basop32c.c	/^Int16 norm_s (Int16 var1)$/;"	f
+norm_s	include/basop32.h	71;"	d
+number_of_bits_left	include/typedef.h	/^    Int16 number_of_bits_left; \/* number of bits left in the current word *\/$/;"	m	struct:__anon1
+number_of_vectors	tables.c	/^Int16 number_of_vectors[NUM_CATEGORIES] = {10,10,10, 5, 5, 4, 4,20};$/;"	v
+old_samples	coef2sam.c	/^static Int16 old_samples[DCT_LENGTH];$/;"	v	file:
+old_samples	sam2coef.c	/^static Int16 old_samples[DCT_LENGTH];$/;"	v	file:
+pMmcsdContObj	ezdsp5535_sdcard.c	/^CSL_MMCControllerObj 	pMmcsdContObj;$/;"	v
+pingpong	main.c	/^volatile Int16 pingpong = -1;$/;"	v
+printString	ezdsp5535_lcd.c	/^void printString(char *s, int cnt)$/;"	f
+rate_adjust_categories	decoder.c	/^void rate_adjust_categories(Int16 categorization_control,$/;"	f
+rcv_l	main.c	/^Int16 rcv_l[DCT_LENGTH*2], xmt_l[DCT_LENGTH*2];$/;"	v
+rcv_r	main.c	/^Int16 rcv_r[DCT_LENGTH*2], xmt_r[DCT_LENGTH*2];$/;"	v
+reset_isr	vectors.asm	/^reset_isr:$/;"	l
+rmlt_coefs_to_samples	coef2sam.c	/^void rmlt_coefs_to_samples(Int16 *coefs,     $/;"	f
+rmlt_to_samples_window	tables.c	/^Int16 rmlt_to_samples_window[DCT_LENGTH]=$/;"	v
+rmlt_to_samples_window	tables.c	/^Int16 rmlt_to_samples_window[DCT_LENGTH]={$/;"	v
+round16	basop32c.c	/^Int16 round16 (Int32 L_var1)$/;"	f
+round16	include/basop32.h	63;"	d
+s_cnt	main.c	/^volatile Uint16 s_cnt = 0;             \/\/ DMA interrupt counter$/;"	v
+s_cos_msin_16	include/dct4_s.h	/^cos_msin_t	s_cos_msin_16[DCT_LENGTH_DIV_4] = {$/;"	v
+s_cos_msin_2	include/dct4_s.h	/^cos_msin_t	s_cos_msin_2[DCT_LENGTH_DIV_32] = {$/;"	v
+s_cos_msin_32	include/dct4_s.h	/^cos_msin_t	s_cos_msin_32[DCT_LENGTH_DIV_2] = {$/;"	v
+s_cos_msin_4	include/dct4_s.h	/^cos_msin_t	s_cos_msin_4[DCT_LENGTH_DIV_16] = {$/;"	v
+s_cos_msin_64	include/dct4_s.h	/^cos_msin_t	s_cos_msin_64[DCT_LENGTH] = {$/;"	v
+s_cos_msin_8	include/dct4_s.h	/^cos_msin_t	s_cos_msin_8[DCT_LENGTH_DIV_8] = {$/;"	v
+s_cos_msin_table	include/dct4_s.h	/^cos_msin_t	*s_cos_msin_table[] = {s_cos_msin_2,  s_cos_msin_4,$/;"	v
+sam2coef_init	sam2coef.c	/^void sam2coef_init()$/;"	f
+samples_to_rmlt_coefs	sam2coef.c	/^Int16 samples_to_rmlt_coefs(Int16 *new_samples,Int16 *coefs)$/;"	f
+samples_to_rmlt_window	tables.c	/^Int16 samples_to_rmlt_window[DCT_LENGTH]=$/;"	v
+samples_to_rmlt_window	tables.c	/^Int16 samples_to_rmlt_window[DCT_LENGTH]={$/;"	v
+saturate	basop32.c	/^Int16 saturate (Int32 L_var1)$/;"	f
+saturate	basop32c.c	/^Int16 saturate (Int32 L_var1)$/;"	f
+sdCardCsdObj	ezdsp5535_sdcard.c	/^CSL_MMCCardCsdObj 		sdCardCsdObj;$/;"	v
+sdCardIdObj	ezdsp5535_sdcard.c	/^CSL_MMCCardIdObj 		sdCardIdObj;$/;"	v
+seed0	include/typedef.h	/^    Int16 seed0;$/;"	m	struct:__anon2
+seed1	include/typedef.h	/^    Int16 seed1;$/;"	m	struct:__anon2
+seed2	include/typedef.h	/^    Int16 seed2;$/;"	m	struct:__anon2
+seed3	include/typedef.h	/^    Int16 seed3;$/;"	m	struct:__anon2
+shl	basop32c.c	/^Int16 shl (Int16 var1, Int16 var2)$/;"	f
+shl	include/basop32.h	56;"	d
+shr	basop32c.c	/^Int16 shr (Int16 var1, Int16 var2)$/;"	f
+shr	include/basop32.h	57;"	d
+shr_r	basop32.c	/^Int16 shr_r (Int16 var1, Int16 var2)$/;"	f
+shr_r	basop32c.c	/^Int16 shr_r (Int16 var1, Int16 var2)$/;"	f
+standard_deviation_inverse_table	tables.c	/^Int16 standard_deviation_inverse_table[REGION_POWER_TABLE_SIZE] = {$/;"	v
+step_size_inverse_table	tables.c	/^Int16 step_size_inverse_table[NUM_CATEGORIES]={$/;"	v
+sub	basop32c.c	/^Int16 sub (Int16 var1, Int16 var2)$/;"	f
+sub	include/basop32.h	46;"	d
+syn_bias_7khz	include/dct4_s.h	/^Int16 syn_bias_7khz[320] = {$/;"	v
+t_cnt	main.c	/^volatile Uint16 t_cnt = 0;             \/\/ timer interrupt counter$/;"	v
+table_of_bitcount_tables	huff_tab.c	/^Int16 *table_of_bitcount_tables[NUM_CATEGORIES-1] = {$/;"	v
+table_of_code_tables	huff_tab.c	/^Uint16 *table_of_code_tables[NUM_CATEGORIES-1] = {$/;"	v
+table_of_decoder_tables	huff_tab.c	/^Int16 *table_of_decoder_tables[NUM_CATEGORIES-1] = {$/;"	v
+test_4_frame_errors	decoder.c	/^void test_4_frame_errors(Bit_Obj *bitobj,$/;"	f
+ti_hour	include/fat.h	/^    Uint8   ti_hour;	        \/* 时 *\/$/;"	m	struct:_DATE_TIME
+ti_hund	include/fat.h	/^    Uint8   ti_hund;	        \/* 百分之一秒 *\/$/;"	m	struct:_DATE_TIME
+ti_min	include/fat.h	/^    Uint8   ti_min;  	        \/* 分 *\/$/;"	m	struct:_DATE_TIME
+ti_sec	include/fat.h	/^    Uint8   ti_sec;	            \/* 秒 *\/$/;"	m	struct:_DATE_TIME
+tim_isr	timer.c	/^interrupt void tim_isr()$/;"	f
+time	include/fat.h	/^    Uint16  time;$/;"	m	struct:_SYS_TIME
+vector_dimension	tables.c	/^Int16 vector_dimension[NUM_CATEGORIES] =  { 2, 2, 2, 4, 4, 5, 5, 1};$/;"	v
+vector_huffman	encoder.c	/^Int16 vector_huffman(Int16 category,$/;"	f
+vector_quantize_mlts	encoder.c	/^void vector_quantize_mlts(Int16 number_of_available_bits,$/;"	f
+windowed_data	main.c	/^Int16 windowed_data[DCT_LENGTH];$/;"	v
+word2byte	main.c	/^void word2byte(Uint8 *dst, Int16 *src, int cnt)$/;"	f
+xmt_l	main.c	/^Int16 rcv_l[DCT_LENGTH*2], xmt_l[DCT_LENGTH*2];$/;"	v
+xmt_r	main.c	/^Int16 rcv_r[DCT_LENGTH*2], xmt_r[DCT_LENGTH*2];$/;"	v

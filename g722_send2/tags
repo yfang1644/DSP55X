@@ -1,0 +1,1207 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+$1	boot.asm	/^$1:	TC1 = bit(@ST3_L, #1) || mmap()$/;"	l
+$2	boot.asm	/^$2:	TC1 = bit(@ST3_L, #0) || mmap()$/;"	l
+ABS_REGION_POWER_LEVELS	include/huff_def.h	15;"	d
+AC0	DSP_utils.asm	/^		AC0 = AC0 + ((*AR0+)*(*AR1+))$/;"	d
+AC0	DSP_utils.asm	/^	AC0 = #0 || CSR = T0$/;"	d
+AC0	DSP_utils.asm	/^	AC0 = POPBOTH()$/;"	d
+AC0	autoinit.asm	/^	AC0 = AC0 | (AC1 <<< #-8)$/;"	d
+AC0	autoinit.asm	/^        AC0 = dbl(*AR6+)$/;"	d
+AC0	autoinit.asm	/^        AC0 = uns(*AR0+) << #8$/;"	d
+AC0	idiv.asm	/^	AC0 = |T0|             		; take absolute value of Q$/;"	d
+AC0	idiv.asm	/^	AC0 = |T0|$/;"	d
+AC0	lmpy.asm	/^	AC0 = AC0 * *SP(#0)	      	 ; AC0 = IHI * JLO$/;"	d
+AC0	lmpy.asm	/^	AC0 = AC0 + (AC1 << #16)      	 ; final result  $/;"	d
+AC0	lmpy.asm	/^	AC0 = uns(T0 * *SP(#0))	      	 ; AC0 = ILO * JLO$/;"	d
+AC0	lmpy.asm	/^ 	AC0 = uns(AC0.L) * uns(AC1.L)    ; AC0 = ILO * JLO$/;"	d
+AC0	udiv.asm	/^	AC0 = T0			; Move Q to AC0$/;"	d
+AC1	autoinit.asm	/^	AC1 = AC1 & #0xff	$/;"	d
+AC1	autoinit.asm	/^	AC1 = uns(*AR0+)$/;"	d
+AC1	lmpy.asm	/^	AC1 = (AC1 * T0) + AC0	      	 ; AC1 = (JHI * ILO) + (IHI * JLO)$/;"	d
+AC2	lmpy.asm	/^ 	AC2 = AC0.H * AC1.L	         ; AC2 = IHI * JLO$/;"	d
+AC2	lmpy.asm	/^ 	AC2 = AC2 + (AC1.H * AC0.L)      ; AC2 = (IHI * JLO) + (JHI * ILO)$/;"	d
+AIC3204_I2C_ADDR	aic3204.c	5;"	d	file:
+AIC3204_rget	aic3204.c	/^Int16 AIC3204_rget( Int8 regnum, Int8* regval )$/;"	f
+AIC3204_rset	aic3204.c	/^Int16 AIC3204_rset( Uint8 regnum, Uint8 regval )$/;"	f
+ANTENNA_DIVERSITY	modem_params-125k.h	38;"	d
+ANTENNA_DIVERSITY	modem_params.h	38;"	d
+ANTENNA_DIVERSITY_VALUE	modem_params-125k.h	39;"	d
+ANTENNA_DIVERSITY_VALUE	modem_params.h	39;"	d
+AR0	autoinit.asm	/^        AR0   = #(cinit & 0xffff)$/;"	d
+AR2	autoinit.asm	/^	AR2 = AR2 >> #1$/;"	d
+AR2	autoinit.asm	/^        AR2 = *AR0+$/;"	d
+AR4	idiv.asm	/^	AR4 = AR4 ^ T0			; determine sign of Q$/;"	d
+AR4	idiv.asm	/^	AR4 = T1	         	; save D (for sign)$/;"	d
+AR6	autoinit.asm	/^	AR6   = AC0$/;"	d
+AR6	autoinit.asm	/^        AR6   = #(___pinit__ & 0xffff)$/;"	d
+AR7	autoinit.asm	/^	AR7 = ~AR0$/;"	d
+AR7	autoinit.asm	/^	AR7 = ~AR6$/;"	d
+ASM_DEPS	Debug/sources.mk	/^ASM_DEPS := $/;"	m
+ASM_DEPS__QUOTED	Debug/sources.mk	/^ASM_DEPS__QUOTED := $/;"	m
+ASM_SRCS	Debug/sources.mk	/^ASM_SRCS := $/;"	m
+ASM_UPPER_DEPS	Debug/sources.mk	/^ASM_UPPER_DEPS := $/;"	m
+ASM_UPPER_DEPS__QUOTED	Debug/sources.mk	/^ASM_UPPER_DEPS__QUOTED := $/;"	m
+ASM_UPPER_SRCS	Debug/sources.mk	/^ASM_UPPER_SRCS := $/;"	m
+ATTR_ARCHIVE	include/fat.h	95;"	d
+ATTR_DIRECTORY	include/fat.h	94;"	d
+ATTR_HIDDEN	include/fat.h	91;"	d
+ATTR_READ_ONLY	include/fat.h	90;"	d
+ATTR_SYSTEM	include/fat.h	92;"	d
+ATTR_VOLUME_ID	include/fat.h	93;"	d
+AUDIOPROCESSING	include/codec.h	19;"	d
+A_SRCS	Debug/sources.mk	/^A_SRCS := $/;"	m
+AddFDT	fdt.c	/^Uint8 AddFDT(Uint32 ClusIndex, FDT *FDTData)$/;"	f
+AddFileDriver	disk.c	/^void AddFileDriver(Uint16 (* DiakCommand)(Uint8 Cammand, void *Parameter), void *RsvdForLow)$/;"	f
+AllCacheWriteBack	RWSec.c	/^void AllCacheWriteBack(void)$/;"	f
+Attr	include/fat.h	/^    Uint8   Attr;               \/* 文件属性 *\/$/;"	m	struct:_FDT
+Audio_init	audio.c	/^void Audio_init(Uint16 bandwidth)$/;"	f
+BAD_CLUS	include/fat.h	100;"	d
+BAD_COMMAND	include/fat.h	77;"	d
+BAD_DISK_COMMAND	include/fat.h	50;"	d
+BANDWIDTH	include/codec.h	11;"	d
+BASE_CACHE_NUM	RWSec.c	9;"	d	file:
+BASOP_H_DEFINED	include/basop32.h	19;"	d
+BERR	vectors.asm	/^BERR:		.ivec	no_handler			; Bus Error Interrupt$/;"	l
+BITRATE	include/codec.h	9;"	d
+BRC0	DSP_utils.asm	/^	BRC0 = T0 || AC0 = uns(*AR1+)$/;"	d
+BRC0	DSP_utils.asm	/^	BRC0 = T0 || T0 = *AR1+$/;"	d
+BRC0	DSP_utils.asm	/^	BRC0 = T0$/;"	d
+Bit_Obj	include/typedef.h	/^}Bit_Obj;$/;"	t	typeref:struct:__anon1
+Buf	include/fat.h	/^    Uint8       *Buf;           \/* 数据存储位置 *\/$/;"	m	struct:_Disk_RW_Parameter
+BytsPerSec	include/fat.h	/^    Uint16      BytsPerSec;     \/* 每扇区字节数 *\/$/;"	m	struct:_Disk_Info
+C43_DEPS	Debug/sources.mk	/^C43_DEPS := $/;"	m
+C43_DEPS__QUOTED	Debug/sources.mk	/^C43_DEPS__QUOTED := $/;"	m
+C43_SRCS	Debug/sources.mk	/^C43_SRCS := $/;"	m
+C5500_EXECUTABLE_OUTPUTS	Debug/sources.mk	/^C5500_EXECUTABLE_OUTPUTS := $/;"	m
+C5500_EXECUTABLE_OUTPUTS__QUOTED	Debug/sources.mk	/^C5500_EXECUTABLE_OUTPUTS__QUOTED := $/;"	m
+C55_DEPS	Debug/sources.mk	/^C55_DEPS := $/;"	m
+C55_DEPS__QUOTED	Debug/sources.mk	/^C55_DEPS__QUOTED := $/;"	m
+C55_SRCS	Debug/sources.mk	/^C55_SRCS := $/;"	m
+C62_DEPS	Debug/sources.mk	/^C62_DEPS := $/;"	m
+C62_DEPS__QUOTED	Debug/sources.mk	/^C62_DEPS__QUOTED := $/;"	m
+C62_SRCS	Debug/sources.mk	/^C62_SRCS := $/;"	m
+C64_DEPS	Debug/sources.mk	/^C64_DEPS := $/;"	m
+C64_DEPS__QUOTED	Debug/sources.mk	/^C64_DEPS__QUOTED := $/;"	m
+C64_SRCS	Debug/sources.mk	/^C64_SRCS := $/;"	m
+C67_DEPS	Debug/sources.mk	/^C67_DEPS := $/;"	m
+C67_DEPS__QUOTED	Debug/sources.mk	/^C67_DEPS__QUOTED := $/;"	m
+C67_SRCS	Debug/sources.mk	/^C67_SRCS := $/;"	m
+CACHE_DATA	include/fat.h	115;"	d
+CACHE_READ	include/fat.h	113;"	d
+CACHE_WRITTEN	include/fat.h	114;"	d
+CAP_BANK_VALUE	include/Si446x_api.h	9;"	d
+CC_DEPS	Debug/sources.mk	/^CC_DEPS := $/;"	m
+CC_DEPS__QUOTED	Debug/sources.mk	/^CC_DEPS__QUOTED := $/;"	m
+CC_SRCS	Debug/sources.mk	/^CC_SRCS := $/;"	m
+CENTER_FREQ	modem_params-125k.h	27;"	d
+CENTER_FREQ	modem_params.h	27;"	d
+CG_TOOL_ROOT	Debug/makefile	/^CG_TOOL_ROOT := \/opt\/ti\/ccsv5\/tools\/compiler\/c5500_4.4.1$/;"	m
+CHANNEL	include/codec.h	/^} CHANNEL;$/;"	t	typeref:enum:_CHANNEL
+CHANNEL_NUMBER	modem_params-125k.h	30;"	d
+CHANNEL_NUMBER	modem_params.h	30;"	d
+CHANNEL_SPACING	modem_params-125k.h	29;"	d
+CHANNEL_SPACING	modem_params.h	29;"	d
+CLA_DEPS	Debug/sources.mk	/^CLA_DEPS := $/;"	m
+CLA_DEPS__QUOTED	Debug/sources.mk	/^CLA_DEPS__QUOTED := $/;"	m
+CLA_SRCS	Debug/sources.mk	/^CLA_SRCS := $/;"	m
+CLUSTER_NOT_IN_DISK	include/fat.h	59;"	d
+CMD_CHANGE_STATE	include/Si446x_B1_defs.h	42;"	d
+CMD_FIFO_INFO	include/Si446x_B1_defs.h	39;"	d
+CMD_FRR_A_READ	include/Si446x_B1_defs.h	44;"	d
+CMD_FRR_B_READ	include/Si446x_B1_defs.h	45;"	d
+CMD_FRR_C_READ	include/Si446x_B1_defs.h	46;"	d
+CMD_FRR_D_READ	include/Si446x_B1_defs.h	47;"	d
+CMD_FUNC_INFO	include/Si446x_B1_defs.h	35;"	d
+CMD_GET_ADC_READING	include/Si446x_B1_defs.h	50;"	d
+CMD_GET_CHIP_STATUS	include/Si446x_B1_defs.h	56;"	d
+CMD_GET_INT_STATUS	include/Si446x_B1_defs.h	40;"	d
+CMD_GET_MODEM_STATUS	include/Si446x_B1_defs.h	55;"	d
+CMD_GET_PH_STATUS	include/Si446x_B1_defs.h	54;"	d
+CMD_GET_PROPERTY	include/Si446x_B1_defs.h	37;"	d
+CMD_GPIO_PIN_CFG	include/Si446x_B1_defs.h	38;"	d
+CMD_IRCAL	include/Si446x_B1_defs.h	52;"	d
+CMD_NOP	include/Si446x_B1_defs.h	33;"	d
+CMD_PACKET_INFO	include/Si446x_B1_defs.h	51;"	d
+CMD_PART_INFO	include/Si446x_B1_defs.h	34;"	d
+CMD_PATCH_IMAGE	include/Si446x_B1_defs.h	30;"	d
+CMD_POWER_UP	include/Si446x_B1_defs.h	29;"	d
+CMD_PROTOCOL_CFG	include/Si446x_B1_defs.h	53;"	d
+CMD_READ_CMD_BUFF	include/Si446x_B1_defs.h	43;"	d
+CMD_READ_RX_FIFO	include/Si446x_B1_defs.h	49;"	d
+CMD_REQUEST_DEVICE_STATE	include/Si446x_B1_defs.h	41;"	d
+CMD_RX_HOP	include/Si446x_B1_defs.h	57;"	d
+CMD_SET_PROPERTY	include/Si446x_B1_defs.h	36;"	d
+CMD_SRCS	Debug/sources.mk	/^CMD_SRCS := $/;"	m
+CMD_START_RX	include/Si446x_B1_defs.h	63;"	d
+CMD_START_TX	include/Si446x_B1_defs.h	60;"	d
+CMD_UPPER_SRCS	Debug/sources.mk	/^CMD_UPPER_SRCS := $/;"	m
+CMD_WRITE_TX_FIFO	include/Si446x_B1_defs.h	48;"	d
+COPROCFFT	vectors.asm	/^COPROCFFT:	.ivec	no_handler			; Coprocessor FFT Module Interrupt$/;"	l
+CORE_SIZE	include/defs.h	47;"	d
+CPP_DEPS	Debug/sources.mk	/^CPP_DEPS := $/;"	m
+CPP_DEPS__QUOTED	Debug/sources.mk	/^CPP_DEPS__QUOTED := $/;"	m
+CPP_SRCS	Debug/sources.mk	/^CPP_SRCS := $/;"	m
+CSR	DSP_utils.asm	/^	CSR = T0$/;"	d
+CSR	autoinit.asm	/^	CSR = AR2$/;"	d
+CXX_DEPS	Debug/sources.mk	/^CXX_DEPS := $/;"	m
+CXX_DEPS__QUOTED	Debug/sources.mk	/^CXX_DEPS__QUOTED := $/;"	m
+CXX_SRCS	Debug/sources.mk	/^CXX_SRCS := $/;"	m
+C_DEPS	Debug/sources.mk	/^C_DEPS := $/;"	m
+C_DEPS__QUOTED	Debug/sources.mk	/^C_DEPS__QUOTED := $/;"	m
+C_SRCS	Debug/sources.mk	/^C_SRCS := $/;"	m
+C_UPPER_DEPS	Debug/sources.mk	/^C_UPPER_DEPS := $/;"	m
+C_UPPER_DEPS__QUOTED	Debug/sources.mk	/^C_UPPER_DEPS__QUOTED := $/;"	m
+C_UPPER_SRCS	Debug/sources.mk	/^C_UPPER_SRCS := $/;"	m
+CacheInit	RWSec.c	/^void CacheInit(void)$/;"	f
+CacheWriteBack2	RWSec.c	/^void CacheWriteBack2(Uint16 Index)$/;"	f
+ChangeDir	dir.c	/^Uint8 ChangeDir(Int8 *Path)$/;"	f
+ChangeFDT	fdt.c	/^Uint8 ChangeFDT(Uint32 ClusIndex, FDT *FDTData)$/;"	f
+ClearClus	fdt.c	/^Uint8 ClearClus(Uint32 Index)$/;"	f
+Clus	include/fat.h	/^    Uint32      Clus;           \/* 当前簇号 *\/$/;"	m	struct:_FILE
+ClusPerData	include/fat.h	/^    Uint32      ClusPerData;    \/* 数据区包含簇数 *\/$/;"	m	struct:_Disk_Info
+CrtDate	include/fat.h	/^    Uint16  CrtDate;            \/* 建立日期（fat16保留）*\/$/;"	m	struct:_FDT
+CrtTime	include/fat.h	/^    Uint16  CrtTime;            \/* 建立时间（fat16保留）*\/$/;"	m	struct:_FDT
+CrtTimeTenth	include/fat.h	/^    Uint8   CrtTimeTenth;       \/* 建立时间（fat16保留）*\/$/;"	m	struct:_FDT
+DATAMEMCOPY	autoinit.asm	/^DATAMEMCOPY:$/;"	l
+DATA_RATE	modem_params-125k.h	37;"	d
+DATA_RATE	modem_params.h	37;"	d
+DATE_TIME	include/fat.h	/^}DATE_TIME;$/;"	t	typeref:struct:_DATE_TIME
+DCT_LENGTH	include/defs.h	30;"	d
+DCT_LENGTH_DIV_16	include/defs.h	41;"	d
+DCT_LENGTH_DIV_2	include/defs.h	38;"	d
+DCT_LENGTH_DIV_32	include/defs.h	42;"	d
+DCT_LENGTH_DIV_4	include/defs.h	39;"	d
+DCT_LENGTH_DIV_64	include/defs.h	43;"	d
+DCT_LENGTH_DIV_8	include/defs.h	40;"	d
+DCT_LENGTH_LOG	include/defs.h	29;"	d
+DEL_FDT	include/fat.h	106;"	d
+DEVIATION	modem_params-125k.h	36;"	d
+DEVIATION	modem_params.h	36;"	d
+DIFF_REGION_POWER_LEVELS	include/huff_def.h	16;"	d
+DIR_EMPTY	include/fat.h	65;"	d
+DIR_NOT_EMPTY	include/fat.h	66;"	d
+DISK_CACHE_SIZE	include/fat.h	11;"	d
+DISK_CHECK_CHANGE	include/fat.h	33;"	d
+DISK_CHECK_CMD	include/fat.h	28;"	d
+DISK_CLOSE	include/fat.h	24;"	d
+DISK_DRIVER_VER	include/fat.h	27;"	d
+DISK_FALSE	include/fat.h	49;"	d
+DISK_FREE_SECTOR	include/fat.h	30;"	d
+DISK_FULL	include/fat.h	55;"	d
+DISK_GET_BYTES_PER_SECTOR	include/fat.h	32;"	d
+DISK_GET_SECTORS_PER_BLOCK	include/fat.h	34;"	d
+DISK_GET_SECTOR_NUMBER	include/fat.h	31;"	d
+DISK_INIT	include/fat.h	23;"	d
+DISK_INIT_NOT_OK	include/fat.h	47;"	d
+DISK_INIT_OK	include/fat.h	46;"	d
+DISK_LOW_FORMAT	include/fat.h	29;"	d
+DISK_NO_FORMAT	include/fat.h	75;"	d
+DISK_READ_BLOCK	include/fat.h	35;"	d
+DISK_READ_NOT_OK	include/fat.h	43;"	d
+DISK_READ_OK	include/fat.h	42;"	d
+DISK_READ_RAW	include/fat.h	37;"	d
+DISK_READ_SECTOR	include/fat.h	25;"	d
+DISK_RETURN_OK	include/fat.h	41;"	d
+DISK_TRUE	include/fat.h	48;"	d
+DISK_WRITE_BLOCK	include/fat.h	36;"	d
+DISK_WRITE_NOT_OK	include/fat.h	45;"	d
+DISK_WRITE_OK	include/fat.h	44;"	d
+DISK_WRITE_RAW	include/fat.h	38;"	d
+DISK_WRITE_SECTOR	include/fat.h	26;"	d
+DLOG	vectors.asm	/^DLOG:		.ivec	no_handler			; Emulation Interrupt - DLOG$/;"	l
+DMA	vectors.asm	/^DMA:		.ivec	_dma_isr			; DMA Interrupt$/;"	l
+DMA_audio_init	audio.c	/^void DMA_audio_init(Uint16 size)$/;"	f
+DRP_DIFF_MAX	include/huff_def.h	19;"	d
+DRP_DIFF_MIN	include/huff_def.h	18;"	d
+DataStartSec	include/fat.h	/^    Uint32      DataStartSec;   \/* 数据区开始扇区号 *\/$/;"	m	struct:_Disk_Info
+DelFDT	fdt.c	/^Uint8 DelFDT(Uint32 ClusIndex, Int8 FileName[])$/;"	f
+DiakCommand	include/fat.h	/^    Uint16      (* DiakCommand)(Uint8 Cammand, void *Parameter);$/;"	m	struct:_Disk_Info
+DirClus	include/fat.h	/^    Uint32      DirClus;        \/* 所在目录开始簇号 *\/$/;"	m	struct:_FILE
+DirIsEmpty	fdt.c	/^Uint8 DirIsEmpty(Uint32 ClusIndex)$/;"	f
+DiskCache	RWSec.c	/^Disk_cache DiskCache[MAX_DISK_CACHES];      \/* 磁盘cache *\/$/;"	v
+DiskInfo	disk.c	/^Disk_Info DiskInfo;     \/\/逻辑盘信息$/;"	v
+DiskInit	disk.c	/^void DiskInit(void)$/;"	f
+Disk_Info	include/fat.h	/^}Disk_Info;$/;"	t	typeref:struct:_Disk_Info
+Disk_RW_Parameter	include/fat.h	/^}Disk_RW_Parameter;$/;"	t	typeref:struct:_Disk_RW_Parameter
+Disk_cache	include/fat.h	/^}Disk_cache;$/;"	t	typeref:struct:_Disk_Cache
+EMIF	vectors.asm	/^EMIF:		.ivec	no_handler			; EMIF Error Interrupt$/;"	l
+EMPTY_CLUS	include/fat.h	98;"	d
+EMPTY_CLUS_1	include/fat.h	99;"	d
+EMPTY_DRIVE	include/fat.h	81;"	d
+EMPTY_FDT	include/fat.h	105;"	d
+EMUINT	vectors.asm	/^EMUINT:		.ivec	no_handler			; Emulation monitor mode interrupt$/;"	l
+ENCODER_SCALE_FACTOR	include/defs.h	54;"	d
+EOF_CLUS_1	include/fat.h	101;"	d
+EOF_CLUS_END	include/fat.h	102;"	d
+ESC_FDT	include/fat.h	107;"	d
+ESF_ADJUSTMENT_TO_RMS_INDEX	include/defs.h	65;"	d
+EXIT	autoinit.asm	/^EXIT:$/;"	l
+EZDSP5535_GPIO_init	ezdsp5535_gpio.c	/^void EZDSP5535_GPIO_init()$/;"	f
+EZDSP5535_I2C_close	ezdsp5535_i2c.c	/^void EZDSP5535_I2C_close( )$/;"	f
+EZDSP5535_I2C_init	ezdsp5535_i2c.c	/^void EZDSP5535_I2C_init( )$/;"	f
+EZDSP5535_I2C_read	ezdsp5535_i2c.c	/^Int16 EZDSP5535_I2C_read( Uint16 i2c_addr, Int8* data, Uint16 len )$/;"	f
+EZDSP5535_I2C_reset	ezdsp5535_i2c.c	/^void EZDSP5535_I2C_reset( )$/;"	f
+EZDSP5535_I2C_write	ezdsp5535_i2c.c	/^Int16 EZDSP5535_I2C_write( Uint16 i2c_addr, Int8* data, Uint16 len )$/;"	f
+EZDSP5535_I2S_init	ezdsp5535_i2s.c	/^void EZDSP5535_I2S_init(void)$/;"	f
+EZDSP5535_LCD_init	ezdsp5535_lcd.c	/^void EZDSP5535_LCD_init(void)$/;"	f
+EZDSP5535_LCD_multiSend	ezdsp5535_lcd.c	/^Int16 EZDSP5535_LCD_multiSend(Int8* data, Uint16 len)$/;"	f
+EZDSP5535_LCD_send	ezdsp5535_lcd.c	/^Int16 EZDSP5535_LCD_send(Int8 comdat, Int8 data)$/;"	f
+EZDSP5535_SAR_getKey	ezdsp5535_sar.c	/^Uint16 EZDSP5535_SAR_getKey(void)$/;"	f
+EZDSP5535_SAR_init	ezdsp5535_sar.c	/^void EZDSP5535_SAR_init(void)$/;"	f
+EZDSP5535_SDCARD_close	ezdsp5535_sdcard.c	/^Int16 EZDSP5535_SDCARD_close()$/;"	f
+EZDSP5535_SDCARD_init	ezdsp5535_sdcard.c	/^Int16 EZDSP5535_SDCARD_init()$/;"	f
+EZDSP5535_SPI_init	ezdsp5535_spi.c	/^void EZDSP5535_SPI_init(void)$/;"	f
+EZRADIOPRO2_SI4464_B1	modem_params-125k.h	13;"	d
+EZRADIOPRO2_SI4464_B1	modem_params.h	13;"	d
+EZRP_NEXT_TestCard	include/Si446x_api.h	16;"	d
+FAT12	include/fat.h	85;"	d
+FAT16	include/fat.h	86;"	d
+FAT32	include/fat.h	87;"	d
+FATAddClus	fat.c	/^Uint32 FATAddClus(Uint32 Index)$/;"	f
+FATDelClusChain	fat.c	/^void FATDelClusChain(Uint32 Index)$/;"	f
+FATGetNextClus	fat.c	/^Uint32 FATGetNextClus(Uint32 Index)$/;"	f
+FATSecCnt	include/fat.h	/^    Uint32      FATSecCnt;      \/* 每个FAT占用扇区数 *\/$/;"	m	struct:_Disk_Info
+FATSetNextClus	fat.c	/^void FATSetNextClus(Uint32 Index, Uint32 Next)$/;"	f
+FATStartSec	include/fat.h	/^    Uint32      FATStartSec;    \/* FAT表开始扇区号 *\/$/;"	m	struct:_Disk_Info
+FATType	include/fat.h	/^    Uint8       FATType;        \/* 类型：FAT12、FAT16和FAT32 *\/$/;"	m	struct:_Disk_Info
+FAT_ERR	include/fat.h	68;"	d
+FDT	include/fat.h	/^} FDT;$/;"	t	typeref:struct:_FDT
+FDTGET	include/fat.h	109;"	d
+FDTInfo	fdt.c	/^Uint8 FDTInfo(Uint32 ClusIndex, Uint32 Index, FDT *FDTData, Uint16 type)$/;"	f
+FDTIsLie	fdt.c	/^Uint8 FDTIsLie(Uint32 ClusIndex, Int8 FileName[])$/;"	f
+FDTSET	include/fat.h	110;"	d
+FDT_EXISTS	include/fat.h	63;"	d
+FDT_OVER	include/fat.h	62;"	d
+FILEPROCESSING	include/codec.h	20;"	d
+FILE_EOF	include/fat.h	70;"	d
+FILE_FLAGS_READ	include/fat.h	118;"	d
+FILE_FLAGS_WRITE	include/fat.h	119;"	d
+FILE_LOCK	include/fat.h	71;"	d
+FILE_NAME_ERR	include/fat.h	69;"	d
+FRAME_SIZE	idiv.asm	/^FRAME_SIZE	.set	1$/;"	l
+FRAME_SIZE	idiv.asm	/^FRAME_SIZE	.set	2$/;"	l
+FRAME_SIZE	lmpy.asm	/^FRAME_SIZE	.set	1$/;"	l
+FRAME_SIZE	lmpy.asm	/^FRAME_SIZE	.set	2$/;"	l
+FRAME_SIZE	udiv.asm	/^FRAME_SIZE	.set	1$/;"	l
+FRAME_SIZE	udiv.asm	/^FRAME_SIZE	.set	2$/;"	l
+FREQ_CONTROL_INTE_12	modem_params-125k.h	67;"	d
+FREQ_CONTROL_INTE_12	modem_params.h	67;"	d
+FS_GetDateTime	dir.c	/^Uint8 FS_GetDateTime(SYS_TIME *CurTime)$/;"	f
+FileClose	file.c	/^Uint8 FileClose(HANDLE Handle)$/;"	f
+FileCloseAll	file.c	/^void FileCloseAll(void)$/;"	f
+FileInfo	file.c	/^MY_FILE FileInfo[MAX_OPEN_FILES];        \/* 打开文件信息表 *\/$/;"	v
+FileInit	file.c	/^void FileInit(void)$/;"	f
+FileOpen	file.c	/^HANDLE FileOpen(Int8 *DirFileName, Uint16 type)$/;"	f
+FileRead	file.c	/^Uint32 FileRead(void *Buf, Uint32 Size, HANDLE Handle)$/;"	f
+FileSeek	file.c	/^Uint8 FileSeek(HANDLE Handle, Int32 offset, Uint8 Whence)$/;"	f
+FileSize	include/fat.h	/^    Uint32      FileSize;       \/* 文件大小 *\/$/;"	m	struct:_FILE
+FileSize	include/fat.h	/^    Uint32  FileSize;           \/* 文件大小 *\/$/;"	m	struct:_FDT
+FileWrite	file.c	/^Uint32 FileWrite(void *Buf, Uint32 Size, HANDLE Handle)$/;"	f
+FindFDTInfo	fdt.c	/^Uint8 FindFDTInfo(FDT *Rt, Uint32 ClusIndex, Int8 FileName[])$/;"	f
+FindOpenFile	file.c	/^HANDLE FindOpenFile(Uint32 DirClus, Int8 *FileName, Uint16 type)$/;"	f
+Flag	include/fat.h	/^    Uint8       Flag;           \/* 状态 *\/$/;"	m	struct:_Disk_Cache
+Flags	include/fat.h	/^    Uint8       Flags;          \/* 一些标志 *\/$/;"	m	struct:_FILE
+FloppyDiskInit	disk.c	/^void FloppyDiskInit(Uint16  (* DiakCommand)(Uint8 Cammand, void *Parameter),$/;"	f
+FreeCache	RWSec.c	/^void FreeCache(Uint32 Index)$/;"	f
+FreeClus	fat.c	/^Uint8 FreeClus(Uint32 Index)$/;"	f
+FreeDriveCache	RWSec.c	/^void FreeDriveCache(void)$/;"	f
+FsMount	disk.c	/^Uint8 FsMount(Uint8 *Buf)$/;"	f
+FsPathFileName	dir.c	/^Int8 FsPathFileName[MAX_PATHFILE_LENGTH + 1];$/;"	v
+FsStrCopy	dir.c	/^Int8 *FsStrCopy(Int8 *source)$/;"	f
+FsUMount	disk.c	/^Uint8 FsUMount(void)$/;"	f
+FstClus	include/fat.h	/^    Uint32      FstClus;        \/* 起始簇号 *\/$/;"	m	struct:_FILE
+FstClusHI	include/fat.h	/^    Uint16  FstClusHI;          \/* 起始簇号高两个字节（fat16保留）*\/$/;"	m	struct:_FDT
+FstClusLO	include/fat.h	/^    Uint16  FstClusLO;          \/* 起始簇(cluster)号低两个字节 *\/$/;"	m	struct:_FDT
+GETDATATIME	include/fat.h	356;"	d
+GETDATATIME	include/fat.h	360;"	d
+GET_TIME_ERR	include/fat.h	74;"	d
+GPIO	vectors.asm	/^GPIO:		.ivec	_gpio_isr			; GPIO Interrupt$/;"	l
+GPIOPROCESSING	include/codec.h	22;"	d
+GPIO_IN	include/ezdsp5535_gpio.h	10;"	d
+GPIO_OUT	include/ezdsp5535_gpio.h	11;"	d
+GetCache	RWSec.c	/^Uint16 GetCache(Uint32 Index)$/;"	f
+GetDirClusIndex	dir.c	/^Uint32 GetDirClusIndex(Int8 *Path)$/;"	f
+HANDLE	include/fat.h	/^typedef Uint16 HANDLE;$/;"	t
+I$$DIV	idiv.asm	/^I$$DIV:	.asmfunc$/;"	l
+I$$LMPY	lmpy.asm	/^I$$LMPY:	.asmfunc$/;"	l
+I$$MOD	idiv.asm	/^I$$MOD:	.asmfunc$/;"	l
+I$$UDIV	udiv.asm	/^I$$UDIV:	.asmfunc$/;"	l
+I$$UMOD	udiv.asm	/^I$$UMOD:	.asmfunc$/;"	l
+I2C	vectors.asm	/^I2C:		.ivec	no_handler			; IIC interrupt$/;"	l
+ICR	main.c	49;"	d	file:
+INT0	vectors.asm	/^INT0:		.ivec	no_handler			; External User Interrupt #0 $/;"	l
+INT1	vectors.asm	/^INT1:		.ivec	no_handler			; External User Interrupt #1$/;"	l
+INTR_init	sysinit.c	/^void INTR_init(void)$/;"	f
+IN_DIR	dir.c	4;"	d	file:
+IN_DISK	disk.c	4;"	d	file:
+IN_FAT	fat.c	5;"	d	file:
+IN_FDT	fdt.c	4;"	d	file:
+IN_FILE	file.c	5;"	d	file:
+IN_RWSEC	RWSec.c	4;"	d	file:
+K_DEPS	Debug/sources.mk	/^K_DEPS := $/;"	m
+K_DEPS__QUOTED	Debug/sources.mk	/^K_DEPS__QUOTED := $/;"	m
+K_SRCS	Debug/sources.mk	/^K_SRCS := $/;"	m
+LCD	vectors.asm	/^LCD:		.ivec	no_handler			; LCD Interrupt$/;"	l
+LCD_print	ezdsp5535_lcd.c	/^void LCD_print(Int8 *s, Uint16 cnt, int page)$/;"	f
+LCD_scroll	ezdsp5535_lcd.c	/^void LCD_scroll()$/;"	f
+LD_SRCS	Debug/sources.mk	/^LD_SRCS := $/;"	m
+LD_UPPER_SRCS	Debug/sources.mk	/^LD_UPPER_SRCS := $/;"	m
+LEFT	include/codec.h	/^	LEFT = 0,$/;"	e	enum:_CHANNEL
+LIBS	Debug/objects.mk	/^LIBS := $(GEN_CMDS__FLAG)$/;"	m
+LIB_SRCS	Debug/sources.mk	/^LIB_SRCS := $/;"	m
+LOOP	autoinit.asm	/^LOOP:$/;"	l
+LOOP2	autoinit.asm	/^LOOP2:	$/;"	l
+L_abs	include/basop32.h	65;"	d
+L_add	include/basop32.h	51;"	d
+L_mac	include/basop32.h	49;"	d
+L_msu	include/basop32.h	50;"	d
+L_mult	include/basop32.h	48;"	d
+L_negate	include/basop32.h	66;"	d
+L_shl	include/basop32.h	59;"	d
+L_shr	include/basop32.h	60;"	d
+L_sub	include/basop32.h	52;"	d
+LstAccDate	include/fat.h	/^    Uint16  LstAccDate;         \/* 最后访问日期（fat16保留）*\/$/;"	m	struct:_FDT
+MANCHESTER_CODE	modem_params-125k.h	34;"	d
+MANCHESTER_CODE	modem_params.h	34;"	d
+MANCHESTER_CODE_VALUE	modem_params-125k.h	35;"	d
+MANCHESTER_CODE_VALUE	modem_params.h	35;"	d
+MAX_16	include/basop32.h	33;"	d
+MAX_32	include/basop32.h	30;"	d
+MAX_BITS_PER_FRAME	include/defs.h	68;"	d
+MAX_CTS_RETRY	include/Si446x_api.h	69;"	d
+MAX_DCT_LENGTH	include/defs.h	21;"	d
+MAX_DCT_LENGTH_LOG	include/defs.h	20;"	d
+MAX_DISK_CACHES	RWSec.c	10;"	d	file:
+MAX_NUMBER_OF_REGIONS	include/defs.h	22;"	d
+MAX_NUMBER_OF_VALID_COEFS	include/defs.h	23;"	d
+MAX_NUM_BINS	include/huff_def.h	21;"	d
+MAX_NUM_CATEGORIZATION_CONTROL_BITS	include/defs.h	24;"	d
+MAX_NUM_CATEGORIZATION_CONTROL_POSSIBILITIES	include/defs.h	25;"	d
+MAX_OPEN_FILES	include/fat.h	7;"	d
+MAX_PATHFILE_LENGTH	include/fat.h	15;"	d
+MAX_TRX_LENGTH	Si446x_api.c	9;"	d	file:
+MAX_VECTOR_DIMENSION	include/huff_def.h	23;"	d
+MAX_VECTOR_INDICES	include/huff_def.h	22;"	d
+MDP	boot.asm	/^	MDP   = #0$/;"	d
+MDP05	autoinit.asm	/^	MDP05 = #0$/;"	d
+MDP05	autoinit.asm	/^        MDP05 = #((cinit >> 16) & 0x7f)$/;"	d
+MDP05	boot.asm	/^	MDP05 = #0$/;"	d
+MDP67	autoinit.asm	/^	MDP67 = #0$/;"	d
+MDP67	autoinit.asm	/^	MDP67 = *SP(#0) $/;"	d
+MDP67	autoinit.asm	/^	MDP67 = @AC0_H || mmap()$/;"	d
+MDP67	autoinit.asm	/^        MDP67 = #((___pinit__ >> 16) & 0x7f)$/;"	d
+MDP67	boot.asm	/^	MDP67 = #0$/;"	d
+MDR_FREE	ezdsp5535_i2c.c	74;"	d	file:
+MDR_IRS	ezdsp5535_i2c.c	73;"	d	file:
+MDR_MST	ezdsp5535_i2c.c	72;"	d	file:
+MDR_STP	ezdsp5535_i2c.c	77;"	d	file:
+MDR_STT	ezdsp5535_i2c.c	70;"	d	file:
+MDR_TRX	ezdsp5535_i2c.c	71;"	d	file:
+MIN_16	include/basop32.h	34;"	d
+MIN_32	include/basop32.h	31;"	d
+MMC_clearResponse	csl_mmcsd.c	/^CSL_Status MMC_clearResponse(CSL_MmcsdHandle    hMmcsd)$/;"	f
+MMC_close	csl_mmcsd.c	/^CSL_Status MMC_close(CSL_MmcsdHandle    hMmcsd)$/;"	f
+MMC_deselectCard	csl_mmcsd.c	/^CSL_Status MMC_deselectCard(CSL_MmcsdHandle    hMmcsd,$/;"	f
+MMC_getNumberOfCards	csl_mmcsd.c	/^CSL_Status MMC_getNumberOfCards(CSL_MmcsdHandle    hMmcsd,$/;"	f
+MMC_open	csl_mmcsd.c	/^CSL_MmcsdHandle MMC_open(CSL_MMCControllerObj    *pMmcsdContObj,$/;"	f
+MMC_read	csl_mmcsd.c	/^CSL_Status MMC_read(CSL_MmcsdHandle    hMmcsd,$/;"	f
+MMC_selectCard	csl_mmcsd.c	/^CSL_Status MMC_selectCard(CSL_MmcsdHandle    hMmcsd,$/;"	f
+MMC_sendCmd	csl_mmcsd.c	/^CSL_Status MMC_sendCmd(CSL_MmcsdHandle    hMmcsd,$/;"	f
+MMC_sendGoIdle	csl_mmcsd.c	/^CSL_Status MMC_sendGoIdle(CSL_MmcsdHandle    hMmcsd)$/;"	f
+MMC_sendOpCond	csl_mmcsd.c	/^CSL_Status MMC_sendOpCond(CSL_MmcsdHandle    hMmcsd,$/;"	f
+MMC_setBlockLength	csl_mmcsd.c	/^CSL_Status MMC_setBlockLength (CSL_MmcsdHandle    hMmcsd,$/;"	f
+MMC_setCardPtr	csl_mmcsd.c	/^CSL_Status MMC_setCardPtr(CSL_MmcsdHandle    hMmcsd,$/;"	f
+MMC_setCardType	csl_mmcsd.c	/^CSL_Status MMC_setCardType(CSL_MMCCardObj    *pCardObj,$/;"	f
+MMC_stop	csl_mmcsd.c	/^CSL_Status MMC_stop(CSL_MmcsdHandle    hMmcsd)$/;"	f
+MMC_write	csl_mmcsd.c	/^CSL_Status MMC_write(CSL_MmcsdHandle    hMmcsd,$/;"	f
+MODEM_AFC_GEAR_12	modem_params-125k.h	76;"	d
+MODEM_AFC_GEAR_12	modem_params.h	76;"	d
+MODEM_AGC_CONTRL_5	modem_params-125k.h	79;"	d
+MODEM_AGC_CONTRL_5	modem_params.h	79;"	d
+MODEM_AGC_WINDOW_SIZE_7	modem_params-125k.h	80;"	d
+MODEM_AGC_WINDOW_SIZE_7	modem_params.h	80;"	d
+MODEM_ANT_DIV_MODE_6	modem_params-125k.h	89;"	d
+MODEM_ANT_DIV_MODE_6	modem_params.h	89;"	d
+MODEM_BCR_OSR_1_14	modem_params-125k.h	74;"	d
+MODEM_BCR_OSR_1_14	modem_params.h	74;"	d
+MODEM_CHFLT_RX1_CHFLT_COE13_7_0_13	modem_params-125k.h	95;"	d
+MODEM_CHFLT_RX1_CHFLT_COE13_7_0_13	modem_params.h	95;"	d
+MODEM_CHFLT_RX1_CHFLT_COE4_7_0_13	modem_params-125k.h	96;"	d
+MODEM_CHFLT_RX1_CHFLT_COE4_7_0_13	modem_params.h	96;"	d
+MODEM_CHFLT_RX2_CHFLT_COE13_7_0_13	modem_params-125k.h	98;"	d
+MODEM_CHFLT_RX2_CHFLT_COE13_7_0_13	modem_params.h	98;"	d
+MODEM_CHFLT_RX2_CHFLT_COE4_7_0_13	modem_params-125k.h	99;"	d
+MODEM_CHFLT_RX2_CHFLT_COE4_7_0_13	modem_params.h	99;"	d
+MODEM_CLKGEN_BAND_5	modem_params-125k.h	63;"	d
+MODEM_CLKGEN_BAND_5	modem_params.h	63;"	d
+MODEM_DATA_RATE_2_14	modem_params-125k.h	55;"	d
+MODEM_DATA_RATE_2_14	modem_params.h	55;"	d
+MODEM_FSK4_GAIN1_9	modem_params-125k.h	83;"	d
+MODEM_FSK4_GAIN1_9	modem_params.h	83;"	d
+MODEM_MDM_CTRL_11	modem_params-125k.h	72;"	d
+MODEM_MDM_CTRL_11	modem_params.h	72;"	d
+MODEM_MOD_TYPE_7	modem_params-125k.h	62;"	d
+MODEM_MOD_TYPE_7	modem_params.h	62;"	d
+MODEM_OOK_PDTC_8	modem_params-125k.h	85;"	d
+MODEM_OOK_PDTC_8	modem_params.h	85;"	d
+MODEM_RAW_SEARCH_8	modem_params-125k.h	87;"	d
+MODEM_RAW_SEARCH_8	modem_params.h	87;"	d
+MODEM_RSSI_COMP_5	modem_params-125k.h	91;"	d
+MODEM_RSSI_COMP_5	modem_params.h	91;"	d
+MODEM_TX_RAMP_DELAY_5	modem_params-125k.h	56;"	d
+MODEM_TX_RAMP_DELAY_5	modem_params.h	56;"	d
+MODULATION_TYPE	modem_params-125k.h	32;"	d
+MODULATION_TYPE	modem_params.h	32;"	d
+MODULATION_TYPE_VALUE	modem_params-125k.h	33;"	d
+MODULATION_TYPE_VALUE	modem_params.h	33;"	d
+MOD_2FSK	include/Si446x_api.h	60;"	d
+MOD_2GFSK	include/Si446x_api.h	61;"	d
+MOD_4FSK	include/Si446x_api.h	62;"	d
+MOD_4GFSK	include/Si446x_api.h	63;"	d
+MOD_CW	include/Si446x_api.h	58;"	d
+MOD_OOK	include/Si446x_api.h	59;"	d
+MY_FILE	include/fat.h	/^} MY_FILE;$/;"	t	typeref:struct:_FILE
+MakeDir	dir.c	/^Uint8 MakeDir(Int8 *Path)$/;"	f
+ModemRx1	Si446x_api.c	/^Uint8 ModemRx1[] = {11, MODEM_MDM_CTRL_11};$/;"	v
+ModemRx10	Si446x_api.c	/^Uint8 ModemRx10[] = {13, MODEM_CHFLT_RX1_CHFLT_COE4_7_0_13};$/;"	v
+ModemRx11	Si446x_api.c	/^Uint8 ModemRx11[] = {13, MODEM_CHFLT_RX2_CHFLT_COE13_7_0_13};$/;"	v
+ModemRx12	Si446x_api.c	/^Uint8 ModemRx12[] = {13, MODEM_CHFLT_RX2_CHFLT_COE4_7_0_13};$/;"	v
+ModemRx2	Si446x_api.c	/^Uint8 ModemRx2[] = {14, MODEM_BCR_OSR_1_14};$/;"	v
+ModemRx3	Si446x_api.c	/^Uint8 ModemRx3[] = {12, MODEM_AFC_GEAR_12};$/;"	v
+ModemRx4	Si446x_api.c	/^Uint8 ModemRx4[] = {5, MODEM_AGC_CONTRL_5};$/;"	v
+ModemRx4_1	Si446x_api.c	/^Uint8 ModemRx4_1[] = {7, MODEM_AGC_WINDOW_SIZE_7};$/;"	v
+ModemRx5	Si446x_api.c	/^Uint8 ModemRx5[] = {9, MODEM_FSK4_GAIN1_9};$/;"	v
+ModemRx6	Si446x_api.c	/^Uint8 ModemRx6[] = {8, MODEM_OOK_PDTC_8};$/;"	v
+ModemRx7	Si446x_api.c	/^Uint8 ModemRx7[] = {8, MODEM_RAW_SEARCH_8};$/;"	v
+ModemRx8	Si446x_api.c	/^Uint8 ModemRx8[] = {6, MODEM_ANT_DIV_MODE_6};$/;"	v
+ModemRx9	Si446x_api.c	/^Uint8 ModemRx9[] = {13, MODEM_CHFLT_RX1_CHFLT_COE13_7_0_13};$/;"	v
+ModemTrx1	Si446x_api.c	/^Uint8 ModemTrx1[] = {7, MODEM_MOD_TYPE_7};$/;"	v
+ModemTrx2	Si446x_api.c	/^Uint8 ModemTrx2[] = {5, MODEM_CLKGEN_BAND_5};$/;"	v
+ModemTrx3	Si446x_api.c	/^Uint8 ModemTrx3[] = {11, SYNTH_PFDCP_CPFF_11};$/;"	v
+ModemTrx4	Si446x_api.c	/^Uint8 ModemTrx4[] = {12, FREQ_CONTROL_INTE_12};$/;"	v
+ModemTx1	Si446x_api.c	/^Uint8 ModemTx1[] = {14, MODEM_DATA_RATE_2_14};$/;"	v
+ModemTx2	Si446x_api.c	/^Uint8 ModemTx2[] = {5, MODEM_TX_RAMP_DELAY_5};$/;"	v
+NIRQ_TIMEOUT	include/Si446x_api.h	70;"	d
+NMI	vectors.asm	/^NMI:		.ivec	no_handler			; Nonmaskable Interrupt$/;"	l
+NOT_EMPTY_CACHE	include/fat.h	57;"	d
+NOT_FAT_DISK	include/fat.h	61;"	d
+NOT_FIND_DIR	include/fat.h	73;"	d
+NOT_FIND_DISK	include/fat.h	54;"	d
+NOT_FIND_FDT	include/fat.h	60;"	d
+NOT_FIND_FILE	include/fat.h	72;"	d
+NOT_RUN	include/fat.h	76;"	d
+NTRes	include/fat.h	/^    Uint8   NTRes;              \/* 保留给NT *\/$/;"	m	struct:_FDT
+NULL	include/fat.h	127;"	d
+NUMBER_OF_REGIONS	include/defs.h	31;"	d
+NUMBER_OF_VALID_COEFS	include/defs.h	32;"	d
+NUM_CATEGORIES	include/defs.h	46;"	d
+NUM_CATEGORIZATION_CONTROL_BITS	include/defs.h	33;"	d
+NUM_CATEGORIZATION_CONTROL_POSSIBILITIES	include/defs.h	34;"	d
+Name	include/fat.h	/^    Int8        Name[11];       \/* 文件名 *\/$/;"	m	struct:_FILE
+Name	include/fat.h	/^    Int8    Name[11];           \/* 短文件名主文件名 *\/$/;"	m	struct:_FDT
+NoKey	include/ezdsp5535_sar.h	10;"	d
+Not_Open_FILE	include/fat.h	19;"	d
+NumFATs	include/fat.h	/^    Uint8       NumFATs;        \/* FAT表数目 *\/$/;"	m	struct:_Disk_Info
+OBJS	Debug/sources.mk	/^OBJS := $/;"	m
+OBJS__QUOTED	Debug/sources.mk	/^OBJS__QUOTED := $/;"	m
+OBJ_SRCS	Debug/sources.mk	/^OBJ_SRCS := $/;"	m
+ONE_SMA_WITH_RF_SWITCH	include/Si446x_api.h	47;"	d
+ONE_SMA_WITH_RF_SWITCH	include/Si446x_api.h	49;"	d
+ONE_SMA_WITH_RF_SWITCH	include/Si446x_api.h	51;"	d
+OPT_DEPS	Debug/sources.mk	/^OPT_DEPS := $/;"	m
+OPT_DEPS__QUOTED	Debug/sources.mk	/^OPT_DEPS__QUOTED := $/;"	m
+OPT_SRCS	Debug/sources.mk	/^OPT_SRCS := $/;"	m
+OSD9616_I2C_ADDR	ezdsp5535_lcd.c	7;"	d	file:
+O_SRCS	Debug/sources.mk	/^O_SRCS := $/;"	m
+Offset	include/fat.h	/^    Uint32      Offset;         \/* 文件指针偏移量 *\/$/;"	m	struct:_FILE
+OpenSec	RWSec.c	/^Uint8 *OpenSec(Uint32 Index)$/;"	f
+PARAMETER_ERR	include/fat.h	78;"	d
+PATH_NOT_FIND	include/fat.h	67;"	d
+PA_BIAS_CLKDUTY	modem_params-125k.h	103;"	d
+PA_BIAS_CLKDUTY	modem_params.h	103;"	d
+PA_MODE	modem_params-125k.h	101;"	d
+PA_MODE	modem_params.h	101;"	d
+PA_PWR_LVL	modem_params-125k.h	102;"	d
+PA_PWR_LVL	modem_params.h	102;"	d
+PA_TC_5	modem_params-125k.h	58;"	d
+PA_TC_5	modem_params.h	58;"	d
+PINIT	autoinit.asm	/^PINIT:		$/;"	l
+PLL_init	pll.c	/^void PLL_init(Uint16 multipler)$/;"	f
+PORTMEMCOPY	autoinit.asm	/^PORTMEMCOPY:$/;"	l
+PP	include/fat.h	4;"	d
+PROG0	vectors.asm	/^PROG0:		.ivec	no_handler			; Programmable 0 Interrupt$/;"	l
+PROG1	vectors.asm	/^PROG1:		.ivec	no_handler			; Programmable 1 Interrupt$/;"	l
+PROG2	vectors.asm	/^PROG2:		.ivec	no_handler			; Programmable 2 Interrupt$/;"	l
+PROG3	vectors.asm	/^PROG3:		.ivec	no_handler			; Programmable 3 Interrupt$/;"	l
+PROP_FREQ_CONTROL_CHANNEL_STEP_SIZE_0	include/Si446x_B1_defs.h	269;"	d
+PROP_FREQ_CONTROL_CHANNEL_STEP_SIZE_1	include/Si446x_B1_defs.h	268;"	d
+PROP_FREQ_CONTROL_FRAC_0	include/Si446x_B1_defs.h	267;"	d
+PROP_FREQ_CONTROL_FRAC_1	include/Si446x_B1_defs.h	266;"	d
+PROP_FREQ_CONTROL_FRAC_2	include/Si446x_B1_defs.h	265;"	d
+PROP_FREQ_CONTROL_GROUP	include/Si446x_B1_defs.h	263;"	d
+PROP_FREQ_CONTROL_INTE	include/Si446x_B1_defs.h	264;"	d
+PROP_FREQ_CONTROL_VCOCNT_RX_ADJ	include/Si446x_B1_defs.h	271;"	d
+PROP_FREQ_CONTROL_W_SIZE	include/Si446x_B1_defs.h	270;"	d
+PROP_FRR_CTL_A_MODE	include/Si446x_B1_defs.h	91;"	d
+PROP_FRR_CTL_B_MODE	include/Si446x_B1_defs.h	92;"	d
+PROP_FRR_CTL_C_MODE	include/Si446x_B1_defs.h	93;"	d
+PROP_FRR_CTL_D_MODE	include/Si446x_B1_defs.h	94;"	d
+PROP_FRR_CTL_GROUP	include/Si446x_B1_defs.h	90;"	d
+PROP_GLOBAL_CLK_CFG	include/Si446x_B1_defs.h	74;"	d
+PROP_GLOBAL_CONFIG	include/Si446x_B1_defs.h	76;"	d
+PROP_GLOBAL_GROUP	include/Si446x_B1_defs.h	72;"	d
+PROP_GLOBAL_LOW_BATT_THRESH	include/Si446x_B1_defs.h	75;"	d
+PROP_GLOBAL_WUT_CAL	include/Si446x_B1_defs.h	82;"	d
+PROP_GLOBAL_WUT_CONFIG	include/Si446x_B1_defs.h	77;"	d
+PROP_GLOBAL_WUT_LDC	include/Si446x_B1_defs.h	81;"	d
+PROP_GLOBAL_WUT_M_15_8	include/Si446x_B1_defs.h	78;"	d
+PROP_GLOBAL_WUT_M_7_0	include/Si446x_B1_defs.h	79;"	d
+PROP_GLOBAL_WUT_R	include/Si446x_B1_defs.h	80;"	d
+PROP_GLOBAL_XO_TUNE	include/Si446x_B1_defs.h	73;"	d
+PROP_INT_CTL_CHIP_ENABLE	include/Si446x_B1_defs.h	88;"	d
+PROP_INT_CTL_ENABLE	include/Si446x_B1_defs.h	85;"	d
+PROP_INT_CTL_GROUP	include/Si446x_B1_defs.h	84;"	d
+PROP_INT_CTL_MODEM_ENABLE	include/Si446x_B1_defs.h	87;"	d
+PROP_INT_CTL_PH_ENABLE	include/Si446x_B1_defs.h	86;"	d
+PROP_MATCH_CTRL_1	include/Si446x_B1_defs.h	252;"	d
+PROP_MATCH_CTRL_2	include/Si446x_B1_defs.h	255;"	d
+PROP_MATCH_CTRL_3	include/Si446x_B1_defs.h	258;"	d
+PROP_MATCH_CTRL_4	include/Si446x_B1_defs.h	261;"	d
+PROP_MATCH_GROUP	include/Si446x_B1_defs.h	249;"	d
+PROP_MATCH_MASK_1	include/Si446x_B1_defs.h	251;"	d
+PROP_MATCH_MASK_2	include/Si446x_B1_defs.h	254;"	d
+PROP_MATCH_MASK_3	include/Si446x_B1_defs.h	257;"	d
+PROP_MATCH_MASK_4	include/Si446x_B1_defs.h	260;"	d
+PROP_MATCH_VALUE_1	include/Si446x_B1_defs.h	250;"	d
+PROP_MATCH_VALUE_2	include/Si446x_B1_defs.h	253;"	d
+PROP_MATCH_VALUE_3	include/Si446x_B1_defs.h	256;"	d
+PROP_MATCH_VALUE_4	include/Si446x_B1_defs.h	259;"	d
+PROP_MODEM_ADC_CTRL	include/Si446x_B1_defs.h	193;"	d
+PROP_MODEM_AFC_GAIN_0	include/Si446x_B1_defs.h	188;"	d
+PROP_MODEM_AFC_GAIN_1	include/Si446x_B1_defs.h	187;"	d
+PROP_MODEM_AFC_GEAR	include/Si446x_B1_defs.h	185;"	d
+PROP_MODEM_AFC_LIMITER_0	include/Si446x_B1_defs.h	190;"	d
+PROP_MODEM_AFC_LIMITER_1	include/Si446x_B1_defs.h	189;"	d
+PROP_MODEM_AFC_MISC	include/Si446x_B1_defs.h	191;"	d
+PROP_MODEM_AFC_WAIT	include/Si446x_B1_defs.h	186;"	d
+PROP_MODEM_AFC_ZIFOFF	include/Si446x_B1_defs.h	192;"	d
+PROP_MODEM_ANT_DIV_CONTROL	include/Si446x_B1_defs.h	195;"	d
+PROP_MODEM_CHFLT_GROUP	include/Si446x_B1_defs.h	203;"	d
+PROP_MODEM_CHFLT_RX1_CHFLT_COE0_7_0	include/Si446x_B1_defs.h	217;"	d
+PROP_MODEM_CHFLT_RX1_CHFLT_COE10_7_0	include/Si446x_B1_defs.h	207;"	d
+PROP_MODEM_CHFLT_RX1_CHFLT_COE11_7_0	include/Si446x_B1_defs.h	206;"	d
+PROP_MODEM_CHFLT_RX1_CHFLT_COE12_7_0	include/Si446x_B1_defs.h	205;"	d
+PROP_MODEM_CHFLT_RX1_CHFLT_COE13_7_0	include/Si446x_B1_defs.h	204;"	d
+PROP_MODEM_CHFLT_RX1_CHFLT_COE1_7_0	include/Si446x_B1_defs.h	216;"	d
+PROP_MODEM_CHFLT_RX1_CHFLT_COE2_7_0	include/Si446x_B1_defs.h	215;"	d
+PROP_MODEM_CHFLT_RX1_CHFLT_COE3_7_0	include/Si446x_B1_defs.h	214;"	d
+PROP_MODEM_CHFLT_RX1_CHFLT_COE4_7_0	include/Si446x_B1_defs.h	213;"	d
+PROP_MODEM_CHFLT_RX1_CHFLT_COE5_7_0	include/Si446x_B1_defs.h	212;"	d
+PROP_MODEM_CHFLT_RX1_CHFLT_COE6_7_0	include/Si446x_B1_defs.h	211;"	d
+PROP_MODEM_CHFLT_RX1_CHFLT_COE7_7_0	include/Si446x_B1_defs.h	210;"	d
+PROP_MODEM_CHFLT_RX1_CHFLT_COE8_7_0	include/Si446x_B1_defs.h	209;"	d
+PROP_MODEM_CHFLT_RX1_CHFLT_COE9_7_0	include/Si446x_B1_defs.h	208;"	d
+PROP_MODEM_CHFLT_RX1_CHFLT_COEM0	include/Si446x_B1_defs.h	218;"	d
+PROP_MODEM_CHFLT_RX1_CHFLT_COEM1	include/Si446x_B1_defs.h	219;"	d
+PROP_MODEM_CHFLT_RX1_CHFLT_COEM2	include/Si446x_B1_defs.h	220;"	d
+PROP_MODEM_CHFLT_RX1_CHFLT_COEM3	include/Si446x_B1_defs.h	221;"	d
+PROP_MODEM_CHFLT_RX2_CHFLT_COE0_7_0	include/Si446x_B1_defs.h	235;"	d
+PROP_MODEM_CHFLT_RX2_CHFLT_COE10_7_0	include/Si446x_B1_defs.h	225;"	d
+PROP_MODEM_CHFLT_RX2_CHFLT_COE11_7_0	include/Si446x_B1_defs.h	224;"	d
+PROP_MODEM_CHFLT_RX2_CHFLT_COE12_7_0	include/Si446x_B1_defs.h	223;"	d
+PROP_MODEM_CHFLT_RX2_CHFLT_COE13_7_0	include/Si446x_B1_defs.h	222;"	d
+PROP_MODEM_CHFLT_RX2_CHFLT_COE1_7_0	include/Si446x_B1_defs.h	234;"	d
+PROP_MODEM_CHFLT_RX2_CHFLT_COE2_7_0	include/Si446x_B1_defs.h	233;"	d
+PROP_MODEM_CHFLT_RX2_CHFLT_COE3_7_0	include/Si446x_B1_defs.h	232;"	d
+PROP_MODEM_CHFLT_RX2_CHFLT_COE4_7_0	include/Si446x_B1_defs.h	231;"	d
+PROP_MODEM_CHFLT_RX2_CHFLT_COE5_7_0	include/Si446x_B1_defs.h	230;"	d
+PROP_MODEM_CHFLT_RX2_CHFLT_COE6_7_0	include/Si446x_B1_defs.h	229;"	d
+PROP_MODEM_CHFLT_RX2_CHFLT_COE7_7_0	include/Si446x_B1_defs.h	228;"	d
+PROP_MODEM_CHFLT_RX2_CHFLT_COE8_7_0	include/Si446x_B1_defs.h	227;"	d
+PROP_MODEM_CHFLT_RX2_CHFLT_COE9_7_0	include/Si446x_B1_defs.h	226;"	d
+PROP_MODEM_CHFLT_RX2_CHFLT_COEM0	include/Si446x_B1_defs.h	236;"	d
+PROP_MODEM_CHFLT_RX2_CHFLT_COEM1	include/Si446x_B1_defs.h	237;"	d
+PROP_MODEM_CHFLT_RX2_CHFLT_COEM2	include/Si446x_B1_defs.h	238;"	d
+PROP_MODEM_CHFLT_RX2_CHFLT_COEM3	include/Si446x_B1_defs.h	239;"	d
+PROP_MODEM_DATA_RATE_0	include/Si446x_B1_defs.h	179;"	d
+PROP_MODEM_DATA_RATE_1	include/Si446x_B1_defs.h	178;"	d
+PROP_MODEM_DATA_RATE_2	include/Si446x_B1_defs.h	177;"	d
+PROP_MODEM_FREQ_DEV_0	include/Si446x_B1_defs.h	182;"	d
+PROP_MODEM_FREQ_DEV_1	include/Si446x_B1_defs.h	181;"	d
+PROP_MODEM_FREQ_DEV_2	include/Si446x_B1_defs.h	180;"	d
+PROP_MODEM_FREQ_OFFSET_0	include/Si446x_B1_defs.h	184;"	d
+PROP_MODEM_FREQ_OFFSET_1	include/Si446x_B1_defs.h	183;"	d
+PROP_MODEM_FSK4_MAP	include/Si446x_B1_defs.h	194;"	d
+PROP_MODEM_GROUP	include/Si446x_B1_defs.h	174;"	d
+PROP_MODEM_MAP_CONTROL	include/Si446x_B1_defs.h	176;"	d
+PROP_MODEM_MOD_TYPE	include/Si446x_B1_defs.h	175;"	d
+PROP_MODEM_RESERVED_20_50	include/Si446x_B1_defs.h	201;"	d
+PROP_MODEM_RSSI_COMP	include/Si446x_B1_defs.h	200;"	d
+PROP_MODEM_RSSI_CONTROL	include/Si446x_B1_defs.h	198;"	d
+PROP_MODEM_RSSI_CONTROL2	include/Si446x_B1_defs.h	199;"	d
+PROP_MODEM_RSSI_JUMP_THRESH	include/Si446x_B1_defs.h	197;"	d
+PROP_MODEM_RSSI_THRESH	include/Si446x_B1_defs.h	196;"	d
+PROP_PA_BIAS_CLKDUTY	include/Si446x_B1_defs.h	244;"	d
+PROP_PA_GROUP	include/Si446x_B1_defs.h	241;"	d
+PROP_PA_MODE	include/Si446x_B1_defs.h	242;"	d
+PROP_PA_PWR_LVL	include/Si446x_B1_defs.h	243;"	d
+PROP_PA_RAMP_DOWN_DELAY	include/Si446x_B1_defs.h	247;"	d
+PROP_PA_RAMP_EX	include/Si446x_B1_defs.h	246;"	d
+PROP_PA_TC	include/Si446x_B1_defs.h	245;"	d
+PROP_PKT_CONFIG1	include/Si446x_B1_defs.h	126;"	d
+PROP_PKT_CRC_CONFIG	include/Si446x_B1_defs.h	120;"	d
+PROP_PKT_FIELD_1_CONFIG	include/Si446x_B1_defs.h	135;"	d
+PROP_PKT_FIELD_1_CRC_CONFIG	include/Si446x_B1_defs.h	136;"	d
+PROP_PKT_FIELD_1_LENGTH_12_8	include/Si446x_B1_defs.h	133;"	d
+PROP_PKT_FIELD_1_LENGTH_7_0	include/Si446x_B1_defs.h	134;"	d
+PROP_PKT_FIELD_2_CONFIG	include/Si446x_B1_defs.h	139;"	d
+PROP_PKT_FIELD_2_CRC_CONFIG	include/Si446x_B1_defs.h	140;"	d
+PROP_PKT_FIELD_2_LENGTH_12_8	include/Si446x_B1_defs.h	137;"	d
+PROP_PKT_FIELD_2_LENGTH_7_0	include/Si446x_B1_defs.h	138;"	d
+PROP_PKT_FIELD_3_CONFIG	include/Si446x_B1_defs.h	143;"	d
+PROP_PKT_FIELD_3_CRC_CONFIG	include/Si446x_B1_defs.h	144;"	d
+PROP_PKT_FIELD_3_LENGTH_12_8	include/Si446x_B1_defs.h	141;"	d
+PROP_PKT_FIELD_3_LENGTH_7_0	include/Si446x_B1_defs.h	142;"	d
+PROP_PKT_FIELD_4_CONFIG	include/Si446x_B1_defs.h	147;"	d
+PROP_PKT_FIELD_4_CRC_CONFIG	include/Si446x_B1_defs.h	148;"	d
+PROP_PKT_FIELD_4_LENGTH_12_8	include/Si446x_B1_defs.h	145;"	d
+PROP_PKT_FIELD_4_LENGTH_7_0	include/Si446x_B1_defs.h	146;"	d
+PROP_PKT_FIELD_5_CONFIG	include/Si446x_B1_defs.h	151;"	d
+PROP_PKT_FIELD_5_CRC_CONFIG	include/Si446x_B1_defs.h	152;"	d
+PROP_PKT_FIELD_5_LENGTH_12_8	include/Si446x_B1_defs.h	149;"	d
+PROP_PKT_FIELD_5_LENGTH_7_0	include/Si446x_B1_defs.h	150;"	d
+PROP_PKT_GROUP	include/Si446x_B1_defs.h	119;"	d
+PROP_PKT_LEN	include/Si446x_B1_defs.h	128;"	d
+PROP_PKT_LEN_ADJUST	include/Si446x_B1_defs.h	130;"	d
+PROP_PKT_LEN_FIELD_SOURCE	include/Si446x_B1_defs.h	129;"	d
+PROP_PKT_RESERVED_18_7	include/Si446x_B1_defs.h	127;"	d
+PROP_PKT_RX_FIELD_1_CONFIG	include/Si446x_B1_defs.h	155;"	d
+PROP_PKT_RX_FIELD_1_CRC_CONFIG	include/Si446x_B1_defs.h	156;"	d
+PROP_PKT_RX_FIELD_1_LENGTH_12_8	include/Si446x_B1_defs.h	153;"	d
+PROP_PKT_RX_FIELD_1_LENGTH_7_0	include/Si446x_B1_defs.h	154;"	d
+PROP_PKT_RX_FIELD_2_CONFIG	include/Si446x_B1_defs.h	159;"	d
+PROP_PKT_RX_FIELD_2_CRC_CONFIG	include/Si446x_B1_defs.h	160;"	d
+PROP_PKT_RX_FIELD_2_LENGTH_12_8	include/Si446x_B1_defs.h	157;"	d
+PROP_PKT_RX_FIELD_2_LENGTH_7_0	include/Si446x_B1_defs.h	158;"	d
+PROP_PKT_RX_FIELD_3_CONFIG	include/Si446x_B1_defs.h	163;"	d
+PROP_PKT_RX_FIELD_3_CRC_CONFIG	include/Si446x_B1_defs.h	164;"	d
+PROP_PKT_RX_FIELD_3_LENGTH_12_8	include/Si446x_B1_defs.h	161;"	d
+PROP_PKT_RX_FIELD_3_LENGTH_7_0	include/Si446x_B1_defs.h	162;"	d
+PROP_PKT_RX_FIELD_4_CONFIG	include/Si446x_B1_defs.h	167;"	d
+PROP_PKT_RX_FIELD_4_CRC_CONFIG	include/Si446x_B1_defs.h	168;"	d
+PROP_PKT_RX_FIELD_4_LENGTH_12_8	include/Si446x_B1_defs.h	165;"	d
+PROP_PKT_RX_FIELD_4_LENGTH_7_0	include/Si446x_B1_defs.h	166;"	d
+PROP_PKT_RX_FIELD_5_CONFIG	include/Si446x_B1_defs.h	171;"	d
+PROP_PKT_RX_FIELD_5_CRC_CONFIG	include/Si446x_B1_defs.h	172;"	d
+PROP_PKT_RX_FIELD_5_LENGTH_12_8	include/Si446x_B1_defs.h	169;"	d
+PROP_PKT_RX_FIELD_5_LENGTH_7_0	include/Si446x_B1_defs.h	170;"	d
+PROP_PKT_RX_THRESHOLD	include/Si446x_B1_defs.h	132;"	d
+PROP_PKT_TX_THRESHOLD	include/Si446x_B1_defs.h	131;"	d
+PROP_PKT_WHT_BIT_NUM	include/Si446x_B1_defs.h	125;"	d
+PROP_PKT_WHT_POLY_15_8	include/Si446x_B1_defs.h	121;"	d
+PROP_PKT_WHT_POLY_7_0	include/Si446x_B1_defs.h	122;"	d
+PROP_PKT_WHT_SEED_15_8	include/Si446x_B1_defs.h	123;"	d
+PROP_PKT_WHT_SEED_7_0	include/Si446x_B1_defs.h	124;"	d
+PROP_PREAMBLE_CONFIG	include/Si446x_B1_defs.h	101;"	d
+PROP_PREAMBLE_CONFIG_NSTD	include/Si446x_B1_defs.h	99;"	d
+PROP_PREAMBLE_CONFIG_STD_1	include/Si446x_B1_defs.h	98;"	d
+PROP_PREAMBLE_CONFIG_STD_2	include/Si446x_B1_defs.h	100;"	d
+PROP_PREAMBLE_GROUP	include/Si446x_B1_defs.h	96;"	d
+PROP_PREAMBLE_PATTERN_15_8	include/Si446x_B1_defs.h	104;"	d
+PROP_PREAMBLE_PATTERN_23_16	include/Si446x_B1_defs.h	103;"	d
+PROP_PREAMBLE_PATTERN_31_24	include/Si446x_B1_defs.h	102;"	d
+PROP_PREAMBLE_PATTERN_7_0	include/Si446x_B1_defs.h	105;"	d
+PROP_PREAMBLE_POSTAMBLE_CONFIG	include/Si446x_B1_defs.h	106;"	d
+PROP_PREAMBLE_POSTAMBLE_PATTERN_15_8	include/Si446x_B1_defs.h	109;"	d
+PROP_PREAMBLE_POSTAMBLE_PATTERN_23_16	include/Si446x_B1_defs.h	108;"	d
+PROP_PREAMBLE_POSTAMBLE_PATTERN_31_24	include/Si446x_B1_defs.h	107;"	d
+PROP_PREAMBLE_POSTAMBLE_PATTERN_7_0	include/Si446x_B1_defs.h	110;"	d
+PROP_PREAMBLE_TX_LENGTH	include/Si446x_B1_defs.h	97;"	d
+PROP_RX_HOP_CONTROL	include/Si446x_B1_defs.h	274;"	d
+PROP_RX_HOP_GROUP	include/Si446x_B1_defs.h	273;"	d
+PROP_RX_HOP_TABLE_ENTRY_0	include/Si446x_B1_defs.h	276;"	d
+PROP_RX_HOP_TABLE_ENTRY_1	include/Si446x_B1_defs.h	277;"	d
+PROP_RX_HOP_TABLE_ENTRY_10	include/Si446x_B1_defs.h	286;"	d
+PROP_RX_HOP_TABLE_ENTRY_11	include/Si446x_B1_defs.h	287;"	d
+PROP_RX_HOP_TABLE_ENTRY_12	include/Si446x_B1_defs.h	288;"	d
+PROP_RX_HOP_TABLE_ENTRY_13	include/Si446x_B1_defs.h	289;"	d
+PROP_RX_HOP_TABLE_ENTRY_14	include/Si446x_B1_defs.h	290;"	d
+PROP_RX_HOP_TABLE_ENTRY_15	include/Si446x_B1_defs.h	291;"	d
+PROP_RX_HOP_TABLE_ENTRY_16	include/Si446x_B1_defs.h	292;"	d
+PROP_RX_HOP_TABLE_ENTRY_17	include/Si446x_B1_defs.h	293;"	d
+PROP_RX_HOP_TABLE_ENTRY_18	include/Si446x_B1_defs.h	294;"	d
+PROP_RX_HOP_TABLE_ENTRY_19	include/Si446x_B1_defs.h	295;"	d
+PROP_RX_HOP_TABLE_ENTRY_2	include/Si446x_B1_defs.h	278;"	d
+PROP_RX_HOP_TABLE_ENTRY_20	include/Si446x_B1_defs.h	296;"	d
+PROP_RX_HOP_TABLE_ENTRY_21	include/Si446x_B1_defs.h	297;"	d
+PROP_RX_HOP_TABLE_ENTRY_22	include/Si446x_B1_defs.h	298;"	d
+PROP_RX_HOP_TABLE_ENTRY_23	include/Si446x_B1_defs.h	299;"	d
+PROP_RX_HOP_TABLE_ENTRY_24	include/Si446x_B1_defs.h	300;"	d
+PROP_RX_HOP_TABLE_ENTRY_25	include/Si446x_B1_defs.h	301;"	d
+PROP_RX_HOP_TABLE_ENTRY_26	include/Si446x_B1_defs.h	302;"	d
+PROP_RX_HOP_TABLE_ENTRY_27	include/Si446x_B1_defs.h	303;"	d
+PROP_RX_HOP_TABLE_ENTRY_28	include/Si446x_B1_defs.h	304;"	d
+PROP_RX_HOP_TABLE_ENTRY_29	include/Si446x_B1_defs.h	305;"	d
+PROP_RX_HOP_TABLE_ENTRY_3	include/Si446x_B1_defs.h	279;"	d
+PROP_RX_HOP_TABLE_ENTRY_30	include/Si446x_B1_defs.h	306;"	d
+PROP_RX_HOP_TABLE_ENTRY_31	include/Si446x_B1_defs.h	307;"	d
+PROP_RX_HOP_TABLE_ENTRY_32	include/Si446x_B1_defs.h	308;"	d
+PROP_RX_HOP_TABLE_ENTRY_33	include/Si446x_B1_defs.h	309;"	d
+PROP_RX_HOP_TABLE_ENTRY_34	include/Si446x_B1_defs.h	310;"	d
+PROP_RX_HOP_TABLE_ENTRY_35	include/Si446x_B1_defs.h	311;"	d
+PROP_RX_HOP_TABLE_ENTRY_36	include/Si446x_B1_defs.h	312;"	d
+PROP_RX_HOP_TABLE_ENTRY_37	include/Si446x_B1_defs.h	313;"	d
+PROP_RX_HOP_TABLE_ENTRY_38	include/Si446x_B1_defs.h	314;"	d
+PROP_RX_HOP_TABLE_ENTRY_39	include/Si446x_B1_defs.h	315;"	d
+PROP_RX_HOP_TABLE_ENTRY_4	include/Si446x_B1_defs.h	280;"	d
+PROP_RX_HOP_TABLE_ENTRY_40	include/Si446x_B1_defs.h	316;"	d
+PROP_RX_HOP_TABLE_ENTRY_41	include/Si446x_B1_defs.h	317;"	d
+PROP_RX_HOP_TABLE_ENTRY_42	include/Si446x_B1_defs.h	318;"	d
+PROP_RX_HOP_TABLE_ENTRY_43	include/Si446x_B1_defs.h	319;"	d
+PROP_RX_HOP_TABLE_ENTRY_44	include/Si446x_B1_defs.h	320;"	d
+PROP_RX_HOP_TABLE_ENTRY_45	include/Si446x_B1_defs.h	321;"	d
+PROP_RX_HOP_TABLE_ENTRY_46	include/Si446x_B1_defs.h	322;"	d
+PROP_RX_HOP_TABLE_ENTRY_47	include/Si446x_B1_defs.h	323;"	d
+PROP_RX_HOP_TABLE_ENTRY_48	include/Si446x_B1_defs.h	324;"	d
+PROP_RX_HOP_TABLE_ENTRY_49	include/Si446x_B1_defs.h	325;"	d
+PROP_RX_HOP_TABLE_ENTRY_5	include/Si446x_B1_defs.h	281;"	d
+PROP_RX_HOP_TABLE_ENTRY_50	include/Si446x_B1_defs.h	326;"	d
+PROP_RX_HOP_TABLE_ENTRY_51	include/Si446x_B1_defs.h	327;"	d
+PROP_RX_HOP_TABLE_ENTRY_52	include/Si446x_B1_defs.h	328;"	d
+PROP_RX_HOP_TABLE_ENTRY_53	include/Si446x_B1_defs.h	329;"	d
+PROP_RX_HOP_TABLE_ENTRY_54	include/Si446x_B1_defs.h	330;"	d
+PROP_RX_HOP_TABLE_ENTRY_55	include/Si446x_B1_defs.h	331;"	d
+PROP_RX_HOP_TABLE_ENTRY_56	include/Si446x_B1_defs.h	332;"	d
+PROP_RX_HOP_TABLE_ENTRY_57	include/Si446x_B1_defs.h	333;"	d
+PROP_RX_HOP_TABLE_ENTRY_58	include/Si446x_B1_defs.h	334;"	d
+PROP_RX_HOP_TABLE_ENTRY_59	include/Si446x_B1_defs.h	335;"	d
+PROP_RX_HOP_TABLE_ENTRY_6	include/Si446x_B1_defs.h	282;"	d
+PROP_RX_HOP_TABLE_ENTRY_60	include/Si446x_B1_defs.h	336;"	d
+PROP_RX_HOP_TABLE_ENTRY_61	include/Si446x_B1_defs.h	337;"	d
+PROP_RX_HOP_TABLE_ENTRY_62	include/Si446x_B1_defs.h	338;"	d
+PROP_RX_HOP_TABLE_ENTRY_63	include/Si446x_B1_defs.h	339;"	d
+PROP_RX_HOP_TABLE_ENTRY_7	include/Si446x_B1_defs.h	283;"	d
+PROP_RX_HOP_TABLE_ENTRY_8	include/Si446x_B1_defs.h	284;"	d
+PROP_RX_HOP_TABLE_ENTRY_9	include/Si446x_B1_defs.h	285;"	d
+PROP_RX_HOP_TABLE_SIZE	include/Si446x_B1_defs.h	275;"	d
+PROP_SYNC_BITS_15_8	include/Si446x_B1_defs.h	116;"	d
+PROP_SYNC_BITS_23_16	include/Si446x_B1_defs.h	115;"	d
+PROP_SYNC_BITS_31_24	include/Si446x_B1_defs.h	114;"	d
+PROP_SYNC_BITS_7_0	include/Si446x_B1_defs.h	117;"	d
+PROP_SYNC_CONFIG	include/Si446x_B1_defs.h	113;"	d
+PROP_SYNC_GROUP	include/Si446x_B1_defs.h	112;"	d
+PaSettings	Si446x_api.c	/^Uint8 PaSettings[][5] = {$/;"	v
+PathClusIndex	include/fat.h	/^    Uint32      PathClusIndex;  \/* 当前路径的FDT表开始簇号, 0为根目录 *\/$/;"	m	struct:_Disk_Info
+RCV2	vectors.asm	/^RCV2:		.ivec	_i2s2_rx_isr		; I2S2 Rx Interrupt$/;"	l
+RCV3	vectors.asm	/^RCV3:		.ivec	no_handler			; I2S3 Rx Interrupt$/;"	l
+REGION_POWER_STEPSIZE_DB	include/huff_def.h	14;"	d
+REGION_POWER_TABLE_NUM_NEGATIVES	include/defs.h	51;"	d
+REGION_POWER_TABLE_SIZE	include/defs.h	50;"	d
+REGION_SIZE	include/defs.h	17;"	d
+RET2	idiv.asm	/^RET2:$/;"	l
+RETURN_OK	include/fat.h	53;"	d
+RIGHT	include/codec.h	/^	RIGHT = 1,$/;"	e	enum:_CHANNEL
+RM	Debug/makefile	/^RM := rm -rf$/;"	m
+RMDIR	Debug/makefile	/^RMDIR := rm -rf$/;"	m
+ROOT_FDT_FULL	include/fat.h	64;"	d
+RST	vectors.asm	/^RST:		.ivec	reset_isr, USE_RETA   ; Reset \/ Software Interrupt #0$/;"	l
+RTC	vectors.asm	/^RTC:		.ivec	no_handler			; RTC interrupt$/;"	l
+RTDXRCV	vectors.asm	/^RTDXRCV:	.ivec	no_handler			; Emulation Interrupt - RTDX receive$/;"	l
+RTDXXMT	vectors.asm	/^RTDXXMT:	.ivec	no_handler			; Emulation Interrupt - RTDX transmit$/;"	l
+RTOS	vectors.asm	/^RTOS:		.ivec	no_handler			; Emulation Interrupt - RTOS$/;"	l
+RW_ID	include/fat.h	/^    Uint16      RW_ID;          \/* 读写ID,用于释放Cache *\/$/;"	m	struct:_Disk_Cache
+Rand_Obj	include/typedef.h	/^}Rand_Obj;$/;"	t	typeref:struct:__anon2
+ReadFDTInfo	fdt.c	/^Uint8  ReadFDTInfo(Uint32 SecIndex, Uint16 ByteIndex, FDT *Rt)$/;"	f
+ReadSec	RWSec.c	/^Uint8 ReadSec(Uint32 Index, Uint16 isData)$/;"	f
+ReceivePacket	Si446x_api.c	/^void ReceivePacket(Uint8 *buff)$/;"	f
+RemoveDir	dir.c	/^Uint8 RemoveDir(Int8 *Path)$/;"	f
+RemoveFile	file.c	/^Uint8 RemoveFile(Int8 *DirFileName)$/;"	f
+RemoveFileDriver	disk.c	/^void RemoveFileDriver(Uint16 (* DiakCommand)(Uint8 Cammand, void *Parameter))$/;"	f
+RfByte	audio.c	/^Uint8  RfByte[2*(MAX_BITS_PER_FRAME\/8+2)] = {0x6b, 0x21};		\/\/ left and right$/;"	v
+RootDirTable	include/fat.h	/^    Uint32      RootDirTable;   \/* 根目录开始扇区号（FAT32为开始簇号）*\/$/;"	m	struct:_Disk_Info
+RootFDTInfo	fdt.c	/^Uint8 RootFDTInfo(Uint32 Index, FDT *FDTData, Uint16 type)$/;"	f
+RootSecCnt	include/fat.h	/^    Uint32      RootSecCnt;     \/* 根目录占用扇区数 *\/$/;"	m	struct:_Disk_Info
+RsvdForLow	include/fat.h	/^    void        *RsvdForLow;    \/* 保留给底层驱动程序 *\/$/;"	m	struct:_Disk_Info
+RsvdForLow	include/fat.h	/^    void        *RsvdForLow;    \/* 保留给底层驱动程序，由_Disk_Info中拷贝过来 *\/$/;"	m	struct:_Disk_RW_Parameter
+S43_DEPS	Debug/sources.mk	/^S43_DEPS := $/;"	m
+S43_DEPS__QUOTED	Debug/sources.mk	/^S43_DEPS__QUOTED := $/;"	m
+S43_SRCS	Debug/sources.mk	/^S43_SRCS := $/;"	m
+S55_DEPS	Debug/sources.mk	/^S55_DEPS := $/;"	m
+S55_DEPS__QUOTED	Debug/sources.mk	/^S55_DEPS__QUOTED := $/;"	m
+S55_SRCS	Debug/sources.mk	/^S55_SRCS := $/;"	m
+S62_DEPS	Debug/sources.mk	/^S62_DEPS := $/;"	m
+S62_DEPS__QUOTED	Debug/sources.mk	/^S62_DEPS__QUOTED := $/;"	m
+S62_SRCS	Debug/sources.mk	/^S62_SRCS := $/;"	m
+S64_DEPS	Debug/sources.mk	/^S64_DEPS := $/;"	m
+S64_DEPS__QUOTED	Debug/sources.mk	/^S64_DEPS__QUOTED := $/;"	m
+S64_SRCS	Debug/sources.mk	/^S64_SRCS := $/;"	m
+S67_DEPS	Debug/sources.mk	/^S67_DEPS := $/;"	m
+S67_DEPS__QUOTED	Debug/sources.mk	/^S67_DEPS__QUOTED := $/;"	m
+S67_SRCS	Debug/sources.mk	/^S67_SRCS := $/;"	m
+SARADC	vectors.asm	/^SARADC:		.ivec	no_handler			; SAR ADC Interrupt$/;"	l
+SA_DEPS	Debug/sources.mk	/^SA_DEPS := $/;"	m
+SA_DEPS__QUOTED	Debug/sources.mk	/^SA_DEPS__QUOTED := $/;"	m
+SA_SRCS	Debug/sources.mk	/^SA_SRCS := $/;"	m
+SDCammand	sd.c	/^Uint16 SDCammand(Uint8 Cammand, void *Parameter) \/*使用您自己的函数名称 *\/$/;"	f
+SD_ReadBlock	csl_mmcsd.c	/^int SD_ReadBlock(Uint32 sect, Uint8 *p)$/;"	f
+SD_ReadBlock_Raw	csl_mmcsd.c	/^int SD_ReadBlock_Raw(Uint32 sect, Uint8 *p)$/;"	f
+SD_WriteBlock	csl_mmcsd.c	/^int SD_WriteBlock(Uint32 sect, Uint8 *p)$/;"	f
+SD_WriteBlock_Raw	csl_mmcsd.c	/^int SD_WriteBlock_Raw(Uint32 sect, Uint8 *p)$/;"	f
+SD_configurePullup	csl_mmcsd.c	/^CSL_Status SD_configurePullup(CSL_MmcsdHandle    hMmcsd,$/;"	f
+SD_getCardCsd	csl_mmcsd.c	/^CSL_Status SD_getCardCsd(CSL_MmcsdHandle      hMmcsd,$/;"	f
+SD_sendAllCID	csl_mmcsd.c	/^CSL_Status SD_sendAllCID(CSL_MmcsdHandle     hMmcsd,$/;"	f
+SD_sendRca	csl_mmcsd.c	/^CSL_Status SD_sendRca(CSL_MmcsdHandle     hMmcsd,$/;"	f
+SD_setBusWidth	csl_mmcsd.c	/^CSL_Status SD_setBusWidth(CSL_MmcsdHandle    hMmcsd,$/;"	f
+SECTOR_NOT_IN_CACHE	include/fat.h	56;"	d
+SECTOR_READ_ERR	include/fat.h	58;"	d
+SEEK_CUR	include/fat.h	123;"	d
+SEEK_END	include/fat.h	124;"	d
+SEEK_SET	include/fat.h	122;"	d
+SI446X_API_H_	include/Si446x_api.h	2;"	d
+SI446X_B1_DEFS_H	include/Si446x_B1_defs.h	22;"	d
+SINT30	vectors.asm	/^SINT30:		.ivec	no_handler			; Software Interrupt #30$/;"	l
+SINT31	vectors.asm	/^SINT31:		.ivec	no_handler			; Software Interrupt #31$/;"	l
+SP	autoinit.asm	/^	SP = SP + #1$/;"	d
+SP	autoinit.asm	/^	SP = SP + #3$/;"	d
+SP	autoinit.asm	/^	SP = SP - #1$/;"	d
+SP	autoinit.asm	/^	SP = SP - #3$/;"	d
+SP	boot.asm	/^	SP  = #((__stack + (__STACK_SIZE >> 1)) & 0xFFFE)$/;"	d
+SP	boot.asm	/^	SP = SP + #0   ; avoid ECNs 372 and 438$/;"	d
+SP	idiv.asm	/^	SP = SP + #FRAME_SIZE		; deallocate frame$/;"	d
+SP	idiv.asm	/^	SP = SP + #FRAME_SIZE	 	; deallocate frame$/;"	d
+SP	idiv.asm	/^	SP = SP - #FRAME_SIZE		; allocate frame$/;"	d
+SP	idiv.asm	/^	SP = SP - #FRAME_SIZE		; allocate space$/;"	d
+SP	udiv.asm	/^	SP = SP + #FRAME_SIZE$/;"	d
+SP	udiv.asm	/^	SP = SP - #FRAME_SIZE$/;"	d
+SPI	vectors.asm	/^SPI:		.ivec	_spi_isr			; SPI Receive Interrupt$/;"	l
+SPIPROCESSING	include/codec.h	21;"	d
+SPI_sendData	ezdsp5535_spi.c	/^void SPI_sendData(Uint8 *buf, Uint16 cnt)$/;"	f
+SSP	boot.asm	/^ 	SSP = #((__sysstack + (__SYSSTACK_SIZE >> 1)) & 0xFFFF)$/;"	d
+ST1_OFF	boot.asm	/^ST1_OFF .equ (1<<ST1_LEAD)|(1<<ST1_SATA)|(1<<ST1_RDM)|(1<<ST1_FRCT)|(1<<ST1_M40)|(1<<ST1_SATD)$/;"	l
+ST1_OFF	boot.asm	/^ST1_OFF .equ (1<<ST1_M40)|(1<<ST1_SATD)|(1<<ST1_C16)|(1<<ST1_FRCT)|(1<<ST1_C54CM)$/;"	l
+ST1_ON	boot.asm	/^ST1_ON  .equ (1<<ST1_ARMS)|(1<<ST1_CPL)|(1<<ST1_SXMD)|(1<<ST1_GSM)$/;"	l
+ST1_ON	boot.asm	/^ST1_ON  .equ (1<<ST1_CPL)|(1<<ST1_SXMD)$/;"	l
+ST2_03LC	boot.asm	/^ST2_03LC .equ (1<<ST2_AR0LC) | (1<<ST2_AR1LC) | (1<<ST2_AR2LC) | (1<<ST2_AR3LC)$/;"	l
+ST2_47LC	boot.asm	/^ST2_47LC .equ (1<<ST2_AR4LC) | (1<<ST2_AR5LC) | (1<<ST2_AR6LC) | (1<<ST2_AR7LC)$/;"	l
+ST2_OFF	boot.asm	/^ST2_OFF  .equ (1<<ST2_CDPLC) | ST2_03LC | ST2_47LC$/;"	l
+ST2_OFF	boot.asm	/^ST2_OFF  .equ (1<<ST2_RDM) | (1<<ST2_CDPLC) | ST2_03LC | ST2_47LC$/;"	l
+ST2_ON	boot.asm	/^ST2_ON   .equ (1<<ST2_ARMS)$/;"	l
+STEREO	include/codec.h	/^	STEREO = 2$/;"	e	enum:_CHANNEL
+STR_RRDY	ezdsp5535_i2c.c	76;"	d	file:
+STR_XRDY	ezdsp5535_i2c.c	75;"	d	file:
+SUBDIRS	Debug/sources.mk	/^SUBDIRS := \\$/;"	m
+SW1	include/ezdsp5535_sar.h	7;"	d
+SW12	include/ezdsp5535_sar.h	9;"	d
+SW2	include/ezdsp5535_sar.h	8;"	d
+SYNTH_PFDCP_CPFF_11	modem_params-125k.h	65;"	d
+SYNTH_PFDCP_CPFF_11	modem_params.h	65;"	d
+SYS_TIME	include/fat.h	/^}SYS_TIME;$/;"	t	typeref:struct:_SYS_TIME
+S_DEPS	Debug/sources.mk	/^S_DEPS := $/;"	m
+S_DEPS__QUOTED	Debug/sources.mk	/^S_DEPS__QUOTED := $/;"	m
+S_SRCS	Debug/sources.mk	/^S_SRCS := $/;"	m
+S_UPPER_DEPS	Debug/sources.mk	/^S_UPPER_DEPS := $/;"	m
+S_UPPER_DEPS__QUOTED	Debug/sources.mk	/^S_UPPER_DEPS__QUOTED := $/;"	m
+S_UPPER_SRCS	Debug/sources.mk	/^S_UPPER_SRCS := $/;"	m
+SecIndex	include/fat.h	/^    Uint32      SecIndex;       \/* 缓冲的扇区索引 *\/$/;"	m	struct:_Disk_Cache
+SecOffset	include/fat.h	/^    Uint32      SecOffset;      \/* 分区起始位置 *\/$/;"	m	struct:_Disk_Info
+SecPerClus	include/fat.h	/^    Uint8       SecPerClus;     \/* 每簇扇区数 *\/$/;"	m	struct:_Disk_Info
+SecPerDisk	include/fat.h	/^    Uint32      SecPerDisk;     \/* 逻辑驱动器包含扇区数 *\/$/;"	m	struct:_Disk_Info
+SectorIndex	include/fat.h	/^    Uint32      SectorIndex;    \/* 操作的扇区 *\/$/;"	m	struct:_Disk_RW_Parameter
+SendPacket	Si446x_api.c	/^void SendPacket(Uint8 length, Uint8 *buff)$/;"	f
+SetPAMode	Si446x_api.c	/^void SetPAMode(Uint8 bPaMode, Uint8 bModType)$/;"	f
+Si446x_Init	Si446x_api.c	/^void Si446x_Init(void)$/;"	f
+SpiGetResponse	ezdsp5535_spi.c	/^void SpiGetResponse(Uint8 reg, Uint16 length, Uint8 *str)$/;"	f
+SpiReadByte	ezdsp5535_spi.c	/^Uint8 SpiReadByte(Uint8 reg)$/;"	f
+SpiReadRxDataBuffer	ezdsp5535_spi.c	/^void SpiReadRxDataBuffer(Uint16 length, Uint8 *str)$/;"	f
+SpiSendCommand	ezdsp5535_spi.c	/^void SpiSendCommand(Uint16 length, Uint8 *str)$/;"	f
+SpiWaitforCTS	ezdsp5535_spi.c	/^int SpiWaitforCTS(void)$/;"	f
+SpiWriteByte	ezdsp5535_spi.c	/^void SpiWriteByte(Uint8 reg, Uint8 val)$/;"	f
+SpiWriteTxDataBuffer	ezdsp5535_spi.c	/^void SpiWriteTxDataBuffer(Uint16 length, Uint8 *str)$/;"	f
+StrToFDTName	dir.c	/^Uint8 StrToFDTName(Int8 *FDTName, Int8 *Str)$/;"	f
+T0	DSP_utils.asm	/^		T0 = *AR1+$/;"	d
+T0	DSP_utils.asm	/^		T0 = AC0 || AC0 = AC0 << #-8$/;"	d
+T0	idiv.asm	/^	T0 = -T0              		; negate Q$/;"	d
+T0	idiv.asm	/^	T0 = HI(AC0)		      	; extract remainder from AC0_H$/;"	d
+T0	idiv.asm	/^        T0 = AC0			; discard remainder$/;"	d
+T0	udiv.asm	/^	T0 = AC0 			; discard remainder$/;"	d
+T0	udiv.asm	/^	T0 = HI(AC0)		      	; extract remainder from AC0_H$/;"	d
+T1	idiv.asm	/^	T1 = T0$/;"	d
+TIMER_init	timer.c	/^void TIMER_init(void)$/;"	f
+TIME_CONST	timer.c	11;"	d	file:
+TINT	vectors.asm	/^TINT:		.ivec	_tim_isr			; Timer \/ Software Interrupt #4$/;"	l
+TYPEDEF_H	include/typedef.h	17;"	d
+TestCard_4460_TCE10D434	include/Si446x_api.h	27;"	d
+TestCard_4460_TCE10D868	include/Si446x_api.h	31;"	d
+TestCard_4460_TSC10D868	include/Si446x_api.h	30;"	d
+TestCard_4461_TCE14D434	include/Si446x_api.h	26;"	d
+TestCard_4461_TCE16D868	include/Si446x_api.h	33;"	d
+TestCard_4461_TSC14D868	include/Si446x_api.h	32;"	d
+TestCard_4463_TCE20B460	include/Si446x_api.h	28;"	d
+TestCard_4463_TCE20B868	include/Si446x_api.h	34;"	d
+TestCard_4463_TCE20B915	include/Si446x_api.h	37;"	d
+TestCard_4463_TCE20C460	include/Si446x_api.h	29;"	d
+TestCard_4463_TCE20C868	include/Si446x_api.h	35;"	d
+TestCard_4463_TCE20C915	include/Si446x_api.h	38;"	d
+TestCard_4463_TCE27F868	include/Si446x_api.h	36;"	d
+TestCard_4463_TCE30E915	include/Si446x_api.h	39;"	d
+TestCard_4463_TSQ20B169	include/Si446x_api.h	23;"	d
+TestCard_4463_TSQ20D169	include/Si446x_api.h	24;"	d
+TestCard_4463_TSQ27F169	include/Si446x_api.h	25;"	d
+TestCard_4464_TCE20B420	include/Si446x_api.h	40;"	d
+UART	vectors.asm	/^UART:		.ivec	no_handler			; IIS #1 Receive Interrupt$/;"	l
+UMAX_32	include/basop32.h	36;"	d
+UMIN_32	include/basop32.h	37;"	d
+UN_MOUNT_DRIVE	include/fat.h	82;"	d
+USB	vectors.asm	/^USB:		.ivec	no_handler			; USB Transmit Interrupt$/;"	l
+USER_OBJS	Debug/objects.mk	/^USER_OBJS :=$/;"	m
+WriteFDTInfo	fdt.c	/^Uint8  WriteFDTInfo(Uint32 SecIndex, Uint16 ByteIndex, FDT *FDTData)$/;"	f
+WriteSec	RWSec.c	/^void WriteSec(Uint32 Index, Uint16 isData)$/;"	f
+WrtDate	include/fat.h	/^    Uint16  WrtDate;            \/* 最后写日期 *\/$/;"	m	struct:_FDT
+WrtTime	include/fat.h	/^    Uint16  WrtTime;            \/* 最后写时间 *\/$/;"	m	struct:_FDT
+XAR0	autoinit.asm	/^	XAR0 = #___bss__$/;"	d
+XAR0	autoinit.asm	/^        XAR0  = #(cinit & 0x7fffff)$/;"	d
+XAR0	autoinit.asm	/^        XAR0  = #(cinit & 0xffffff)$/;"	d
+XAR0	boot.asm	/^	XAR0 = #___bss__$/;"	d
+XAR1	boot.asm	/^	XAR1 = XAR0$/;"	d
+XAR2	boot.asm	/^	XAR2 = XAR0$/;"	d
+XAR3	boot.asm	/^	XAR3 = XAR0$/;"	d
+XAR4	boot.asm	/^	XAR4 = XAR0$/;"	d
+XAR5	boot.asm	/^	XAR5 = XAR0$/;"	d
+XAR6	autoinit.asm	/^	XAR6  = AC0$/;"	d
+XAR6	autoinit.asm	/^	XAR6 = #___bss__$/;"	d
+XAR6	autoinit.asm	/^	XAR6 = dbl(*SP(#0))$/;"	d
+XAR6	autoinit.asm	/^        XAR6  = #(___pinit__ & 0x7fffff)$/;"	d
+XAR6	autoinit.asm	/^        XAR6  = #(___pinit__ & 0xffffff)$/;"	d
+XAR6	boot.asm	/^	XAR6 = XAR0$/;"	d
+XAR7	boot.asm	/^	XAR7 = XAR0$/;"	d
+XCDP	boot.asm	/^	XCDP = XAR0$/;"	d
+XDP	boot.asm	/^	XDP  = XAR0$/;"	d
+XMT2	vectors.asm	/^XMT2:		.ivec	_i2s2_tx_isr		; I2S2 Tx Interrupt$/;"	l
+XMT3	vectors.asm	/^XMT3:		.ivec	no_handler			; I2S3 Tx Interrupt$/;"	l
+XO_TUNE	modem_params-125k.h	15;"	d
+XO_TUNE	modem_params.h	15;"	d
+XSP	boot.asm	/^	XSP = #((__stack + (__STACK_SIZE >> 1)) & 0x7FFFFE)$/;"	d
+XSP	boot.asm	/^	XSP = #((__stack + (__STACK_SIZE)) & 0xFFFFFC)$/;"	d
+XSSP	boot.asm	/^	XSSP = #((__sysstack + (__SYSSTACK_SIZE >> 1)) & 0x7FFFFE)$/;"	d
+XSSP	boot.asm	/^   	XSSP = #((__sysstack + (__SYSSTACK_SIZE)) & 0xFFFFFC)$/;"	d
+XTAL_CAP_BANK	modem_params-125k.h	31;"	d
+XTAL_CAP_BANK	modem_params.h	31;"	d
+XTAL_FREQ	modem_params-125k.h	28;"	d
+XTAL_FREQ	modem_params.h	28;"	d
+_C55X	include/c55x.h	7;"	d
+_CHANNEL	include/codec.h	/^typedef enum _CHANNEL {$/;"	g
+_CODEC_H	include/codec.h	7;"	d
+_DATE_TIME	include/fat.h	/^typedef struct _DATE_TIME$/;"	s
+_DSP_add	DSP_utils.asm	/^_DSP_add:$/;"	l
+_DSP_byte2word	DSP_utils.asm	/^_DSP_byte2word:$/;"	l
+_DSP_mac	DSP_utils.asm	/^_DSP_mac:$/;"	l
+_DSP_memcpy	DSP_utils.asm	/^_DSP_memcpy:$/;"	l
+_DSP_word2byte	DSP_utils.asm	/^_DSP_word2byte:$/;"	l
+_DSP_zero	DSP_utils.asm	/^_DSP_zero:$/;"	l
+_Disk_Cache	include/fat.h	/^typedef struct _Disk_Cache$/;"	s
+_Disk_Info	include/fat.h	/^typedef struct _Disk_Info$/;"	s
+_Disk_RW_Parameter	include/fat.h	/^typedef struct _Disk_RW_Parameter$/;"	s
+_EZDSP5535_waitusec	DSP_utils.asm	/^_EZDSP5535_waitusec:$/;"	l
+_FDT	include/fat.h	/^typedef struct _FDT$/;"	s
+_FILE	include/fat.h	/^typedef struct _FILE$/;"	s
+_FileOpenR	file.c	/^HANDLE _FileOpenR(Int8 *DirFileName)$/;"	f
+_FileOpenRW	file.c	/^HANDLE _FileOpenRW(char *DirFileName)$/;"	f
+_FileOpenW	file.c	/^HANDLE _FileOpenW(Int8 *DirFileName)$/;"	f
+_GPIO_H_	include/ezdsp5535_gpio.h	8;"	d
+_GetFDTInfo	dir.c	/^Uint32 _GetFDTInfo(Int8 *FDTName, Int8 *DirFileName)$/;"	f
+_HardDiskInit	disk.c	/^void _HardDiskInit(Uint16  (* DiakCommand)(Uint8 Cammand, void *Parameter),$/;"	f
+_Reset	vectors.asm	/^_Reset:$/;"	l
+_SYS_TIME	include/fat.h	/^typedef  struct _SYS_TIME$/;"	s
+__divi	idiv.asm	/^__divi:$/;"	l
+__divu	udiv.asm	/^__divu:$/;"	l
+__mpyli	lmpy.asm	/^__mpyli:$/;"	l
+__remi	idiv.asm	/^__remi:$/;"	l
+__remu	udiv.asm	/^__remu:$/;"	l
+__stack	boot.asm	/^__stack:    .usect  .stack, 0, 0, 1$/;"	l
+__sysstack	boot.asm	/^__sysstack: .usect  .sysstack, 0, 0, 1$/;"	l
+_auto_init	autoinit.asm	/^_auto_init:	.asmfunc$/;"	l
+_c_int00	boot.asm	/^_c_int00:	.asmfunc$/;"	l
+_divul	divul.c	/^unsigned long _divul (unsigned long x1, unsigned long x2)$/;"	f
+_remul	remul.c	/^unsigned long _remul (unsigned long x1, unsigned long x2)$/;"	f
+a_cos_msin_16	include/dct4_a.h	/^cos_msin_t	a_cos_msin_16[80] = {$/;"	v
+a_cos_msin_2	include/dct4_a.h	/^cos_msin_t	a_cos_msin_2[10] = {$/;"	v
+a_cos_msin_32	include/dct4_a.h	/^cos_msin_t	a_cos_msin_32[160]= {$/;"	v
+a_cos_msin_4	include/dct4_a.h	/^cos_msin_t	a_cos_msin_4[20] = {$/;"	v
+a_cos_msin_64	include/dct4_a.h	/^cos_msin_t	a_cos_msin_64[320] = {$/;"	v
+a_cos_msin_8	include/dct4_a.h	/^cos_msin_t	a_cos_msin_8[40] = {$/;"	v
+a_cos_msin_table	include/dct4_a.h	/^cos_msin_t	*a_cos_msin_table[] = {a_cos_msin_2, a_cos_msin_4,$/;"	v
+abApi_Read	Si446x_api.c	/^Uint8 abApi_Read[16];		\/\/ Read buffer for API communication$/;"	v
+abApi_Write	Si446x_api.c	/^Uint8 abApi_Write[16];		\/\/ Write buffer for API communication$/;"	v
+abs_s	include/basop32.h	54;"	d
+add	include/basop32.h	45;"	d
+adjust_abs_region_power_index	encoder.c	/^void adjust_abs_region_power_index(Int16 *absolute_region_power_index,Int16 *mlt_coefs)$/;"	f
+aic3204_init	aic3204.c	/^void aic3204_init(Uint8 rate, Int8 micGain)$/;"	f
+anal_bias	include/dct4_a.h	/^Int16 anal_bias[320] = {$/;"	v
+audioProcessing	audio.c	/^void audioProcessing(void)$/;"	f
+bApi_Set_Receive	Si446x_api.c	/^void bApi_Set_Receive(void)     \/\/将系统设置到接收状态$/;"	f
+bApi_Set_Send	Si446x_api.c	/^void bApi_Set_Send(Uint16 length)     \/\/将系统设置到发射状态$/;"	f
+bits_to_words	encoder.c	/^void bits_to_words(Uint32 *region_mlt_bits,$/;"	f
+buf	include/fat.h	/^    Uint8       buf[DISK_CACHE_SIZE];   \/* 缓冲区 *\/$/;"	m	struct:_Disk_Cache
+buffer	ezdsp5535_spi.c	/^static Uint8 *buffer;$/;"	v	file:
+buffer_a	audio.c	/^Int16 buffer_a[MAX_DCT_LENGTH],$/;"	v
+buffer_b	audio.c	/^      buffer_b[MAX_DCT_LENGTH],$/;"	v
+buffer_c	audio.c	/^      buffer_c[MAX_DCT_LENGTH];$/;"	v
+calc_offset	common.c	/^Int16 calc_offset(Int16 *rms_index, Int16 available_bits)$/;"	f
+categorize	common.c	/^void categorize(Int16 number_of_available_bits,$/;"	f
+code_bit_count	include/typedef.h	/^    Int16 code_bit_count;      \/* bit count of the current word *\/$/;"	m	struct:__anon1
+code_word_ptr	include/typedef.h	/^    Int16 *code_word_ptr;      \/* pointer to the bitstream *\/$/;"	m	struct:__anon1
+coef2sam_init	coef2sam.c	/^void coef2sam_init()$/;"	f
+comp_powercat_and_catbalance	common.c	/^void comp_powercat_and_catbalance(Int16 *power_categories,$/;"	f
+compute_region_powers	encoder.c	/^Int16 compute_region_powers(Int16  *mlt_coefs,$/;"	f
+cos_msin_t	include/typedef.h	/^} cos_msin_t;$/;"	t	typeref:struct:__anon3
+cosine	include/typedef.h	/^    Int16 cosine;$/;"	m	struct:__anon3
+current_word	include/typedef.h	/^    Int16 current_word;        \/* current word in the bitstream being processed *\/$/;"	m	struct:__anon1
+da_day	include/fat.h	/^    Uint8   da_day;	            \/* 月中日期 *\/$/;"	m	struct:_DATE_TIME
+da_dow	include/fat.h	/^    Uint8   da_dow;	            \/* 星期中日期 *\/$/;"	m	struct:_DATE_TIME
+da_mon	include/fat.h	/^    Uint8   da_mon;	            \/* 月 *\/ $/;"	m	struct:_DATE_TIME
+da_year	include/fat.h	/^    Uint16  da_year;	        \/* 公元年 *\/$/;"	m	struct:_DATE_TIME
+data1	ezdsp5535_i2s.c	/^Int16 data1, data2;$/;"	v
+data2	ezdsp5535_i2s.c	/^Int16 data1, data2;$/;"	v
+date	include/fat.h	/^    Uint16  date;$/;"	m	struct:_SYS_TIME
+dct_core_a	include/dct4_a.h	/^Int16 dct_core_a[10][10] = {$/;"	v
+dct_core_s	include/dct4_s.h	/^Int16 dct_core_s[CORE_SIZE][CORE_SIZE] = {$/;"	v
+dct_type_iv_a	dct4_a.c	/^void dct_type_iv_a (Int16 *input, Int16 *output, Int16 dct_length)$/;"	f
+dct_type_iv_s	dct4_s.c	/^void dct_type_iv_s (Int16 *input, Int16 *output,Int16 dct_length)$/;"	f
+decode_envelope	decoder.c	/^void decode_envelope(Bit_Obj *bitobj,$/;"	f
+decode_vector_quantized_mlt_indices	decoder.c	/^void decode_vector_quantized_mlt_indices(Bit_Obj  *bitobj,$/;"	f
+decoder	decoder.c	/^void decoder(Int16 *out_words,$/;"	f
+differential_region_power_bits	huff_tab.c	/^Int16 differential_region_power_bits[MAX_NUMBER_OF_REGIONS][DIFF_REGION_POWER_LEVELS] = {$/;"	v
+differential_region_power_codes	huff_tab.c	/^Uint16 differential_region_power_codes[MAX_NUMBER_OF_REGIONS][DIFF_REGION_POWER_LEVELS] = {$/;"	v
+differential_region_power_decoder_tree	huff_tab.c	/^Int16 differential_region_power_decoder_tree[MAX_NUMBER_OF_REGIONS][DIFF_REGION_POWER_LEVELS-1][2] = {$/;"	v
+dither	include/dct4_s.h	/^Int16 dither[320]= {$/;"	v
+div_s	include/basop32.h	69;"	d
+dma_isr	audio.c	/^interrupt void dma_isr(void)$/;"	f
+encoder	encoder.c	/^void encoder(Int16  number_of_available_bits,$/;"	f
+error_handling	decoder.c	/^void error_handling(Int16 number_of_coefs,$/;"	f
+expected_bits_table	huff_tab.c	/^Int16 expected_bits_table[NUM_CATEGORIES] = {52, 47, 43, 37, 29, 22, 16,   0};$/;"	v
+fileProcessing	fileproc.c	/^void fileProcessing(void)$/;"	f
+font	ezdsp5535_lcd.c	/^long font[] = {			\/\/ ASCII 0-127$/;"	v
+gDct_length	audio.c	/^Uint16 gDct_length;$/;"	v
+gDct_length_log	audio.c	/^Uint16 gDct_length_log;$/;"	v
+gNum_categorization_control_bits	audio.c	/^Uint16 gNum_categorization_control_bits;$/;"	v
+gNum_categorization_control_possibilities	audio.c	/^Uint16 gNum_categorization_control_possibilities;$/;"	v
+gNumber_of_regions	audio.c	/^Uint16 gNumber_of_regions;$/;"	v
+gNumber_of_valid_coefs	audio.c	/^Uint16 gNumber_of_valid_coefs;$/;"	v
+get_next_bit	decoder.c	/^void get_next_bit(Bit_Obj *bitobj)$/;"	f
+get_rand	decoder.c	/^Int16 get_rand()$/;"	f
+gpioIsrStatus	main.c	/^volatile Int16 gpioIsrStatus = 0;$/;"	v
+gpio_isr	ezdsp5535_gpio.c	/^interrupt void gpio_isr(void)$/;"	f
+i2s2_rx_isr	ezdsp5535_i2s.c	/^interrupt void i2s2_rx_isr(void)$/;"	f
+i2s2_tx_isr	ezdsp5535_i2s.c	/^interrupt void i2s2_tx_isr(void)$/;"	f
+index_to_array	decoder.c	/^Int16 index_to_array(Int16 index, Int16 *array, Int16 category)$/;"	f
+int_dead_zone	tables.c	/^Int16 int_dead_zone[NUM_CATEGORIES]=         $/;"	v
+int_dead_zone_low_bits	tables.c	/^Int16 int_dead_zone_low_bits[NUM_CATEGORIES]=$/;"	v
+int_region_standard_deviation_table	tables.c	/^Int16 int_region_standard_deviation_table[REGION_POWER_TABLE_SIZE] = {$/;"	v
+main	main.c	/^void main(void)$/;"	f
+max_bin_plus_one	tables.c	/^Int16 max_bin_plus_one[NUM_CATEGORIES] = {14, 10, 7, 5, 4, 3, 2, 2};$/;"	v
+max_bin_plus_one_inverse	tables.c	/^Int16 max_bin_plus_one_inverse[NUM_CATEGORIES] = $/;"	v
+max_dither	include/dct4_s.h	/^Int16 max_dither[MAX_DCT_LENGTH]= {$/;"	v
+max_rmlt_to_samples_window	tables.c	/^Int16 max_rmlt_to_samples_window[MAX_DCT_LENGTH]={$/;"	v
+max_samples_to_rmlt_window	tables.c	/^Int16 max_samples_to_rmlt_window[MAX_DCT_LENGTH]={$/;"	v
+minus_sine	include/typedef.h	/^    Int16 minus_sine;$/;"	m	struct:__anon3
+mlt_decoder_tree_category_0	huff_tab.c	/^Int16 mlt_decoder_tree_category_0[180][2] = {$/;"	v
+mlt_decoder_tree_category_1	huff_tab.c	/^Int16 mlt_decoder_tree_category_1[93][2] = {$/;"	v
+mlt_decoder_tree_category_2	huff_tab.c	/^Int16 mlt_decoder_tree_category_2[47][2] = {$/;"	v
+mlt_decoder_tree_category_3	huff_tab.c	/^Int16 mlt_decoder_tree_category_3[519][2] = {$/;"	v
+mlt_decoder_tree_category_4	huff_tab.c	/^Int16 mlt_decoder_tree_category_4[208][2] = {$/;"	v
+mlt_decoder_tree_category_5	huff_tab.c	/^Int16 mlt_decoder_tree_category_5[191][2] = {$/;"	v
+mlt_decoder_tree_category_6	huff_tab.c	/^Int16 mlt_decoder_tree_category_6[31][2] = {$/;"	v
+mlt_quant_centroid	huff_tab.c	/^Int16 mlt_quant_centroid[NUM_CATEGORIES][MAX_NUM_BINS] = {$/;"	v
+mlt_sqvh_bitcount_category_0	huff_tab.c	/^Int16 mlt_sqvh_bitcount_category_0[196] = {$/;"	v
+mlt_sqvh_bitcount_category_1	huff_tab.c	/^Int16 mlt_sqvh_bitcount_category_1[100] = {$/;"	v
+mlt_sqvh_bitcount_category_2	huff_tab.c	/^Int16 mlt_sqvh_bitcount_category_2[49] = {$/;"	v
+mlt_sqvh_bitcount_category_3	huff_tab.c	/^Int16 mlt_sqvh_bitcount_category_3[625] = {$/;"	v
+mlt_sqvh_bitcount_category_4	huff_tab.c	/^Int16 mlt_sqvh_bitcount_category_4[256] = {$/;"	v
+mlt_sqvh_bitcount_category_5	huff_tab.c	/^Int16 mlt_sqvh_bitcount_category_5[243] = {$/;"	v
+mlt_sqvh_bitcount_category_6	huff_tab.c	/^Int16 mlt_sqvh_bitcount_category_6[32] = {$/;"	v
+mlt_sqvh_code_category_0	huff_tab.c	/^Uint16 mlt_sqvh_code_category_0[196] = {$/;"	v
+mlt_sqvh_code_category_1	huff_tab.c	/^Uint16 mlt_sqvh_code_category_1[100] = {$/;"	v
+mlt_sqvh_code_category_2	huff_tab.c	/^Uint16 mlt_sqvh_code_category_2[49] = {$/;"	v
+mlt_sqvh_code_category_3	huff_tab.c	/^Uint16 mlt_sqvh_code_category_3[625] = {$/;"	v
+mlt_sqvh_code_category_4	huff_tab.c	/^Uint16 mlt_sqvh_code_category_4[256] = {$/;"	v
+mlt_sqvh_code_category_5	huff_tab.c	/^Uint16 mlt_sqvh_code_category_5[243] = {$/;"	v
+mlt_sqvh_code_category_6	huff_tab.c	/^Uint16 mlt_sqvh_code_category_6[32] = {$/;"	v
+mmcCardObj	ezdsp5535_sdcard.c	/^CSL_MMCCardObj			mmcCardObj;$/;"	v
+mmcStatus	ezdsp5535_sdcard.c	/^CSL_Status	 mmcStatus;$/;"	v
+mmcsdHandle	ezdsp5535_sdcard.c	/^CSL_MmcsdHandle 		mmcsdHandle;$/;"	v
+msec	include/fat.h	/^    Uint8   msec;	$/;"	m	struct:_SYS_TIME
+mult	include/basop32.h	62;"	d
+mult_r	include/basop32.h	67;"	d
+negate	include/basop32.h	55;"	d
+next_bit	include/typedef.h	/^    Int16 next_bit;            \/* next bit in the current word *\/$/;"	m	struct:__anon1
+no_handler	vectors.asm	/^no_handler:$/;"	l
+norm_l	include/basop32.h	70;"	d
+norm_s	include/basop32.h	71;"	d
+number_of_16bit_words_per_frame	audio.c	/^Uint16 number_of_16bit_words_per_frame;$/;"	v
+number_of_bits_left	include/typedef.h	/^    Int16 number_of_bits_left; \/* number of bits left in the current word *\/$/;"	m	struct:__anon1
+number_of_bits_per_frame	audio.c	/^Uint16 number_of_bits_per_frame;$/;"	v
+number_of_bytes_per_frame	audio.c	/^Uint16 number_of_bytes_per_frame;$/;"	v
+number_of_vectors	tables.c	/^Int16 number_of_vectors[NUM_CATEGORIES] = {10,10,10, 5, 5, 4, 4,20};$/;"	v
+old_decoder_mlt_coefs	decoder.c	/^Int16 old_decoder_mlt_coefs[MAX_DCT_LENGTH];$/;"	v
+old_samples	coef2sam.c	/^static Int16 old_samples[MAX_DCT_LENGTH*2];		\/\/ left and right channel$/;"	v	file:
+old_samples	sam2coef.c	/^static Int16 old_samples[MAX_DCT_LENGTH*2];	\/\/ left and right channel$/;"	v	file:
+pMmcsdContObj	ezdsp5535_sdcard.c	/^CSL_MMCControllerObj 	pMmcsdContObj;$/;"	v
+pingpong	audio.c	/^volatile Int16 pingpong = -1;$/;"	v
+printString	ezdsp5535_lcd.c	/^void printString(Int8 *s, Uint16 cnt)$/;"	f
+rate_adjust_categories	decoder.c	/^void rate_adjust_categories(Int16 categorization_control,$/;"	f
+rawOutWords	audio.c	/^Int16  rawOutWords[2*(MAX_BITS_PER_FRAME\/16+1)] = {0x6b21};$/;"	v
+rcv_l	audio.c	/^Int16 rcv_l[MAX_DCT_LENGTH*2], xmt_l[MAX_DCT_LENGTH*2];$/;"	v
+rcv_r	audio.c	/^Int16 rcv_r[MAX_DCT_LENGTH*2], xmt_r[MAX_DCT_LENGTH*2];$/;"	v
+reset_isr	vectors.asm	/^reset_isr:$/;"	l
+rmlt_coefs_to_samples	coef2sam.c	/^void rmlt_coefs_to_samples(Int16 *coefs,     $/;"	f
+rmlt_to_samples_window	tables.c	/^Int16 rmlt_to_samples_window[320]=$/;"	v
+round16	include/basop32.h	63;"	d
+s_cos_msin_16	include/dct4_s.h	/^cos_msin_t	s_cos_msin_16[DCT_LENGTH_DIV_4] = {$/;"	v
+s_cos_msin_2	include/dct4_s.h	/^cos_msin_t	s_cos_msin_2[DCT_LENGTH_DIV_32] = {$/;"	v
+s_cos_msin_32	include/dct4_s.h	/^cos_msin_t	s_cos_msin_32[DCT_LENGTH_DIV_2] = {$/;"	v
+s_cos_msin_4	include/dct4_s.h	/^cos_msin_t	s_cos_msin_4[DCT_LENGTH_DIV_16] = {$/;"	v
+s_cos_msin_64	include/dct4_s.h	/^cos_msin_t	s_cos_msin_64[DCT_LENGTH] = {$/;"	v
+s_cos_msin_8	include/dct4_s.h	/^cos_msin_t	s_cos_msin_8[DCT_LENGTH_DIV_8] = {$/;"	v
+s_cos_msin_table	include/dct4_s.h	/^cos_msin_t	*s_cos_msin_table[] = {s_cos_msin_2,  s_cos_msin_4,$/;"	v
+sam2coef_init	sam2coef.c	/^void sam2coef_init()$/;"	f
+samples_to_rmlt_coefs	sam2coef.c	/^Int16 samples_to_rmlt_coefs(Int16 *new_samples,$/;"	f
+samples_to_rmlt_window	tables.c	/^Int16 samples_to_rmlt_window[320]=$/;"	v
+sdCardCsdObj	ezdsp5535_sdcard.c	/^CSL_MMCCardCsdObj 		sdCardCsdObj;$/;"	v
+sdCardIdObj	ezdsp5535_sdcard.c	/^CSL_MMCCardIdObj 		sdCardIdObj;$/;"	v
+seed0	include/typedef.h	/^    Int16 seed0;$/;"	m	struct:__anon2
+seed1	include/typedef.h	/^    Int16 seed1;$/;"	m	struct:__anon2
+seed2	include/typedef.h	/^    Int16 seed2;$/;"	m	struct:__anon2
+seed3	include/typedef.h	/^    Int16 seed3;$/;"	m	struct:__anon2
+sent_buffer	audio.c	/^Uint8  *sent_buffer;$/;"	v
+sent_buffer_cnt	audio.c	/^Int16  sent_buffer_cnt = 0;$/;"	v
+sent_cnt	ezdsp5535_spi.c	/^static Int16 sent_cnt = 0;$/;"	v	file:
+shl	include/basop32.h	56;"	d
+shr	include/basop32.h	57;"	d
+spiIsrStatus	main.c	/^volatile Int16 spiIsrStatus = 0;$/;"	v
+spi_isr	ezdsp5535_spi.c	/^interrupt void spi_isr(void)$/;"	f
+standard_deviation_inverse_table	tables.c	/^Int16 standard_deviation_inverse_table[REGION_POWER_TABLE_SIZE] = {$/;"	v
+step_size_inverse_table	tables.c	/^Int16 step_size_inverse_table[NUM_CATEGORIES]={$/;"	v
+sub	include/basop32.h	46;"	d
+syn_bias_7khz	include/dct4_s.h	/^Int16 syn_bias_7khz[320] = {$/;"	v
+table_of_bitcount_tables	huff_tab.c	/^Int16 *table_of_bitcount_tables[NUM_CATEGORIES-1] = {$/;"	v
+table_of_code_tables	huff_tab.c	/^Uint16 *table_of_code_tables[NUM_CATEGORIES-1] = {$/;"	v
+table_of_decoder_tables	huff_tab.c	/^Int16 *table_of_decoder_tables[NUM_CATEGORIES-1] = {$/;"	v
+taskList	main.c	/^volatile Uint16 taskList = 0;$/;"	v
+test_4_frame_errors	decoder.c	/^void test_4_frame_errors(Bit_Obj *bitobj,$/;"	f
+ti_hour	include/fat.h	/^    Uint8   ti_hour;	        \/* 时 *\/$/;"	m	struct:_DATE_TIME
+ti_hund	include/fat.h	/^    Uint8   ti_hund;	        \/* 百分之一秒 *\/$/;"	m	struct:_DATE_TIME
+ti_min	include/fat.h	/^    Uint8   ti_min;  	        \/* 分 *\/$/;"	m	struct:_DATE_TIME
+ti_sec	include/fat.h	/^    Uint8   ti_sec;	            \/* 秒 *\/$/;"	m	struct:_DATE_TIME
+tim_isr	timer.c	/^interrupt void tim_isr(void)$/;"	f
+time	include/fat.h	/^    Uint16  time;$/;"	m	struct:_SYS_TIME
+vector_dimension	tables.c	/^Int16 vector_dimension[NUM_CATEGORIES] =  { 2, 2, 2, 4, 4, 5, 5, 1};$/;"	v
+vector_huffman	encoder.c	/^Int16 vector_huffman(Int16 category,$/;"	f
+vector_quantize_mlts	encoder.c	/^void vector_quantize_mlts(Int16 number_of_available_bits,$/;"	f
+windowed_data	audio.c	/^Int16 windowed_data[MAX_DCT_LENGTH];$/;"	v
+xmt_l	audio.c	/^Int16 rcv_l[MAX_DCT_LENGTH*2], xmt_l[MAX_DCT_LENGTH*2];$/;"	v
+xmt_r	audio.c	/^Int16 rcv_r[MAX_DCT_LENGTH*2], xmt_r[MAX_DCT_LENGTH*2];$/;"	v

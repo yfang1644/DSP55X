@@ -1,0 +1,13 @@
+#include "soc.h"
+#include "cslr_gpio.h"
+
+void EZDSP5535_GPIO_init()
+{
+	CSL_GPIO_REGS->IODIR1 = 0xc000;
+	CSL_GPIO_REGS->IODIR2 = 0x0003;
+	CSL_GPIO_REGS->IOOUTDATA1 = 0xc000;
+	CSL_GPIO_REGS->IOOUTDATA2 = 0x0003;
+
+	CSL_GPIO_REGS->IODIR1 |= 0x1000;	/* for LCD */
+	CSL_GPIO_REGS->IOOUTDATA1 |= 0x1000;
+}

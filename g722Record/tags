@@ -1,0 +1,764 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+$1	boot.asm	/^$1:	TC1 = bit(@ST3_L, #1) || mmap()$/;"	l
+$2	boot.asm	/^$2:	TC1 = bit(@ST3_L, #0) || mmap()$/;"	l
+AC0	DSP_utils.asm	/^		AC0 = AC0 >> #1 || T1 = field_extract(AC0, #0xff00)$/;"	d
+AC0	DSP_utils.asm	/^		AC0 = CARRY \\\\ AC0 \\\\ TC2$/;"	d
+AC0	DSP_utils.asm	/^	AC0 = POPBOTH()$/;"	d
+AC0	DSP_utils.asm	/^	AC0 = uns(*AR1+)$/;"	d
+AC0	autoinit.asm	/^	AC0 = AC0 | (AC1 <<< #-8)$/;"	d
+AC0	autoinit.asm	/^        AC0 = dbl(*AR6+)$/;"	d
+AC0	autoinit.asm	/^        AC0 = uns(*AR0+) << #8$/;"	d
+AC1	autoinit.asm	/^	AC1 = AC1 & #0xff	$/;"	d
+AC1	autoinit.asm	/^	AC1 = uns(*AR0+)$/;"	d
+ADAPTIVE	driver/c5535drv.h	39;"	d
+AIC3204_I2C_ADDR	aic3204.c	5;"	d	file:
+AIC3204_rget	aic3204.c	/^Int16 AIC3204_rget( Uint8 regnum, Uint8* regval )$/;"	f
+AIC3204_rset	aic3204.c	/^Int16 AIC3204_rset( Uint8 regnum, Uint8 regval )$/;"	f
+ALARMPROCESSING	include/g722record.h	13;"	d
+AR0	autoinit.asm	/^        AR0   = #(cinit & 0xffff)$/;"	d
+AR2	autoinit.asm	/^	AR2 = AR2 >> #1$/;"	d
+AR2	autoinit.asm	/^        AR2 = *AR0+$/;"	d
+AR6	autoinit.asm	/^	AR6   = AC0$/;"	d
+AR6	autoinit.asm	/^        AR6   = #(___pinit__ & 0xffff)$/;"	d
+AR7	autoinit.asm	/^	AR7 = ~AR0$/;"	d
+AR7	autoinit.asm	/^	AR7 = ~AR6$/;"	d
+ASM_DEPS	Debug/sources.mk	/^ASM_DEPS := $/;"	m
+ASM_DEPS	Release/sources.mk	/^ASM_DEPS := $/;"	m
+ASM_DEPS__QUOTED	Debug/sources.mk	/^ASM_DEPS__QUOTED := $/;"	m
+ASM_DEPS__QUOTED	Release/sources.mk	/^ASM_DEPS__QUOTED := $/;"	m
+ASM_SRCS	Debug/sources.mk	/^ASM_SRCS := $/;"	m
+ASM_SRCS	Release/sources.mk	/^ASM_SRCS := $/;"	m
+ASM_UPPER_DEPS	Debug/sources.mk	/^ASM_UPPER_DEPS := $/;"	m
+ASM_UPPER_DEPS	Release/sources.mk	/^ASM_UPPER_DEPS := $/;"	m
+ASM_UPPER_DEPS__QUOTED	Debug/sources.mk	/^ASM_UPPER_DEPS__QUOTED := $/;"	m
+ASM_UPPER_DEPS__QUOTED	Release/sources.mk	/^ASM_UPPER_DEPS__QUOTED := $/;"	m
+ASM_UPPER_SRCS	Debug/sources.mk	/^ASM_UPPER_SRCS := $/;"	m
+ASM_UPPER_SRCS	Release/sources.mk	/^ASM_UPPER_SRCS := $/;"	m
+AUDIOPROCESSING	include/g722record.h	10;"	d
+A_SRCS	Debug/sources.mk	/^A_SRCS := $/;"	m
+A_SRCS	Release/sources.mk	/^A_SRCS := $/;"	m
+Audio_init	audio.c	/^void Audio_init(Uint16 bandwidth)$/;"	f
+BEAMFORM	driver/c5535drv.h	41;"	d
+BERR	vectors.asm	/^BERR:		.ivec	no_handler			; Bus Error Interrupt$/;"	l
+BITRATE	PC/split.c	2;"	d	file:
+BRC0	DSP_utils.asm	/^	BRC0 = T0$/;"	d
+BoardUSB_init	usb_dma.c	/^Int16 BoardUSB_init(void)$/;"	f
+BoardUSB_init	usb_int.c	/^Int16 BoardUSB_init(void)$/;"	f
+C43_DEPS	Debug/sources.mk	/^C43_DEPS := $/;"	m
+C43_DEPS	Release/sources.mk	/^C43_DEPS := $/;"	m
+C43_DEPS__QUOTED	Debug/sources.mk	/^C43_DEPS__QUOTED := $/;"	m
+C43_DEPS__QUOTED	Release/sources.mk	/^C43_DEPS__QUOTED := $/;"	m
+C43_SRCS	Debug/sources.mk	/^C43_SRCS := $/;"	m
+C43_SRCS	Release/sources.mk	/^C43_SRCS := $/;"	m
+C5500_EXECUTABLE_OUTPUTS	Debug/sources.mk	/^C5500_EXECUTABLE_OUTPUTS := $/;"	m
+C5500_EXECUTABLE_OUTPUTS	Release/sources.mk	/^C5500_EXECUTABLE_OUTPUTS := $/;"	m
+C5500_EXECUTABLE_OUTPUTS__QUOTED	Debug/sources.mk	/^C5500_EXECUTABLE_OUTPUTS__QUOTED := $/;"	m
+C5500_EXECUTABLE_OUTPUTS__QUOTED	Release/sources.mk	/^C5500_EXECUTABLE_OUTPUTS__QUOTED := $/;"	m
+C55_DEPS	Debug/sources.mk	/^C55_DEPS := $/;"	m
+C55_DEPS	Release/sources.mk	/^C55_DEPS := $/;"	m
+C55_DEPS__QUOTED	Debug/sources.mk	/^C55_DEPS__QUOTED := $/;"	m
+C55_DEPS__QUOTED	Release/sources.mk	/^C55_DEPS__QUOTED := $/;"	m
+C55_SRCS	Debug/sources.mk	/^C55_SRCS := $/;"	m
+C55_SRCS	Release/sources.mk	/^C55_SRCS := $/;"	m
+C62_DEPS	Debug/sources.mk	/^C62_DEPS := $/;"	m
+C62_DEPS	Release/sources.mk	/^C62_DEPS := $/;"	m
+C62_DEPS__QUOTED	Debug/sources.mk	/^C62_DEPS__QUOTED := $/;"	m
+C62_DEPS__QUOTED	Release/sources.mk	/^C62_DEPS__QUOTED := $/;"	m
+C62_SRCS	Debug/sources.mk	/^C62_SRCS := $/;"	m
+C62_SRCS	Release/sources.mk	/^C62_SRCS := $/;"	m
+C64_DEPS	Debug/sources.mk	/^C64_DEPS := $/;"	m
+C64_DEPS	Release/sources.mk	/^C64_DEPS := $/;"	m
+C64_DEPS__QUOTED	Debug/sources.mk	/^C64_DEPS__QUOTED := $/;"	m
+C64_DEPS__QUOTED	Release/sources.mk	/^C64_DEPS__QUOTED := $/;"	m
+C64_SRCS	Debug/sources.mk	/^C64_SRCS := $/;"	m
+C64_SRCS	Release/sources.mk	/^C64_SRCS := $/;"	m
+C67_DEPS	Debug/sources.mk	/^C67_DEPS := $/;"	m
+C67_DEPS	Release/sources.mk	/^C67_DEPS := $/;"	m
+C67_DEPS__QUOTED	Debug/sources.mk	/^C67_DEPS__QUOTED := $/;"	m
+C67_DEPS__QUOTED	Release/sources.mk	/^C67_DEPS__QUOTED := $/;"	m
+C67_SRCS	Debug/sources.mk	/^C67_SRCS := $/;"	m
+C67_SRCS	Release/sources.mk	/^C67_SRCS := $/;"	m
+CC_DEPS	Debug/sources.mk	/^CC_DEPS := $/;"	m
+CC_DEPS	Release/sources.mk	/^CC_DEPS := $/;"	m
+CC_DEPS__QUOTED	Debug/sources.mk	/^CC_DEPS__QUOTED := $/;"	m
+CC_DEPS__QUOTED	Release/sources.mk	/^CC_DEPS__QUOTED := $/;"	m
+CC_SRCS	Debug/sources.mk	/^CC_SRCS := $/;"	m
+CC_SRCS	Release/sources.mk	/^CC_SRCS := $/;"	m
+CG_TOOL_ROOT	Debug/makefile	/^CG_TOOL_ROOT := \/opt\/ti\/ccsv5\/tools\/compiler\/c5500_4.4.1$/;"	m
+CG_TOOL_ROOT	Release/makefile	/^CG_TOOL_ROOT := \/opt\/ti\/ccsv5\/tools\/compiler\/c5500_4.4.1$/;"	m
+CHANNEL	include/g722record.h	/^} CHANNEL;$/;"	t	typeref:enum:_CHANNEL
+CLA_DEPS	Debug/sources.mk	/^CLA_DEPS := $/;"	m
+CLA_DEPS	Release/sources.mk	/^CLA_DEPS := $/;"	m
+CLA_DEPS__QUOTED	Debug/sources.mk	/^CLA_DEPS__QUOTED := $/;"	m
+CLA_DEPS__QUOTED	Release/sources.mk	/^CLA_DEPS__QUOTED := $/;"	m
+CLA_SRCS	Debug/sources.mk	/^CLA_SRCS := $/;"	m
+CLA_SRCS	Release/sources.mk	/^CLA_SRCS := $/;"	m
+CMD_SRCS	Debug/sources.mk	/^CMD_SRCS := $/;"	m
+CMD_SRCS	Release/sources.mk	/^CMD_SRCS := $/;"	m
+CMD_UPPER_SRCS	Debug/sources.mk	/^CMD_UPPER_SRCS := $/;"	m
+CMD_UPPER_SRCS	Release/sources.mk	/^CMD_UPPER_SRCS := $/;"	m
+COD1	include/fileops.h	8;"	d
+COPROCFFT	vectors.asm	/^COPROCFFT:	.ivec	no_handler			; Coprocessor FFT Module Interrupt$/;"	l
+CPP_DEPS	Debug/sources.mk	/^CPP_DEPS := $/;"	m
+CPP_DEPS	Release/sources.mk	/^CPP_DEPS := $/;"	m
+CPP_DEPS__QUOTED	Debug/sources.mk	/^CPP_DEPS__QUOTED := $/;"	m
+CPP_DEPS__QUOTED	Release/sources.mk	/^CPP_DEPS__QUOTED := $/;"	m
+CPP_SRCS	Debug/sources.mk	/^CPP_SRCS := $/;"	m
+CPP_SRCS	Release/sources.mk	/^CPP_SRCS := $/;"	m
+CSL_USB_DATA_SIZE	usb_dma.c	124;"	d	file:
+CSL_USB_DATA_SIZE	usb_int.c	119;"	d	file:
+CSL_USB_LRAM_SIZE	usb_dma.c	125;"	d	file:
+CSL_USB_MAX_CURRENT	usb_dma.c	126;"	d	file:
+CSL_USB_MAX_CURRENT	usb_int.c	120;"	d	file:
+CSL_startTransferCallback	usb_dma.c	/^CSL_Status CSL_startTransferCallback(void    *vpContext,$/;"	f
+CSL_startTransferCallback	usb_int.c	/^CSL_Status CSL_startTransferCallback(void    *vpContext,$/;"	f
+CSR	autoinit.asm	/^	CSR = AR2$/;"	d
+CXX_DEPS	Debug/sources.mk	/^CXX_DEPS := $/;"	m
+CXX_DEPS	Release/sources.mk	/^CXX_DEPS := $/;"	m
+CXX_DEPS__QUOTED	Debug/sources.mk	/^CXX_DEPS__QUOTED := $/;"	m
+CXX_DEPS__QUOTED	Release/sources.mk	/^CXX_DEPS__QUOTED := $/;"	m
+CXX_SRCS	Debug/sources.mk	/^CXX_SRCS := $/;"	m
+CXX_SRCS	Release/sources.mk	/^CXX_SRCS := $/;"	m
+C_DEPS	Debug/sources.mk	/^C_DEPS := $/;"	m
+C_DEPS	Release/sources.mk	/^C_DEPS := $/;"	m
+C_DEPS__QUOTED	Debug/sources.mk	/^C_DEPS__QUOTED := $/;"	m
+C_DEPS__QUOTED	Release/sources.mk	/^C_DEPS__QUOTED := $/;"	m
+C_SRCS	Debug/sources.mk	/^C_SRCS := $/;"	m
+C_SRCS	Release/sources.mk	/^C_SRCS := $/;"	m
+C_UPPER_DEPS	Debug/sources.mk	/^C_UPPER_DEPS := $/;"	m
+C_UPPER_DEPS	Release/sources.mk	/^C_UPPER_DEPS := $/;"	m
+C_UPPER_DEPS__QUOTED	Debug/sources.mk	/^C_UPPER_DEPS__QUOTED := $/;"	m
+C_UPPER_DEPS__QUOTED	Release/sources.mk	/^C_UPPER_DEPS__QUOTED := $/;"	m
+C_UPPER_SRCS	Debug/sources.mk	/^C_UPPER_SRCS := $/;"	m
+C_UPPER_SRCS	Release/sources.mk	/^C_UPPER_SRCS := $/;"	m
+DATAMEMCOPY	autoinit.asm	/^DATAMEMCOPY:$/;"	l
+DCT_LENGTH	PC/resort.c	3;"	d	file:
+DIRECT_IO	include/fileops.h	/^	DIRECT_IO = 0x0080,$/;"	e	enum:__anon1
+DLOG	vectors.asm	/^DLOG:		.ivec	no_handler			; Emulation Interrupt - DLOG$/;"	l
+DMA	vectors.asm	/^DMA:		.ivec	_dma_isr			; DMA Interrupt$/;"	l
+DMA_audio_init	audio.c	/^void DMA_audio_init(Uint16 size)$/;"	f
+EMIF	vectors.asm	/^EMIF:		.ivec	no_handler			; EMIF Error Interrupt$/;"	l
+EMUINT	vectors.asm	/^EMUINT:		.ivec	no_handler			; Emulation monitor mode interrupt$/;"	l
+EXIT	autoinit.asm	/^EXIT:$/;"	l
+EZDSP5535_GPIO_init	ezdsp5535_gpio.c	/^void EZDSP5535_GPIO_init()$/;"	f
+EZDSP5535_I2C_close	ezdsp5535_i2c.c	/^Int16 EZDSP5535_I2C_close( )$/;"	f
+EZDSP5535_I2C_init	ezdsp5535_i2c.c	/^Int16 EZDSP5535_I2C_init( )$/;"	f
+EZDSP5535_I2C_read	ezdsp5535_i2c.c	/^Int16 EZDSP5535_I2C_read( Uint16 i2c_addr, Uint8* data, Uint16 len )$/;"	f
+EZDSP5535_I2C_reset	ezdsp5535_i2c.c	/^Int16 EZDSP5535_I2C_reset( )$/;"	f
+EZDSP5535_I2C_write	ezdsp5535_i2c.c	/^Int16 EZDSP5535_I2C_write( Uint16 i2c_addr, Uint8* data, Uint16 len )$/;"	f
+EZDSP5535_I2S_init	ezdsp5535_i2s.c	/^void EZDSP5535_I2S_init(void)$/;"	f
+EZDSP5535_LCD_init	ezdsp5535_lcd.c	/^void EZDSP5535_LCD_init( )$/;"	f
+EZDSP5535_LCD_multiSend	ezdsp5535_lcd.c	/^Int16 EZDSP5535_LCD_multiSend( Uint8* data, Uint16 len )$/;"	f
+EZDSP5535_LCD_send	ezdsp5535_lcd.c	/^Int16 EZDSP5535_LCD_send( Uint16 comdat, Uint16 data )$/;"	f
+EZDSP5535_UART_init	ezdsp5535_uart.c	/^void EZDSP5535_UART_init( )$/;"	f
+FILEPROCESSING	include/g722record.h	11;"	d
+FILE_DMAMODE	include/fileops.h	10;"	d
+FILE_DMAMODE	include/fileops.h	11;"	d
+FILE_RECORD_COD1	include/fileops.h	/^	FILE_RECORD_COD1	= RECORD|COD1,$/;"	e	enum:__anon1
+FILE_RECORD_RAW	include/fileops.h	/^	FILE_RECORD_RAW		= RECORD|RAW,$/;"	e	enum:__anon1
+FILE_REPLAY_COD1	include/fileops.h	/^	FILE_REPLAY_COD1	= REPLAY|COD1,$/;"	e	enum:__anon1
+FILE_REPLAY_RAW	include/fileops.h	/^	FILE_REPLAY_RAW		= REPLAY|RAW,$/;"	e	enum:__anon1
+FILTER	driver/c5535drv.h	38;"	d
+File_init	file.c	/^void File_init(void)$/;"	f
+GPIO	vectors.asm	/^GPIO:		.ivec	no_handler			; GPIO Interrupt$/;"	l
+I2C	vectors.asm	/^I2C:		.ivec	no_handler			; IIC interrupt$/;"	l
+ICR	main.c	44;"	d	file:
+INT0	vectors.asm	/^INT0:		.ivec	no_handler			; External User Interrupt #0 $/;"	l
+INT1	vectors.asm	/^INT1:		.ivec	no_handler			; External User Interrupt #1$/;"	l
+INTR_init	sysinit.c	/^void INTR_init(void)$/;"	f
+KDIR	driver/Makefile	/^KDIR        := \/lib\/modules\/`uname -r`\/build$/;"	m
+K_DEPS	Debug/sources.mk	/^K_DEPS := $/;"	m
+K_DEPS	Release/sources.mk	/^K_DEPS := $/;"	m
+K_DEPS__QUOTED	Debug/sources.mk	/^K_DEPS__QUOTED := $/;"	m
+K_DEPS__QUOTED	Release/sources.mk	/^K_DEPS__QUOTED := $/;"	m
+K_SRCS	Debug/sources.mk	/^K_SRCS := $/;"	m
+K_SRCS	Release/sources.mk	/^K_SRCS := $/;"	m
+LCD	vectors.asm	/^LCD:		.ivec	no_handler			; LCD Interrupt$/;"	l
+LCD_print	ezdsp5535_lcd.c	/^void LCD_print(char *s, int page)$/;"	f
+LCD_scroll	ezdsp5535_lcd.c	/^void LCD_scroll()$/;"	f
+LDS_SRCS	Debug/sources.mk	/^LDS_SRCS := $/;"	m
+LDS_SRCS	Release/sources.mk	/^LDS_SRCS := $/;"	m
+LDS_UPPER_SRCS	Debug/sources.mk	/^LDS_UPPER_SRCS := $/;"	m
+LDS_UPPER_SRCS	Release/sources.mk	/^LDS_UPPER_SRCS := $/;"	m
+LD_SRCS	Debug/sources.mk	/^LD_SRCS := $/;"	m
+LD_SRCS	Release/sources.mk	/^LD_SRCS := $/;"	m
+LD_UPPER_SRCS	Debug/sources.mk	/^LD_UPPER_SRCS := $/;"	m
+LD_UPPER_SRCS	Release/sources.mk	/^LD_UPPER_SRCS := $/;"	m
+LEFT	include/g722record.h	/^    LEFT = 0,$/;"	e	enum:_CHANNEL
+LIBS	Debug/objects.mk	/^LIBS := -llibg722_1.lib -llibfatfs.lib$/;"	m
+LIBS	Release/objects.mk	/^LIBS :=$/;"	m
+LIB_SRCS	Debug/sources.mk	/^LIB_SRCS := $/;"	m
+LIB_SRCS	Release/sources.mk	/^LIB_SRCS := $/;"	m
+LOOP	autoinit.asm	/^LOOP:$/;"	l
+LOOP2	autoinit.asm	/^LOOP2:	$/;"	l
+M41TXX_ADDR	rtcM41Txx_i2c.c	7;"	d	file:
+M41TXX_ADDR	rtcM41Txx_i2c.c	8;"	d	file:
+MAX_BITS_PER_FRAME	PC/split.c	3;"	d	file:
+MAX_FILELENGTH	include/fileops.h	13;"	d
+MAX_SCHEDULE	include/schedule.h	4;"	d
+MAX_TRANSFER	driver/c5535drv.c	35;"	d	file:
+MAX_TRANSFER	driver/dec_usb.c	36;"	d	file:
+MAX_TRANSFER	driver/usb-skeleton.c	42;"	d	file:
+MDP	boot.asm	/^	MDP   = #0$/;"	d
+MDP05	autoinit.asm	/^	MDP05 = #0$/;"	d
+MDP05	autoinit.asm	/^        MDP05 = #((cinit >> 16) & 0x7f)$/;"	d
+MDP05	boot.asm	/^	MDP05 = #0$/;"	d
+MDP67	autoinit.asm	/^	MDP67 = #0$/;"	d
+MDP67	autoinit.asm	/^	MDP67 = *SP(#0) $/;"	d
+MDP67	autoinit.asm	/^	MDP67 = @AC0_H || mmap()$/;"	d
+MDP67	autoinit.asm	/^        MDP67 = #((___pinit__ >> 16) & 0x7f)$/;"	d
+MDP67	boot.asm	/^	MDP67 = #0$/;"	d
+MDR_FREE	ezdsp5535_i2c.c	77;"	d	file:
+MDR_IRS	ezdsp5535_i2c.c	76;"	d	file:
+MDR_MST	ezdsp5535_i2c.c	75;"	d	file:
+MDR_STP	ezdsp5535_i2c.c	80;"	d	file:
+MDR_STT	ezdsp5535_i2c.c	73;"	d	file:
+MDR_TRX	ezdsp5535_i2c.c	74;"	d	file:
+MONITOR	include/fileops.h	/^	MONITOR$/;"	e	enum:__anon1
+NMI	vectors.asm	/^NMI:		.ivec	no_handler			; Nonmaskable Interrupt$/;"	l
+NO_OPERATION	include/fileops.h	/^	NO_OPERATION,$/;"	e	enum:__anon1
+NULL_FUNCTION	driver/c5535drv.h	37;"	d
+OBJS	Debug/sources.mk	/^OBJS := $/;"	m
+OBJS	Release/sources.mk	/^OBJS := $/;"	m
+OBJS__QUOTED	Debug/sources.mk	/^OBJS__QUOTED := $/;"	m
+OBJS__QUOTED	Release/sources.mk	/^OBJS__QUOTED := $/;"	m
+OBJ_SRCS	Debug/sources.mk	/^OBJ_SRCS := $/;"	m
+OBJ_SRCS	Release/sources.mk	/^OBJ_SRCS := $/;"	m
+OPT_DEPS	Debug/sources.mk	/^OPT_DEPS := $/;"	m
+OPT_DEPS	Release/sources.mk	/^OPT_DEPS := $/;"	m
+OPT_DEPS__QUOTED	Debug/sources.mk	/^OPT_DEPS__QUOTED := $/;"	m
+OPT_DEPS__QUOTED	Release/sources.mk	/^OPT_DEPS__QUOTED := $/;"	m
+OPT_SRCS	Debug/sources.mk	/^OPT_SRCS := $/;"	m
+OPT_SRCS	Release/sources.mk	/^OPT_SRCS := $/;"	m
+OSD9616_I2C_ADDR	ezdsp5535_lcd.c	6;"	d	file:
+O_SRCS	Debug/sources.mk	/^O_SRCS := $/;"	m
+O_SRCS	Release/sources.mk	/^O_SRCS := $/;"	m
+PINIT	autoinit.asm	/^PINIT:		$/;"	l
+PLL_init	pll.c	/^void PLL_init(Uint32 clock)$/;"	f
+PORTMEMCOPY	autoinit.asm	/^PORTMEMCOPY:$/;"	l
+PROG0	vectors.asm	/^PROG0:		.ivec	no_handler			; Programmable 0 Interrupt$/;"	l
+PROG1	vectors.asm	/^PROG1:		.ivec	no_handler			; Programmable 1 Interrupt$/;"	l
+PROG2	vectors.asm	/^PROG2:		.ivec	no_handler			; Programmable 2 Interrupt$/;"	l
+PROG3	vectors.asm	/^PROG3:		.ivec	no_handler			; Programmable 3 Interrupt$/;"	l
+PWD	driver/Makefile	/^PWD         := $(shell pwd)$/;"	m
+RAW	include/fileops.h	7;"	d
+RCV2	vectors.asm	/^RCV2:		.ivec	_i2s2_rx_isr		; I2S2 Rx Interrupt$/;"	l
+RCV3	vectors.asm	/^RCV3:		.ivec	no_handler			; I2S3 Rx Interrupt$/;"	l
+RECORD	include/fileops.h	4;"	d
+REPLAY	include/fileops.h	5;"	d
+RIGHT	include/g722record.h	/^    RIGHT = 1,$/;"	e	enum:_CHANNEL
+RM	Debug/makefile	/^RM := rm -rf$/;"	m
+RM	Release/makefile	/^RM := rm -rf$/;"	m
+RMDIR	Debug/makefile	/^RMDIR := rm -rf$/;"	m
+RMDIR	Release/makefile	/^RMDIR := rm -rf$/;"	m
+RST	vectors.asm	/^RST:		.ivec	reset_isr, USE_RETA	; Reset \/ Software Interrupt #0$/;"	l
+RTC	vectors.asm	/^RTC:		.ivec	_rtc_isr			; RTC interrupt$/;"	l
+RTC_reset	csl_rtc.c	/^void RTC_reset(void)$/;"	f
+RTDXRCV	vectors.asm	/^RTDXRCV:	.ivec	no_handler			; Emulation Interrupt - RTDX receive$/;"	l
+RTDXXMT	vectors.asm	/^RTDXXMT:	.ivec	no_handler			; Emulation Interrupt - RTDX transmit$/;"	l
+RTOS	vectors.asm	/^RTOS:		.ivec	no_handler			; Emulation Interrupt - RTOS$/;"	l
+S43_DEPS	Debug/sources.mk	/^S43_DEPS := $/;"	m
+S43_DEPS	Release/sources.mk	/^S43_DEPS := $/;"	m
+S43_DEPS__QUOTED	Debug/sources.mk	/^S43_DEPS__QUOTED := $/;"	m
+S43_DEPS__QUOTED	Release/sources.mk	/^S43_DEPS__QUOTED := $/;"	m
+S43_SRCS	Debug/sources.mk	/^S43_SRCS := $/;"	m
+S43_SRCS	Release/sources.mk	/^S43_SRCS := $/;"	m
+S55_DEPS	Debug/sources.mk	/^S55_DEPS := $/;"	m
+S55_DEPS	Release/sources.mk	/^S55_DEPS := $/;"	m
+S55_DEPS__QUOTED	Debug/sources.mk	/^S55_DEPS__QUOTED := $/;"	m
+S55_DEPS__QUOTED	Release/sources.mk	/^S55_DEPS__QUOTED := $/;"	m
+S55_SRCS	Debug/sources.mk	/^S55_SRCS := $/;"	m
+S55_SRCS	Release/sources.mk	/^S55_SRCS := $/;"	m
+S62_DEPS	Debug/sources.mk	/^S62_DEPS := $/;"	m
+S62_DEPS	Release/sources.mk	/^S62_DEPS := $/;"	m
+S62_DEPS__QUOTED	Debug/sources.mk	/^S62_DEPS__QUOTED := $/;"	m
+S62_DEPS__QUOTED	Release/sources.mk	/^S62_DEPS__QUOTED := $/;"	m
+S62_SRCS	Debug/sources.mk	/^S62_SRCS := $/;"	m
+S62_SRCS	Release/sources.mk	/^S62_SRCS := $/;"	m
+S64_DEPS	Debug/sources.mk	/^S64_DEPS := $/;"	m
+S64_DEPS	Release/sources.mk	/^S64_DEPS := $/;"	m
+S64_DEPS__QUOTED	Debug/sources.mk	/^S64_DEPS__QUOTED := $/;"	m
+S64_DEPS__QUOTED	Release/sources.mk	/^S64_DEPS__QUOTED := $/;"	m
+S64_SRCS	Debug/sources.mk	/^S64_SRCS := $/;"	m
+S64_SRCS	Release/sources.mk	/^S64_SRCS := $/;"	m
+S67_DEPS	Debug/sources.mk	/^S67_DEPS := $/;"	m
+S67_DEPS	Release/sources.mk	/^S67_DEPS := $/;"	m
+S67_DEPS__QUOTED	Debug/sources.mk	/^S67_DEPS__QUOTED := $/;"	m
+S67_DEPS__QUOTED	Release/sources.mk	/^S67_DEPS__QUOTED := $/;"	m
+S67_SRCS	Debug/sources.mk	/^S67_SRCS := $/;"	m
+S67_SRCS	Release/sources.mk	/^S67_SRCS := $/;"	m
+SARADC	vectors.asm	/^SARADC:		.ivec	no_handler			; SAR ADC Interrupt$/;"	l
+SA_DEPS	Debug/sources.mk	/^SA_DEPS := $/;"	m
+SA_DEPS	Release/sources.mk	/^SA_DEPS := $/;"	m
+SA_DEPS__QUOTED	Debug/sources.mk	/^SA_DEPS__QUOTED := $/;"	m
+SA_DEPS__QUOTED	Release/sources.mk	/^SA_DEPS__QUOTED := $/;"	m
+SA_SRCS	Debug/sources.mk	/^SA_SRCS := $/;"	m
+SA_SRCS	Release/sources.mk	/^SA_SRCS := $/;"	m
+SCHEDULE_init	schedule.c	/^void SCHEDULE_init(void)$/;"	f
+SINT30	vectors.asm	/^SINT30:		.ivec	no_handler			; Software Interrupt #30$/;"	l
+SINT31	vectors.asm	/^SINT31:		.ivec	no_handler			; Software Interrupt #31$/;"	l
+SP	autoinit.asm	/^	SP = SP + #1$/;"	d
+SP	autoinit.asm	/^	SP = SP + #3$/;"	d
+SP	autoinit.asm	/^	SP = SP - #1$/;"	d
+SP	autoinit.asm	/^	SP = SP - #3$/;"	d
+SP	boot.asm	/^	SP  = #((__stack + (__STACK_SIZE >> 1)) & 0xFFFE)$/;"	d
+SP	boot.asm	/^	SP = SP + #0   ; avoid ECNs 372 and 438$/;"	d
+SPEC_CAN	driver/c5535drv.h	42;"	d
+SPEC_SUB	driver/c5535drv.h	40;"	d
+SPI	vectors.asm	/^SPI:		.ivec	no_handler			; SPI Receive Interrupt$/;"	l
+SSP	boot.asm	/^ 	SSP = #((__sysstack + (__SYSSTACK_SIZE >> 1)) & 0xFFFF)$/;"	d
+ST1_OFF	boot.asm	/^ST1_OFF .equ (1<<ST1_LEAD)|(1<<ST1_SATA)|(1<<ST1_RDM)|(1<<ST1_FRCT)|(1<<ST1_M40)|(1<<ST1_SATD)$/;"	l
+ST1_OFF	boot.asm	/^ST1_OFF .equ (1<<ST1_M40)|(1<<ST1_SATD)|(1<<ST1_C16)|(1<<ST1_FRCT)|(1<<ST1_C54CM)$/;"	l
+ST1_ON	boot.asm	/^ST1_ON  .equ (1<<ST1_ARMS)|(1<<ST1_CPL)|(1<<ST1_SXMD)|(1<<ST1_GSM)$/;"	l
+ST1_ON	boot.asm	/^ST1_ON  .equ (1<<ST1_CPL)|(1<<ST1_SXMD)$/;"	l
+ST2_03LC	boot.asm	/^ST2_03LC .equ (1<<ST2_AR0LC) | (1<<ST2_AR1LC) | (1<<ST2_AR2LC) | (1<<ST2_AR3LC)$/;"	l
+ST2_47LC	boot.asm	/^ST2_47LC .equ (1<<ST2_AR4LC) | (1<<ST2_AR5LC) | (1<<ST2_AR6LC) | (1<<ST2_AR7LC)$/;"	l
+ST2_OFF	boot.asm	/^ST2_OFF  .equ (1<<ST2_CDPLC) | ST2_03LC | ST2_47LC$/;"	l
+ST2_OFF	boot.asm	/^ST2_OFF  .equ (1<<ST2_RDM) | (1<<ST2_CDPLC) | ST2_03LC | ST2_47LC$/;"	l
+ST2_ON	boot.asm	/^ST2_ON   .equ (1<<ST2_ARMS)$/;"	l
+STEREO	include/g722record.h	/^    STEREO = 2$/;"	e	enum:_CHANNEL
+STR_RRDY	ezdsp5535_i2c.c	79;"	d	file:
+STR_XRDY	ezdsp5535_i2c.c	78;"	d	file:
+SUBDIRS	Debug/sources.mk	/^SUBDIRS := \\$/;"	m
+SUBDIRS	Release/sources.mk	/^SUBDIRS := \\$/;"	m
+S_DEPS	Debug/sources.mk	/^S_DEPS := $/;"	m
+S_DEPS	Release/sources.mk	/^S_DEPS := $/;"	m
+S_DEPS__QUOTED	Debug/sources.mk	/^S_DEPS__QUOTED := $/;"	m
+S_DEPS__QUOTED	Release/sources.mk	/^S_DEPS__QUOTED := $/;"	m
+S_SRCS	Debug/sources.mk	/^S_SRCS := $/;"	m
+S_SRCS	Release/sources.mk	/^S_SRCS := $/;"	m
+S_UPPER_DEPS	Debug/sources.mk	/^S_UPPER_DEPS := $/;"	m
+S_UPPER_DEPS	Release/sources.mk	/^S_UPPER_DEPS := $/;"	m
+S_UPPER_DEPS__QUOTED	Debug/sources.mk	/^S_UPPER_DEPS__QUOTED := $/;"	m
+S_UPPER_DEPS__QUOTED	Release/sources.mk	/^S_UPPER_DEPS__QUOTED := $/;"	m
+S_UPPER_SRCS	Debug/sources.mk	/^S_UPPER_SRCS := $/;"	m
+S_UPPER_SRCS	Release/sources.mk	/^S_UPPER_SRCS := $/;"	m
+T0	DSP_utils.asm	/^		T0 = TC2 \\\\ T0 \\\\ TC2 || *AR0+ = T1$/;"	d
+T0	DSP_utils.asm	/^	T0 = *(#_WATERMARK)$/;"	d
+T1	DSP_utils.asm	/^		T1 = field_extract(AC0, #0x00ff)$/;"	d
+T1	DSP_utils.asm	/^	T1 = POP()$/;"	d
+TC2	DSP_utils.asm	/^		TC2 = bit(*(#20h), #15)$/;"	d
+TIMER_init	timer.c	/^void TIMER_init(void)$/;"	f
+TIME_CONST	timer.c	11;"	d	file:
+TINT	vectors.asm	/^TINT:		.ivec	_tim_isr			; Timer \/ Software Interrupt #4$/;"	l
+UART	vectors.asm	/^UART:		.ivec	_uart_isr			; IIS #1 Receive Interrupt$/;"	l
+UARTPROCESSING	include/g722record.h	12;"	d
+USB	vectors.asm	/^USB:		.ivec	_usb_isr			; USB Transmit Interrupt$/;"	l
+USBPROCESSING	include/g722record.h	14;"	d
+USB_DEC_MINOR_BASE	driver/dec_usb.c	33;"	d	file:
+USB_DEC_PRODUCT_ID	driver/dec_usb.c	22;"	d	file:
+USB_DEC_VENDOR_ID	driver/dec_usb.c	21;"	d	file:
+USB_SKEL_MINOR_BASE	driver/c5535drv.c	32;"	d	file:
+USB_SKEL_MINOR_BASE	driver/usb-skeleton.c	39;"	d	file:
+USB_SKEL_PRODUCT_ID	driver/c5535drv.c	21;"	d	file:
+USB_SKEL_PRODUCT_ID	driver/usb-skeleton.c	28;"	d	file:
+USB_SKEL_VENDOR_ID	driver/c5535drv.c	20;"	d	file:
+USB_SKEL_VENDOR_ID	driver/usb-skeleton.c	27;"	d	file:
+USB_abortAllTransaction	csl_usb.c	/^CSL_Status USB_abortAllTransaction(CSL_UsbDevNum    devNum)$/;"	f
+USB_abortTransaction	csl_usb.c	/^CSL_Status USB_abortTransaction(pUsbEpHandle    hEp)$/;"	f
+USB_bytesRemaining	csl_usb.c	/^CSL_UsbByteCount USB_bytesRemaining(pUsbEpHandle    hEp,$/;"	f
+USB_checkSpeed	csl_usbAux.c	/^Bool USB_checkSpeed(pUsbContext        pContext,$/;"	f
+USB_clearEndptStall	csl_usb.c	/^CSL_Status USB_clearEndptStall(pUsbEpHandle  hEp)$/;"	f
+USB_clearEpRxPktRdy	csl_usbAux.c	/^void USB_clearEpRxPktRdy(DWORD    dwEndpoint)$/;"	f
+USB_confDmaRx	csl_usbAux.c	/^CSL_Status USB_confDmaRx(CSL_UsbHostPktDescr    *hpdrx,$/;"	f
+USB_confDmaTx	csl_usbAux.c	/^CSL_Status USB_confDmaTx(CSL_UsbHostPktDescr    *hpdtx,$/;"	f
+USB_dmaPopQue	csl_usbAux.c	/^void USB_dmaPopQue(Uint16 queueNum)$/;"	f
+USB_dmaRxStart	csl_usbAux.c	/^void USB_dmaRxStart(DWORD    dwEndpoint)$/;"	f
+USB_dmaRxStop	csl_usbAux.c	/^void USB_dmaRxStop(DWORD     dwEndpoint)$/;"	f
+USB_dmaTxStart	csl_usbAux.c	/^void USB_dmaTxStart(DWORD    dwEndpoint)$/;"	f
+USB_dmaTxStop	csl_usbAux.c	/^void USB_dmaTxStop(DWORD    dwEndpoint)$/;"	f
+USB_epNumToHandle	csl_usb.c	/^pUsbEpHandle USB_epNumToHandle(CSL_UsbDevNum    devNum,$/;"	f
+USB_findFifoSize	csl_usb.c	/^Uint16 USB_findFifoSize(Uint16 maxPktSize, CSL_UsbXferType xferType)$/;"	f
+USB_flushFifo	csl_usbAux.c	/^void USB_flushFifo(DWORD    dwEndpoint,$/;"	f
+USB_getDataCountReadFromFifo	csl_usb.c	/^Uint16 USB_getDataCountReadFromFifo(pUsbEpHandle    hEp)$/;"	f
+USB_getEndptStall	csl_usb.c	/^CSL_UsbBoolean USB_getEndptStall(pUsbEpHandle    hEp,$/;"	f
+USB_getEvents	csl_usb.c	/^CSL_UsbEventMask USB_getEvents(pUsbEpHandle    hEp,$/;"	f
+USB_getFrameNo	csl_usb.c	/^CSL_UsbFrameNum USB_getFrameNo(CSL_UsbDevNum    devNum)$/;"	f
+USB_getSetupPacket	csl_usb.c	/^CSL_Status USB_getSetupPacket(CSL_UsbDevNum         devNum,$/;"	f
+USB_handleRx	csl_usbAux.c	/^CSL_Status USB_handleRx(pUsbContext     pContext,$/;"	f
+USB_handleRxIntr	csl_usbAux.c	/^void USB_handleRxIntr(pUsbContext     pContext)$/;"	f
+USB_handleTx	csl_usbAux.c	/^CSL_Status USB_handleTx(pUsbContext     pContext,$/;"	f
+USB_handleTxIntr	csl_usbAux.c	/^void USB_handleTxIntr(pUsbContext     pContext)$/;"	f
+USB_init	csl_usb.c	/^CSL_Status USB_init(CSL_UsbConfig    *usbConfig)$/;"	f
+USB_initDma	csl_usbAux.c	/^void USB_initDma(void)$/;"	f
+USB_initEndptObj	csl_usb.c	/^CSL_Status USB_initEndptObj(CSL_UsbDevNum        devNum,$/;"	f
+USB_initQueueManager	csl_usbAux.c	/^CSL_Status USB_initQueueManager(CSL_UsbHostPktDescr    *hpdtx,$/;"	f
+USB_isTransactionDone	csl_usb.c	/^CSL_UsbBoolean USB_isTransactionDone(pUsbEpHandle    hEp,$/;"	f
+USB_isValidDataInFifoOut	csl_usbAux.c	/^Bool USB_isValidDataInFifoOut(pUsbEpStatus    peps)$/;"	f
+USB_peekEvents	csl_usb.c	/^CSL_UsbEventMask USB_peekEvents(pUsbEpHandle    hEp,$/;"	f
+USB_postTransaction	csl_usb.c	/^CSL_Status USB_postTransaction(pUsbEpHandle      hEp,$/;"	f
+USB_processEP0In	csl_usbAux.c	/^CSL_Status USB_processEP0In(pUsbContext     pContext)$/;"	f
+USB_processEP0Out	csl_usbAux.c	/^CSL_Status USB_processEP0Out(pUsbContext    pContext)$/;"	f
+USB_readEP0Buf	csl_usbAux.c	/^void USB_readEP0Buf(pUsbContext    pContext,$/;"	f
+USB_resetDev	csl_usb.c	/^CSL_Status USB_resetDev(CSL_UsbDevNum    devNum)$/;"	f
+USB_selfwakeup	csl_usb.c	/^CSL_Status USB_selfwakeup(CSL_UsbDevNum    devNum,$/;"	f
+USB_sendEpZLP	csl_usbAux.c	/^void USB_sendEpZLP(DWORD    dwEndpoint)$/;"	f
+USB_serviceEp0RxPkt	csl_usbAux.c	/^void USB_serviceEp0RxPkt(Uint16    periCsr0Val)$/;"	f
+USB_setConfiguration	csl_usbAux.c	/^void USB_setConfiguration(CSL_UsbDevNum    devNum,$/;"	f
+USB_setParams	csl_usb.c	/^CSL_Status USB_setParams(CSL_UsbDevNum    devNum,$/;"	f
+USB_stallEndpt	csl_usb.c	/^CSL_Status USB_stallEndpt(pUsbEpHandle  hEp)$/;"	f
+USER_OBJS	Debug/objects.mk	/^USER_OBJS :=$/;"	m
+USER_OBJS	Release/objects.mk	/^USER_OBJS :=$/;"	m
+UartList	ezdsp5535_uart.c	/^} UartList;$/;"	t	typeref:struct:_UartList	file:
+VR_BUFFER_READ	driver/c5535drv.h	44;"	d
+VR_BULK_WRITE	driver/c5535drv.h	17;"	d
+VR_CHANNEL_MONITOR	driver/c5535drv.h	22;"	d
+VR_CHANNEL_READ	driver/c5535drv.h	35;"	d
+VR_ENDPOINT0READ	driver/c5535drv.h	12;"	d
+VR_ENDPOINT0WRITE	driver/c5535drv.h	15;"	d
+VR_FILTER_WRITE	driver/c5535drv.h	46;"	d
+VR_FUNCTION_SET	driver/c5535drv.h	36;"	d
+VR_LED_OPTION	driver/c5535drv.h	19;"	d
+VR_POLLING	driver/c5535drv.h	45;"	d
+VR_REF_CHANNEL	driver/c5535drv.h	24;"	d
+VR_REGREAD	driver/c5535drv.h	14;"	d
+VR_REGWRITE	driver/c5535drv.h	13;"	d
+VR_RESET	driver/c5535drv.h	11;"	d
+VR_SAMPLING_RATE	driver/c5535drv.h	23;"	d
+VR_SET_ADAPT_L	driver/c5535drv.h	29;"	d
+VR_SET_BEAMERSTEP	driver/c5535drv.h	27;"	d
+VR_SET_BEAM_L	driver/c5535drv.h	32;"	d
+VR_SET_DELAY	driver/c5535drv.h	30;"	d
+VR_SET_GAIN	driver/c5535drv.h	31;"	d
+VR_SET_SPECDEEP	driver/c5535drv.h	26;"	d
+VR_SET_STEPSIZE	driver/c5535drv.h	25;"	d
+VR_SET_TOTALCHN	driver/c5535drv.h	33;"	d
+VR_TYPE_IN	driver/c5535drv.h	10;"	d
+VR_TYPE_OUT	driver/c5535drv.h	9;"	d
+VR_USB_VERSION	driver/c5535drv.h	20;"	d
+WATERMARK	audio.c	/^unsigned short WATERMARK = WATERMARK_CODE;$/;"	v
+WATERMARK_CODE	include/g722record.h	30;"	d
+WRITES_IN_FLIGHT	driver/c5535drv.c	39;"	d	file:
+WRITES_IN_FLIGHT	driver/dec_usb.c	40;"	d	file:
+WRITES_IN_FLIGHT	driver/usb-skeleton.c	46;"	d	file:
+XAR0	autoinit.asm	/^	XAR0 = #___bss__$/;"	d
+XAR0	autoinit.asm	/^        XAR0  = #(cinit & 0x7fffff)$/;"	d
+XAR0	autoinit.asm	/^        XAR0  = #(cinit & 0xffffff)$/;"	d
+XAR0	boot.asm	/^	XAR0 = #___bss__$/;"	d
+XAR1	boot.asm	/^	XAR1 = XAR0$/;"	d
+XAR2	boot.asm	/^	XAR2 = XAR0$/;"	d
+XAR3	boot.asm	/^	XAR3 = XAR0$/;"	d
+XAR4	boot.asm	/^	XAR4 = XAR0$/;"	d
+XAR5	boot.asm	/^	XAR5 = XAR0$/;"	d
+XAR6	autoinit.asm	/^	XAR6  = AC0$/;"	d
+XAR6	autoinit.asm	/^	XAR6 = #___bss__$/;"	d
+XAR6	autoinit.asm	/^	XAR6 = dbl(*SP(#0))$/;"	d
+XAR6	autoinit.asm	/^        XAR6  = #(___pinit__ & 0x7fffff)$/;"	d
+XAR6	autoinit.asm	/^        XAR6  = #(___pinit__ & 0xffffff)$/;"	d
+XAR6	boot.asm	/^	XAR6 = XAR0$/;"	d
+XAR7	boot.asm	/^	XAR7 = XAR0$/;"	d
+XCDP	boot.asm	/^	XCDP = XAR0$/;"	d
+XDP	boot.asm	/^	XDP  = XAR0$/;"	d
+XMT2	vectors.asm	/^XMT2:		.ivec	_i2s2_tx_isr		; I2S2 Tx Interrupt$/;"	l
+XMT3	vectors.asm	/^XMT3:		.ivec	no_handler			; I2S3 Tx Interrupt$/;"	l
+XSP	boot.asm	/^	XSP = #((__stack + (__STACK_SIZE >> 1)) & 0x7FFFFE)$/;"	d
+XSP	boot.asm	/^	XSP = #((__stack + (__STACK_SIZE)) & 0xFFFFFC)$/;"	d
+XSSP	boot.asm	/^	XSSP = #((__sysstack + (__SYSSTACK_SIZE >> 1)) & 0x7FFFFE)$/;"	d
+XSSP	boot.asm	/^   	XSSP = #((__sysstack + (__SYSSTACK_SIZE)) & 0xFFFFFC)$/;"	d
+XmtSize	ezdsp5535_uart.c	/^static int xmtCounter = 0, XmtSize = 0;$/;"	v	file:
+_C5535_USB_	driver/c5535drv.h	6;"	d
+_CHANNEL	include/g722record.h	/^typedef enum _CHANNEL {$/;"	g
+_CSL_USBAUX_H_	include/usbAux.h	3;"	d
+_DSP_watermark	DSP_utils.asm	/^_DSP_watermark:$/;"	l
+_EZDSP5535_waitusec	DSP_utils.asm	/^_EZDSP5535_waitusec:$/;"	l
+_FILEOPS_H_	include/fileops.h	2;"	d
+_G722RECORD_H	include/g722record.h	2;"	d
+_GPIO_H_	include/ezdsp5535_gpio.h	8;"	d
+_Reset	vectors.asm	/^_Reset:$/;"	l
+_SCHEDULE_H_	include/schedule.h	2;"	d
+_UartList	ezdsp5535_uart.c	/^typedef struct _UartList {$/;"	s	file:
+__stack	boot.asm	/^__stack:    .usect  .stack, 0, 0, 1$/;"	l
+__sysstack	boot.asm	/^__sysstack: .usect  .sysstack, 0, 0, 1$/;"	l
+__this_module	driver/c5535drv.mod.c	/^struct module __this_module$/;"	v	typeref:struct:module
+__used	driver/c5535drv.mod.c	/^__used$/;"	v	file:
+__used	driver/c5535drv.mod.c	/^__used$/;"	v	typeref:struct:____versions	file:
+_auto_init	autoinit.asm	/^_auto_init:	.asmfunc$/;"	l
+_c_int00	boot.asm	/^_c_int00:	.asmfunc$/;"	l
+_recordStruct	include/fileops.h	/^typedef struct _recordStruct {$/;"	s
+_timeStruct	include/schedule.h	/^typedef struct _timeStruct {$/;"	s
+adjustDate	schedule.c	/^void adjustDate(timeStruct *p, Uint8 weekday)$/;"	f
+aic3204_init	aic3204.c	/^void aic3204_init(Uint8 rate, Int8 micGain)$/;"	f
+aic3204_set_frequency	aic3204.c	/^void aic3204_set_frequency(Int8 freq)$/;"	f
+aic3204_set_mic_gain	aic3204.c	/^void aic3204_set_mic_gain(Int8 gain)$/;"	f
+aic3204_set_spk_gain	aic3204.c	/^void aic3204_set_spk_gain(Int8 gain)$/;"	f
+alarmProcessing	schedule.c	/^void alarmProcessing(void)$/;"	f
+asc2bcd	schedule.c	/^Uint16 asc2bcd(Uint8 *p)$/;"	f
+ascii2bcd	ezdsp5535_uart.c	/^Int16 ascii2bcd(Int8 *ascii, Int8 *bcd)$/;"	f
+audioProcessing	audio.c	/^void audioProcessing(void)$/;"	f
+bcd2ascii	ezdsp5535_uart.c	/^Int16 bcd2ascii(Int8 *bcd, Int8 *ascii)$/;"	f
+bcd2int	schedule.c	/^Uint16 bcd2int(Uint8 bcd)$/;"	f
+buf1	PC/resort.c	/^unsigned short buf1[DCT_LENGTH], buf2[DCT_LENGTH];$/;"	v
+buf2	PC/resort.c	/^unsigned short buf1[DCT_LENGTH], buf2[DCT_LENGTH];$/;"	v
+bufr	PC/split.c	/^unsigned short bufr[MAX_BITS_PER_FRAME];$/;"	v
+bufw	PC/resort.c	/^unsigned short bufw[DCT_LENGTH*2];$/;"	v
+bufw	PC/split.c	/^unsigned short bufw[MAX_BITS_PER_FRAME];$/;"	v
+bulk_in_buffer	driver/c5535drv.c	/^	unsigned char           *bulk_in_buffer;	\/* the buffer to receive data *\/$/;"	m	struct:usb_skel	file:
+bulk_in_buffer	driver/dec_usb.c	/^	unsigned char           *bulk_in_buffer;	\/* the buffer to receive data *\/$/;"	m	struct:usb_dec	file:
+bulk_in_buffer	driver/usb-skeleton.c	/^	unsigned char           *bulk_in_buffer;	\/* the buffer to receive data *\/$/;"	m	struct:usb_skel	file:
+bulk_in_completion	driver/usb-skeleton.c	/^	struct completion	bulk_in_completion;	\/* to wait for an ongoing read *\/$/;"	m	struct:usb_skel	typeref:struct:usb_skel::completion	file:
+bulk_in_copied	driver/usb-skeleton.c	/^	size_t			bulk_in_copied;		\/* already copied to user space *\/$/;"	m	struct:usb_skel	file:
+bulk_in_endpointAddr	driver/c5535drv.c	/^	__u8			bulk_in_endpointAddr;	\/* the address of the bulk in endpoint *\/$/;"	m	struct:usb_skel	file:
+bulk_in_endpointAddr	driver/dec_usb.c	/^	__u8			bulk_in_endpointAddr;	\/* the address of the bulk in endpoint *\/$/;"	m	struct:usb_dec	file:
+bulk_in_endpointAddr	driver/usb-skeleton.c	/^	__u8			bulk_in_endpointAddr;	\/* the address of the bulk in endpoint *\/$/;"	m	struct:usb_skel	file:
+bulk_in_filled	driver/usb-skeleton.c	/^	size_t			bulk_in_filled;		\/* number of bytes in the buffer *\/$/;"	m	struct:usb_skel	file:
+bulk_in_size	driver/c5535drv.c	/^	size_t			bulk_in_size;		\/* the size of the receive buffer *\/$/;"	m	struct:usb_skel	file:
+bulk_in_size	driver/dec_usb.c	/^	size_t			bulk_in_size;		\/* the size of the receive buffer *\/$/;"	m	struct:usb_dec	file:
+bulk_in_size	driver/usb-skeleton.c	/^	size_t			bulk_in_size;		\/* the size of the receive buffer *\/$/;"	m	struct:usb_skel	file:
+bulk_in_urb	driver/usb-skeleton.c	/^	struct urb		*bulk_in_urb;		\/* the urb to read data with *\/$/;"	m	struct:usb_skel	typeref:struct:usb_skel::urb	file:
+bulk_out_endpointAddr	driver/c5535drv.c	/^	__u8			bulk_out_endpointAddr;	\/* the address of the bulk out endpoint *\/$/;"	m	struct:usb_skel	file:
+bulk_out_endpointAddr	driver/dec_usb.c	/^	__u8			bulk_out_endpointAddr;	\/* the address of the bulk out endpoint *\/$/;"	m	struct:usb_dec	file:
+bulk_out_endpointAddr	driver/usb-skeleton.c	/^	__u8			bulk_out_endpointAddr;	\/* the address of the bulk out endpoint *\/$/;"	m	struct:usb_skel	file:
+card_capacity	ezdsp5535_uart.c	/^Int16 card_capacity(void)$/;"	f
+cfgDesc	usb_dma.c	/^Uint16 cfgDesc[40] = {$/;"	v
+cfgDesc	usb_int.c	/^Uint16 cfgDesc[40] = {$/;"	v
+channel	include/fileops.h	/^	Uint16 channel;			\/\/ left=1, right=2, stereo=3$/;"	m	struct:_recordStruct
+checkToday	schedule.c	/^Uint32 checkToday(timeStruct *now)	\/\/ return weekday of a date$/;"	f
+cmdID	ezdsp5535_uart.c	/^	Uint32 cmdID;$/;"	m	struct:_UartList	file:
+code	include/fileops.h	/^	Uint16 code;			\/\/ 0=raw, 0x0100=g722.1, 0x0116$/;"	m	struct:_recordStruct
+commandList	ezdsp5535_uart.c	/^UartList commandList[] = {$/;"	v
+convertSeconds	schedule.c	/^void convertSeconds(timeStruct tb[], int item)$/;"	f
+curFileName	include/fileops.h	/^	Int8 *curFileName;		\/\/ yyyymmdd\/hhmmsslr.cod, lr=left\/right,cod=raw,16k,24k,32k$/;"	m	struct:_recordStruct
+curSchedule	schedule.c	/^static Int16 curSchedule = -1;$/;"	v	file:
+data1	ezdsp5535_i2s.c	/^Int16 data1, data2;$/;"	v
+data2	ezdsp5535_i2s.c	/^Int16 data1, data2;$/;"	v
+day	include/schedule.h	/^	Uint8  year, month, day;$/;"	m	struct:_timeStruct
+dec_class	driver/dec_usb.c	/^static struct usb_class_driver dec_class = {$/;"	v	typeref:struct:usb_class_driver	file:
+dec_delete	driver/dec_usb.c	/^static void dec_delete(struct kref *kref)$/;"	f	file:
+dec_disconnect	driver/dec_usb.c	/^static void dec_disconnect(struct usb_interface *interface)$/;"	f	file:
+dec_draw_down	driver/dec_usb.c	/^static void dec_draw_down(struct usb_dec *dev)$/;"	f	file:
+dec_driver	driver/dec_usb.c	/^static struct usb_driver dec_driver = {$/;"	v	typeref:struct:usb_driver	file:
+dec_driver	driver/dec_usb.c	/^static struct usb_driver dec_driver;$/;"	v	typeref:struct:usb_driver	file:
+dec_fops	driver/dec_usb.c	/^static const struct file_operations dec_fops = {$/;"	v	typeref:struct:file_operations	file:
+dec_ioctl	driver/dec_usb.c	/^static int dec_ioctl(struct inode *inode, struct file *file,$/;"	f	file:
+dec_open	driver/dec_usb.c	/^static int dec_open(struct inode *inode, struct file *file)$/;"	f	file:
+dec_post_reset	driver/dec_usb.c	/^static int dec_post_reset(struct usb_interface *intf)$/;"	f	file:
+dec_pre_reset	driver/dec_usb.c	/^static int dec_pre_reset(struct usb_interface *intf)$/;"	f	file:
+dec_probe	driver/dec_usb.c	/^static int dec_probe(struct usb_interface *interface, const struct usb_device_id *id)$/;"	f	file:
+dec_read	driver/dec_usb.c	/^static ssize_t dec_read(struct file *file, char *buffer, size_t count, loff_t *ppos)$/;"	f	file:
+dec_release	driver/dec_usb.c	/^static int dec_release(struct inode *inode, struct file *file)$/;"	f	file:
+dec_resume	driver/dec_usb.c	/^static int dec_resume(struct usb_interface *intf)$/;"	f	file:
+dec_suspend	driver/dec_usb.c	/^static int dec_suspend(struct usb_interface *intf, pm_message_t message)$/;"	f	file:
+dec_table	driver/dec_usb.c	/^static struct usb_device_id dec_table [] = {$/;"	v	typeref:struct:usb_device_id	file:
+dec_write	driver/dec_usb.c	/^static ssize_t dec_write(struct file *file, const char *user_buffer, size_t count, loff_t *ppos)$/;"	f	file:
+delete_all	ezdsp5535_uart.c	/^Int16 delete_all(void)$/;"	f
+devAddr	usb_dma.c	/^Uint16                devAddr;$/;"	v
+devAddr	usb_int.c	/^Uint16    devAddr;$/;"	v
+deviceDesc	usb_dma.c	/^Uint16 deviceDesc[9] = {$/;"	v
+deviceDesc	usb_int.c	/^Uint16 deviceDesc[9] = {$/;"	v
+dir_list	ezdsp5535_uart.c	/^Int16 dir_list(void)$/;"	f
+dmaIsrStatus	audio.c	/^volatile Uint16 dmaIsrStatus = 0;$/;"	v
+dma_isr	audio.c	/^void interrupt dma_isr(void)$/;"	f
+err_lock	driver/c5535drv.c	/^	spinlock_t		err_lock;		\/* lock for errors *\/$/;"	m	struct:usb_skel	file:
+err_lock	driver/dec_usb.c	/^	spinlock_t		err_lock;		\/* lock for errors *\/$/;"	m	struct:usb_dec	file:
+err_lock	driver/usb-skeleton.c	/^	spinlock_t		err_lock;		\/* lock for errors *\/$/;"	m	struct:usb_skel	file:
+errors	driver/c5535drv.c	/^	int			errors;			\/* the last request tanked *\/$/;"	m	struct:usb_skel	file:
+errors	driver/dec_usb.c	/^	int			errors;			\/* the last request tanked *\/$/;"	m	struct:usb_dec	file:
+errors	driver/usb-skeleton.c	/^	int			errors;			\/* the last request tanked *\/$/;"	m	struct:usb_skel	file:
+file	file.c	/^FIL file;$/;"	v
+fileName	file.c	/^Int8 fileName[MAX_FILELENGTH] = "20130501\/121020lr.raw";$/;"	v
+file_delete	ezdsp5535_uart.c	/^Int16 file_delete(void)$/;"	f
+font	ezdsp5535_lcd.c	/^long font[] = {$/;"	v
+frames	include/fileops.h	/^	Uint32 frames;			\/\/ file splits in frame(20ms)$/;"	m	struct:_recordStruct
+framesize	include/fileops.h	/^	Uint16 framesize;		\/\/ read\/write framesize$/;"	m	struct:_recordStruct
+fs	file.c	/^FATFS *fs = NULL;$/;"	v
+function	ezdsp5535_uart.c	/^	Int16 (*function)(void);$/;"	m	struct:_UartList	file:
+function	include/fileops.h	/^	Uint16 function;$/;"	m	struct:_recordStruct
+gBulkInTransfer	csl_usb.c	/^CSL_UsbTransfer    gBulkInTransfer;$/;"	v
+gBulkOutTransfer	csl_usb.c	/^CSL_UsbTransfer    gBulkOutTransfer;$/;"	v
+gCtrlTransfer	csl_usb.c	/^CSL_UsbTransfer    gCtrlTransfer;$/;"	v
+gDct_length	audio.c	/^Uint16 gDct_length;$/;"	v
+gDct_length_log	audio.c	/^Uint16 gDct_length_log;$/;"	v
+gEpStatus	csl_usb.c	/^CSL_UsbEpStatus    gEpStatus[CSL_USB_ENDPOINT_COUNT];$/;"	v
+gIntInTransfer	csl_usb.c	/^CSL_UsbTransfer    gIntInTransfer;$/;"	v
+gIsoInTransfer	csl_usb.c	/^CSL_UsbTransfer    gIsoInTransfer;$/;"	v
+gIsoOutTransfer	csl_usb.c	/^CSL_UsbTransfer    gIsoOutTransfer;$/;"	v
+gNum_categorization_control_bits	audio.c	/^Uint16 gNum_categorization_control_bits;$/;"	v
+gNum_categorization_control_possibilities	audio.c	/^Uint16 gNum_categorization_control_possibilities;$/;"	v
+gNumber_of_regions	audio.c	/^Uint16 gNumber_of_regions;$/;"	v
+gNumber_of_valid_coefs	audio.c	/^Uint16 gNumber_of_valid_coefs;$/;"	v
+gUsbContext	csl_usb.c	/^CSL_UsbContext     gUsbContext;$/;"	v
+gUsbEpHandle	csl_usb.c	/^pUsbEpHandle       gUsbEpHandle[CSL_USB_ENDPOINT_COUNT];$/;"	v
+gpio_isr	ezdsp5535_gpio.c	/^void interrupt gpio_isr(void)$/;"	f
+hEPx	usb_dma.c	/^pUsbEpHandle          hEPx;$/;"	v
+hEPx	usb_int.c	/^pUsbEpHandle          hEPx;$/;"	v
+hEpObjArray	usb_dma.c	/^pUsbEpHandle          hEpObjArray[CSL_USB_ENDPOINT_COUNT];$/;"	v
+hEpObjArray	usb_int.c	/^pUsbEpHandle          hEpObjArray[CSL_USB_ENDPOINT_COUNT];$/;"	v
+hex2bcd	csl_rtc.c	/^Uint8 hex2bcd(Uint8 hex)$/;"	f
+hour	include/schedule.h	/^	Uint16 hour, min, sec;		\/\/ each holds 2 timers$/;"	m	struct:_timeStruct
+hpdrx	usb_dma.c	/^CSL_UsbHostPktDescr hpdrx;$/;"	v
+hpdtx	usb_dma.c	/^CSL_UsbHostPktDescr hpdtx;$/;"	v
+i2s2_rx_isr	ezdsp5535_i2s.c	/^interrupt void i2s2_rx_isr(void)$/;"	f
+i2s2_tx_isr	ezdsp5535_i2s.c	/^interrupt void i2s2_tx_isr(void)$/;"	f
+inputDmaChn	audio.c	/^Int16 *inputDmaChn[] = {rcv_l, rcv_r};$/;"	v
+interface	driver/c5535drv.c	/^	struct usb_interface	*interface;		\/* the interface for this device *\/$/;"	m	struct:usb_skel	typeref:struct:usb_skel::usb_interface	file:
+interface	driver/dec_usb.c	/^	struct usb_interface	*interface;		\/* the interface for this device *\/$/;"	m	struct:usb_dec	typeref:struct:usb_dec::usb_interface	file:
+interface	driver/usb-skeleton.c	/^	struct usb_interface	*interface;		\/* the interface for this device *\/$/;"	m	struct:usb_skel	typeref:struct:usb_skel::usb_interface	file:
+io_mutex	driver/c5535drv.c	/^	struct mutex		io_mutex;		\/* synchronize I\/O with disconnect *\/$/;"	m	struct:usb_skel	typeref:struct:usb_skel::mutex	file:
+io_mutex	driver/dec_usb.c	/^	struct mutex		io_mutex;		\/* synchronize I\/O with disconnect *\/$/;"	m	struct:usb_dec	typeref:struct:usb_dec::mutex	file:
+io_mutex	driver/usb-skeleton.c	/^	struct mutex		io_mutex;		\/* synchronize I\/O with disconnect *\/$/;"	m	struct:usb_skel	typeref:struct:usb_skel::mutex	file:
+kref	driver/c5535drv.c	/^	struct kref		kref;$/;"	m	struct:usb_skel	typeref:struct:usb_skel::kref	file:
+kref	driver/dec_usb.c	/^	struct kref		kref;$/;"	m	struct:usb_dec	typeref:struct:usb_dec::kref	file:
+kref	driver/usb-skeleton.c	/^	struct kref		kref;$/;"	m	struct:usb_skel	typeref:struct:usb_skel::kref	file:
+limit_sem	driver/c5535drv.c	/^	struct semaphore	limit_sem;		\/* limiting the number of writes in progress *\/$/;"	m	struct:usb_skel	typeref:struct:usb_skel::semaphore	file:
+limit_sem	driver/dec_usb.c	/^	struct semaphore	limit_sem;		\/* limiting the number of writes in progress *\/$/;"	m	struct:usb_dec	typeref:struct:usb_dec::semaphore	file:
+limit_sem	driver/usb-skeleton.c	/^	struct semaphore	limit_sem;		\/* limiting the number of writes in progress *\/$/;"	m	struct:usb_skel	typeref:struct:usb_skel::semaphore	file:
+linking_ram0	usb_dma.c	/^Uint32 linking_ram0[CSL_USB_LRAM_SIZE];$/;"	v
+main	PC/resort.c	/^int main(int argc, char *argv[])$/;"	f
+main	PC/split.c	/^int main(int argc, char *argv[])$/;"	f
+main	driver/r.c	/^main()$/;"	f
+main	driver/usb.c	/^main()$/;"	f
+main	driver/w.c	/^main(int argc, char *argv[])$/;"	f
+main	main.c	/^void main(void)$/;"	f
+mem_cmp	ezdsp5535_uart.c	/^int mem_cmp (const void* dst, const void* src, int cnt) {$/;"	f	file:
+mem_cpy	ezdsp5535_uart.c	/^void mem_cpy (void* dst, const void* src, int cnt) {$/;"	f	file:
+min	include/schedule.h	/^	Uint16 hour, min, sec;		\/\/ each holds 2 timers$/;"	m	struct:_timeStruct
+mix_lr	audio.c	/^Uint8 mix_lr[MAX_DCT_LENGTH*4];					\/\/ 0l0l0l0l....0r0r0r0r$/;"	v
+month	include/schedule.h	/^	Uint8  year, month, day;$/;"	m	struct:_timeStruct
+no_handler	vectors.asm	/^no_handler:$/;"	l
+number_of_16bit_words_per_frame	audio.c	/^Uint16 number_of_16bit_words_per_frame;$/;"	v
+number_of_bits_per_frame	audio.c	/^Uint16 number_of_bits_per_frame;$/;"	v
+number_of_bytes_per_frame	audio.c	/^Uint16 number_of_bytes_per_frame;$/;"	v
+obj-m	driver/Makefile	/^obj-m       := c5535drv.o$/;"	m
+ongoing_read	driver/usb-skeleton.c	/^	bool			ongoing_read;		\/* a read is going on *\/$/;"	m	struct:usb_skel	file:
+open_count	driver/c5535drv.c	/^	int			open_count;		\/* count the number of openers *\/$/;"	m	struct:usb_skel	file:
+open_count	driver/dec_usb.c	/^	int			open_count;		\/* count the number of openers *\/$/;"	m	struct:usb_dec	file:
+open_count	driver/usb-skeleton.c	/^	int			open_count;		\/* count the number of openers *\/$/;"	m	struct:usb_skel	file:
+outputDmaChn	audio.c	/^Int16 *outputDmaChn[] = {xmt_l, xmt_r};$/;"	v
+pContext	usb_dma.c	/^pUsbContext           pContext = &gUsbContext;$/;"	v
+pContext	usb_int.c	/^pUsbContext           pContext = &gUsbContext;$/;"	v
+pingpong	audio.c	/^Int16 pingpong = -1;$/;"	v
+powerManager	pll.c	/^void powerManager(Uint16 on)$/;"	f
+processed_urb	driver/usb-skeleton.c	/^	bool			processed_urb;		\/* indicates we haven't processed the urb *\/$/;"	m	struct:usb_skel	file:
+raw_seconds	include/schedule.h	/^	Int32  raw_seconds;$/;"	m	struct:_timeStruct
+rcvCounter	ezdsp5535_uart.c	/^static int rcvCounter = 0;$/;"	v	file:
+rcv_l	audio.c	/^Int16 rcv_l[MAX_DCT_LENGTH*2], xmt_l[MAX_DCT_LENGTH*2];$/;"	v
+rcv_r	audio.c	/^Int16 rcv_r[MAX_DCT_LENGTH*2], xmt_r[MAX_DCT_LENGTH*2];$/;"	v
+readFileProcessing	file.c	/^void readFileProcessing(int chn)$/;"	f
+recordFile	file.c	/^recordStruct recordFile;$/;"	v
+recordStruct	include/fileops.h	/^} recordStruct;$/;"	t	typeref:struct:_recordStruct
+reset_isr	vectors.asm	/^reset_isr:$/;"	l
+rtc_get_time	csl_rtc.c	/^void rtc_get_time(Int8 *pRtcTime, int len)$/;"	f
+rtc_get_time	rtcM41Txx_i2c.c	/^void rtc_get_time(Int8 *str, int len)$/;"	f
+rtc_isr	csl_rtc.c	/^void interrupt rtc_isr(void)$/;"	f
+rtc_set_alarm	csl_rtc.c	/^void rtc_set_alarm(timeStruct time, int pos)	\/\/ 0:start, 8:stop$/;"	f
+rtc_set_alarm	rtcM41Txx_i2c.c	/^void rtc_set_alarm(Int8 *str)$/;"	f
+rtc_set_time	csl_rtc.c	/^void rtc_set_time(Int8 *pRtcTime, int len)$/;"	f
+rtc_set_time	rtcM41Txx_i2c.c	/^void rtc_set_time(Int8 *str, int len)$/;"	f
+rx_buffer	ezdsp5535_uart.c	/^Int8 rx_buffer[64];$/;"	v
+sampleRate	include/fileops.h	/^	Uint8 sampleRate;		\/\/ sampling rate$/;"	m	struct:_recordStruct
+schedule_read	schedule.c	/^Int16 schedule_read(void)$/;"	f
+sec	include/schedule.h	/^	Uint16 hour, min, sec;		\/\/ each holds 2 timers$/;"	m	struct:_timeStruct
+set_machine_id	ezdsp5535_uart.c	/^Int16 set_machine_id(void)$/;"	f
+set_rec_level	ezdsp5535_uart.c	/^Int16 set_rec_level(void)$/;"	f
+set_record_mode	ezdsp5535_uart.c	/^Int16 set_record_mode(void)$/;"	f
+set_spk_level	ezdsp5535_uart.c	/^Int16 set_spk_level(void)$/;"	f
+set_split	ezdsp5535_uart.c	/^Int16 set_split(void)$/;"	f
+skel_class	driver/c5535drv.c	/^static struct usb_class_driver skel_class = {$/;"	v	typeref:struct:usb_class_driver	file:
+skel_class	driver/usb-skeleton.c	/^static struct usb_class_driver skel_class = {$/;"	v	typeref:struct:usb_class_driver	file:
+skel_delete	driver/c5535drv.c	/^static void skel_delete(struct kref *kref)$/;"	f	file:
+skel_delete	driver/usb-skeleton.c	/^static void skel_delete(struct kref *kref)$/;"	f	file:
+skel_disconnect	driver/c5535drv.c	/^static void skel_disconnect(struct usb_interface *interface)$/;"	f	file:
+skel_disconnect	driver/usb-skeleton.c	/^static void skel_disconnect(struct usb_interface *interface)$/;"	f	file:
+skel_do_read_io	driver/usb-skeleton.c	/^static int skel_do_read_io(struct usb_skel *dev, size_t count)$/;"	f	file:
+skel_draw_down	driver/c5535drv.c	/^static void skel_draw_down(struct usb_skel *dev)$/;"	f	file:
+skel_draw_down	driver/usb-skeleton.c	/^static void skel_draw_down(struct usb_skel *dev)$/;"	f	file:
+skel_driver	driver/c5535drv.c	/^static struct usb_driver skel_driver = {$/;"	v	typeref:struct:usb_driver	file:
+skel_driver	driver/c5535drv.c	/^static struct usb_driver skel_driver;$/;"	v	typeref:struct:usb_driver	file:
+skel_driver	driver/usb-skeleton.c	/^static struct usb_driver skel_driver = {$/;"	v	typeref:struct:usb_driver	file:
+skel_driver	driver/usb-skeleton.c	/^static struct usb_driver skel_driver;$/;"	v	typeref:struct:usb_driver	file:
+skel_flush	driver/usb-skeleton.c	/^static int skel_flush(struct file *file, fl_owner_t id)$/;"	f	file:
+skel_fops	driver/c5535drv.c	/^static const struct file_operations skel_fops = {$/;"	v	typeref:struct:file_operations	file:
+skel_fops	driver/usb-skeleton.c	/^static const struct file_operations skel_fops = {$/;"	v	typeref:struct:file_operations	file:
+skel_ioctl	driver/c5535drv.c	/^static long skel_ioctl(struct file *file, unsigned int cmd, unsigned long arg)$/;"	f	file:
+skel_open	driver/c5535drv.c	/^static int skel_open(struct inode *inode, struct file *file)$/;"	f	file:
+skel_open	driver/usb-skeleton.c	/^static int skel_open(struct inode *inode, struct file *file)$/;"	f	file:
+skel_post_reset	driver/c5535drv.c	/^static int skel_post_reset(struct usb_interface *intf)$/;"	f	file:
+skel_post_reset	driver/usb-skeleton.c	/^static int skel_post_reset(struct usb_interface *intf)$/;"	f	file:
+skel_pre_reset	driver/c5535drv.c	/^static int skel_pre_reset(struct usb_interface *intf)$/;"	f	file:
+skel_pre_reset	driver/usb-skeleton.c	/^static int skel_pre_reset(struct usb_interface *intf)$/;"	f	file:
+skel_probe	driver/c5535drv.c	/^static int skel_probe(struct usb_interface *interface, const struct usb_device_id *id)$/;"	f	file:
+skel_probe	driver/usb-skeleton.c	/^static int skel_probe(struct usb_interface *interface,$/;"	f	file:
+skel_read	driver/c5535drv.c	/^static ssize_t skel_read(struct file *file, char *buffer, size_t count, loff_t *ppos)$/;"	f	file:
+skel_read	driver/usb-skeleton.c	/^static ssize_t skel_read(struct file *file, char *buffer, size_t count,$/;"	f	file:
+skel_read_bulk_callback	driver/usb-skeleton.c	/^static void skel_read_bulk_callback(struct urb *urb)$/;"	f	file:
+skel_release	driver/c5535drv.c	/^static int skel_release(struct inode *inode, struct file *file)$/;"	f	file:
+skel_release	driver/usb-skeleton.c	/^static int skel_release(struct inode *inode, struct file *file)$/;"	f	file:
+skel_resume	driver/c5535drv.c	/^static int skel_resume(struct usb_interface *intf)$/;"	f	file:
+skel_resume	driver/usb-skeleton.c	/^static int skel_resume(struct usb_interface *intf)$/;"	f	file:
+skel_suspend	driver/c5535drv.c	/^static int skel_suspend(struct usb_interface *intf, pm_message_t message)$/;"	f	file:
+skel_suspend	driver/usb-skeleton.c	/^static int skel_suspend(struct usb_interface *intf, pm_message_t message)$/;"	f	file:
+skel_table	driver/c5535drv.c	/^static const struct usb_device_id skel_table[] = {$/;"	v	typeref:struct:usb_device_id	file:
+skel_table	driver/usb-skeleton.c	/^static const struct usb_device_id skel_table[] = {$/;"	v	typeref:struct:usb_device_id	file:
+skel_write	driver/c5535drv.c	/^static ssize_t skel_write(struct file *file, const char *user_buffer, size_t count, loff_t *ppos)$/;"	f	file:
+skel_write	driver/usb-skeleton.c	/^static ssize_t skel_write(struct file *file, const char *user_buffer,$/;"	f	file:
+skel_write_bulk_callback	driver/usb-skeleton.c	/^static void skel_write_bulk_callback(struct urb *urb)$/;"	f	file:
+split	include/fileops.h	/^	Uint32 split;			\/\/ for split reload$/;"	m	struct:_recordStruct
+start_play	ezdsp5535_uart.c	/^Int16 start_play(void)$/;"	f
+start_record	ezdsp5535_uart.c	/^Int16 start_record(void)$/;"	f
+status	usb_dma.c	/^CSL_Status            status;$/;"	v
+status	usb_int.c	/^CSL_Status            status;$/;"	v
+status_inquery	ezdsp5535_uart.c	/^Int16 status_inquery(void)$/;"	f
+stop_command	ezdsp5535_uart.c	/^Int16 stop_command(void)$/;"	f
+strDesc	usb_dma.c	/^Uint16  strDesc[4][32] = {$/;"	v
+strDesc	usb_int.c	/^Uint16  strDesc[4][32] = {$/;"	v
+submitted	driver/c5535drv.c	/^	struct usb_anchor	submitted;		\/* in case we need to retract our submissions *\/$/;"	m	struct:usb_skel	typeref:struct:usb_skel::usb_anchor	file:
+submitted	driver/dec_usb.c	/^	struct usb_anchor	submitted;		\/* in case we need to retract our submissions *\/$/;"	m	struct:usb_dec	typeref:struct:usb_dec::usb_anchor	file:
+submitted	driver/usb-skeleton.c	/^	struct usb_anchor	submitted;		\/* in case we need to retract our submissions *\/$/;"	m	struct:usb_skel	typeref:struct:usb_skel::usb_anchor	file:
+sumSeconds	schedule.c	/^Uint32 sumSeconds(timeStruct *p)$/;"	f
+table	schedule.c	/^timeStruct table[MAX_SCHEDULE];$/;"	v
+taskList	main.c	/^Uint16 taskList = 0;$/;"	v
+tim_isr	timer.c	/^void interrupt tim_isr(void)$/;"	f
+timeStruct	include/schedule.h	/^} timeStruct;$/;"	t	typeref:struct:_timeStruct
+timer_settings	ezdsp5535_uart.c	/^Int16 timer_settings(void)$/;"	f
+to_skel_dev	driver/c5535drv.c	58;"	d	file:
+to_skel_dev	driver/usb-skeleton.c	71;"	d	file:
+totalSchedule	schedule.c	/^static Uint16 totalSchedule = 0;$/;"	v	file:
+tx_buffer	ezdsp5535_uart.c	/^Int8 tx_buffer[64];$/;"	v
+uartProcessing	ezdsp5535_uart.c	/^void uartProcessing(void)$/;"	f
+uart_isr	ezdsp5535_uart.c	/^void interrupt uart_isr(void)$/;"	f
+udev	driver/c5535drv.c	/^	struct usb_device	*udev;			\/* the usb device for this device *\/$/;"	m	struct:usb_skel	typeref:struct:usb_skel::usb_device	file:
+udev	driver/dec_usb.c	/^	struct usb_device	*udev;			\/* the usb device for this device *\/$/;"	m	struct:usb_dec	typeref:struct:usb_dec::usb_device	file:
+udev	driver/usb-skeleton.c	/^	struct usb_device	*udev;			\/* the usb device for this device *\/$/;"	m	struct:usb_skel	typeref:struct:usb_skel::usb_device	file:
+usbBulkInEpObj	usb_dma.c	/^CSL_UsbEpObj          usbBulkInEpObj;$/;"	v
+usbBulkInEpObj	usb_int.c	/^CSL_UsbEpObj          usbBulkInEpObj;$/;"	v
+usbBulkOutEpObj	usb_dma.c	/^CSL_UsbEpObj          usbBulkOutEpObj;$/;"	v
+usbBulkOutEpObj	usb_int.c	/^CSL_UsbEpObj          usbBulkOutEpObj;$/;"	v
+usbCtrlInEpObj	usb_dma.c	/^CSL_UsbEpObj          usbCtrlInEpObj;$/;"	v
+usbCtrlInEpObj	usb_int.c	/^CSL_UsbEpObj          usbCtrlInEpObj;$/;"	v
+usbCtrlOutEpObj	usb_dma.c	/^CSL_UsbEpObj          usbCtrlOutEpObj;$/;"	v
+usbCtrlOutEpObj	usb_int.c	/^CSL_UsbEpObj          usbCtrlOutEpObj;$/;"	v
+usbDataBuffer	usb_dma.c	/^Uint16    usbDataBuffer[CSL_USB_DATA_SIZE];$/;"	v
+usbDataBuffer	usb_int.c	/^Uint16    usbDataBuffer[CSL_USB_DATA_SIZE];$/;"	v
+usbProcessing	usb_dma.c	/^void usbProcessing(void)$/;"	f
+usbProcessing	usb_int.c	/^void usbProcessing(void)$/;"	f
+usbRegisters	csl_usb.c	/^CSL_UsbRegsOvly    usbRegisters;$/;"	v
+usbSetup	usb_int.c	/^CSL_UsbSetupStruct    usbSetup;$/;"	v
+usb_dec	driver/dec_usb.c	/^struct usb_dec {$/;"	s	file:
+usb_dec_exit	driver/dec_usb.c	/^module_exit(usb_dec_exit);$/;"	v
+usb_dec_exit	driver/dec_usb.c	/^static void __exit usb_dec_exit(void)$/;"	f	file:
+usb_dec_init	driver/dec_usb.c	/^module_init(usb_dec_init);$/;"	v
+usb_dec_init	driver/dec_usb.c	/^static int __init usb_dec_init(void)$/;"	f	file:
+usb_income_num_bytes	usb_int.c	/^Uint16 usb_income_num_bytes;$/;"	v
+usb_isr	usb_dma.c	/^void interrupt usb_isr(void)$/;"	f
+usb_isr	usb_int.c	/^void interrupt usb_isr(void)$/;"	f
+usb_skel	driver/c5535drv.c	/^struct usb_skel {$/;"	s	file:
+usb_skel	driver/usb-skeleton.c	/^struct usb_skel {$/;"	s	file:
+usb_skel_exit	driver/c5535drv.c	/^module_exit(usb_skel_exit);$/;"	v
+usb_skel_exit	driver/c5535drv.c	/^static void __exit usb_skel_exit(void)$/;"	f	file:
+usb_skel_exit	driver/usb-skeleton.c	/^module_exit(usb_skel_exit);$/;"	v
+usb_skel_exit	driver/usb-skeleton.c	/^static void __exit usb_skel_exit(void)$/;"	f	file:
+usb_skel_init	driver/c5535drv.c	/^module_init(usb_skel_init);$/;"	v
+usb_skel_init	driver/c5535drv.c	/^static int __init usb_skel_init(void)$/;"	f	file:
+usb_skel_init	driver/usb-skeleton.c	/^module_init(usb_skel_init);$/;"	v
+usb_skel_init	driver/usb-skeleton.c	/^static int __init usb_skel_init(void)$/;"	f	file:
+weekday	include/schedule.h	/^	Uint8  weekday;$/;"	m	struct:_timeStruct
+writeFileProcessing	file.c	/^void writeFileProcessing(int chn)$/;"	f
+xmtCounter	ezdsp5535_uart.c	/^static int xmtCounter = 0, XmtSize = 0;$/;"	v	file:
+xmt_l	audio.c	/^Int16 rcv_l[MAX_DCT_LENGTH*2], xmt_l[MAX_DCT_LENGTH*2];$/;"	v
+xmt_r	audio.c	/^Int16 rcv_r[MAX_DCT_LENGTH*2], xmt_r[MAX_DCT_LENGTH*2];$/;"	v
+year	include/schedule.h	/^	Uint8  year, month, day;$/;"	m	struct:_timeStruct

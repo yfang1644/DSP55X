@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+environment/project/com.ti.ccstudio.buildDefinitions.C5500.Debug.224887667/LIBFAT16_PATH/delimiter=\:
+environment/project/com.ti.ccstudio.buildDefinitions.C5500.Debug.224887667/LIBFAT16_PATH/operation=append
+environment/project/com.ti.ccstudio.buildDefinitions.C5500.Debug.224887667/LIBFAT16_PATH/value=/home/fang/ti/ezdsp5535_v1/tests/libfat16
+environment/project/com.ti.ccstudio.buildDefinitions.C5500.Debug.224887667/LIBG722_2_PATH/delimiter=\:
+environment/project/com.ti.ccstudio.buildDefinitions.C5500.Debug.224887667/LIBG722_2_PATH/operation=append
+environment/project/com.ti.ccstudio.buildDefinitions.C5500.Debug.224887667/LIBG722_2_PATH/value=/home/fang/ti/ezdsp5535_v1/tests/libg722_2
+environment/project/com.ti.ccstudio.buildDefinitions.C5500.Debug.224887667/append=true
+environment/project/com.ti.ccstudio.buildDefinitions.C5500.Debug.224887667/appendContributed=true

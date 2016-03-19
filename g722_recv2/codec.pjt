@@ -1,0 +1,55 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="D:\IceTek\C5509\g722_1\codec_2\"
+ProjectType=Executable
+CPUFamily=TMS320C55XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="aic23.c"
+Source="coef2sam.c"
+Source="common.c"
+Source="dct4_a.c"
+Source="dct4_s.c"
+Source="decoder.c"
+Source="dma.c"
+Source="DSP_buffer_copy.asm"
+Source="DSP_emif.asm"
+Source="encoder.c"
+Source="huff_tab.c"
+Source="i2c.c"
+Source="main.c"
+Source="sam2coef.c"
+Source="sysinit.c"
+Source="tables.c"
+Source="timer.c"
+Source="vectors.asm"
+Source="c55_cov_lnk.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -mg -o2 -fr"$(Proj_dir)\Debug" -i".\include" -d"_DEBUG" -ml
+
+["Compiler" Settings: "Release"]
+Options=-o2 -fr"$(Proj_dir)\Release"
+
+["Linker" Settings: "Debug"]
+Options=-c -m".\Debug\codec.map" -o".\Debug\codec.out" -w -x
+
+["Linker" Settings: "Release"]
+Options=-c -m".\Release\encode.map" -o".\Release\encode.out" -w -x
+
+["vectors.asm" Settings: "Debug"]
+Options="Compiler" -{-mg}
+
+["c55_cov_lnk.cmd" Settings: "Debug"]
+LinkOrder=1
+
+["c55_cov_lnk.cmd" Settings: "Release"]
+LinkOrder=1
+

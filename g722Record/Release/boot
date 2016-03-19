@@ -1,0 +1,3 @@
+bootimg.bin: g722Record.out
+	/opt/ti/ccsv5/tools/compiler/c5500_4.4.1/bin/hex55 -b -boot -serial8 -v5505 $< -o $@
+

@@ -1,0 +1,60 @@
+  2*(63632- 39198) = 2*24434
+  2*(25988 - 1598)
+
+  1*(61762 - 12895) 
+
+  4*(64567 - 52350)
+
+  dot_product 汇编 61762-20496,效果明显
+2131120
+2121147(改内嵌除法 _divs)
+2119522(改内嵌长加法L_add -> _lsadd())
+2049092(改内嵌L_sub, L_mult)
+1733006
+	#define	add		_sadd
+	#define	sub		_ssub
+	#define	abs_s	_abss
+	#define	L_shr	_lshrs
+	#define	L_shl	_lsshl
+
+1728604
+	#define	shr		_shrs
+	#define	shl		_sshl
+
+1726479
+	#define	L_negate(a)		(_lsneg(a))
+	#define	L_abs(a)		(_labss(a))
+1080896
+	#define	L_mac		_smac
+	#define	L_msu		_smas
+
+863381
+	#define	negate(a)		(_sneg(a))
+	#define	mult(a,b)		(_smpy((a), (b)))
+	#define	mult_r(a,b)		((short)(_smpyr((a), (b))>>16))
+
+823748
+	#define	round16(a)		((int)(_round(a) >> 16))
+
+821377(自己写汇编 div_s,取代 rts.lib中的 divs)
+_min, _max 效率不高，去掉后 821118
+
+815692
+
+811064(换汇编 residu_asm.asm)
+
+859012 168058
+854580 164078 (scale_asm)
+
+849432 163958 (weight_a, round(L_mult) -> mult_r)
+
+2013-05-17:
+exclusive compile:
+basicop2.c
+convolve.c
+deemph.c
+gpclip_asm.asm
+preemph.c
+updt_tar.c
+util.c
+weight_a.c

@@ -1,0 +1,577 @@
+******************************************************************************
+              TMS320C55x Linker Unix v4.4.1                    
+******************************************************************************
+>> Linked Sun Sep 28 12:27:56 2014
+
+OUTPUT FILE NAME:   <si4464_send.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 00023808
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+                        (bytes)   (bytes)    (bytes)   (bytes)
+----------------------  --------  ---------  --------  --------  ----  --------
+PAGE 0:
+  MMR                   00000000   000000c0  00000000  000000c0  RWIX
+  DARAM0                000000c0   0000ff40  0000cd7e  000031c2  RWIX
+  VECS1                 00010000   00000100  00000100  00000000  RWIX
+  SARAM0                00010100   0000ff00  00003000  0000cf00  RWIX
+  SARAM1                00020000   00020000  000038c7  0001c739  RWIX
+  SARAM2                00040000   0000ff00  00007874  0000868c  RWIX
+  PDROM                 00ff8000   00008000  00000000  00008000  R IX
+
+PAGE 2:
+  IOPORT                00000000   00020000  00000000  00020000  RWI 
+
+
+SECTION ALLOCATION MAP
+(Addresses surrounded by []'s are displayed for convenience only!)
+
+output                                                          attributes/
+section   page  orgn(bytes) orgn(words) len(bytes) len(words)   input sections
+--------  ----  ----------- ----------- ---------- ----------   --------------
+.pinit       0   [ 00040000 ]  00020000          *   00000000   UNINITIALIZED
+
+.data        0   [ 000000c0 ]  00000060          *   00000000   UNINITIALIZED
+
+.cio         0   [ 000000c0 ]  00000060          *   00001400   UNINITIALIZED
+                 [ 000000c0 ]  00000060          *   00001400   audio.obj (.cio)
+
+.bss.1       0   [ 000028c0 ]  00001460          *   0000519a   UNINITIALIZED
+                 [ 000028c0 ]  00001460          *   0000209e   libg722_1.lib : huff_tab.obj (.bss)
+                 [ 000069fc ]  000034fe          *   00000a5c                 : dct4_s.obj (.bss)
+                 [ 00007eb4 ]  00003f5a          *   00000a00                 : common.obj (.bss)
+                 [ 000092b4 ]  0000495a          *   00000838                 : tables.obj (.bss)
+                 [ 0000a324 ]  00005192          *   0000069c                 : dct4_a.obj (.bss)
+                 [ 0000b05c ]  0000582e          *   00000500                 : coef2sam.obj (.bss)
+                 [ 0000ba5c ]  00005d2e          *   00000500                 : sam2coef.obj (.bss)
+                 [ 0000c45c ]  0000622e          *   00000284                 : decoder.obj (.bss)
+                 [ 0000c964 ]  000064b2          *   00000147   Si446x_api.obj (.bss)
+                 [ 0000cbf2 ]  000065f9          *   00000001   ezdsp5535_gpio.obj (.bss)
+
+.bss.2       0   [ 0000cbf8 ]  000065fc          *   00000109   UNINITIALIZED
+                 [ 0000cbf8 ]  000065fc          *   00000109   audio.obj (.bss)
+
+.bss.3       0   [ 0000ce0c ]  00006706          *   00000011   UNINITIALIZED
+                 [ 0000ce0c ]  00006706          *   00000008   ezdsp5535_spi.obj (.bss)
+                 [ 0000ce1c ]  0000670e          *   00000005   main.obj (.bss)
+                 [ 0000ce26 ]  00006713          *   00000004   ezdsp5535_i2s.obj (.bss)
+
+.const       0   [ 0000ce30 ]  00006718          *   0000000b   
+                 [ 0000ce30 ]  00006718          *   00000004   libg722_1.lib : dct4_a.obj (.const:_$P$T0$1)
+                 [ 0000ce38 ]  0000671c          *   00000004                 : dct4_s.obj (.const:_$P$T0$1)
+                 [ 0000ce40 ]  00006720          *   00000003                 : decoder.obj (.const:_$P$T0$2)
+
+.vectors     0     00010000  [ 00008000 ] 00000100          *   
+                   00010000  [ 00008000 ] 00000100          *   vectors.obj (.vectors)
+
+.stack       0   [ 00010100 ]  00008080          *   00001000   UNINITIALIZED
+                 [ 00010100 ]  00008080          *   00001000   --HOLE--
+
+.sysstack 
+*            0   [ 00012100 ]  00009080          *   00000800   UNINITIALIZED
+                 [ 00012100 ]  00009080          *   00000800   --HOLE--
+
+.text        0     00020000  [ 00010000 ] 000038c7          *   
+                   00020000  [ 00010000 ] 00000a94          *   libg722_1.lib : encoder.obj (.text)
+                   00020a94  [ 0001054a ] 000008d0          *                 : decoder.obj (.text)
+                   00021364  [ 000109b2 ] 00000718          *   Si446x_api.obj (.text)
+                   00021a7c  [ 00010d3e ] 0000040c          *   libg722_1.lib : dct4_s.obj (.text)
+                   00021e88  [ 00010f44 ] 000003df          *                 : common.obj (.text)
+                   00022267  [ 00011133+] 0000039e          *   audio.obj (.text)
+                   00022605  [ 00011302+] 00000354          *   libg722_1.lib : dct4_a.obj (.text)
+                   00022959  [ 000114ac+] 000002aa          *   ezdsp5535_spi.obj (.text)
+                   00022c03  [ 00011601+] 00000242          *   libg722_1.lib : sam2coef.obj (.text)
+                   00022e45  [ 00011722+] 000001e7          *   aic3204.obj (.text)
+                   0002302c  [ 00011816 ] 000001a2          *   libg722_1.lib : coef2sam.obj (.text)
+                   000231ce  [ 000118e7 ] 00000124          *   ezdsp5535_i2c.obj (.text)
+                   000232f2  [ 00011979 ] 0000010b          *   main.obj (.text)
+                   000233fd  [ 000119fe+] 000000ee          *   ezdsp5535_spi.obj (.text:retain)
+                   000234eb  [ 00011a75+] 000000b6          *   ezdsp5535_i2s.obj (.text:retain)
+                   000235a1  [ 00011ad0+] 00000089          *   audio.obj (.text:retain)
+                   0002362a  [ 00011b15 ] 00000064          *   ezdsp5535_gpio.obj (.text)
+                   0002368e  [ 00011b47 ] 0000005b          *   libg722_1.lib : DSP_utils.obj (.text)
+                   000236e9  [ 00011b74+] 0000004d          *   autoinit.obj (.text)
+                   00023736  [ 00011b9b ] 00000048          *   ezdsp5535_gpio.obj (.text:retain)
+                   0002377e  [ 00011bbf ] 00000047          *   sysinit.obj (.text)
+                   000237c5  [ 00011be2+] 00000043          *   pll.obj (.text)
+                   00023808  [ 00011c04 ] 00000030          *   boot.obj (.text)
+                   00023838  [ 00011c1c ] 0000002d          *   timer.obj (.text)
+                   00023865  [ 00011c32+] 00000028          *   ezdsp5535_i2s.obj (.text)
+                   0002388d  [ 00011c46+] 00000028          *   timer.obj (.text:retain)
+                   000238b5  [ 00011c5a+] 0000000b          *   DSP_utils.obj (.text)
+                   000238c0  [ 00011c60 ] 00000006          *   vectors.obj (.text)
+                   000238c6  [ 00011c63 ] 00000001          *   --HOLE-- [fill = 20]
+
+.cinit       0   [ 00040000 ]  00020000          *   00003c3a   
+                 [ 00040000 ]  00020000          *   000020f5   libg722_1.lib : huff_tab.obj (.cinit)
+                 [ 000441ea ]  000220f5          *   00000a7d                 : dct4_s.obj (.cinit)
+                 [ 000456e4 ]  00022b72          *   0000085f                 : tables.obj (.cinit)
+                 [ 000467a2 ]  000233d1          *   000006b7                 : dct4_a.obj (.cinit)
+                 [ 00047510 ]  00023a88          *   00000163   Si446x_api.obj (.cinit)
+                 [ 000477d6 ]  00023beb          *   00000017   audio.obj (.cinit)
+                 [ 00047804 ]  00023c02          *   00000014   main.obj (.cinit)
+                 [ 0004782c ]  00023c16          *   00000010   ezdsp5535_spi.obj (.cinit)
+                 [ 0004784c ]  00023c26          *   00000008   ezdsp5535_i2s.obj (.cinit)
+                 [ 0004785c ]  00023c2e          *   00000007   libg722_1.lib : decoder.obj (.cinit)
+                 [ 0004786a ]  00023c35          *   00000004   ezdsp5535_gpio.obj (.cinit)
+                 [ 00047872 ]  00023c39          *   00000001   --HOLE-- [fill = 0]
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+abs. value/
+byte addr   word addr   name
+---------   ---------   ----
+00000002                $TI_capability$C5500$CallingConvention
+00000002                $TI_capability$C5500$MemoryModel
+00000001                $TI_capability_requires_rev3
+ffffffff                .bss
+ffffffff                .data
+ffffffff                .text
+00022e45                _AIC3204_rget
+00022e7f                _AIC3204_rset
+0002253c                _Audio_init
+00022267                _DMA_audio_init
+000236ae                _DSP_add
+000236c7                _DSP_mac
+000236a1                _DSP_memcpy
+0002368e                _DSP_zero
+0002362a                _EZDSP5535_GPIO_init
+000231ed                _EZDSP5535_I2C_close
+000231ce                _EZDSP5535_I2C_init
+00023278                _EZDSP5535_I2C_read
+000231f6                _EZDSP5535_I2C_reset
+00023204                _EZDSP5535_I2C_write
+00023865                _EZDSP5535_I2S_init
+000237c5                _EZDSP5535_PLL_init
+00022959                _EZDSP5535_SPI_init
+000238b5                _EZDSP5535_waitusec
+0002377e                _INTR_init
+            00006553    _ModemRx1
+            000065ba    _ModemRx10
+            000065c8    _ModemRx11
+            000065d6    _ModemRx12
+            0000655f    _ModemRx2
+            0000656e    _ModemRx3
+            0000657b    _ModemRx4
+            00006581    _ModemRx4_1
+            00006589    _ModemRx5
+            00006593    _ModemRx6
+            0000659c    _ModemRx7
+            000065a5    _ModemRx8
+            000065ac    _ModemRx9
+            0000652c    _ModemTrx1
+            00006534    _ModemTrx2
+            0000653a    _ModemTrx3
+            00006546    _ModemTrx4
+            000065e4    _ModemTx1
+            000065f3    _ModemTx2
+            000064d2    _PaSettings
+000214d1                _ReceivePacket
+00010000                _Reset
+00022b55                _SPI_recvData
+00022bbc                _SPI_sendData
+00021535                _SendPacket
+00021364                _SetPAMode
+000215ac                _Si446x_Init
+000229a4                _SpiBusStatus
+00022ab6                _SpiGetResponse
+000229d9                _SpiReadByte
+00022b3e                _SpiReadRxDataBuffer
+00022a63                _SpiSendCommand
+00022a01                _SpiWaitforCTS
+00022a39                _SpiWriteByte
+00022b15                _SpiWriteTxDataBuffer
+00023838                _TIMER_init
+            00009080    __STACK_END
+00002000                __STACK_SIZE
+00001000                __SYSSTACK_SIZE
+ffffffff                ___binit__
+ffffffff                ___bss__
+ffffffff                ___c_args__
+            00020000    ___cinit__
+ffffffff                ___data__
+ffffffff                ___edata__
+ffffffff                ___end__
+ffffffff                ___etext__
+ffffffff                ___pinit__
+ffffffff                ___text__
+            00008080    __stack
+            00009080    __sysstack
+            0000521e    _a_cos_msin_16
+            00005192    _a_cos_msin_2
+            000052be    _a_cos_msin_32
+            000051a6    _a_cos_msin_4
+            000053fe    _a_cos_msin_64
+            000051ce    _a_cos_msin_8
+            0000567e    _a_cos_msin_table
+            000064c2    _abApi_Read
+            000064b2    _abApi_Write
+00020258                _adjust_abs_region_power_index
+00022ea6                _aic3204_init
+            000056ee    _anal_bias
+000224b9                _audioDecoding
+0002243f                _audioEncoding
+000236e9                _auto_init
+000213fc                _bApi_Set_Receive
+00021466                _bApi_Set_Send
+00020000                _bits_to_words
+            0000670a    _buffer
+            00003f5a    _buffer_a
+            000041da    _buffer_b
+            0000445a    _buffer_c
+00023808                _c_int00
+0002217d                _calc_offset
+0002220d                _categorize
+000231ba                _coef2sam_init
+00021e88                _comp_powercat_and_catbalance
+00020301                _compute_region_powers
+            00006713    _data1
+            00006714    _data2
+            0000568a    _dct_core_a
+            000034fe    _dct_core_s
+00022605                _dct_type_iv_a
+00021a7c                _dct_type_iv_s
+00020b16                _decode_envelope
+00020d81                _decode_vector_quantized_mlt_indices
+00021266                _decoder
+            00001460    _differential_region_power_bits
+            00001700    _differential_region_power_codes
+            000019a0    _differential_region_power_decoder_tree
+            000036a2    _dither
+000235a1                _dma_isr
+00020968                _encoder
+000211a7                _error_handling
+            00001f28    _expected_bits_table
+            00006683    _gDct_length
+            00006682    _gDct_length_log
+            000066ff    _gNum_categorization_control_bits
+            00006701    _gNum_categorization_control_possibilities
+            000066fe    _gNumber_of_regions
+            00006700    _gNumber_of_valid_coefs
+00020a94                _get_next_bit
+00020ad6                _get_rand
+            0000670f    _gpioIsrStatus
+00023736                _gpio_isr
+00023546                _i2s2_rx_isr
+000234eb                _i2s2_tx_isr
+00020cfc                _index_to_array
+            000065fc    _inputDmaChn
+            00004a02    _int_dead_zone
+            00004a0a    _int_dead_zone_low_bits
+            0000495a    _int_region_standard_deviation_table
+000232f2                _main
+            00006712    _mark
+            000049f2    _max_bin_plus_one
+            000049fa    _max_bin_plus_one_inverse
+            000037e2    _max_dither
+            00004c92    _max_rmlt_to_samples_window
+            00004a12    _max_samples_to_rmlt_window
+            00002b06    _mlt_decoder_tree_category_0
+            00002c6e    _mlt_decoder_tree_category_1
+            00002d28    _mlt_decoder_tree_category_2
+            00002d86    _mlt_decoder_tree_category_3
+            00003194    _mlt_decoder_tree_category_4
+            00003334    _mlt_decoder_tree_category_5
+            000034b2    _mlt_decoder_tree_category_6
+            00001ea8    _mlt_quant_centroid
+            00001f30    _mlt_sqvh_bitcount_category_0
+            000020b8    _mlt_sqvh_bitcount_category_1
+            00002180    _mlt_sqvh_bitcount_category_2
+            000021e2    _mlt_sqvh_bitcount_category_3
+            000026c4    _mlt_sqvh_bitcount_category_4
+            000028c4    _mlt_sqvh_bitcount_category_5
+            00002aaa    _mlt_sqvh_bitcount_category_6
+            00001ff4    _mlt_sqvh_code_category_0
+            0000211c    _mlt_sqvh_code_category_1
+            000021b1    _mlt_sqvh_code_category_2
+            00002453    _mlt_sqvh_code_category_3
+            000027c4    _mlt_sqvh_code_category_4
+            000029b7    _mlt_sqvh_code_category_5
+            00002aca    _mlt_sqvh_code_category_6
+            00006607    _number_of_16bit_words_per_frame
+            00006605    _number_of_bits_per_frame
+            00006606    _number_of_bytes_per_frame
+            000049ea    _number_of_vectors
+            00006604    _offset
+            0000622e    _old_decoder_mlt_coefs
+            00006702    _old_mag_shift
+            00006600    _outputDmaChn
+00020cc1                _rate_adjust_categories
+            00006684    _rawInWords
+            00006608    _rawOutWords
+            00000060    _rcv_l
+            00000a60    _rcv_r
+            00006706    _recv_cnt
+0002302c                _rmlt_coefs_to_samples
+            00005052    _rmlt_to_samples_window
+            00003aee    _s_cos_msin_16
+            00003a62    _s_cos_msin_2
+            00003b8e    _s_cos_msin_32
+            00003a76    _s_cos_msin_4
+            00003cce    _s_cos_msin_64
+            00003a9e    _s_cos_msin_8
+            00003f4e    _s_cos_msin_table
+00022e31                _sam2coef_init
+00022c03                _samples_to_rmlt_coefs
+            00004f12    _samples_to_rmlt_window
+            00006707    _sent_cnt
+            00006708    _sent_cntRes
+            00006709    _si4464Func
+            00006710    _spiIsrStatus
+000233fd                _spi_isr
+            0000670c    _spi_set
+            0000499a    _standard_deviation_inverse_table
+            000049da    _step_size_inverse_table
+            00003562    _syn_bias_7khz
+            00002aea    _table_of_bitcount_tables
+            00002af8    _table_of_code_tables
+            000034f0    _table_of_decoder_tables
+            0000670e    _taskList
+000210ef                _test_4_frame_errors
+            00006711    _timIsrStatus
+0002388d                _tim_isr
+            000049e2    _vector_dimension
+0002050f                _vector_huffman
+0002072b                _vector_quantize_mlts
+            000046da    _windowed_data
+            00000560    _xmt_l
+            00000f60    _xmt_r
+ffffffff                binit
+            00020000    cinit
+ffffffff                edata
+ffffffff                end
+ffffffff                etext
+ffffffff                pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+abs. value/
+byte addr   word addr   name
+---------   ---------   ----
+00000001                $TI_capability_requires_rev3
+00000002                $TI_capability$C5500$CallingConvention
+00000002                $TI_capability$C5500$MemoryModel
+            00000060    _rcv_l
+            00000560    _xmt_l
+00001000                __SYSSTACK_SIZE
+            00000a60    _rcv_r
+            00000f60    _xmt_r
+00002000                __STACK_SIZE
+            00001460    _differential_region_power_bits
+            00001700    _differential_region_power_codes
+            000019a0    _differential_region_power_decoder_tree
+            00001ea8    _mlt_quant_centroid
+            00001f28    _expected_bits_table
+            00001f30    _mlt_sqvh_bitcount_category_0
+            00001ff4    _mlt_sqvh_code_category_0
+            000020b8    _mlt_sqvh_bitcount_category_1
+            0000211c    _mlt_sqvh_code_category_1
+            00002180    _mlt_sqvh_bitcount_category_2
+            000021b1    _mlt_sqvh_code_category_2
+            000021e2    _mlt_sqvh_bitcount_category_3
+            00002453    _mlt_sqvh_code_category_3
+            000026c4    _mlt_sqvh_bitcount_category_4
+            000027c4    _mlt_sqvh_code_category_4
+            000028c4    _mlt_sqvh_bitcount_category_5
+            000029b7    _mlt_sqvh_code_category_5
+            00002aaa    _mlt_sqvh_bitcount_category_6
+            00002aca    _mlt_sqvh_code_category_6
+            00002aea    _table_of_bitcount_tables
+            00002af8    _table_of_code_tables
+            00002b06    _mlt_decoder_tree_category_0
+            00002c6e    _mlt_decoder_tree_category_1
+            00002d28    _mlt_decoder_tree_category_2
+            00002d86    _mlt_decoder_tree_category_3
+            00003194    _mlt_decoder_tree_category_4
+            00003334    _mlt_decoder_tree_category_5
+            000034b2    _mlt_decoder_tree_category_6
+            000034f0    _table_of_decoder_tables
+            000034fe    _dct_core_s
+            00003562    _syn_bias_7khz
+            000036a2    _dither
+            000037e2    _max_dither
+            00003a62    _s_cos_msin_2
+            00003a76    _s_cos_msin_4
+            00003a9e    _s_cos_msin_8
+            00003aee    _s_cos_msin_16
+            00003b8e    _s_cos_msin_32
+            00003cce    _s_cos_msin_64
+            00003f4e    _s_cos_msin_table
+            00003f5a    _buffer_a
+            000041da    _buffer_b
+            0000445a    _buffer_c
+            000046da    _windowed_data
+            0000495a    _int_region_standard_deviation_table
+            0000499a    _standard_deviation_inverse_table
+            000049da    _step_size_inverse_table
+            000049e2    _vector_dimension
+            000049ea    _number_of_vectors
+            000049f2    _max_bin_plus_one
+            000049fa    _max_bin_plus_one_inverse
+            00004a02    _int_dead_zone
+            00004a0a    _int_dead_zone_low_bits
+            00004a12    _max_samples_to_rmlt_window
+            00004c92    _max_rmlt_to_samples_window
+            00004f12    _samples_to_rmlt_window
+            00005052    _rmlt_to_samples_window
+            00005192    _a_cos_msin_2
+            000051a6    _a_cos_msin_4
+            000051ce    _a_cos_msin_8
+            0000521e    _a_cos_msin_16
+            000052be    _a_cos_msin_32
+            000053fe    _a_cos_msin_64
+            0000567e    _a_cos_msin_table
+            0000568a    _dct_core_a
+            000056ee    _anal_bias
+            0000622e    _old_decoder_mlt_coefs
+            000064b2    _abApi_Write
+            000064c2    _abApi_Read
+            000064d2    _PaSettings
+            0000652c    _ModemTrx1
+            00006534    _ModemTrx2
+            0000653a    _ModemTrx3
+            00006546    _ModemTrx4
+            00006553    _ModemRx1
+            0000655f    _ModemRx2
+            0000656e    _ModemRx3
+            0000657b    _ModemRx4
+            00006581    _ModemRx4_1
+            00006589    _ModemRx5
+            00006593    _ModemRx6
+            0000659c    _ModemRx7
+            000065a5    _ModemRx8
+            000065ac    _ModemRx9
+            000065ba    _ModemRx10
+            000065c8    _ModemRx11
+            000065d6    _ModemRx12
+            000065e4    _ModemTx1
+            000065f3    _ModemTx2
+            000065fc    _inputDmaChn
+            00006600    _outputDmaChn
+            00006604    _offset
+            00006605    _number_of_bits_per_frame
+            00006606    _number_of_bytes_per_frame
+            00006607    _number_of_16bit_words_per_frame
+            00006608    _rawOutWords
+            00006682    _gDct_length_log
+            00006683    _gDct_length
+            00006684    _rawInWords
+            000066fe    _gNumber_of_regions
+            000066ff    _gNum_categorization_control_bits
+            00006700    _gNumber_of_valid_coefs
+            00006701    _gNum_categorization_control_possibilities
+            00006702    _old_mag_shift
+            00006706    _recv_cnt
+            00006707    _sent_cnt
+            00006708    _sent_cntRes
+            00006709    _si4464Func
+            0000670a    _buffer
+            0000670c    _spi_set
+            0000670e    _taskList
+            0000670f    _gpioIsrStatus
+            00006710    _spiIsrStatus
+            00006711    _timIsrStatus
+            00006712    _mark
+            00006713    _data1
+            00006714    _data2
+00010000                _Reset
+            00008080    __stack
+            00009080    __STACK_END
+            00009080    __sysstack
+00020000                _bits_to_words
+00020258                _adjust_abs_region_power_index
+00020301                _compute_region_powers
+0002050f                _vector_huffman
+0002072b                _vector_quantize_mlts
+00020968                _encoder
+00020a94                _get_next_bit
+00020ad6                _get_rand
+00020b16                _decode_envelope
+00020cc1                _rate_adjust_categories
+00020cfc                _index_to_array
+00020d81                _decode_vector_quantized_mlt_indices
+000210ef                _test_4_frame_errors
+000211a7                _error_handling
+00021266                _decoder
+00021364                _SetPAMode
+000213fc                _bApi_Set_Receive
+00021466                _bApi_Set_Send
+000214d1                _ReceivePacket
+00021535                _SendPacket
+000215ac                _Si446x_Init
+00021a7c                _dct_type_iv_s
+00021e88                _comp_powercat_and_catbalance
+0002217d                _calc_offset
+0002220d                _categorize
+00022267                _DMA_audio_init
+0002243f                _audioEncoding
+000224b9                _audioDecoding
+0002253c                _Audio_init
+00022605                _dct_type_iv_a
+00022959                _EZDSP5535_SPI_init
+000229a4                _SpiBusStatus
+000229d9                _SpiReadByte
+00022a01                _SpiWaitforCTS
+00022a39                _SpiWriteByte
+00022a63                _SpiSendCommand
+00022ab6                _SpiGetResponse
+00022b15                _SpiWriteTxDataBuffer
+00022b3e                _SpiReadRxDataBuffer
+00022b55                _SPI_recvData
+00022bbc                _SPI_sendData
+00022c03                _samples_to_rmlt_coefs
+00022e31                _sam2coef_init
+00022e45                _AIC3204_rget
+00022e7f                _AIC3204_rset
+00022ea6                _aic3204_init
+0002302c                _rmlt_coefs_to_samples
+000231ba                _coef2sam_init
+000231ce                _EZDSP5535_I2C_init
+000231ed                _EZDSP5535_I2C_close
+000231f6                _EZDSP5535_I2C_reset
+00023204                _EZDSP5535_I2C_write
+00023278                _EZDSP5535_I2C_read
+000232f2                _main
+000233fd                _spi_isr
+000234eb                _i2s2_tx_isr
+00023546                _i2s2_rx_isr
+000235a1                _dma_isr
+0002362a                _EZDSP5535_GPIO_init
+0002368e                _DSP_zero
+000236a1                _DSP_memcpy
+000236ae                _DSP_add
+000236c7                _DSP_mac
+000236e9                _auto_init
+00023736                _gpio_isr
+0002377e                _INTR_init
+000237c5                _EZDSP5535_PLL_init
+00023808                _c_int00
+00023838                _TIMER_init
+00023865                _EZDSP5535_I2S_init
+0002388d                _tim_isr
+000238b5                _EZDSP5535_waitusec
+            00020000    ___cinit__
+            00020000    cinit
+ffffffff                .bss
+ffffffff                .data
+ffffffff                .text
+ffffffff                ___binit__
+ffffffff                ___bss__
+ffffffff                ___c_args__
+ffffffff                ___data__
+ffffffff                ___edata__
+ffffffff                ___end__
+ffffffff                ___etext__
+ffffffff                ___pinit__
+ffffffff                ___text__
+ffffffff                binit
+ffffffff                edata
+ffffffff                end
+ffffffff                etext
+ffffffff                pinit
+
+[221 symbols]
