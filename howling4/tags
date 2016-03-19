@@ -1,0 +1,205 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+$1	boot.asm	/^$1:	TC1 = bit(@ST3_L, #1) || mmap()$/;"	l
+$2	boot.asm	/^$2:	TC1 = bit(@ST3_L, #0) || mmap()$/;"	l
+AC0	DSP_lms.asm	/^	AC0 = #0				|| bit(ST1, #ST1_SATD) = #1$/;"	d
+AC0	DSP_lms.asm	/^	AC0 = AC0 + (*(#12h) << #0)						; *(#12h) = AR2$/;"	d
+AC0	DSP_lms.asm	/^	AC0 = POPBOTH()			|| bit(ST1, #ST1_SATD) = #0$/;"	d
+AC0	DSP_lms.asm	/^	AC0 = XAR0				|| PSHBOTH(AC0)$/;"	d
+AC0	DSP_utils.asm	/^		AC0 = AC0 + ((*AR0+)*(*AR1+))$/;"	d
+AC0	DSP_utils.asm	/^	AC0 = #0 || CSR = T0$/;"	d
+AC0	DSP_utils.asm	/^	AC0 = POPBOTH()$/;"	d
+AC0	autoinit.asm	/^	AC0 = AC0 | (AC1 <<< #-8)$/;"	d
+AC0	autoinit.asm	/^        AC0 = dbl(*AR6+)$/;"	d
+AC0	autoinit.asm	/^        AC0 = uns(*AR0+) << #8$/;"	d
+AC1	DSP_lms.asm	/^	AC1 = POPBOTH()			|| bit(ST1, #ST1_SATD) = #0$/;"	d
+AC1	DSP_lms.asm	/^	AC1 = dbl(*flt)			|| bit(ST1, #ST1_FRCT) = #1$/;"	d
+AC1	autoinit.asm	/^	AC1 = AC1 & #0xff	$/;"	d
+AC1	autoinit.asm	/^	AC1 = uns(*AR0+)$/;"	d
+AC2	DSP_lms.asm	/^		AC2 = (*x-) * T1							; AC1 = h[i]$/;"	d
+AC2	DSP_lms.asm	/^		AC2 = AC1 * (*x)	|| dbl(*flt+) = AC1		; save h[i]$/;"	d
+AC2	DSP_lms.asm	/^	AC2 = POPBOTH()			|| bit(ST1, #ST1_FRCT) = #0$/;"	d
+AIC3204_I2C_ADDR	aic3204.c	5;"	d	file:
+AIC3204_rset	aic3204.c	/^Int16 AIC3204_rset(Uint8 regnum, Uint8 regval)$/;"	f
+AR0	autoinit.asm	/^        AR0   = #(cinit & 0xffff)$/;"	d
+AR2	autoinit.asm	/^	AR2 = AR2 >> #1$/;"	d
+AR2	autoinit.asm	/^        AR2 = *AR0+$/;"	d
+AR6	autoinit.asm	/^	AR6   = AC0$/;"	d
+AR6	autoinit.asm	/^        AR6   = #(___pinit__ & 0xffff)$/;"	d
+AR7	autoinit.asm	/^	AR7 = ~AR0$/;"	d
+AR7	autoinit.asm	/^	AR7 = ~AR6$/;"	d
+AUDIOPROCESSING	include/radio.h	15;"	d
+BERR	vectors.asm	/^BERR:		.ivec	no_handler			; Bus Error Interrupt$/;"	l
+BRC0	DSP_lms.asm	/^	BRC0 = AR2				|| PSHBOTH(AC2)$/;"	d
+BRC0	DSP_utils.asm	/^	BRC0 = T0 || T0 = *AR1+$/;"	d
+BRC0	DSP_utils.asm	/^	BRC0 = T0$/;"	d
+COPROCFFT	vectors.asm	/^COPROCFFT:	.ivec	no_handler			; Coprocessor FFT Module Interrupt$/;"	l
+CSR	DSP_utils.asm	/^	CSR = T0$/;"	d
+CSR	autoinit.asm	/^	CSR = AR2$/;"	d
+Complex	include/radio.h	/^typedef struct {long re, im;} Complex;$/;"	t	typeref:struct:__anon1
+DATAMEMCOPY	autoinit.asm	/^DATAMEMCOPY:$/;"	l
+DELAY	audio.c	163;"	d	file:
+DLOG	vectors.asm	/^DLOG:		.ivec	no_handler			; Emulation Interrupt - DLOG$/;"	l
+DMA	vectors.asm	/^DMA:		.ivec	_dma_isr			; DMA Interrupt$/;"	l
+DMA_audio_init	audio.c	/^void DMA_audio_init(Uint16 size)$/;"	f
+EMIF	vectors.asm	/^EMIF:		.ivec	no_handler			; EMIF Error Interrupt$/;"	l
+EMUINT	vectors.asm	/^EMUINT:		.ivec	no_handler			; Emulation monitor mode interrupt$/;"	l
+EXIT	autoinit.asm	/^EXIT:$/;"	l
+EZDSP5535_GPIO_init	ezdsp5535_gpio.c	/^void EZDSP5535_GPIO_init()$/;"	f
+EZDSP5535_I2C_close	ezdsp5535_i2c.c	/^Int16 EZDSP5535_I2C_close( )$/;"	f
+EZDSP5535_I2C_init	ezdsp5535_i2c.c	/^Int16 EZDSP5535_I2C_init( )$/;"	f
+EZDSP5535_I2C_read	ezdsp5535_i2c.c	/^Int16 EZDSP5535_I2C_read( Uint16 i2c_addr, Uint8* data, Uint16 len )$/;"	f
+EZDSP5535_I2C_reset	ezdsp5535_i2c.c	/^Int16 EZDSP5535_I2C_reset( )$/;"	f
+EZDSP5535_I2C_write	ezdsp5535_i2c.c	/^Int16 EZDSP5535_I2C_write( Uint16 i2c_addr, Uint8* data, Uint16 len )$/;"	f
+EZDSP5535_I2S_init	ezdsp5535_i2s.c	/^void EZDSP5535_I2S_init(int mode)$/;"	f
+EZDSP5535_SAR_getKey	ezdsp5535_sar.c	/^Uint16 EZDSP5535_SAR_getKey(void)$/;"	f
+EZDSP5535_SAR_init	ezdsp5535_sar.c	/^void EZDSP5535_SAR_init(void)$/;"	f
+FFT_L	include/radio.h	13;"	d
+FILEPROCESSING	include/radio.h	16;"	d
+FS	include/radio.h	11;"	d
+GPIO	vectors.asm	/^GPIO:		.ivec	no_handler			; GPIO Interrupt$/;"	l
+I2C	vectors.asm	/^I2C:		.ivec	no_handler			; IIC interrupt$/;"	l
+ICR	main.c	15;"	d	file:
+INT0	vectors.asm	/^INT0:		.ivec	no_handler			; External User Interrupt #0 $/;"	l
+INT1	vectors.asm	/^INT1:		.ivec	no_handler			; External User Interrupt #1$/;"	l
+INTR_init	sysinit.c	/^void INTR_init(void)$/;"	f
+LCD	vectors.asm	/^LCD:		.ivec	no_handler			; LCD Interrupt$/;"	l
+LOOP	autoinit.asm	/^LOOP:$/;"	l
+LOOP2	autoinit.asm	/^LOOP2:	$/;"	l
+M	include/radio.h	12;"	d
+MDP	boot.asm	/^	MDP   = #0$/;"	d
+MDP05	autoinit.asm	/^	MDP05 = #0$/;"	d
+MDP05	autoinit.asm	/^        MDP05 = #((cinit >> 16) & 0x7f)$/;"	d
+MDP05	boot.asm	/^	MDP05 = #0$/;"	d
+MDP67	autoinit.asm	/^	MDP67 = #0$/;"	d
+MDP67	autoinit.asm	/^	MDP67 = *SP(#0) $/;"	d
+MDP67	autoinit.asm	/^	MDP67 = @AC0_H || mmap()$/;"	d
+MDP67	autoinit.asm	/^        MDP67 = #((___pinit__ >> 16) & 0x7f)$/;"	d
+MDP67	boot.asm	/^	MDP67 = #0$/;"	d
+MDR_FREE	ezdsp5535_i2c.c	77;"	d	file:
+MDR_IRS	ezdsp5535_i2c.c	76;"	d	file:
+MDR_MST	ezdsp5535_i2c.c	75;"	d	file:
+MDR_STP	ezdsp5535_i2c.c	80;"	d	file:
+MDR_STT	ezdsp5535_i2c.c	73;"	d	file:
+MDR_TRX	ezdsp5535_i2c.c	74;"	d	file:
+NMI	vectors.asm	/^NMI:		.ivec	no_handler			; Nonmaskable Interrupt$/;"	l
+NoKey	include/ezdsp5535_sar.h	10;"	d
+PINIT	autoinit.asm	/^PINIT:		$/;"	l
+PLL_init	pll.c	/^void PLL_init(Uint32 clock)$/;"	f
+PORTMEMCOPY	autoinit.asm	/^PORTMEMCOPY:$/;"	l
+PROG0	vectors.asm	/^PROG0:		.ivec	no_handler			; Programmable 0 Interrupt$/;"	l
+PROG1	vectors.asm	/^PROG1:		.ivec	no_handler			; Programmable 1 Interrupt$/;"	l
+PROG2	vectors.asm	/^PROG2:		.ivec	no_handler			; Programmable 2 Interrupt$/;"	l
+PROG3	vectors.asm	/^PROG3:		.ivec	no_handler			; Programmable 3 Interrupt$/;"	l
+RCV2	vectors.asm	/^RCV2:		.ivec	_i2s2_rx_isr		; I2S2 Rx Interrupt$/;"	l
+RCV3	vectors.asm	/^RCV3:		.ivec	no_handler			; I2S3 Rx Interrupt$/;"	l
+RST	vectors.asm	/^RST:		.ivec	reset_isr, USE_RETA	; Reset \/ Software Interrupt #0$/;"	l
+RTC	vectors.asm	/^RTC:		.ivec	no_handler			; RTC interrupt$/;"	l
+RTDXRCV	vectors.asm	/^RTDXRCV:	.ivec	no_handler			; Emulation Interrupt - RTDX receive$/;"	l
+RTDXXMT	vectors.asm	/^RTDXXMT:	.ivec	no_handler			; Emulation Interrupt - RTDX transmit$/;"	l
+RTOS	vectors.asm	/^RTOS:		.ivec	no_handler			; Emulation Interrupt - RTOS$/;"	l
+SARADC	vectors.asm	/^SARADC:		.ivec	no_handler			; SAR ADC Interrupt$/;"	l
+SINT30	vectors.asm	/^SINT30:		.ivec	no_handler			; Software Interrupt #30$/;"	l
+SINT31	vectors.asm	/^SINT31:		.ivec	no_handler			; Software Interrupt #31$/;"	l
+SP	autoinit.asm	/^	SP = SP + #1$/;"	d
+SP	autoinit.asm	/^	SP = SP + #3$/;"	d
+SP	autoinit.asm	/^	SP = SP - #1$/;"	d
+SP	autoinit.asm	/^	SP = SP - #3$/;"	d
+SP	boot.asm	/^	SP  = #((__stack + (__STACK_SIZE >> 1)) & 0xFFFE)$/;"	d
+SP	boot.asm	/^	SP = SP + #0   ; avoid ECNs 372 and 438$/;"	d
+SPI	vectors.asm	/^SPI:		.ivec	no_handler			; SPI Receive Interrupt$/;"	l
+SSP	boot.asm	/^ 	SSP = #((__sysstack + (__SYSSTACK_SIZE >> 1)) & 0xFFFF)$/;"	d
+ST1_OFF	boot.asm	/^ST1_OFF .equ (1<<ST1_LEAD)|(1<<ST1_SATA)|(1<<ST1_RDM)|(1<<ST1_FRCT)|(1<<ST1_M40)|(1<<ST1_SATD)$/;"	l
+ST1_OFF	boot.asm	/^ST1_OFF .equ (1<<ST1_M40)|(1<<ST1_SATD)|(1<<ST1_C16)|(1<<ST1_FRCT)|(1<<ST1_C54CM)$/;"	l
+ST1_ON	boot.asm	/^ST1_ON  .equ (1<<ST1_ARMS)|(1<<ST1_CPL)|(1<<ST1_SXMD)|(1<<ST1_GSM)$/;"	l
+ST1_ON	boot.asm	/^ST1_ON  .equ (1<<ST1_CPL)|(1<<ST1_SXMD)$/;"	l
+ST2_03LC	boot.asm	/^ST2_03LC .equ (1<<ST2_AR0LC) | (1<<ST2_AR1LC) | (1<<ST2_AR2LC) | (1<<ST2_AR3LC)$/;"	l
+ST2_47LC	boot.asm	/^ST2_47LC .equ (1<<ST2_AR4LC) | (1<<ST2_AR5LC) | (1<<ST2_AR6LC) | (1<<ST2_AR7LC)$/;"	l
+ST2_OFF	boot.asm	/^ST2_OFF  .equ (1<<ST2_CDPLC) | ST2_03LC | ST2_47LC$/;"	l
+ST2_OFF	boot.asm	/^ST2_OFF  .equ (1<<ST2_RDM) | (1<<ST2_CDPLC) | ST2_03LC | ST2_47LC$/;"	l
+ST2_ON	boot.asm	/^ST2_ON   .equ (1<<ST2_ARMS)$/;"	l
+STR_RRDY	ezdsp5535_i2c.c	79;"	d	file:
+STR_XRDY	ezdsp5535_i2c.c	78;"	d	file:
+SW1	include/ezdsp5535_sar.h	7;"	d
+SW12	include/ezdsp5535_sar.h	9;"	d
+SW2	include/ezdsp5535_sar.h	8;"	d
+T0	DSP_utils.asm	/^	T0 = T0 >> #1$/;"	d
+TINT	vectors.asm	/^TINT:		.ivec	no_handler			; Timer \/ Software Interrupt #4$/;"	l
+UART	vectors.asm	/^UART:		.ivec	no_handler			; IIS #1 Receive Interrupt$/;"	l
+UARTPROCESSING	include/radio.h	17;"	d
+USB	vectors.asm	/^USB:		.ivec	no_handler			; USB Transmit Interrupt$/;"	l
+XAR0	DSP_lms.asm	/^	XAR0 = AC0				|| PSHBOTH(AC1)$/;"	d
+XAR0	autoinit.asm	/^	XAR0 = #___bss__$/;"	d
+XAR0	autoinit.asm	/^        XAR0  = #(cinit & 0x7fffff)$/;"	d
+XAR0	autoinit.asm	/^        XAR0  = #(cinit & 0xffffff)$/;"	d
+XAR0	boot.asm	/^	XAR0 = #___bss__$/;"	d
+XAR1	boot.asm	/^	XAR1 = XAR0$/;"	d
+XAR2	boot.asm	/^	XAR2 = XAR0$/;"	d
+XAR3	boot.asm	/^	XAR3 = XAR0$/;"	d
+XAR4	boot.asm	/^	XAR4 = XAR0$/;"	d
+XAR5	boot.asm	/^	XAR5 = XAR0$/;"	d
+XAR6	autoinit.asm	/^	XAR6  = AC0$/;"	d
+XAR6	autoinit.asm	/^	XAR6 = #___bss__$/;"	d
+XAR6	autoinit.asm	/^	XAR6 = dbl(*SP(#0))$/;"	d
+XAR6	autoinit.asm	/^        XAR6  = #(___pinit__ & 0x7fffff)$/;"	d
+XAR6	autoinit.asm	/^        XAR6  = #(___pinit__ & 0xffffff)$/;"	d
+XAR6	boot.asm	/^	XAR6 = XAR0$/;"	d
+XAR7	boot.asm	/^	XAR7 = XAR0$/;"	d
+XCDP	boot.asm	/^	XCDP = XAR0$/;"	d
+XDP	boot.asm	/^	XDP  = XAR0$/;"	d
+XMT2	vectors.asm	/^XMT2:		.ivec	_i2s2_tx_isr		; I2S2 Tx Interrupt$/;"	l
+XMT3	vectors.asm	/^XMT3:		.ivec	no_handler			; I2S3 Tx Interrupt$/;"	l
+XSP	boot.asm	/^	XSP = #((__stack + (__STACK_SIZE >> 1)) & 0x7FFFFE)$/;"	d
+XSP	boot.asm	/^	XSP = #((__stack + (__STACK_SIZE)) & 0xFFFFFC)$/;"	d
+XSSP	boot.asm	/^	XSSP = #((__sysstack + (__SYSSTACK_SIZE >> 1)) & 0x7FFFFE)$/;"	d
+XSSP	boot.asm	/^   	XSSP = #((__sysstack + (__SYSSTACK_SIZE)) & 0xFFFFFC)$/;"	d
+_C55X	include/c55x.h	7;"	d
+_DSP_add	DSP_utils.asm	/^_DSP_add:$/;"	l
+_DSP_lms	DSP_lms.asm	/^_DSP_lms:$/;"	l
+_DSP_mac	DSP_utils.asm	/^_DSP_mac:$/;"	l
+_DSP_memcpy	DSP_utils.asm	/^_DSP_memcpy:$/;"	l
+_DSP_zero	DSP_utils.asm	/^_DSP_zero:$/;"	l
+_EZDSP5535_waitusec	DSP_utils.asm	/^_EZDSP5535_waitusec:$/;"	l
+_GPIO_H_	include/ezdsp5535_gpio.h	8;"	d
+_RADIO_H	include/radio.h	7;"	d
+_Reset	vectors.asm	/^_Reset:$/;"	l
+__stack	boot.asm	/^__stack:    .usect  .stack, 0, 0, 1$/;"	l
+__sysstack	boot.asm	/^__sysstack: .usect  .sysstack, 0, 0, 1$/;"	l
+_auto_init	autoinit.asm	/^_auto_init:	.asmfunc$/;"	l
+_c_int00	boot.asm	/^_c_int00:	.asmfunc$/;"	l
+aflt	audio.c	/^Int32 aflt[FFT_L];                 \/\/ adaptive filter$/;"	v
+aic3204_init	aic3204.c	/^void aic3204_init(Uint8 rate, Int8 micGain)$/;"	f
+audioProcessing	audio.c	/^void audioProcessing(int func)$/;"	f
+ch0	audio.c	/^Int16 ch0[FFT_L], *ch1;            \/\/ ch1=reference channel of adaptive$/;"	v
+ch1	audio.c	/^Int16 ch0[FFT_L], *ch1;            \/\/ ch1=reference channel of adaptive$/;"	v
+dbuff	audio.c	/^Int16 dbuff[FFT_L+2];              \/\/ delay buffer for adaptive filter$/;"	v
+delay	ezdsp5535_i2s.c	/^Uint16 delay = 0;$/;"	v
+displayFrequency	main.c	/^void displayFrequency()$/;"	f
+dma_isr	audio.c	/^interrupt void dma_isr(void)$/;"	f
+fraction	include/radio.h	/^typedef struct {int mant; int index;} fraction;$/;"	t	typeref:struct:__anon2
+i2s2_rx_isr	ezdsp5535_i2s.c	/^interrupt void i2s2_rx_isr(void)$/;"	f
+i2s2_tx_isr	ezdsp5535_i2s.c	/^interrupt void i2s2_tx_isr(void)$/;"	f
+im	include/radio.h	/^typedef struct {long re, im;} Complex;$/;"	m	struct:__anon1
+index	include/radio.h	/^typedef struct {int mant; int index;} fraction;$/;"	m	struct:__anon2
+main	main.c	/^void main()$/;"	f
+mant	include/radio.h	/^typedef struct {int mant; int index;} fraction;$/;"	m	struct:__anon2
+no_handler	vectors.asm	/^no_handler:$/;"	l
+pingpong	audio.c	/^Int16 pingpong = -1;$/;"	v
+rcv_l	audio.c	/^Int16 rcv_l[FFT_L*2], xmt_l[FFT_L*2];$/;"	v
+rcv_r	audio.c	/^Int16 rcv_r[FFT_L*2], xmt_r[FFT_L*2];$/;"	v
+re	include/radio.h	/^typedef struct {long re, im;} Complex;$/;"	m	struct:__anon1
+reset_isr	vectors.asm	/^reset_isr:$/;"	l
+s16	include/radio.h	/^typedef	short s16;$/;"	t
+s32	include/radio.h	/^typedef	long s32;$/;"	t
+sample_ptr	ezdsp5535_i2s.c	/^Uint16 sample_ptr = 0;$/;"	v
+t_cnt	main.c	/^volatile u16 t_cnt = 0;				\/\/ timer interrupt counter$/;"	v
+taskList	audio.c	/^Uint16 taskList = 0;		\/\/ bit0 -- audio processing$/;"	v
+timer	main.c	/^volatile s16 timer = 0;				\/\/ timer interrupt$/;"	v
+u16	include/radio.h	/^typedef	unsigned short u16;$/;"	t
+u32	include/radio.h	/^typedef unsigned long u32;$/;"	t
+xmt_l	audio.c	/^Int16 rcv_l[FFT_L*2], xmt_l[FFT_L*2];$/;"	v
+xmt_r	audio.c	/^Int16 rcv_r[FFT_L*2], xmt_r[FFT_L*2];$/;"	v

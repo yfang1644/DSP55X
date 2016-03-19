@@ -1,0 +1,13 @@
+howling control
+hilbert transform, phase shift pi/2, multiply sin/cos
+
+            +-----+    +--------+    x sin()
+       +--->| ADC |----|  FIR1  |---->o------+
+       |    +-----+    +--------+             \
+    ---+                                       O---->
+       |    +-----+    +--------+             /
+       +--->| ADC |----|  FIR2  |---->o------+
+            +-----+    +--------+    x cos()
+
+FIR1 and FIR2 in codec, FIR1 25taps hilbert, FIR2 25pats high pass
+

@@ -1,0 +1,1 @@
+"./vectors.obj" "./twiddle32.obj" "./sysinit.obj" "./pll.obj" "./main.obj" "./ezdsp5535_sar.obj" "./ezdsp5535_i2s.obj" "./ezdsp5535_i2c.obj" "./ezdsp5535_gpio.obj" "./cfft32_noscale.obj" "./cbrev32.obj" "./boot.obj" "./autoinit.obj" "./audio.obj" "./aic3204.obj" "./DSP_utils.obj" "./DSP_restore.obj" "../lnkx.cmd" 
